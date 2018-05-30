@@ -2,16 +2,22 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import Header from '../components/Header'
+import Footer from '../components/Footer'
+
 import '../styles/application.scss'
 import '../static/tailwind.css'
 
 const Layout = ({ children, data }) => (
-  <div>
+  <div className="text-black">
     <Helmet
       title={data.site.siteMetadata.title}
       meta={[
         { name: 'description', content: 'Sample' },
-        { name: 'keywords', content: 'UX/UI Engineer from Glasgow, stuck right in the middle of design and code' },
+        {
+          name: 'keywords',
+          content:
+            'UX/UI Engineer from Glasgow, stuck right in the middle of design and code',
+        },
       ]}
     >
       <link
@@ -19,8 +25,11 @@ const Layout = ({ children, data }) => (
         rel="stylesheet"
       />
     </Helmet>
-    {/* <Header siteTitle={data.site.siteMetadata.title} forHire={true} /> */}
-    {children()}
+    <div className="container px-8 leading-normal">
+      <Header siteTitle={data.site.siteMetadata.title} forHire={true} />
+      {children()}
+      <Footer />
+    </div>
     <script
       dangerouslySetInnerHTML={{
         __html: `

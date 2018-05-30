@@ -1,22 +1,26 @@
 {
-  "name": "gatsby-starter-default",
-  "description": "Gatsby default starter",
+  "name": "chrisssy",
+  "description": "Personal blog/site",
   "version": "1.0.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Chris Collins <chriscollins238@gmail.com>",
   "dependencies": {
     "gatsby": "^1.9.247",
     "gatsby-link": "^1.6.40",
     "gatsby-plugin-react-helmet": "^2.0.10",
     "gatsby-plugin-sass": "^1.0.26",
-    "react-helmet": "^5.2.0"
+    "gatsby-plugin-styled-components": "^2.0.11",
+    "react-feather": "^1.1.0",
+    "react-helmet": "^5.2.0",
+    "styled-components": "^3.3.0"
   },
   "keywords": [
-    "gatsby"
+    "gatsby",
+    "react"
   ],
   "license": "MIT",
   "scripts": {
     "build": "tailwind build ./src/styles/tailwind.css -c ./tailwind.config.js -o ./src/static/tailwind.css && purgecss -c purgecss.config.js -o ./src/static && gatsby build",
-    "develop": "tailwind build ./src/styles/tailwind.css -c ./tailwind.config.js -o ./src/static/tailwind.css && gatsby develop",
+    "dev": "tailwind build ./src/styles/tailwind.css -c ./tailwind.config.js -o ./src/static/tailwind.css && gatsby develop",
     "format": "prettier --write 'src/**/*.js'",
     "deploy": "tailwind build ./src/styles/tailwind.css -c ./tailwind.config.js -o ./src/static/tailwind.css && purgecss -c purgecss.config.js -o ./src/static && gatsby build && gh-pages -d public",
     "test": "echo \"Error: no test specified\" && exit 1"
