@@ -22,7 +22,7 @@ const Header = props => (
       {props.forHire && (
         <Flag
           text="Available for hire"
-          linkTo="/contact"
+          linkTo="mailto:chriscollins238@gmail.com"
           background={tailwind.colors['green-dark']}
           color="#FFF"
         />

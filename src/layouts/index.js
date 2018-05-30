@@ -25,7 +25,7 @@ const Layout = ({ children, data }) => (
         rel="stylesheet"
       />
     </Helmet>
-    <div className="container px-8 leading-normal">
+    <div className="container leading-normal">
       <Header siteTitle={data.site.siteMetadata.title} forHire={true} />
       {children()}
       <Footer />

@@ -32,10 +32,6 @@ const IndexPage = () => (
       </p>
     </div>
 
-    {/* <div className="container">
-      <h1>Projects</h1>
-    </div> */}
-
     <div className="w-full py-8">
       <div className="flex flex-wrap">
         <div className="md:w-1/2 md:px-4">

@@ -2,6 +2,13 @@ body {
   font-family: 'Karla', sans-serif;
 }
 
+.container {
+  padding-left: 2em;
+  padding-right: 2em;
+  margin: 0 auto;
+  max-width: 80em;
+}
+
 .nav-link {
   position: relative;
 
