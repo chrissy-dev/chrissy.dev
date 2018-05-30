@@ -1,26 +1,34 @@
-# gatsby-starter-default
-The default Gatsby starter.
+# chrisssy.com 👀
+My personal website/blog built using Gatsby.
+
+![](https://img.shields.io/badge/TailwindCSS-0.5.3-44a8b3.svg) 
+![](https://img.shields.io/badge/GatsbyJS-1.9.247-663399.svg) 
 
 For an overview of the project structure please refer to the [Gatsby documentation - Building with Components](https://www.gatsbyjs.org/docs/building-with-components/).
 
 ## Install
 
-Make sure that you have the Gatsby CLI program installed:
+#### Install 🙄
 ```sh
-npm install --global gatsby-cli
+npm install
 ```
 
-And run from your CLI:
+#### Develop 💅🏻
+> Start the Gatsby development server
+
 ```sh
-gatsby new gatsby-example-site
+npm run dev
 ```
 
-Then you can run it by:
+#### Build 🔥
 ```sh
-cd gatsby-example-site
-npm run develop
+npm run dev
 ```
 
-## Deploy
+## 🎉 Deploy 🚢
+> Triggers a rebuild and deploys to GitHub Pages
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-default)
+```sh
+npm run deploy
+```
+
