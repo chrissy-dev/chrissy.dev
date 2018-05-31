@@ -1,6 +1,4 @@
-/*
-
-Tailwind - The Utility-First CSS Framework
+/* Tailwind - The Utility-First CSS Framework
 
 A project by Adam Wathan (@adamwathan), Jonathan Reinink (@reinink),
 David Hemphill (@davidhemphill) and Steve Schoger (@steveschoger).
@@ -21,13 +19,11 @@ View the full documentation at https://tailwindcss.com.
 | to use it, but it can sometimes be helpful to have available. For
 | example, you may choose to merge your custom configuration
 | values with some of the Tailwind defaults.
-|
-*/
+| */
 
 // let defaultConfig = require('tailwindcss/defaultConfig')()
 
-/*
-|-------------------------------------------------------------------------------
+/* |-------------------------------------------------------------------------------
 | Colors                                    https://tailwindcss.com/docs/colors
 |-------------------------------------------------------------------------------
 |
@@ -39,8 +35,7 @@ View the full documentation at https://tailwindcss.com.
 | We've used literal color names ("red", "blue", etc.) for the default
 | palette, but if you'd rather use functional names like "primary" and
 | "secondary", or even a numeric scale like "100" and "200", go for it.
-|
-*/
+| */
 
 let colors = {
   transparent: 'transparent',
@@ -406,7 +401,12 @@ module.exports = {
   |
   */
 
-  borderColors: global.Object.assign({ default: colors['grey-light'] }, colors),
+  borderColors: global.Object.assign(
+    {
+      default: colors['grey-light'],
+    },
+    colors
+  ),
 
   /*
   |-----------------------------------------------------------------------------

@@ -3,9 +3,7 @@ import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
-
-import '../styles/application.scss'
-import '../static/tailwind.css'
+import '../static/application.css'
 
 const Layout = ({ children, data }) => (
   <div className="text-black">

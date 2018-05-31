@@ -1,0 +1,14 @@
+@tailwind preflight;
+@tailwind utilities;
+@tailwind components;
+
+.container {
+  margin: 0 auto;
+  max-width: 80em;
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+.transition {
+  transition: cubic-bezier(0.215, 0.61, 0.355, 1) all 0.3s;
+}
