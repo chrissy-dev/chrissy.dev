@@ -9,6 +9,12 @@ const Navigation = () => (
     >
       Home
     </Link>
+    <Link
+      to="/photos"
+      className="text-black text-lg font-bold no-underline p-1 ml-3 nav-link"
+    >
+      Photos
+    </Link>
   </ul>
 )
 

@@ -3,18 +3,15 @@ import ImageZoom from 'react-medium-image-zoom'
 
 const Photo = props => {
   return (
-    <div>
-      <ImageZoom
-        image={{
-          src: props.full,
-          style: { width: '20em' },
-        }}
-        zoomImage={{
-          src: props.thumb,
-        }}
-        shouldReplaceImage={false}
-      />
-    </div>
+    <ImageZoom
+      image={{
+        src: props.full,
+      }}
+      zoomImage={{
+        src: props.thumb,
+      }}
+      shouldReplaceImage={false}
+    />
   )
 }
 
