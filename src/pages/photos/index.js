@@ -19,7 +19,7 @@ const IndexPage = () => {
             target="_blank"
           >
             Olympus OM-D E-M10 II
-          </a>{' '}
+          </a>
           and I use: Olympus 17mm 1.8, Olympus 45mm 1.8 and Oylmpus 40-150mm.
         </p>
       </Hero>

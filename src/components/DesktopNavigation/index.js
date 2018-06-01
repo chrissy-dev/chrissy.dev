@@ -1,8 +1,8 @@
 import React from 'react'
 import Link from 'gatsby-link'
 
-const Navigation = () => (
-  <ul className="list-reset">
+const DesktopNavigation = () => (
+  <ul className="list-reset hidden md:block">
     <Link
       to="/"
       className="text-black text-lg font-bold no-underline p-1 ml-3 nav-link"
@@ -18,4 +18,4 @@ const Navigation = () => (
   </ul>
 )
 
-export default Navigation
+export default DesktopNavigation

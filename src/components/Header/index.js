@@ -4,13 +4,14 @@ import Logo from '../../static/images/cc.jpg'
 
 // Components
 import Flag from '../Flag'
-import Navigation from '../Navigation'
+import DesktopNavigation from '../DesktopNavigation'
+import MobileNavigation from '../MobileNavigation'
 
 // Style
 import tailwind from '../../../tailwind.config.js'
 
 const Header = props => (
-  <header className="w-full py-8 max-w-xl mx-auto leading-normal">
+  <header className="py-4 md:py-8 border-b border-grey-lighter">
     <div className="flex items-center">
       <a href="/" className="leading-none">
         <img
@@ -28,9 +29,16 @@ const Header = props => (
         />
       )}
 
-      <nav className="flex-1 text-right items-center sm:block w-full sm:w-auto">
+      <div className="flex-1">
+        <div className="flex justify-end">
+          <MobileNavigation />
+          <DesktopNavigation />
+        </div>
+      </div>
+      {/* <Menu />
+      <nav className="hidden md:block flex-1 text-right items-center sm:block w-full sm:w-auto">
         <Navigation />
-      </nav>
+      </nav> */}
     </div>
   </header>
 )
