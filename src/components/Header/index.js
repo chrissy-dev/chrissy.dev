@@ -17,7 +17,7 @@ const Header = props => (
         <img
           src={Logo}
           alt={props.siteTitle}
-          className="w-10 rounded-full inline-block border-4 border-transparent hover:border-orange transition"
+          className="w-10 rounded-full inline-block transition"
         />
       </a>
       {props.forHire && (

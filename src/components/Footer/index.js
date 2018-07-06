@@ -8,7 +8,7 @@ const Footer = props => {
 
   return (
     <Footer className="w-full p-6 text-center border-t border-grey-lighter">
-      <p className="text-sm text-grey">
+      <p className="text-xs text-grey">
         © 2018 Chris Collins. All Rights Reserved.
       </p>
     </Footer>

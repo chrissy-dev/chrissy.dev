@@ -26,7 +26,7 @@ const Flag = props => {
   return (
     <Link
       href={props.linkTo}
-      className="no-underline ml-2 rounded-sm py-1 px-2 text-sm leading-tight"
+      className="no-underline ml-3 rounded-sm py-1 px-2 text-sm leading-tight"
     >
       {props.text}
     </Link>
