@@ -7,11 +7,12 @@ import { withPrefix } from 'gatsby-link'
 import vanillaCalendar from '../static/images/vanilla-calendar.jpg'
 import mobTimer from '../static/images/mob-timer.jpg'
 import jiraIcon from '../static/images/jira-icon.png'
+import stillGame from '../static/images/still-game-quiz.jpg'
 
 const IndexPage = () => (
-  <div>
-    <div className="w-full py-8 max-w-md lg:my-8 mx-auto leading-normal">
-      <h1 className="mb-6">
+  <div class="container">
+    <div className="w-full p-8 md:px-0 md:py-8 max-w-md lg:my-8 mx-auto leading-normal">
+      <h1 className="mb-6 text-xl md:text-4xl">
         I’m Chrissy 👋, <br />
         a UX designer and developer
       </h1>
@@ -30,12 +31,21 @@ const IndexPage = () => (
       </p>
     </div>
 
-    <div className="w-full py-8">
+    <div className="w-full">
       <div class="max-w-lg lg:my-8 mx-auto">
+        <Work
+          background={tailwind.colors['blue-light']}
+          title="Still Game Quiz"
+          description="A quiz app on a Glasgow classic, written in Vue JS."
+          image={stillGame}
+          link="http://stillgamequiz.com"
+          linkLabel="View online"
+        />
+
         <Work
           background={tailwind.colors['orange-light']}
           title="Vanilla Calendar"
-          description="A very simple Javascript calendar"
+          description="A very simple vanilla Javascript calendar"
           image={vanillaCalendar}
           link="https://github.com/vanilla-calendar/vanilla-calendar"
           linkLabel="View on GitHub"

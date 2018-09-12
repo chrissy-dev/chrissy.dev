@@ -1,16 +1,17 @@
 @tailwind preflight;
-@tailwind utilities;
 @tailwind components;
+@tailwind utilities;
 
 body {
-  font-family: 'Roboto' sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, “Segoe UI”, Roboto, Helvetica, Arial, sans-serif;
+  background-color: #f4f8fb;
 }
 
 .container {
   margin: 0 auto;
   max-width: 80em;
-  padding-left: 2em;
-  padding-right: 2em;
+  padding-left: 1em;
+  padding-right: 1em;
 }
 
 .transition {

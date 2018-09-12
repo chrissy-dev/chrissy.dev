@@ -26,7 +26,7 @@ export default class MobileNavigation extends Component {
       left: 0;
       right: 0;
       width: 100%;
-      background-color: rgba(255, 255, 255, 0.9);
+      background-color: rgba(255, 255, 255, 0.99);
       height: 100vh;
       text-align: center;
     `

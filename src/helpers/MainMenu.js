@@ -1,10 +1,10 @@
 export const MainMenu = [
   {
     label: 'Home',
-    route: '/',
+    route: '/'
   },
   {
     label: 'Photos',
-    route: '/photos',
-  },
+    route: '/photos'
+  }
 ]

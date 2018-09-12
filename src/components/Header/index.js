@@ -11,8 +11,8 @@ import MobileNavigation from '../MobileNavigation'
 import tailwind from '../../../tailwind.config.js'
 
 const Header = props => (
-  <header className="py-4 md:py-8 border-b border-grey-lighter">
-    <div className="flex items-center">
+  <header className="py-4 md:py-6 border-b border-grey-lighter bg-white">
+    <div className="flex container items-center">
       <a href="/" className="leading-none">
         <img
           src={Logo}

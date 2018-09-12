@@ -9,7 +9,3 @@ function importAll(r) {
 export const getPhoto = importAll(
   require.context('../static/photos', false, /\.(png|jpe?g|svg)$/)
 )
-
-export const getThumb = importAll(
-  require.context('../static/photos/thumbs', false, /\.(png|jpe?g|svg)$/)
-)

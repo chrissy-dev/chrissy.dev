@@ -18,16 +18,10 @@ const Layout = ({ children, data }) => (
         },
       ]}
     >
-      <link
-        href="//fonts.googleapis.com/css?family=Roboto:400,700"
-        rel="stylesheet"
-      />
     </Helmet>
-    <div className="container leading-normal">
-      <Header siteTitle={data.site.siteMetadata.title} forHire={true} />
-      {children()}
-      <Footer />
-    </div>
+    <Header siteTitle={data.site.siteMetadata.title} forHire={true} />
+    {children()}
+    <Footer />
     <script
       dangerouslySetInnerHTML={{
         __html: `

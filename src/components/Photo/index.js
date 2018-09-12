@@ -1,19 +1,11 @@
 import React from 'react'
-import ImageZoom from 'react-medium-image-zoom'
 
 const Photo = props => {
   return (
-    <div class="float-left sm:w-1/2  md:w-1/4 sm:px-4 mb-4">
-      <ImageZoom
-        image={{
-          src: props.full,
-        }}
-        zoomImage={{
-          src: props.thumb,
-        }}
-        shouldReplaceImage={false}
-      />
-    </div>
+    <figure class="w-full mb-8">
+      <img src={props.full} />
+      <figcaption class="text-center p-2 text-xs italic">{props.caption}</figcaption>
+    </figure>
   )
 }
 
