@@ -14,6 +14,9 @@ linkedin_url: https://www.linkedin.com/in/chrisssycollins
 
 # Build settings
 markdown: kramdown
+sass:
+  sass_dir: assets/css
+
 plugins:
   - jekyll-feed
 # Exclude from processing.

@@ -1,15 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
   {% include head.html %}
-  <body class="sans-serif">
-    {{ content }}
-  </body>
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-51066910-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+  <body>
+    <nav class="db w-100 bb b--black-10">
+      <div class="center mw8 db dt-l w-100 border-box pa3 ph5-l ">
+        <div class="db dtc-l">
+          <a class="dib center v-mid mid-gray link dim tc tl-l mb2 mb0-l" href="/" title="Home">
+            <img src="/static/avatar.jpg" class="dib w2 h2 br-100" alt="Chris Collins" />
+          </a>
+        </div>
+        <div class="db dtc-l v-mid w-100 w-75-l tc tr-l">
+          <a class="f6 f5-l dib mr3 mr4-l" href="/" title="Home">Home</a>
+          <a class="f6 f5-l dib mr3 mr4-l" href="/notes" title="Blog">Notes</a>
+          <a class="f6 f5-l dib" href="/contact" title="Contact">Contact</a>
+        </div>
+      </div>
+    </nav>
 
-    gtag('config', 'UA-51066910-1');
+    {{ content }}
+
+    <div class="center mw8 db dt-l w-100 border-box pa3 ph5-l ">
+      <footer class="pv4 ph3 ph5-m ph6-l f5">
+        <small class="db tc">Made by <b class="fw5">Chris Collins</b></small>
+        <ul class="list pl0 tc">
+          <li class="dib mr2">
+            <a href="https://www.instagram.com/scottishstoater">Instagram</a>
+          </li>
+          <li class="dib mr2">
+            <a href="https://www.twitter.com/chrisssycollins">Twitter</a>
+          </li>
+          <li class="dib mr2">
+            <a href="https://www.linkedin.com/in/chrisssycollins/">LinkedIn</a>
+          </li>
+          <li class="dib mr2">
+            <a href="http://pinterest.com/scottishstoater">Pinterest</a>
+          </li>
+        </ul>
+      </footer>
+    </div>
+  </body>
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=UA-51066910-1"
+  ></script>
+  <script>
+    window.dataLayer = window.dataLayer || []
+    function gtag() {
+      dataLayer.push(arguments)
+    }
+    gtag('js', new Date())
+
+    gtag('config', 'UA-51066910-1')
   </script>
 </html>
