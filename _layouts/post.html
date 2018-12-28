@@ -1,68 +1,22 @@
-<!DOCTYPE html>
-<html lang="en">
-  {% include head.html %}
-  <body>
-  <nav class="db w-100 bb b--black-10">
-    <div class="center mw8 dt w-100 border-box pv3 ph4 ph5-l ">
-      <div class="dtc">
-        <a class="center v-mid w2 h2" href="/" title="Home">
-          <img src="/static/avatar.jpg" class="dib w2 h2 br-100" alt="Chris Collins" />
-        </a>
-      </div>
-      <div class="dtc v-mid tr">
-        <a class="f6 f5-l dib mr3 mr4-l" href="/" title="Home">Home</a>
-        <a class="f6 f5-l dib mr3 mr4-l" href="/notes" title="Blog">Notes</a>
-        <a class="f6 f5-l dib" href="/contact" title="Contact">Contact</a>
-      </div>
-    </div>
-  </nav>
+---
+layout: base
+---
 
+<div class="center db w-100 border-box pv3 ph4 ph5-l mw7">
+  <div class="tc-ns mt4-ns db">
+    <h1 class="ma0 f2 f1-ns lh-title">{{ page.title }}</h1>
+    <small class="gray db pv2"><time>{{ page.date | date: "%-d %B %Y"}}</time></small>
+  </div>
+</div>
 
-    <div class="center db w-100 border-box pa4 ph5-l mw7">
-    <div class="tc-ns mv4-ns db">
-      <h1 class="lh-title ma0 f2 f1-m">{{ page.title }} </h1>
-      <small class="gray db pv2"><time>{{ page.date | date: "%-d %B %Y"}}
-        </time></small>
-    </div>
-      <div class="f4 lh-copy post-content">
+{% if page.featured_image %}
+<div class="center db w-100 border-box mw8 mt4-ns">
+  <img src="{{ page.featured_image }}" class="w-100 ma0 pa0" alt="{{ page.title }}" />
+</div>
+{% endif %}
 
-{{ content }}
-      </div>
-        </div>
-
-
-
-    <div class="center mw8 db dt-l w-100 border-box pa3 ph5-l ">
-      <footer class="pv4 ph3 ph5-m ph6-l f5">
-        <small class="db tc">Made by <b class="fw5">Chris Collins</b></small>
-        <ul class="list pl0 tc">
-          <li class="dib mr2">
-            <a href="https://www.instagram.com/scottishstoater">Instagram</a>
-          </li>
-          <li class="dib mr2">
-            <a href="https://www.twitter.com/chrisssycollins">Twitter</a>
-          </li>
-          <li class="dib mr2">
-            <a href="https://www.linkedin.com/in/chrisssycollins/">LinkedIn</a>
-          </li>
-          <li class="dib mr2">
-            <a href="http://pinterest.com/scottishstoater">Pinterest</a>
-          </li>
-        </ul>
-      </footer>
-    </div>
-  </body>
-  <script
-    async
-    src="https://www.googletagmanager.com/gtag/js?id=UA-51066910-1"
-  ></script>
-  <script>
-    window.dataLayer = window.dataLayer || []
-    function gtag() {
-      dataLayer.push(arguments)
-    }
-    gtag('js', new Date())
-
-    gtag('config', 'UA-51066910-1')
-  </script>
-</html>
+<div class="center db w-100 border-box pv3 ph4 ph5-l mw7">
+  <div class="f4 lh-copy black-90 post-content">
+    {{ content }}
+  </div>
+</div>

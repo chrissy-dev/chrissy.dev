@@ -50,7 +50,16 @@ a:visited {
   }
 }
 
+.post-card {
+}
+
+.serif {
+  font-family: Georgia, serif;
+}
 .post-content {
+  text-rendering: optimizeLegibility;
+  font-family: Georgia, serif;
+
   a,
   a:visited {
     color: $blue;
@@ -59,6 +68,24 @@ a:visited {
     &:hover {
       color: lighten($blue, 5%);
     }
+  }
+}
+
+table {
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 1rem;
+  background-color: transparent;
+  border-collapse: collapse;
+  th,
+  td {
+    vertical-align: top;
+    padding: 0.75rem;
+    border-top: 1px solid #dee2e6;
+  }
+  th {
+    border-bottom: 2px solid #dee2e6;
+    font-weight: 600;
   }
 }
 
@@ -73,7 +100,7 @@ a:visited {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   width: 100%;
-  padding: 5px;
+  padding: 0.5rem;
   border: 1px solid #222;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -89,14 +116,14 @@ a:visited {
   font-family: 'CircularStd', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 1rem;
   line-height: 1.5;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   display: inline-block;
   position: relative;
-  padding: 7px 10px;
+  padding: 0.5rem 1rem;
   border-radius: 3px;
   color: #fff;
   background-color: $blue;
@@ -140,6 +167,7 @@ h4,
 h5,
 h6 {
   font-weight: 600;
+  font-family: 'CircularStd', sans-serif;
 }
 
 mark {
@@ -150,15 +178,23 @@ mark {
 }
 
 blockquote {
-  font-size: 1.2em;
+  font-size: 1em;
   font-style: italic;
-  padding: 1rem 3rem;
-  border-left: 3px solid #aaa;
+  padding: 1rem 2rem;
   position: relative;
-  background: #ededed;
+  border-left: solid 3px #ededed;
   margin: 0;
 }
 
+.site-footer {
+  color: #aaa;
+  svg {
+    fill: #aaa;
+    &:hover {
+      fill: darken(#aaa, 10%);
+    }
+  }
+}
 .highlight .hll {
   background-color: #ffffcc;
 }

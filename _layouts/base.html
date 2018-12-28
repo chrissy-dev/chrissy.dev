@@ -3,42 +3,9 @@
 {% include head.html %}
 
 <body>
-  <nav class="db w-100 bb b--black-10">
-    <div class="center mw8 dt w-100 border-box pv3 ph4 ph5-l ">
-      <div class="dtc">
-        <a class="center v-mid w2 h2" href="/" title="Home">
-          <img src="/static/avatar.jpg" class="dib w2 h2 br-100" alt="Chris Collins" />
-        </a>
-      </div>
-      <div class="dtc v-mid tr">
-        <a class="f6 f5-l dib mr3 mr4-l" href="/" title="Home">Home</a>
-        <a class="f6 f5-l dib mr3 mr4-l" href="/notes" title="Blog">Notes</a>
-        <a class="f6 f5-l dib" href="/contact" title="Contact">Contact</a>
-      </div>
-    </div>
-  </nav>
-
+  {% include site-header.html %}
   {{ content }}
-
-  <div class="center mw8 db dt-l w-100 border-box pa3 ph5-l ">
-    <footer class="pv4 ph3 ph5-m ph6-l f5">
-      <small class="db tc">Made by <b class="fw5">Chris Collins</b></small>
-      <ul class="list pl0 tc">
-        <li class="dib mr2">
-          <a href="https://www.instagram.com/scottishstoater">Instagram</a>
-        </li>
-        <li class="dib mr2">
-          <a href="https://www.twitter.com/chrisssycollins">Twitter</a>
-        </li>
-        <li class="dib mr2">
-          <a href="https://www.linkedin.com/in/chrisssycollins/">LinkedIn</a>
-        </li>
-        <li class="dib mr2">
-          <a href="http://pinterest.com/scottishstoater">Pinterest</a>
-        </li>
-      </ul>
-    </footer>
-  </div>
+  {% include site-footer.html %}
 </body>
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-51066910-1"></script>
 <script>

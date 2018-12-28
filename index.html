@@ -20,7 +20,7 @@ layout: base
 
     <div class="center mw8 db dt-l w-100 border-box pa4 ph5-l ">
 
-  <div class="dt v-mid w-100 bb bw2 b--black-10">
+  <div class="dt v-mid w-100">
     <div class="dtc pr4">
       <h2 class="fw5 f4">Recent notes</h2>
     </div>
@@ -32,16 +32,18 @@ layout: base
 
 <div class="flex-ns mt3">
   {% for post in site.posts limit:3 %}
-    <div class="w-100 w-third-m mb3 mb0-m br2 ba b--black-20 overflow-hidden {% if forloop.last == false %}mr3{% endif %}">
-    
+    <div class="w-100 w-third-m mb3 mb0-m br2 ba b--black-20 overflow-hidden flex flex-column post-card {% if forloop.last == false %}mr4{% endif %}">
       <a href="{{post.url}}" class="link lh-title fw5 "><img src="http://tachyons.io/img/cat-720.jpg" class="w-100 db" alt="Closeup photo of a tabby cat yawning."></a>
       <div class="pa3">
-        <a href="{{post.url}}" class="link lh-title fw5 " title="{{post.title}}">
-          <h2 class="link lh-title fw5 pa0 f5 ma0">{{post.title}}</h2>
-        </a>
-        <small class="gray db pv2"><time>{{ post.date | date: "%-d %B %Y"}}
-</time></small>
+        <div class="flex-1">
+          <a href="{{post.url}}" class="link lh-title fw5" title="{{post.title}}">
+            <h2 class="link lh-title fw5 pa0 f4 ma0">{{ post.title }}</h2>
+          </a>
+        </div>
       </div>
+            <footer class="pa3 self-baseline">
+              <small class="gray db pv2"><time>{{ post.date | date: "%-d %B %Y"}}</time></small>
+            </footer>
       </a>
     </div>
   {% endfor %}
