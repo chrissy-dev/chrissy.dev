@@ -1,0 +1,29 @@
+# Site settings
+title: Chris Collins
+
+email: chriscollins238@gmail.com
+description: >-
+  I'm Chris Collins, a digital product designer passionate about user experience, interaction and web performance.
+url: 'https://chrisssy.com'
+
+# Social settings
+twitter_url: https://twitter.com/chrisssycollins
+instagram_url: https://twitter.com/scottishstoater
+pinterest_url: https://pinterest.com/scottishstoater
+linkedin_url: https://www.linkedin.com/in/chrisssycollins
+
+# Build settings
+markdown: kramdown
+plugins:
+  - jekyll-feed
+# Exclude from processing.
+# The following items will not be processed, by default. Create a custom list
+# to override the default setting.
+# exclude:
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/
