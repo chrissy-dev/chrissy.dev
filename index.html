@@ -29,44 +29,28 @@ layout: base
     </div>
   </div>
 
-<section>
-  <article>
-    <a class="dt w-100 bb b--black-10 pv3 no-underline  " href="#0">
-  
-          <div class="dtc v-top">
-            <h1 class="f6 f5-ns fw6 lh-title black mv0">Google Design team are cooling than you thought!</h1>
-          
-            <small class="gray db pt2"><time>6 hours ago</time></small>
-          
-          
-          </div>
-    </a>
-  </article>
 
-    <article>
-      <a class=" dt w-100 bb b--black-10 pv3  no-underline" href="#0">
-
-        <div class="dtc v-top">
-          <h1 class="f6 f5-ns fw6 lh-title black mv0">Google Design team are cooling than you thought!</h1>
-
-          <small class="gray db pt2"><time>6 hours ago</time></small>
-        </div>
-      </a>
-    </article>
-
-      <article>
-        <a class=" dt w-100 bb b--black-10 pv3 no-underline " href="#0">
-
-            <div class="dtc v-top">
-              <h1 class="f6 f5-ns fw6 lh-title black mv0">Google Design team are cooling than you thought!</h1>
-            
-              <small class="gray db pt2"><time>6 hours ago</time></small>
-            
-            
-            </div>
+<div class="flex-ns mt3">
+  {% for post in site.posts limit:3 %}
+    <div class="w-100 w-third-m mb3 mb0-m br2 ba b--black-20 overflow-hidden {% if forloop.last == false %}mr3{% endif %}">
+    
+      <a href="{{post.url}}" class="link lh-title fw5 "><img src="http://tachyons.io/img/cat-720.jpg" class="w-100 db" alt="Closeup photo of a tabby cat yawning."></a>
+      <div class="pa3">
+        <a href="{{post.url}}" class="link lh-title fw5 " title="{{post.title}}">
+          <h2 class="link lh-title fw5 pa0 f5 ma0">{{post.title}}</h2>
         </a>
-      </article>
-</section>
+        <small class="gray db pv2"><time>{{ post.date | date: "%-d %B %Y"}}
+</time></small>
+      </div>
+      </a>
+    </div>
+  {% endfor %}
+
+
+
+
+
+  </div>
 
   
 
