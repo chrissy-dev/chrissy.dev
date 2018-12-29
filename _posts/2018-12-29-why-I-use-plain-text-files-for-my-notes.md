@@ -4,7 +4,9 @@ title: Why I use plain text files for my notes
 featured_image: /static/plain-text-notes.jpg
 ---
 
-Recently I noticed a colleague using TextEdit on her Mac as her primary method of taking notes. I asked her why she doesn’t use something more mordern like Apple Notes, Evernote or any from the ever growing pool of specific note taking apps available. She replied a beautifully simplistic answer: “I’ve been taking notes like this since I started using a computer”.
+Recently I noticed a colleague using [TextEdit](https://support.apple.com/en-gb/guide/textedit/welcome/mac) on her Mac as her primary method of taking notes. I asked her why she doesn’t use something more mordern like [Apple Notes](https://support.apple.com/en-gb/guide/notes/welcome/mac), [Evernote](https://evernote.com/) or any from the ever growing pool of specific note taking apps available. She replied a beautifully simplistic answer: 
+
+> “I’ve been taking notes like this since I started using a computer”.
 
 Her reply made me realise that at the time I was very caught up in finding the perfect notes app/tool. I’d spend an unhealthy amount of time researching about privacy, cloud syncing, subscriptions, markdown vs no markdown, is it exportable, does it support organisation ...
 
