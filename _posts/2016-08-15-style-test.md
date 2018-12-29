@@ -3,7 +3,6 @@ layout: post
 title: "A Full and Comprehensive Style Test"
 tags: [test, style]
 comments: true
-featured_image: http://tachyons.io/img/cat-720.jpg
 ---
 
 Below is just about everything you'll need to style in the theme. Check the source code to see the many embedded elements within paragraphs.
