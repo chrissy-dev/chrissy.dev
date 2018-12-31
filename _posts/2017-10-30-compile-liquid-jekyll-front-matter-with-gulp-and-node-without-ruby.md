@@ -1,10 +1,8 @@
 ---
 layout: post
-title: Compile Jekyll liquid templates and frontmatter with Gulp 
+title: Compile Jekyll liquid templates and frontmatter with Gulp
 featured_image: /static/gulp-jekyll.jpg
-
 ---
-
 
 Going to keep this short and sweet, this is extremely basic but is very easily expandable using globs, renaming, optimisation etc.
 
@@ -29,23 +27,23 @@ The `default.html` layout looks like this:
 
 ```html
 <!DOCTYPE html>
-    <html lang="en-GB">
-    <head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title> 
-        { % if page.title % } { { page.title | escape } } { % endif % }
+<html lang="en-GB">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>
+      { % if page.title % } { { page.title | escape } } { % endif % }
     </title>
-    </head>
-    <body>
+  </head>
+  <body>
     { { content } }
-    </body>
+  </body>
 </html>
 ```
 
 and finally `page.html` looks like this:
 
-***Note:** We are using Front Matter to assign variables that are used in the `layout.html` and the `page.html.`*
+**\*Note:** We are using Front Matter to assign variables that are used in the `layout.html` and the `page.html.`\*
 
 ```html
 ---
@@ -102,8 +100,8 @@ gulp.task('compile', function() {
         }))
         .pipe(gulp.dest('./_site/'))
   })
-  ```
-  
-  Finally running `gulp compile` will compile your templates.
-  
-  If you’d like an example on GitHub or anything else added to this let me know in the comments and I’ll get right on it.
+```
+
+Finally running `gulp compile` will compile your templates.
+
+If you’d like an example on GitHub or anything else added to this let me know in the comments and I’ll get right on it.
