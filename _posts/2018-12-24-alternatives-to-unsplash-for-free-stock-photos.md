@@ -59,4 +59,4 @@ It’s scary to think just how much Unsplash and sites like it have influenced t
 
 ## Missed one?
 
-Let me know in the comments if you feel there is one that should be there and isn’t.
+[Let me know](/contact) if you feel there is one that should be there and isn’t. 
