@@ -46,6 +46,9 @@ table {
   margin-bottom: 1rem;
   background-color: transparent;
   border-collapse: collapse;
+  display: block;
+  overflow-x: auto;
+  white-space: nowrap;
   th,
   td {
     vertical-align: top;
