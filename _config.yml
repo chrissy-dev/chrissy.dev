@@ -29,3 +29,6 @@ plugins:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+# Handling Reading
+include: ["_redirects"]
