@@ -7,7 +7,7 @@ layout: base
   <main class="pv3-ns ph5-ns mw7 center tc">
     <h1 class="f1 f-headline-ns lh-copy fw6 ma0">Hello</h1>
     <p class="f4 lh-copy mb0">
-      I'm a Digital Product Designer from Glasgow currently working at <a href="https://www.arnoldclark.com" title="Arnold Clark">Arnold
+      I'm a Digital Product Designer from Glasgow working at <a href="https://www.arnoldclark.com" title="Arnold Clark">Arnold
         Clark</a>. My passion lies in building digital products, with a focus on user experience, accessibility and
       performance.
     </p>
@@ -28,7 +28,7 @@ layout: base
 
 <div class="flex-ns mt3">
     {% for post in site.posts limit: 3 %}
-    <div class="w-100 w-third-l mb3 mb0-m br2 ba b--black-10 overflow-hidden flex flex-column post-card {% if forloop.last == false %}mr4{% endif %}">
+    <div class="w-100 w-third-l mb4 mb0-m br2 ba b--black-10 overflow-hidden flex flex-column post-card {% if forloop.last == false %}mr4{% endif %}">
       <a href="{{post.url}}" class="link lh-title fw5 "><img src="{% if post.featured_image %}{{post.featured_image}}{% else %}/static/fallback.jpg{% endif %}" class="w-100 db" alt="Closeup photo of a tabby cat yawning."></a>
       <div class="pa3">
             <small class="gray db pb2"><time>{{ post.date | date: "%-d %B %Y"}}</time></small>

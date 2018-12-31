@@ -52,7 +52,7 @@ table {
   th,
   td {
     vertical-align: top;
-    padding: 0.75rem;
+    padding: 0.5rem 0.75rem;
     border-top: 1px solid #dee2e6;
   }
   th {
@@ -157,12 +157,13 @@ mark {
 }
 
 blockquote {
-  font-size: 1em;
+  font-size: 1.4rem;
   font-style: italic;
-  padding: 1rem 2rem;
+  padding: 0.25rem 1rem;
   position: relative;
-  border-left: solid 3px #ededed;
   margin: 0;
+  border-left: solid 2px;
+  border-color: #ccc;
 }
 
 .site-footer {
