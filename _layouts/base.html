@@ -1,15 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-  {% include head.html %}
-  <body class="sans-serif">
-    {{ content }}
-  </body>
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-51066910-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+{% include head.html %}
 
-    gtag('config', 'UA-51066910-1');
-  </script>
+<body>
+  {% include site-header.html %}
+  {{ content }}
+  {% include site-footer.html %}
+</body>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-51066910-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || []
+  function gtag() {
+    dataLayer.push(arguments)
+  }
+  gtag('js', new Date())
+
+  gtag('config', 'UA-51066910-1')
+</script>
+
 </html>

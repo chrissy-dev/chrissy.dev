@@ -1,6 +1,5 @@
 # Site settings
 title: Chris Collins
-
 email: chriscollins238@gmail.com
 description: >-
   I'm Chris Collins, a digital product designer passionate about user experience, interaction and web performance.
@@ -14,6 +13,9 @@ linkedin_url: https://www.linkedin.com/in/chrisssycollins
 
 # Build settings
 markdown: kramdown
+sass:
+  sass_dir: assets/css
+
 plugins:
   - jekyll-feed
 # Exclude from processing.
