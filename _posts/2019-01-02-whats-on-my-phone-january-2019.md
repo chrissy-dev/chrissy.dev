@@ -1,10 +1,11 @@
 ---
 layout: post
+published: false
 title: What’s on my phone January 2019
 featured_image: /static/whats-on-my-phone.jpg
 ---
 
-I enjoy reading what apps and tools people use daily. 
+I enjoy reading what apps and tools people use daily.
 
 PocketCasts
 Darkroom
@@ -15,10 +16,10 @@ iBooks
 Strava
 Reddit
 Just Eat
-Waze 
-Plex 
+Waze
+Plex
 Retouch
-Facebook 
+Facebook
 Bobby
 Google Photos
-MapOut 
+MapOut
