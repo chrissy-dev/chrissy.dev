@@ -17,17 +17,17 @@ layout: base
   <form name="contact" netlify>
     <div class="db mb3">
       <label for="name" class="mb1 db">Name</label>
-      <input type="text" name="name" class="input" />
+      <input type="text" name="name" class="input" required />
     </div>
     <div class="db mb3">
       <label for="subject" class="mb1 db">Subject</label>
-      <input type="text" name="subject" class="input" />
+      <input type="text" name="subject" class="input" required />
     </div>
     <div class="db mb3">
       <label for="subject" class="mb1 db">Message</label>
-      <textarea name="message" class="input" rows="5"></textarea>
+      <textarea name="message" class="input" rows="5" required></textarea>
     </div>
-
+    <div data-netlify-recaptcha="true"></div>
     <button class="btn" type="submit">Send message</button>
   </form>
 </div>
