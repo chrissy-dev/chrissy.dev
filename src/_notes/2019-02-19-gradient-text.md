@@ -1,7 +1,7 @@
 ---
-layout: post
 title: Accessible text gradients using CSS
-featured_image: /static/gradient-text.jpg
+date: 2019-02-19
+featured_image: /assets/images/gradient-text.jpg
 ---
 
 ```css
