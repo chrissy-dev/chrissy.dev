@@ -1,5 +1,6 @@
 const htmlmin = require("html-minifier");
 const CleanCSS = require("clean-css");
+const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 
 module.exports = function(eleventyConfig) {
   // Folders to copy to build dir (See. 1.1)
@@ -28,6 +29,8 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addCollection("sortedNotes", function(collection) {
     return collection.getFilteredByTag("notes").reverse();;
   });
+
+  eleventyConfig.addPlugin(syntaxHighlight);
 
   return {
     dir: {

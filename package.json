@@ -10,6 +10,7 @@
   "license": "ISC",
   "devDependencies": {
     "@11ty/eleventy": "^0.7.1",
+    "@11ty/eleventy-plugin-syntaxhighlight": "^2.0.1",
     "@babel/core": "^7.2.2",
     "@babel/preset-env": "^7.3.1",
     "autoprefixer": "^9.4.7",
