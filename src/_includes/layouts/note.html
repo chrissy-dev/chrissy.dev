@@ -1,0 +1,18 @@
+---
+layout: layouts/base
+---
+
+<article class="container mx-auto p-6 leading-normal text-lg note">
+    <div class="sm:text-center mb-4 pb-2 sm:mb-8 sm:py-8 max-w-md mx-auto">
+        <h1 class="sm:text-5xl leading-tight">{{ title }}</h1>
+        <p class="text-sm text-grey">{{ page.date | date: "%d %B %Y" }}</p>
+    </div>
+
+    {% if featured_image %}
+        <img src="{{featured_image}}" class="mb-10" alt="{{ title }}" />
+    {% endif %}
+
+    <div class="max-w-md mx-auto">
+        {{ content }}
+    </div>
+</article>

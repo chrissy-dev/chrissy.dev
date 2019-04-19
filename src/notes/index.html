@@ -1,0 +1,28 @@
+---
+layout: layouts/base
+title: Notes - Chris Collins
+pagination:
+  data: collections.sortedNotes
+  size: 20
+  alias: sorted
+---
+
+
+<div class="container pt-0 mx-auto">
+    <section class="block leading-normal font-thin relative mb-8 hero">
+        <div class="max-w-sm">
+            <h1 class="text-sm mb-2">Notes</h1>
+            <p class="text-2xl">A random collection of personal notes and rambling about anything and everything. If you
+                find something intresting, smashing! </p>
+        </div>
+    </section>
+
+
+    <div class="mt-8">
+        {% for note in sorted %}
+        <a class="pb-4 mb-4 block no-underline p-4 bg-grey-lightest hover:bg-grey-lighter"
+            href="{{ note.url }}"><strong>{{ note.data.title }}</strong> <span
+                class="block text-sm text-grey-dark mt-1 ">{{ note.data.date | date: "%d %B %Y" }}</span></a>
+        {% endfor %}
+    </div>
+</div>

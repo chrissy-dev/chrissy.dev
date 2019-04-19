@@ -1,0 +1,5 @@
+{
+  "layout": "layouts/note",
+  "tags": "notes",
+  "permalink": "{{ date | date: '%Y/%m/%d' }}/{{ title | slug }}/index.html"
+}

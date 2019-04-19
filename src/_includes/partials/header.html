@@ -1,0 +1,13 @@
+<header>
+<div class="container py-8 md:flex justify-between items-center md:flex-row-reverse">
+        <a href="/" arialabel="Home" class="inline-block no-underline hover:underline flex items-center font-medium md:opacity-25 md:hover:opacity-50">Chris Collins</a>
+
+        <nav class="pt-3 md:py-2">
+            <a class="no-underline mr-2 hover:underline {% if page.url == '/' %} active{% endif %}" href="/">Home</a>
+            <a class="no-underline mx-2 hover:underline {% if page.url == '/notes/' %} active{% endif %}" href="/notes">Notes</a>
+            <a class="no-underline mx-2 hover:underline {% if page.url == '/photos/' %} active{% endif %}" href="/photos">Photos</a>
+            <a class="no-underline ml-2 hover:underline" href="mailto:chriscollins238@gmail.com">Contact</a>
+        </nav>
+    </div>
+</header>
+

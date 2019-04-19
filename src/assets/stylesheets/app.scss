@@ -1,0 +1,124 @@
+@tailwind preflight;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    font-family: neue-haas-unica, sans-serif;
+    @apply text-black text-base font-light;
+}
+
+.container {
+    @apply max-w-xl mx-auto px-8;
+}
+
+.mountains {
+    background-image: url('/assets/images/mountains.svg');
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    padding: 2rem 0 14rem 0;
+
+    @media (min-width: 600px) {
+        padding: 4rem 0 6rem 0;
+    }
+}
+
+.hero {
+    padding: 2rem 0;
+
+    @media (min-width: 600px) {
+        padding: 3rem 0;
+    }
+}
+
+.mountains__stickman {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 1rem;
+}
+
+a,
+a:visited {
+    @apply text-black;
+}
+
+a.active {
+    @apply text-teal underline;
+}
+
+.text-grad {
+    background: #2193b0;
+    /* fallback for old browsers */
+    background: linear-gradient(to right, #f2994a, #f2c94c);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.note p {
+    @apply mb-6 text-lg;
+}
+
+.note h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    @apply mb-6;
+}
+
+table {
+    width: 100%;
+    max-width: 100%;
+    background-color: transparent;
+    border-collapse: collapse;
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+    @apply mb-6;
+
+    thead th {
+        vertical-align: top;
+        padding: 0.5rem 0.75rem;
+        border: 1px solid #dee2e6;
+        text-align: left;
+        font-weight: 600;
+        border-bottom-width: 2px;
+    }
+
+    tbody td {
+        vertical-align: top;
+        padding: 0.5rem 0.75rem;
+        border: 1px solid #dee2e6;
+    }
+
+}
+
+.work {
+    @apply shadow-lg text-white rounded p-6;
+
+    &__title {
+        @apply font-medium mb-2;
+    }
+
+    &__desc {
+        @apply text-sm leading-normal mb-2;
+    }
+    a,a:visited {
+        @apply text-white;
+    }
+}
+
+.work--1 {
+    background-image: linear-gradient(-223deg, #72C2CC 0%, #4EACBA 100%);
+}
+
+.work--2 {
+    background-image: linear-gradient(-223deg, #D7C9FA 0%, #AE98F4 100%);
+}
+
+.work--3 {
+    background-image: linear-gradient(-180deg, #FAD7C9 0%, #F4AE98 100%);
+}
