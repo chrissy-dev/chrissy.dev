@@ -1,6 +1,6 @@
 module.exports = {
   content: ["dist/**/*.html", "dist/**/*.js"],
-  css: ["src/_includes/stylesheets/app.css"],
+  css: ["src/assets/static/app.css"],
   extractors: [{
     extractor: class TailwindCSS {
       static extract(content) {

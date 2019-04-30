@@ -3,8 +3,9 @@
   "version": "0.1.0",
   "description": "Simple 11ty boilerplate",
   "scripts": {
-    "start": "concurrently \"eleventy --watch --quiet\" \"gulp dev --color\"",
-    "build": "gulp build && eleventy && purgecss --config ./purgecss.config.js --out src/_includes/stylesheets && eleventy"
+    "start": "concurrently \"ELEVENTY_ENV=development eleventy --watch --quiet\" \"gulp dev --color\"",
+    "purge": "purgecss --config ./purgecss.config.js --out src/_includes/stylesheets",
+    "build": "gulp build && eleventy && purgecss --config ./purgecss.config.js --out src/_includes/stylesheets && ELEVENTY_ENV=production eleventy"
   },
   "author": "Chris Collins",
   "license": "ISC",
@@ -25,7 +26,8 @@
     "gulp-uglify": "^3.0.1",
     "gulp-watch": "^5.0.1",
     "html-minifier": "^3.5.21",
-    "purgecss": "^1.1.0",
+    "js-beautify": "^1.9.1",
+    "purgecss": "1.3.0",
     "tailwindcss": "^0.7.4"
   }
 }

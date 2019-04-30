@@ -25,12 +25,16 @@
     <meta name="twitter:creator" content="{{ site.social_meta.twitter }}" />
     {% endif %}
     <link rel="stylesheet" href="https://use.typekit.net/jyb8lcg.css">
-    <!-- capture the CSS content as a Liquid variable -->
-    {% capture css %}{% include stylesheets/app.css %}{% endcapture %}
-    <!-- feed it through our cssmin filter to minify -->
-    <style> 
-      {{ css | cssmin | safe }}
-    </style>
+    {% if site.ENV == 'production' %}
+      <!-- capture the CSS content as a Liquid variable -->
+      {% capture css %}{% include stylesheets/app.css %}{% endcapture %}
+      <!-- feed it through our cssmin filter to minify -->
+      <style> 
+        {{ css | cssmin | safe }}
+      </style>
+    {% else %}
+    <link rel="stylesheet" href="/assets/static/app.css">
+    {% endif %}
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-51066910-1"></script>
     <script>
@@ -46,5 +50,4 @@
     {{ content }}
     {% include partials/footer.html %}
   </body>
-  <script>{% include scripts/app.js %}</script>
 </html>

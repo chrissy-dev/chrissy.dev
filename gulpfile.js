@@ -2,8 +2,8 @@ const gulp = require("gulp");
 const connect = require("gulp-connect");
 const watch = require("gulp-watch");
 const sass = require("gulp-sass");
-const babel = require("gulp-babel");
-const uglify = require("gulp-uglify");
+// const babel = require("gulp-babel");
+// const uglify = require("gulp-uglify");
 const del = require("del");
 const postcss = require("gulp-postcss");
 const tailwindcss = require("tailwindcss");
@@ -23,10 +23,10 @@ gulp.task("watch", done => {
   );
 
   // Watch JS files and compile when changed
-  gulp.watch(
-    project.buildSrc + "/assets/scripts/**/*.js",
-    gulp.series("scripts")
-  );
+  // gulp.watch(
+  //   project.buildSrc + "/assets/scripts/**/*.js",
+  //   gulp.series("scripts")
+  // );
 
   /**
     Using gulp-watch as standard gulp
@@ -39,18 +39,18 @@ gulp.task("watch", done => {
 });
 
 // Compile Scripts (Simple, No ES6 imports)
-gulp.task("scripts", done => {
-  gulp
-    .src(project.buildSrc + "/assets/scripts/app.js")
-    .pipe(
-      babel({
-        presets: ["@babel/env"]
-      })
-    )
-    .pipe(uglify())
-    .pipe(gulp.dest(project.buildSrc + "/_includes/scripts"));
-  done();
-});
+// gulp.task("scripts", done => {
+//   gulp
+//     .src(project.buildSrc + "/assets/scripts/app.js")
+//     .pipe(
+//       babel({
+//         presets: ["@babel/env"]
+//       })
+//     )
+//     .pipe(uglify())
+//     .pipe(gulp.dest(project.buildSrc + "/_includes/scripts"));
+//   done();
+// });
 
 // Compile SASS
 gulp.task("stylesheets", done => {
@@ -58,7 +58,7 @@ gulp.task("stylesheets", done => {
     .src(project.buildSrc + "/assets/stylesheets/app.scss")
     .pipe(sass().on("error", sass.logError))
     .pipe(postcss([tailwindcss("./tailwind.js"), require("autoprefixer")]))
-    .pipe(gulp.dest(project.buildSrc + "/_includes/stylesheets"));
+    .pipe(gulp.dest(project.buildSrc + "/assets/static"));
   done();
 });
 
@@ -77,7 +77,7 @@ gulp.task("clean", function () {
 });
 
 // Build task
-gulp.task("build", gulp.parallel("clean", "stylesheets", "scripts"));
+gulp.task("build", gulp.parallel("clean", "stylesheets"));
 
 // Development task
-gulp.task("dev", gulp.parallel("watch", "stylesheets", "scripts", "server"));
+gulp.task("dev", gulp.parallel("watch", "stylesheets", "server"));

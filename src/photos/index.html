@@ -3,30 +3,23 @@ title: Photos - Chris Collins
 layout: layouts/base
 ---
 
-
 <div class="container pt-0 mx-auto">
-        <section class="block leading-normal font-thin relative mb-8 hero">
-                <div class="max-w-sm">
-                    <h1 class="text-sm mb-2">Photos</h1>
-                    <p class="text-2xl">I hike, climb and take photos around Scotland in my spare time. You can give me a follow on <a href="https://www.instagram.com/scottishstoater/" target="_blank">Instagram</a> for more.</p>
-                </div>
-            </section>
+    <section class="block leading-normal font-thin relative mb-8 hero">
+        <div class="max-w-sm">
+            <h1 class="text-sm mb-2">Photos</h1>
+            <p class="text-2xl">I hike, climb and take photos around Scotland in my spare time. You can give me a follow on <a href="https://www.instagram.com/scottishstoater/" target="_blank">Instagram</a> for more.</p>
+        </div>
+    </section>
 </div>
 
-    
- <div class="w-full flex flex-wrap leading-none">
-{% for photo in instagram.graphql.user.edge_owner_to_timeline_media.edges %}
-<a href="//instagram.com/p/{{ photo.node.shortcode }}" target="_blank" class="sm:w-1/3 md:w-1/4">
-<img src="{{photo.node.thumbnail_resources[4].src}}" class="block" alt="{{photo.node.thumbnail_resources[4].src}}">
-</a>
-
-{% endfor %}
- </div>
-    </article>
-
-
+<div class="w-full flex flex-wrap leading-none">
+    {% for photo in instagram.graphql.user.edge_owner_to_timeline_media.edges %}
+    <a href="//instagram.com/p/{{ photo.node.shortcode }}" target="_blank" class="sm:w-1/3 md:w-1/4 hover:opacity-75 transition">
+        <img src="{{photo.node.thumbnail_resources[4].src}}" class="block" alt="{{photo.node.thumbnail_resources[4].src}}">
+    </a>
+    {% endfor %}
+</div>
 
 <div class="text-center mt-6">
-        <a href="//instagram.com/scottishstoater" target="_blank">View more on Instagram</a>
-
+    <a href="//instagram.com/scottishstoater" target="_blank">View more on Instagram</a>
 </div>
