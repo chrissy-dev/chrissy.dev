@@ -4184,6 +4184,10 @@ a:visited {
   color: #22292f;
 }
 
+a:hover {
+  opacity: .75;
+}
+
 a.active {
   color: #4dc0b5;
   text-decoration: underline;
@@ -4208,7 +4212,9 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+ul,
+pre {
   margin-bottom: 1.5rem;
 }
 
@@ -4275,6 +4281,8 @@ table tbody td {
 
 code[class*="language-"],
 pre[class*="language-"] {
+  background-color: #f1f5f8;
+  border-color: #dae1e7;
   color: #393a34;
   font-family: monospace;
   direction: ltr;

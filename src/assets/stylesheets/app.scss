@@ -46,6 +46,10 @@ a:visited {
     @apply text-black;
 }
 
+a:hover {
+    opacity: 0.75;
+}
+
 a.active {
     @apply text-teal underline;
 }
@@ -69,7 +73,9 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+ul,
+pre {
     @apply mb-6;
 }
 
@@ -131,6 +137,7 @@ table {
 
 code[class*="language-"],
 pre[class*="language-"] {
+    @apply bg-grey-lighter border-grey-light;
     color: #393A34;
     font-family: monospace;
     direction: ltr;
