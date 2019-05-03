@@ -6,10 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="{% if description %}{{ description }}{% else %}{{ site.description }}{% endif %}" />
     <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#ffffff">
 
     <title>{% if title %}{{ title }}{% else %}{{ site.title }}{% endif %}</title>
     <link rel="canonical" href="{{ site.url }}{{ page.url }}" />
-    <link rel="icon" type="image/x-icon" href="/assets/images/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon-16x16.png">
+    <link rel="manifest" href="/assets/images/site.webmanifest">
+    <link rel="mask-icon" href="/assets/images/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="/assets/images/favicon.ico">
     <link rel="author" href="{{ site.author }}">
 
     <!-- Open Graph meta -->
@@ -24,6 +30,7 @@
     <meta name="twitter:site" content="{{ site.social_meta.twitter }}" />
     <meta name="twitter:creator" content="{{ site.social_meta.twitter }}" />
     {% endif %}
+    
     <link rel="stylesheet" href="https://use.typekit.net/jyb8lcg.css">
     {% if site.ENV == 'production' %}
       <!-- capture the CSS content as a Liquid variable -->
