@@ -21,5 +21,5 @@ layout: layouts/base
 </div>
 
 <div class="text-center mt-6">
-    <a href="//instagram.com/scottishstoater" target="_blank">View more on Instagram</a>
+    <a href="//instagram.com/scottishstoater" target="_blank">View {{ instagram.graphql.user.edge_owner_to_timeline_media.count | minus:12 }} more on Instagram</a>
 </div>
