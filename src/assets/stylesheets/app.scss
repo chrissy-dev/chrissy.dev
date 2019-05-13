@@ -1,10 +1,21 @@
 @tailwind preflight;
 @tailwind components;
 @tailwind utilities;
+@import url('https://rsms.me/inter/inter.css');
+
+html {
+    font-family: 'Inter', sans-serif;
+}
+
+@supports (font-variation-settings: normal) {
+    html {
+        font-family: 'Inter var', sans-serif;
+    }
+}
 
 body {
-    font-family: neue-haas-unica, sans-serif;
-    @apply text-black text-base font-light;
+    @apply text-black text-base;
+    font-weight: 400;
 }
 
 .transition {

@@ -1,3 +1,5 @@
+@import url("https://rsms.me/inter/inter.css");
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 
 /* Document
@@ -4130,11 +4132,20 @@ table {
   z-index: auto;
 }
 
+html {
+  font-family: 'Inter', sans-serif;
+}
+
+@supports (font-variation-settings: normal) {
+  html {
+    font-family: 'Inter var', sans-serif;
+  }
+}
+
 body {
-  font-family: neue-haas-unica, sans-serif;
   color: #22292f;
   font-size: 1rem;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 .transition {
