@@ -23,10 +23,10 @@ pagination:
         <div class="md:flex md:-mx-4 md:flex-wrap">
             {% for note in sorted %}
             <div class="w-full mb-6 md:mb-0 md:w-1/2 md:px-4">
-                <a class="mb-8 block no-underline border-b" href="{{ note.url }}">
-                    <img src="{{ note.data.featured_image }}" class="block"/>
-                    <div class="px-3 py-6 bg-white">
-                            <span class="block text-sm text-grey-dark mb-3 ">{{ note.data.date | date: "%d %B %Y" }}</span>
+                <a class="mb-8 block no-underline bg-white rounded" href="{{ note.url }}">
+                    <img src="{{ note.data.featured_image }}" class="block rounded-t"/>
+                    <div class="p-6">
+                            <span class="block text-xs text-grey-dark mb-2 ">{{ note.data.date | date: "%d %B %Y" }}</span>
                             <h3 class="leading-base mb-0">{{ note.data.title }}</h3>
                     </div>
                 </a>
