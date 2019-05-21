@@ -62,17 +62,7 @@ a:hover {
 }
 
 a.active {
-    @apply text-teal underline;
-}
-
-.text-grad {
-    background: #2193b0;
-    /* fallback for old browsers */
-    background: linear-gradient(to right, #f2994a, #f2c94c);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    @apply text-teal-dark underline;
 }
 
 .note p {
@@ -118,32 +108,38 @@ table {
 }
 
 .work {
-    @apply shadow-lg text-white rounded p-6;
+    @apply shadow text-white rounded p-6 no-underline;
 
     &__title {
-        @apply font-medium mb-2;
+        @apply font-bold mb-1;
     }
 
     &__desc {
-        @apply text-sm leading-normal mb-2;
+        @apply text-sm leading-normal;
     }
 
     a,
     a:visited {
-        @apply text-white;
+        @apply text-white no-underline;
+
+    }
+
+    &:hover {
+        @apply shadow-lg;
     }
 }
 
+
 .work--1 {
-    background-image: linear-gradient(-223deg, #72C2CC 0%, #4EACBA 100%);
+    background-image: linear-gradient(60deg, #ff9a9e 0%, #fad0c4 100%);
 }
 
 .work--2 {
-    background-image: linear-gradient(-223deg, #D7C9FA 0%, #AE98F4 100%);
+    background-image: linear-gradient(to top, #a18cd1 0%, #a38bda 100%);
 }
 
 .work--3 {
-    background-image: linear-gradient(-180deg, #FAD7C9 0%, #F4AE98 100%);
+    background-image: linear-gradient(60deg, #50c9c3 0%, #96deda 100%);
 }
 
 code[class*="language-"],

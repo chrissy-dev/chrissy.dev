@@ -4200,17 +4200,8 @@ a:hover {
 }
 
 a.active {
-  color: #4dc0b5;
+  color: #38a89d;
   text-decoration: underline;
-}
-
-.text-grad {
-  background: #2193b0;
-  /* fallback for old browsers */
-  background: linear-gradient(to right, #f2994a, #f2c94c);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 
 .note p {
@@ -4256,38 +4247,43 @@ table tbody td {
 }
 
 .work {
-  box-shadow: 0 15px 30px 0 rgba(0, 0, 0, .11), 0 5px 15px 0 rgba(0, 0, 0, .08);
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .1);
   color: #fff;
   border-radius: .25rem;
   padding: 1.5rem;
+  text-decoration: none;
 }
 
 .work__title {
-  font-weight: 500;
-  margin-bottom: .5rem;
+  font-weight: 700;
+  margin-bottom: .25rem;
 }
 
 .work__desc {
   font-size: .875rem;
   line-height: 1.5;
-  margin-bottom: .5rem;
 }
 
 .work a,
 .work a:visited {
   color: #fff;
+  text-decoration: none;
+}
+
+.work:hover {
+  box-shadow: 0 15px 30px 0 rgba(0, 0, 0, .11), 0 5px 15px 0 rgba(0, 0, 0, .08);
 }
 
 .work--1 {
-  background-image: linear-gradient(-223deg, #72c2cc 0%, #4eacba 100%);
+  background-image: linear-gradient(60deg, #ff9a9e 0%, #fad0c4 100%);
 }
 
 .work--2 {
-  background-image: linear-gradient(-223deg, #d7c9fa 0%, #ae98f4 100%);
+  background-image: linear-gradient(to top, #a18cd1 0%, #a38bda 100%);
 }
 
 .work--3 {
-  background-image: linear-gradient(-180deg, #fad7c9 0%, #f4ae98 100%);
+  background-image: linear-gradient(60deg, #50c9c3 0%, #96deda 100%);
 }
 
 code[class*="language-"],
