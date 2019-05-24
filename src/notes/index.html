@@ -2,7 +2,7 @@
 layout: layouts/base
 title: Notes - Chris Collins
 pagination:
-    data: collections.sortedNotes
+    data: collections.notes
     size: 20
     alias: sorted
 ---
@@ -21,7 +21,9 @@ pagination:
 <div class="bg-grey-lighter py-10 mx-auto">
     <div class="container mx-auto max-w-md">
         <div class="md:flex md:-mx-4 md:flex-wrap">
-            {% for note in sorted %}
+            {% assign notes = sorted | reverse %}
+
+            {% for note in notes %}
             <div class="w-full mb-6 md:mb-0 md:w-1/2 md:px-4 pb-4 md:pb-8">
                 <a class="block no-underline bg-white rounded h-full" href="{{ note.url }}">
                     <img src="{{ note.data.featured_image }}" class="block rounded-t"/>

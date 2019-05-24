@@ -47,11 +47,6 @@ module.exports = function (eleventyConfig) {
     return date + (date > 0 ? ['th', 'st', 'nd', 'rd'][(date > 3 && date < 21) || date % 10 > 3 ? 0 : date % 10] : '');
   });
 
-  // Reverse entry notes
-  eleventyConfig.addCollection("sortedNotes", function (collection) {
-    return collection.getFilteredByTag("notes").reverse();;
-  });
-
   eleventyConfig.addPlugin(syntaxHighlight);
 
   return {
