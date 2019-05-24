@@ -22,12 +22,12 @@ pagination:
     <div class="container mx-auto max-w-md">
         <div class="md:flex md:-mx-4 md:flex-wrap">
             {% for note in sorted %}
-            <div class="w-full mb-6 md:mb-0 md:w-1/2 md:px-4">
-                <a class="mb-8 block no-underline bg-white rounded" href="{{ note.url }}">
+            <div class="w-full mb-6 md:mb-0 md:w-1/2 md:px-4 pb-4 md:pb-8">
+                <a class="block no-underline bg-white rounded h-full" href="{{ note.url }}">
                     <img src="{{ note.data.featured_image }}" class="block rounded-t"/>
                     <div class="p-6">
-                            <span class="block text-xs text-grey-dark mb-2 ">{{ note.data.date | date: "%d %B %Y" }}</span>
-                            <h3 class="leading-base mb-0">{{ note.data.title }}</h3>
+                            <span class="block text-xs text-grey-dark mb-2 ">{{ note.data.date | date: "%d" | ordinal }} {{ note.data.date | date: "%B %Y" }}</span>
+                            <h3 class="leading-normal mb-0">{{ note.data.title }}</h3>
                     </div>
                 </a>
             </div>

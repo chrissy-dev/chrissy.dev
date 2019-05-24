@@ -42,6 +42,11 @@ module.exports = function (eleventyConfig) {
     return new CleanCSS({}).minify(code).styles;
   });
 
+  // Ordinal date filter
+  eleventyConfig.addFilter("ordinal", function(date) {
+    return date + (date > 0 ? ['th', 'st', 'nd', 'rd'][(date > 3 && date < 21) || date % 10 > 3 ? 0 : date % 10] : '');
+  });
+
   // Reverse entry notes
   eleventyConfig.addCollection("sortedNotes", function (collection) {
     return collection.getFilteredByTag("notes").reverse();;
