@@ -19,9 +19,11 @@ eleventyConfig.addFilter("ordinal", function(date) {
 
 It can then be used on the day value with the rest of the date parsed as you like.
 
+{% raw %}
 ```html
 {{ date | date: "%d" | ordinal }} {{ date | date: "%B %Y" }}
 ```
+{% endraw %}
 
 This will render:
 
