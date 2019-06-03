@@ -1,7 +1,7 @@
 {
-  "name": "blazin",
-  "version": "0.1.0",
-  "description": "Simple 11ty boilerplate",
+  "name": "chriscollins.me",
+  "version": "1.0.0",
+  "description": "Personal website of Chris Collins, UX Designer & Engineer from Glasgow.",
   "scripts": {
     "start": "concurrently \"ELEVENTY_ENV=development eleventy --watch --quiet\" \"gulp dev --color\"",
     "purge": "purgecss --config ./purgecss.config.js --out src/_includes/stylesheets",
