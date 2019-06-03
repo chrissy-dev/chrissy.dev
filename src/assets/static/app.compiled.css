@@ -6162,16 +6162,17 @@ body {
 }
 
 .mountains {
-  background-image: url('/assets/images/mountains.svg');
+  background-image: url('/assets/images/mountains-mobile.svg');
   background-position: right bottom;
   background-repeat: no-repeat;
-  padding: 2rem 0 14rem 0;
+  padding: 2rem 0 8em 0;
 }
 
 @media (min-width: 600px) {
 
 .mountains {
     padding: 4rem 0 6rem 0;
+    background-image: url('/assets/images/mountains.svg');
 }
   }
 
