@@ -37,13 +37,13 @@
     
     {% if site.ENV == 'production' %}
       <!-- capture the CSS content as a Liquid variable -->
-      {% capture css %}{% include stylesheets/app.css %}{% endcapture %}
+      {% capture css %}{% include stylesheets/app.compiled.css %}{% endcapture %}
       <!-- feed it through our cssmin filter to minify -->
       <style> 
         {{ css | cssmin | safe }}
       </style>
     {% else %}
-    <link rel="stylesheet" href="/assets/static/app.css">
+    <link rel="stylesheet" href="/assets/static/app.compiled.css">
     {% endif %}
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-51066910-1"></script>
