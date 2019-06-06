@@ -6149,6 +6149,17 @@ body {
   font-weight: 400;
 }
 
+a.external::after {
+  display: inline-block;
+  position: relative;
+  width: .75rem;
+  height: .75rem;
+  content: " ";
+  top: -0.25rem;
+  margin-left: .2rem;
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZD0iTTE0IDN2MmgzLjU5bC05LjgzIDkuODMgMS40MSAxLjQxTDE5IDYuNDFWMTBoMlYzbS0yIDE2SDVWNWg3VjNINWEyIDIgMCAwIDAtMiAydjE0YTIgMiAwIDAgMCAyIDJoMTRhMiAyIDAgMCAwIDItMnYtN2gtMnY3eiIvPjwvc3ZnPg==);
+}
+
 .transition {
   transition: all .2s ease-in-out;
 }
