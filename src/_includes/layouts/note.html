@@ -2,9 +2,9 @@
 layout: layouts/base
 ---
 
-<article class="container mx-auto p-6 leading-normal text-lg note">
+<article class="container mx-auto p-6 leading-normal text-lg h-entry note">
     <header class="sm:text-center mb-4 pb-2 sm:mb-8 sm:py-8 max-w-md mx-auto">
-        <h1 class="sm:text-5xl leading-tight">{{ title }}</h1>
+        <a href="{{ page.url }}" class="no-underline u-url"><h1 class="sm:text-5xl leading-tight p-name">{{ title }}</h1></a>
         <p class="text-sm text-grey">{{ page.date | date: "%d" | ordinal }} {{ page.date | date: "%B %Y" }}</p>
     </header>
 
@@ -12,7 +12,7 @@ layout: layouts/base
     <img src="{{featured_image}}" class="mb-10" alt="{{ title }}" />
     {% endif %}
 
-    <article class="max-w-md mx-auto">
+    <article class="max-w-md mx-auto e-content">
         {{ content }}
     </article>
 </article>
