@@ -5,7 +5,7 @@ layout: layouts/base
 <article class="container mx-auto p-6 leading-normal text-lg h-entry note">
     <header class="sm:text-center mb-4 pb-2 sm:mb-8 sm:py-8 max-w-md mx-auto">
         <a href="{{ page.url }}" class="no-underline u-url"><h1 class="sm:text-5xl leading-tight p-name">{{ title }}</h1></a>
-        <p class="text-sm text-grey">{{ page.date | date: "%d" | ordinal }} {{ page.date | date: "%B %Y" }}</p>
+        <p class="text-sm text-grey dt-published" datetime="{{ page.date }}">{{ page.date | date: "%d" | ordinal }} {{ page.date | date: "%B %Y" }}</p>
     </header>
 
     {% if featured_image %}
