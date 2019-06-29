@@ -6214,6 +6214,11 @@ a:hover {
   opacity: .75;
 }
 
+a.link-white,
+a.link-white :visited {
+  color: #fff;
+}
+
 a.active {
   color: #38a89d;
   text-decoration: underline;

@@ -71,6 +71,10 @@ a:hover {
     opacity: 0.75;
 }
 
+a.link-white ,a.link-white :visited {
+	color: #fff;
+}
+
 a.active {
     @apply text-teal-dark underline;
 }
