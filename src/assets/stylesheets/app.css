@@ -50,7 +50,7 @@ body {
 	&:before {
 		content: "";
 		position: absolute;
-		height: 0.25rem;
+		height: 0.20rem;
 		bottom: 0;
 		left: 0;
 	}
@@ -92,6 +92,9 @@ body {
 	@apply max-w-5xl mx-auto px-8;
 }
 
+a,a:visited {
+	@apply underline;
+}
 
 code[class*="language-"],
 pre[class*="language-"] {
