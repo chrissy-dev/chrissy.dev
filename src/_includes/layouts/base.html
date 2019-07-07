@@ -52,8 +52,12 @@
     <link href="https://fonts.googleapis.com/css?family=DM+Sans:400,700|DM+Serif+Display&display=swap" rel="stylesheet">
   </head>
   <body>
-    {% include partials/header.html %}
-    {{ content }}
-    {% include partials/footer.html %}
+    <div class="min-h-screen flex flex-col">
+        {% include partials/header.html %}
+        <main id="main" class="flex-auto md:flex md:items-center fade-in-bottom">
+            {{ content }}
+        </main>
+        {% include partials/footer.html %}
+    </div>
   </body>
 </html>

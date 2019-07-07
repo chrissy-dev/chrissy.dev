@@ -1,11 +1,11 @@
 <header>
-    <div class="container py-8 flex justify-between items-center">
-        <a href="/" arialabel="Home" class="w-12 md:w-16 inline-flex avatar-icon"><img src="/assets/images/avatar.jpg" alt=""></a>
+    <div class="container py-8 md:flex justify-between items-center">
+        <a href="/" arialabel="Home" class="w-12 h-12 md:w-16 md:h-16 inline-flex avatar-icon"><img src="/assets/images/avatar.jpg" alt=""></a>
 
-        <nav class="text-sm font-bold navbar">
+        <nav class="text-xs md:text-sm font-bold navbar mt-4 md:mt-0 -ml-2">
             <ul class="flex">
                 <li><a class="no-underline text-gray-600 mr-1 md:mr-4 uppercase tracking-wider py-4 mx-2 {% if page.url == '/' %} active {% endif %}" href="/">Home</a></li>
-                <li><a class="no-underline text-gray-600 mr-1 md:mr-4 uppercase tracking-wider py-4 mx-2" href="/">About</a></li>
+                <li><a class="no-underline text-gray-600 mr-1 md:mr-4 uppercase tracking-wider py-4 mx-2 {% if page.url == '/about/' %} active {% endif %}" href="/about/">About</a></li>
                 <li><a class="no-underline text-gray-600 mr-1 md:mr-4 uppercase tracking-wider py-4 mx-2" href="/">Photos</a></li>
                 <li><a class="no-underline text-gray-600 mr-1 md:mr-4 uppercase tracking-wider py-4 mx-2" href="/">Blog</a></li>
             </ul>
