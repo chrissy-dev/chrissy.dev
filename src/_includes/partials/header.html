@@ -1,13 +1,14 @@
 <header>
-    <div class="container py-8 md:flex justify-between items-center md:flex-row-reverse">
-        <a href="/" arialabel="Home" class="-ml-2 inline-block inline-block no-underline md:flex items-center font-bold bg-grey-lighter p-2 rounded leading-none h-card" rel="me">Chris&nbsp;<span class="font-light">Collins</span></a>
+    <div class="container py-8 flex justify-between items-center">
+        <a href="/" arialabel="Home" class="w-12 md:w-16 inline-flex avatar-icon"><img src="/assets/images/avatar.jpg" alt=""></a>
 
-        <nav class="pt-3 md:py-2 font-medium">
-            <a class="no-underline mr-1 md:mr-2 hover:underline {% if page.url == '/' %} active{% endif %}" href="/">Home</a>
-            <a class="no-underline mx-1 md:mx-2 hover:underline {% if page.url == '/notes/' %} active{% endif %}" href="/notes">Notes</a>
-            <a class="no-underline mx-1 md:mx-2 hover:underline {% if page.url == '/photos/' %} active{% endif %}" href="/photos">Photos</a>
-            <!-- <a class="no-underline mx-1 md:mx-2 hover:underline external" href="https://represent.io/chrisssy" target="_blank">CV</a> -->
-            <a class="no-underline ml-1 md:ml-2 hover:underline u-email" href="mailto:chriscollins238@gmail.com">Contact</a>
+        <nav class="text-sm font-bold navbar">
+            <ul class="flex">
+                <li><a class="no-underline text-gray-600 mr-1 md:mr-4 uppercase tracking-wider py-4 mx-2 {% if page.url == '/' %} active {% endif %}" href="/">Home</a></li>
+                <li><a class="no-underline text-gray-600 mr-1 md:mr-4 uppercase tracking-wider py-4 mx-2" href="/">About</a></li>
+                <li><a class="no-underline text-gray-600 mr-1 md:mr-4 uppercase tracking-wider py-4 mx-2" href="/">Photos</a></li>
+                <li><a class="no-underline text-gray-600 mr-1 md:mr-4 uppercase tracking-wider py-4 mx-2" href="/">Blog</a></li>
+            </ul>
         </nav>
     </div>
 </header>

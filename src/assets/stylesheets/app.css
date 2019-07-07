@@ -1,162 +1,100 @@
-@tailwind preflight;
+@tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://rsms.me/inter/inter.css');
-
 html {
-    font-family: 'Inter', sans-serif;
-}
-
-@supports (font-variation-settings: normal) {
-    html {
-        font-family: 'Inter var', sans-serif;
-    }
+	font-family: 'DM Sans', sans-serif;
 }
 
 body {
-    @apply text-black text-base;
-    font-weight: 400;
+	@apply text-black text-base;
+	font-weight: 400;
 }
 
-a.external::after {
-    @apply inline-block relative w-3 h-3;
-    content: " ";
-    top: -0.25rem;
-    margin-left: 0.2rem;
-    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZD0iTTE0IDN2MmgzLjU5bC05LjgzIDkuODMgMS40MSAxLjQxTDE5IDYuNDFWMTBoMlYzbS0yIDE2SDVWNWg3VjNINWEyIDIgMCAwIDAtMiAydjE0YTIgMiAwIDAgMCAyIDJoMTRhMiAyIDAgMCAwIDItMnYtN2gtMnY3eiIvPjwvc3ZnPg==);
+.avatar-icon {
+	position: relative;
+
+	&:after,
+	&:before {
+		content: "";
+		z-index: -1;
+		position: absolute;
+		height: 0.8rem;
+		bottom: -0.4rem;
+		left: 0.4rem;
+	}
+
+	&:after {
+		@apply bg-teal-400;
+		width: 0;
+		transition: all .3s cubic-bezier(.86, 0, .07, 1);
+	}
+
+	&:before {
+		@apply bg-gray-400;
+		width: 100%;
+	}
+
+	&:hover {
+		&:after {
+			width: 100%;
+			;
+		}
+	}
 }
 
-.transition {
-    transition: all .2s ease-in-out;
+.navbar ul li a {
+	position: relative;
+
+	&:after,
+	&:before {
+		content: "";
+		position: absolute;
+		height: 0.25rem;
+		bottom: 0;
+		left: 0;
+	}
+
+	&:after {
+		@apply bg-gray-200;
+		width: 0;
+		transition: all .3s cubic-bezier(.86, 0, .07, 1);
+	}
+
+	&:hover {
+		&:after {
+			width: 100%;
+			;
+		}
+	}
+
+	&.active {
+
+		@apply text-gray-900;
+
+		&:after {
+			@apply bg-teal-400;
+			width: 100%;
+		}
+	}
 }
+.dm-sans {
+	font-family: 'DM Sans', sans-serif;
+}
+
+
+.dm-serif-display {
+	font-family: 'DM Serif Display', serif;
+}
+
 
 .container {
-    @apply max-w-xl mx-auto px-8;
-}
-
-.mountains {
-    background-image: url('/assets/images/mountains-mobile.svg');
-    background-position: right bottom;
-    background-repeat: no-repeat;
-    padding: 2rem 0 8em 0;
-    
-    @media (min-width: 600px) {
-        padding: 4rem 0 6rem 0;
-        background-image: url('/assets/images/mountains.svg');
-    }
-}
-
-.hero {
-    padding: 2rem 0;
-
-    @media (min-width: 600px) {
-        padding: 3rem 0;
-    }
-}
-
-.mountains__stickman {
-    position: absolute;
-    bottom: 0px;
-    left: 0px;
-    width: 1rem;
-}
-
-a,
-a:visited {
-    @apply text-black;
-}
-
-a:hover {
-    opacity: 0.75;
-}
-
-a.link-white ,a.link-white :visited {
-	color: #fff;
-}
-
-a.active {
-    @apply text-teal-dark underline;
-}
-
-.note p {
-    @apply mb-6 text-lg;
-}
-
-.note h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-ul,
-pre {
-    @apply mb-6;
-}
-
-table {
-    width: 100%;
-    max-width: 100%;
-    background-color: transparent;
-    border-collapse: collapse;
-    display: block;
-    overflow-x: auto;
-    white-space: nowrap;
-    @apply mb-6;
-
-    thead th {
-        vertical-align: top;
-        padding: 0.5rem 0.75rem;
-        border: 1px solid #dee2e6;
-        text-align: left;
-        font-weight: 600;
-        border-bottom-width: 2px;
-    }
-
-    tbody td {
-        vertical-align: top;
-        padding: 0.5rem 0.75rem;
-        border: 1px solid #dee2e6;
-    }
-
-}
-
-.work {
-    @apply shadow text-white rounded p-6 no-underline;
-
-    &__title {
-        @apply font-bold mb-1;
-    }
-
-    &__desc {
-        @apply text-sm leading-normal;
-    }
-
-    a,
-    a:visited {
-        @apply text-white no-underline;
-
-    }
-
-    &:hover {
-        @apply shadow-lg;
-    }
+	@apply max-w-5xl mx-auto px-8;
 }
 
 
-.work--1 {
-    background-image: linear-gradient(60deg, #ff9a9e 0%, #fad0c4 100%);
-}
-
-.work--2 {
-    background-image: linear-gradient(to top, #a18cd1 0%, #a38bda 100%);
-}
-
-.work--3 {
-    background-image: linear-gradient(60deg, #50c9c3 0%, #96deda 100%);
-}
-
-code[class*="language-"], pre[class*="language-"] {
+code[class*="language-"],
+pre[class*="language-"] {
 	text-align: left;
 	white-space: pre;
 	word-spacing: normal;
@@ -171,7 +109,8 @@ code[class*="language-"], pre[class*="language-"] {
 	tab-size: 4;
 }
 
-code[class*="language-"]::-moz-selection, pre[class*="language-"]::-moz-selection,
+code[class*="language-"]::-moz-selection,
+pre[class*="language-"]::-moz-selection,
 code[class*="language-"] ::-moz-selection,
 pre[class*="language-"] ::-moz-selection {
 	text-shadow: none;
@@ -180,7 +119,8 @@ pre[class*="language-"] ::-moz-selection {
 	background: #363636;
 }
 
-code[class*="language-"]::selection, pre[class*="language-"]::selection,
+code[class*="language-"]::selection,
+pre[class*="language-"]::selection,
 code[class*="language-"] ::selection,
 pre[class*="language-"] ::selection {
 	text-shadow: none;
@@ -190,12 +130,14 @@ pre[class*="language-"] ::selection {
 }
 
 @media print {
-	code[class*="language-"], pre[class*="language-"] {
+
+	code[class*="language-"],
+	pre[class*="language-"] {
 		text-shadow: none !important;
 	}
 }
 
-:not(pre) > code[class*="language-"] {
+:not(pre)>code[class*="language-"] {
 	white-space: normal;
 	color: #eee;
 	background: #2f2f2f;
@@ -203,7 +145,7 @@ pre[class*="language-"] ::selection {
 	padding: 0.1em;
 }
 
-pre > code[class*="language-"] {
+pre>code[class*="language-"] {
 	background: none;
 }
 
@@ -214,10 +156,12 @@ pre[class*="language-"] {
 	background: #2f2f2f;
 	border-radius: 0;
 	margin: 0.5em 0;
-    @apply rounded p-6;
+	@apply rounded p-6;
 }
 
-pre[class*="language-"].language-css > code, pre[class*="language-"].language-sass > code, pre[class*="language-"].language-scss > code {
+pre[class*="language-"].language-css>code,
+pre[class*="language-"].language-sass>code,
+pre[class*="language-"].language-scss>code {
 	color: #fd9170;
 }
 
