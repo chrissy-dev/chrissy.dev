@@ -7601,6 +7601,10 @@ body {
   font-weight: 400;
 }
 
+.text-shadow {
+  text-shadow: 1px 1px 1px rgba(0,0,0,.4);
+}
+
 .avatar-icon {
   position: relative;
 }
