@@ -7727,6 +7727,7 @@ a.cool-link:hover:after, a:visited.cool-link:hover:after {
 
 code[class*="language-"],
 pre[class*="language-"] {
+  font-size: 0.875rem;
   text-align: left;
   white-space: pre;
   word-spacing: normal;
@@ -7738,8 +7739,7 @@ pre[class*="language-"] {
   color: inherit;
   text-shadow: none;
   font-family: Roboto Mono, monospace;
-  font-size: 1rem;
-  line-height: 1.5rem;
+  line-height: 1.5;
   -moz-tab-size: 4;
     -o-tab-size: 4;
        tab-size: 4;
@@ -7752,7 +7752,7 @@ pre[class*="language-"] ::-moz-selection {
   text-shadow: none;
   opacity: 1;
   color: #eee;
-  background: #363636;
+  background-color: #2d3748;
 }
 
 code[class*="language-"]::selection,
@@ -7762,7 +7762,7 @@ pre[class*="language-"] ::selection {
   text-shadow: none;
   opacity: 1;
   color: #eee;
-  background: #363636;
+  background-color: #2d3748;
 }
 
 @media print {
@@ -7775,7 +7775,7 @@ pre[class*="language-"] ::selection {
 :not(pre)>code[class*="language-"] {
   white-space: normal;
   color: #eee;
-  background: #2f2f2f;
+  background-color: #2d3748;
   border-radius: 0.2em;
   padding: 0.1em;
 }
@@ -7788,7 +7788,8 @@ pre[class*="language-"] {
   overflow: auto;
   position: relative;
   color: #eee;
-  background: #2f2f2f;
+  background-color: #2d3748;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
   border-radius: 0;
   margin: 0.5em 0;
   border-radius: 0.25rem;

@@ -2,17 +2,17 @@
 layout: layouts/base
 ---
 
-<article class="container mx-auto p-6 leading-normal text-lg h-entry note">
-    <header class="sm:text-center mb-4 pb-2 sm:mb-8 sm:py-8 max-w-md mx-auto">
-        <a href="{{ page.url }}" class="no-underline u-url"><h1 class="sm:text-5xl leading-tight p-name">{{ title }}</h1></a>
-        <p class="text-sm text-grey dt-published" datetime="{{ page.date }}">{{ page.date | date: "%d" | ordinal }} {{ page.date | date: "%B %Y" }}</p>
+<article class="container mx-auto leading-normal h-entry mb-8">
+    <header class="sm:text-center mb-4 pb-2 sm:mb-8 sm:py-8 mx-auto">
+        <a href="{{ page.url }}" class="no-underline u-url"><h1 class="text-2xl sm:text-3xl md:text-5xl dm-serif-display mb-4 leading-tight p-name">{{ title }}</h1></a>
+        <p class="text-gray-500 uppercase text-xs font-bold tracking-wider dt-published" datetime="{{ page.date }}">{{ page.date | date: "%d" | ordinal }} {{ page.date | date: "%B %Y" }}</p>
     </header>
 
     {% if featured_image %}
     <img src="{{featured_image}}" class="mb-10" alt="{{ title }}" />
     {% endif %}
 
-    <article class="max-w-md mx-auto e-content">
+    <article class="max-w-xl mx-auto e-content md:text-lg note">
         {{ content }}
     </article>
 </article>

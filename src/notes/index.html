@@ -8,32 +8,21 @@ pagination:
 ---
 
 
-<div class="container pt-0 mx-auto">
-    <section class="block leading-normal font-light relative mb-8 hero">
-        <div class="max-w-sm">
-            <h1 class="text-sm mb-2">Notes</h1>
-            <p class="text-2xl">A random collection of personal notes and rambling about anything and everything. If you
-                find something intresting, smashing! </p>
-        </div>
-    </section>
-</div>
-
-<div class="bg-grey-lighter py-10 mx-auto">
-    <div class="container mx-auto max-w-md">
-        <div class="md:flex md:-mx-4 md:flex-wrap">
+<section class="container mx-auto my-4">
+        <h1 class="text-4xl md:text-6xl dm-serif-display leading-tight dm-serif-display mb-6">Notes</h1>
+        <div class="dm-sans leading-normal">
+            <p class="text-xl max-w-xl">A random collection of personal notes and rambling about anything and everything.
+            </p>
+           
             {% assign notes = sorted | reverse %}
 
+            <ul class="my-8 -mx-4 md:-mx-8">
             {% for note in notes %}
-            <div class="w-full mb-6 md:mb-0 md:w-1/2 md:px-4 pb-4 md:pb-8">
-                <a class="block no-underline bg-white rounded h-full" href="{{ note.url }}">
-                    <img src="{{ note.data.featured_image }}" class="block rounded-t"/>
-                    <div class="p-6">
-                            <span class="block text-xs text-grey-dark mb-2 ">{{ note.data.date | date: "%d" | ordinal }} {{ note.data.date | date: "%B %Y" }}</span>
-                            <h3 class="leading-normal mb-0">{{ note.data.title }}</h3>
-                    </div>
-                </a>
-            </div>
+                <li> <a class="block no-underline bg-white border-b border-gray-200 p-4 md:p-8" href="{{ note.url }}">
+                        <h3 class="leading-normal mb-0 text-xl font-bold">{{ note.data.title }}</h3>
+<span class="text-gray-500 uppercase text-xs font-bold tracking-wider">{{ note.data.date | date: "%d" | ordinal }} {{ note.data.date | date: "%B %Y" }}</span>
+                    </a></li>
             {% endfor %}
+            </ul>
         </div>
-    </div>
-</div>
+    </section>

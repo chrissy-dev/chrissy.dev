@@ -141,6 +141,7 @@ a.cool-link, a:visited.cool-link {
 
 code[class*="language-"],
 pre[class*="language-"] {
+	@apply text-sm;
 	text-align: left;
 	white-space: pre;
 	word-spacing: normal;
@@ -150,8 +151,7 @@ pre[class*="language-"] {
 	color: inherit;
 	text-shadow: none;
 	font-family: Roboto Mono, monospace;
-	font-size: 1rem;
-	line-height: 1.5rem;
+	line-height: 1.5;
 	tab-size: 4;
 }
 
@@ -162,7 +162,7 @@ pre[class*="language-"] ::-moz-selection {
 	text-shadow: none;
 	opacity: 1;
 	color: #eee;
-	background: #363636;
+	@apply bg-gray-800;
 }
 
 code[class*="language-"]::selection,
@@ -172,7 +172,7 @@ pre[class*="language-"] ::selection {
 	text-shadow: none;
 	opacity: 1;
 	color: #eee;
-	background: #363636;
+	@apply bg-gray-800;
 }
 
 @media print {
@@ -186,7 +186,7 @@ pre[class*="language-"] ::selection {
 :not(pre)>code[class*="language-"] {
 	white-space: normal;
 	color: #eee;
-	background: #2f2f2f;
+	@apply bg-gray-800;
 	border-radius: 0.2em;
 	padding: 0.1em;
 }
@@ -199,7 +199,7 @@ pre[class*="language-"] {
 	overflow: auto;
 	position: relative;
 	color: #eee;
-	background: #2f2f2f;
+	@apply bg-gray-800 shadow-lg;
 	border-radius: 0;
 	margin: 0.5em 0;
 	@apply rounded p-6;
