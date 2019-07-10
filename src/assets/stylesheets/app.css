@@ -183,6 +183,10 @@ pre[class*="language-"] ::selection {
 	}
 }
 
+:not(pre)>code {
+	@apply bg-gray-100 border rounded text-sm align-middle p-1; 
+}
+
 :not(pre)>code[class*="language-"] {
 	white-space: normal;
 	color: #eee;
@@ -199,10 +203,8 @@ pre[class*="language-"] {
 	overflow: auto;
 	position: relative;
 	color: #eee;
-	@apply bg-gray-800 shadow-lg;
+	@apply bg-gray-800 shadow-lg rounded p-6 my-8;
 	border-radius: 0;
-	margin: 0.5em 0;
-	@apply rounded p-6;
 }
 
 pre[class*="language-"].language-css>code,
@@ -439,13 +441,10 @@ pre[class*="language-"].language-scss>code {
   table td,
   table th {
     padding: 0;
-    line-height: 33px;
+		line-height: 33px;
+		@apply border p-2;
   }
 
-  /* Code blocks */
-  code {
-    vertical-align: bottom;
-  }
 }
 
 

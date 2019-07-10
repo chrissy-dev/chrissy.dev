@@ -7772,6 +7772,15 @@ pre[class*="language-"] ::selection {
   }
 }
 
+:not(pre)>code {
+  background-color: #f7fafc;
+  border-width: 1px;
+  border-radius: 0.25rem;
+  font-size: 0.875rem;
+  vertical-align: middle;
+  padding: 0.25rem;
+}
+
 :not(pre)>code[class*="language-"] {
   white-space: normal;
   color: #eee;
@@ -7790,10 +7799,11 @@ pre[class*="language-"] {
   color: #eee;
   background-color: #2d3748;
   box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
-  border-radius: 0;
-  margin: 0.5em 0;
   border-radius: 0.25rem;
   padding: 1.5rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  border-radius: 0;
 }
 
 pre[class*="language-"].language-css>code,
@@ -8042,12 +8052,8 @@ pre[class*="language-"].language-scss>code {
   .note table th {
     padding: 0;
     line-height: 33px;
-  }
-
-/* Code blocks */
-
-.note code {
-    vertical-align: bottom;
+    border-width: 1px;
+    padding: 0.5rem;
   }
 
 .fade-in-bottom {

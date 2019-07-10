@@ -27,7 +27,7 @@ It can then be used on the day value with the rest of the date parsed as you lik
 
 This will render:
 
-```
+```bash
 1st May 2019 
 ```
 
