@@ -11,11 +11,11 @@ layout: layouts/base
         </p>
         <ul class="flex flex-wrap sm:-mx-4 mt-8">
             {% for photo in instagram.graphql.user.edge_owner_to_timeline_media.edges %}
-            <li class="sm:w-1/2 md:w-1/3 sm:p-4 mb-8 sm:mb-0">
+            <li class="w-full sm:w-1/2 md:w-1/3 sm:p-4 mb-8 sm:mb-0">
                 <a href="//instagram.com/p/{{ photo.node.shortcode }}" target="_blank" class="no-underline text-white">
                     <figure class="relative">
-                        <img src="{{photo.node.thumbnail_resources[4].src}}" class="block"
-                            alt="{{photo.node.thumbnail_resources[4].src}}">
+                        <img src="{{ photo.node.thumbnail_resources[0].src }}" data-src="{{photo.node.thumbnail_resources[4].src}}" class="block w-full lazy-image"
+                            alt="{{ photo.node.accessibility_caption }}">
 
                         <figcaption class="text-xs absolute m-4 p-2 bottom-0 left-0">
                             <p class="flex items-center text-shadow">{{ photo.node.edge_liked_by.count }} <svg

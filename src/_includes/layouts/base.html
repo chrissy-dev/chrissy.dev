@@ -55,4 +55,8 @@
         {% include partials/footer.html %}
     </div>
   </body>
+  {% capture scripts %}{% include scripts/app.js %}{% endcapture %}
+  <script>
+      {{ scripts | safe }}
+  </script>
 </html>
