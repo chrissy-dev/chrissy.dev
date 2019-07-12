@@ -12,7 +12,7 @@ module.exports = {
   url: "https://www.chriscollins.me", // Don't end with a slash /
   description: "Chris Collins is a designer and developer from Scotland.",
   social_meta: {
-    twitter: "@chrisssycollins",
+    twitter: "@scottishstoater",
     featured_image: "/assets/images/featured_image.jpg"
   },
   ENV: process.env.ELEVENTY_ENV
