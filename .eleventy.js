@@ -1,5 +1,4 @@
 const htmlmin = require("html-minifier");
-const CleanCSS = require("clean-css");
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const beautify = require('js-beautify').html;
 const ENV = process.env.ELEVENTY_ENV;
@@ -16,7 +15,9 @@ module.exports = function (eleventyConfig) {
         let minified = htmlmin.minify(content, {
           useShortDoctype: true,
           removeComments: true,
-          collapseWhitespace: true
+          collapseWhitespace: true,
+          minifyCSS: true,
+          minifyJS: true
         });
         return minified;
       }
@@ -36,11 +37,6 @@ module.exports = function (eleventyConfig) {
       return content;
     });
   }
-
-  // Clean CSS Filter
-  eleventyConfig.addFilter("cssmin", function (code) {
-    return new CleanCSS({}).minify(code).styles;
-  });
 
   // Ordinal date filter
   eleventyConfig.addFilter("ordinal", function(date) {
