@@ -7596,8 +7596,8 @@ video {
 }
 
 .markdown p {
-    margin-bottom: 0;
     margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
   }
 
 .markdown ul,

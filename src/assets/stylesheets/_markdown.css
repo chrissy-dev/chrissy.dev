@@ -3,7 +3,7 @@
   @apply leading-normal;
 
   p {
-    @apply mb-0 mt-6;
+    @apply my-6;
   }
 
   ul,
