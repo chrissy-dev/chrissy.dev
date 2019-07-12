@@ -7799,12 +7799,22 @@ pre[class*="language-"] {
   color: #eee;
   background-color: #2d3748;
   box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
-  border-radius: 0.25rem;
-  padding: 1.5rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
   margin-top: 2rem;
   margin-bottom: 2rem;
-  border-radius: 0;
+  margin-left: -2rem;
+  margin-right: -2rem;
 }
+
+@media (min-width: 768px) {
+
+pre[class*="language-"] {
+    border-radius: 0.25rem
+}
+  }
 
 pre[class*="language-"].language-css>code,
 pre[class*="language-"].language-sass>code,
@@ -8099,6 +8109,22 @@ pre[class*="language-"].language-scss>code {
     opacity: 1;
   }
 }
+
+.markdown h1 {
+    font-size: 2.25rem;
+    line-height: 1.25;
+    font-family: 'DM Serif Display', serif;
+    margin-bottom: 1.5rem;
+    font-weight: 500;
+    font-family: 'DM Serif Display', serif;
+  }
+
+@media (min-width: 768px) {
+
+.markdown h1 {
+      font-size: 4rem
+  }
+    }
 
 @media (min-width: 640px) {
   .sm\:appearance-none {

@@ -203,8 +203,10 @@ pre[class*="language-"] {
 	overflow: auto;
 	position: relative;
 	color: #eee;
-	@apply bg-gray-800 shadow-lg rounded p-6 my-8;
-	border-radius: 0;
+	@apply bg-gray-800 shadow-lg px-8 py-4 my-8 -mx-8;
+	@media (min-width: 768px) {
+		@apply rounded;
+	}
 }
 
 pre[class*="language-"].language-css>code,
@@ -485,5 +487,18 @@ pre[class*="language-"].language-scss>code {
     -webkit-transform: translateY(0);
             transform: translateY(0);
     opacity: 1;
+  }
+}
+
+
+
+.markdown {
+  h1 {
+		@apply text-4xl leading-tight dm-serif-display mb-6 font-medium;
+		font-family: 'DM Serif Display', serif;
+
+		@media (min-width: 768px) {
+			@apply text-6xl;
+		}
   }
 }
