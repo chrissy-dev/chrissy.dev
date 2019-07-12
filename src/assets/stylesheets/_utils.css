@@ -1,0 +1,15 @@
+.container {
+  @apply max-w-5xl mx-auto px-8;
+}
+
+.text-shadow {
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, .4);
+}
+
+.dm-sans {
+  font-family: 'DM Sans', sans-serif;
+}
+
+.dm-serif-display {
+  font-family: 'DM Serif Display', serif;
+}

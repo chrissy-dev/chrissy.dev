@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Personal website of Chris Collins, UX Designer & Engineer from Glasgow.",
   "scripts": {
-    "post": "postcss src/assets/stylesheets/app.css -o src/assets/static/app.compiled.css -w",
+    "post": "postcss src/assets/stylesheets/app.css -o src/assets/static/app.compiled.css -w --verbose",
     "start": "concurrently \"ELEVENTY_ENV=development eleventy --serve --watch\" \"npm run post\"",
     "purge": "purgecss --config ./purgecss.config.js --out src/_includes/stylesheets",
     "build": "del dist && eleventy && purgecss --config ./purgecss.config.js --out src/_includes/stylesheets && ELEVENTY_ENV=production eleventy"
@@ -22,6 +22,7 @@
     "js-beautify": "^1.9.1",
     "node-fetch": "^2.5.0",
     "postcss-cli": "^6.1.2",
+    "postcss-import": "^12.0.1",
     "postcss-nested": "^4.1.2",
     "purgecss": "1.3.0",
     "tailwindcss": "^1.0.4"
