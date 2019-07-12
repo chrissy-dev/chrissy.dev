@@ -20,7 +20,7 @@ pagination:
             {% for note in notes %}
                 <li> <a class="block no-underline bg-white border-b border-gray-200 p-4 md:p-8" href="{{ note.url }}">
                         <h3 class="leading-normal mb-0 text-xl font-bold">{{ note.data.title }}</h3>
-<span class="text-gray-500 uppercase text-xs font-bold tracking-wider">{{ note.data.date | date: "%d" | ordinal }} {{ note.data.date | date: "%B %Y" }}</span>
+<span class="text-gray-500 uppercase text-xs font-bold tracking-wider">{{ note.data.date | date: "%d%q %B %Y" }}</span>
                     </a></li>
             {% endfor %}
             </ul>
