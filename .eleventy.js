@@ -38,6 +38,10 @@ module.exports = function (eleventyConfig) {
     });
   }
 
+  eleventyConfig.addFilter("w3cDate", function(date) {
+    return date.toISOString();
+  });
+
   eleventyConfig.addPlugin(syntaxHighlight);
 
   return {
