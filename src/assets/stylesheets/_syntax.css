@@ -20,8 +20,7 @@ code[class*="language-"] ::-moz-selection,
 pre[class*="language-"] ::-moz-selection {
 	text-shadow: none;
 	opacity: 1;
-	color: #eee;
-	@apply bg-gray-800;
+	@apply bg-gray-200 text-gray-900;
 }
 
 code[class*="language-"]::selection,
@@ -30,8 +29,7 @@ code[class*="language-"] ::selection,
 pre[class*="language-"] ::selection {
 	text-shadow: none;
 	opacity: 1;
-	color: #eee;
-	@apply bg-gray-800;
+	@apply bg-gray-200 text-gray-900;
 }
 
 @media print {
@@ -43,7 +41,9 @@ pre[class*="language-"] ::selection {
 }
 
 :not(pre)>code {
-	@apply bg-gray-100 border rounded text-sm align-middle p-1;
+	@apply bg-gray-100 border rounded text-sm align-middle px-2;
+	padding-top: 0.1rem;
+	padding-bottom: 0.1rem;
 }
 
 :not(pre)>code[class*="language-"] {

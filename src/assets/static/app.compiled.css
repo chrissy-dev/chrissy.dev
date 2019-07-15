@@ -7721,8 +7721,8 @@ code[class*="language-"] ::-moz-selection,
 pre[class*="language-"] ::-moz-selection {
   text-shadow: none;
   opacity: 1;
-  color: #eee;
-  background-color: #2d3748;
+  background-color: #edf2f7;
+  color: #1a202c;
 }
 
 code[class*="language-"]::selection,
@@ -7731,8 +7731,8 @@ code[class*="language-"] ::selection,
 pre[class*="language-"] ::selection {
   text-shadow: none;
   opacity: 1;
-  color: #eee;
-  background-color: #2d3748;
+  background-color: #edf2f7;
+  color: #1a202c;
 }
 
 @media print {
@@ -7748,7 +7748,10 @@ pre[class*="language-"] ::selection {
   border-radius: 0.25rem;
   font-size: 0.875rem;
   vertical-align: middle;
-  padding: 0.25rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  padding-top: 0.1rem;
+  padding-bottom: 0.1rem;
 }
 
 :not(pre)>code[class*="language-"] {
