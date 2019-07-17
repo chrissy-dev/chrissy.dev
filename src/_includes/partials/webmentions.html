@@ -1,0 +1,54 @@
+{% assign fullUrl = site.url | append: page.url %}
+{% assign likes = webmentions | likesFilter: fullUrl %}
+{% assign mentions = webmentions | webmentionsFilter: fullUrl %}
+
+<aside class="dm-sans">
+  {% if likes.length == 0 and mentions.length == 0 %}
+  <h2 class="text-xl font-bold my-8">Comments</h2>
+  <p class="text-sm">This website supports <a href="https://indieweb.org/Webmention">Webmentions</a>, share/like this post on Twitter and your comments/likes will appear here.</p>
+  {% endif %}
+
+  {% if likes.length > 0 %}
+  <h2 class="text-xl font-bold my-8">Likes ({{ likes.length }})</h2>
+  <ol class="flex items-center">
+    {% for like in likes %}
+    <li>
+      <a href="{{ like.author.url }}">
+        <img class="w-8 h-8 mr-1 flex-none rounded-full lazy-image" src="/assets/images/fallback-avatar.png"
+          data-src="{{ like.author.photo }}" alt="Image of {{ like.author.name }}" />
+      </a>
+    <li>
+      {% endfor %}
+  </ol>
+  {% endif %}
+
+  {% if mentions.length > 1 %}
+  <h2 class="text-xl font-bold my-8">Replies ({{ mentions.length }})</h2>
+  <ol>
+    {% for item in mentions %}
+    <li>
+      <article class="flex py-4 border-b">
+        <img class="w-8 h-8 flex-none rounded-full mr-4 lazy-image" src="/assets/images/fallback-avatar.png"
+          data-src="{{ item.author.photo }}" alt="Image of {{ item.author.name }}" loading="lazy" />
+        <div class="leading-normal">
+          <header class="mb-2">
+            <h3 class="font-bold text-600 leading-tight">{{ item.author.name }}</h3>
+            <p class="text-xs text-gray-700">
+              <time datetime="{{ item['wm-received'] | w3DateFilter }}"
+                class="dt-published">{{ item['wm-received'] | date: "%d%q %B %Y" }}</time>
+            </p>
+          </header>
+          {% if item.content.value %}
+          <div>
+            {{ item.content.value | safe }}
+          </div>
+          {% else %}
+          <p>{{ item.content.text }}</p>
+          {% endif %}
+        </div>
+      </article>
+    </li>
+    {% endfor %}
+  </ol>
+  {% endif %}
+</aside>

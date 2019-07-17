@@ -15,4 +15,8 @@ layout: layouts/base
     <div class="max-w-xl mx-auto e-content md:text-lg leading-normal markdown">
         {{ content }}
     </div>
+
+     <div class="max-w-xl mx-auto e-content md:text-lg leading-normal mt-8 border-t">
+        {% include partials/webmentions.html %}
+    </div>
 </article>
