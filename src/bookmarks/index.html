@@ -1,0 +1,48 @@
+---
+layout: layouts/base
+title: Bookmarks - Chris Collins
+bookmarks:
+    - title: "Frontend Design, React, and a Bridge over the Great Divide"
+      author: "Brad Frost"
+      url: http://bradfrost.com/blog/post/frontend-design-react-and-a-bridge-over-the-great-divide/
+
+    - title: "Accessibility for Vestibular Disorders: How My Temporary Disability Changed My Perspective"
+      author: "A List Apart"
+      url: https://alistapart.com/article/accessibility-for-vestibular/
+
+    - title: "Semantic JSX"
+      author: "Max Böck"
+      url: https://mxb.dev/blog/semantic-jsx/
+    
+    - title: "All-time visible navigation"
+      author: "Enterprise UX"
+      url: https://medium.com/enterprise-ux/all-time-visible-navigation-f346d9320d52
+    
+    - title: "Look Ma, No Media Queries! Responsive Layouts Using CSS Grid"
+      author: "CSS Tricks"
+      url: https://css-tricks.com/look-ma-no-media-queries-responsive-layouts-using-css-grid/
+
+    - title: "The CSS Mindset"
+      author: "Max Böck"
+      url: https://mxb.dev/blog/the-css-mindset/
+      
+    - title: "Everything Easy is Hard Again"
+      author: "Frank Chimero"
+      url: https://frankchimero.com/writing/everything-easy-is-hard-again/
+   
+    - title: "Google HTML/CSS Style Guide"
+      author: "Google"
+      url: https://google.github.io/styleguide/htmlcssguide.html
+---
+
+
+<section class="container mx-auto my-4">
+        <h1 class="text-4xl md:text-6xl dm-serif-display leading-tight dm-serif-display mb-6">Bookmarks</h1>
+        <div class="dm-sans leading-normal">           
+            <ul class="my-8 -mx-4 md:-mx-8">
+            {% for bm in bookmarks %}
+                <li><a class="block no-underline bg-white border-b border-gray-200 px-4 py-3 md:px-8 hover:bg-gray-100 lg:flex items-center justify-between" href="{{ bm.url }}" target="_blank"><h3>{{ bm.title }}</h3><p class="text-gray-500 text-right text-sm mt-2 lg:mt-0">{{ bm.author }}</p></a></li>
+            {% endfor %}
+            </ul>
+        </div>
+    </section>
