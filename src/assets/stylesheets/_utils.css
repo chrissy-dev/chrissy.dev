@@ -13,3 +13,12 @@
 .dm-serif-display {
   font-family: 'DM Serif Display', serif;
 }
+
+.hover\:scale-down:hover {
+  transform: scale(1.05);
+  @apply shadow-lg;
+}
+
+.transition {
+  transition: all .3s cubic-bezier(.0, 0, .07, 1);
+}
