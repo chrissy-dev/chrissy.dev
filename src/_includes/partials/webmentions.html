@@ -28,22 +28,22 @@
     {% for item in mentions %}
     <li>
       <article class="flex py-4 border-b">
-        <img class="w-8 h-8 flex-none rounded-full mr-4 lazy-image" src="/assets/images/fallback-avatar.png"
+        <img class="w-10 h-10 flex-none rounded-full mr-4 lazy-image" src="/assets/images/fallback-avatar.png"
           data-src="{{ item.author.photo }}" alt="Image of {{ item.author.name }}" loading="lazy" />
-        <div class="leading-normal">
-          <header class="mb-2">
-            <h3 class="font-bold text-600 leading-tight">{{ item.author.name }}</h3>
-            <p class="text-xs text-gray-700">
-              <time datetime="{{ item['wm-received'] | w3DateFilter }}"
-                class="dt-published">{{ item['wm-received'] | date: "%d%q %B %Y" }}</time>
-            </p>
+        <div class="leading-normal w-full">
+          <header class="leading-none mb-2">
+           
+            <h3 class="text-base font-bold"><a href="{{ item.url }}" class="no-underline hover:text-gray-600">{{ item.author.name }}</a></h3>
+            <p><time datetime="{{ item['wm-received'] | w3DateFilter }}"
+                class="dt-published text-gray-500 font-light text-xs">{{ item['wm-received'] | date: "%d%q %B %Y" }}</time></p>
+
           </header>
           {% if item.content.value %}
-          <div>
+          <div class="text-base">
             {{ item.content.value | safe }}
           </div>
           {% else %}
-          <p>{{ item.content.text }}</p>
+          <p class="text-base">{{ item.content.text }}</p>
           {% endif %}
         </div>
       </article>
