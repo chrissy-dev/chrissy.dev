@@ -42,8 +42,8 @@ pre[class*="language-"] ::selection {
 
 :not(pre)>code {
 	@apply bg-gray-100 border rounded text-sm align-middle px-2;
-	padding-top: 0.1rem;
-	padding-bottom: 0.1rem;
+	padding-top: 0.2rem;
+	padding-bottom: 0.2rem;
 }
 
 :not(pre)>code[class*="language-"] {

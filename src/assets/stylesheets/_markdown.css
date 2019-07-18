@@ -1,6 +1,6 @@
 .markdown {
 
-  @apply leading-normal;
+  @apply leading-relaxed;
 
   p {
     @apply my-6;
@@ -82,5 +82,40 @@
     line-height: 33px;
     @apply border p-2;
   }
+
+
+  a,
+a:visited {
+	position: relative;
+	@apply no-underline;
+
+	&:after,
+	&:before {
+		content: "";
+		position: absolute;
+		height: 2px;
+		bottom: 0;
+		left: 0;
+		z-index: -1;
+		transition: all .3s cubic-bezier(.86, 0, .07, 1);
+	}
+
+	&:before {
+		@apply bg-gray-500;
+		width: 100%;
+	}
+
+	&:after {
+		@apply bg-teal-300;
+    width: 0;
+    height: 100%;
+	}
+
+	&:hover {
+		&:after {
+			width: 100%;
+		}
+	}
+}
 
 }
