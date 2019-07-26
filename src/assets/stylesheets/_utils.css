@@ -22,3 +22,17 @@
 .transition {
   transition: all .3s cubic-bezier(.0, 0, .07, 1);
 }
+
+.external_link::after {
+  display: inline-flex;
+  align-items: center;
+  content: '';
+	background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNOC41LDE4LjMxTDUuNjksMTUuNUwxMi4wNiw5LjEySDcuMTFWNS42OUgxOC4zMVYxNi44OUgxNC44OVYxMS45NEw4LjUsMTguMzFaIiAvPjwvc3ZnPg==);  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 0.8rem;
+  height: 0.8rem;
+  vertical-align: middle;
+  margin-left: 0.5rem;
+  @apply bg-gray-200 rounded-sm;
+}

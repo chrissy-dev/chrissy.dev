@@ -39,4 +39,3 @@ const observer = new IntersectionObserver(handleIntersection, options);
 images.forEach(img => {
   observer.observe(img);
 })
-
