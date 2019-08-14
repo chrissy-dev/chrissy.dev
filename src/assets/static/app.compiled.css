@@ -7700,6 +7700,7 @@ video {
 .markdown a:visited {
     position: relative;
     text-decoration: none;
+    font-weight: 700;
   }
 
 .markdown a:after,
@@ -8039,6 +8040,16 @@ hr {
   background-color: #edf2f7;
   margin-top: 2.5rem;
   margin-bottom: 2.5rem;
+}
+
+.hideBots {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 0;
+  width: 0;
+  z-index: -1;
 }
 
 .fade-in-bottom {

@@ -45,3 +45,13 @@
 hr {
   @apply border-0 h-1 bg-gray-200 my-10;
 }
+
+.hideBots {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 0;
+  width: 0;
+  z-index: -1;
+}

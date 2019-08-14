@@ -87,7 +87,7 @@
   a,
 a:visited {
 	position: relative;
-	@apply no-underline;
+	@apply no-underline font-bold;
 
 	&:after,
 	&:before {
