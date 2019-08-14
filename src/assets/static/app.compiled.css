@@ -7604,6 +7604,7 @@ video {
   .markdown ol {
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
+    margin-left: 0.75rem;
     list-style-position: inside;
   }
 
@@ -8006,6 +8007,10 @@ pre[class*="language-"].language-scss>code {
   box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
 }
 
+.hover\:opacity-50:hover {
+  opacity: 0.5;
+}
+
 .transition {
   -webkit-transition: all .3s cubic-bezier(.0, 0, .07, 1);
   transition: all .3s cubic-bezier(.0, 0, .07, 1);
@@ -8026,6 +8031,14 @@ pre[class*="language-"].language-scss>code {
   margin-left: 0.5rem;
   background-color: #edf2f7;
   border-radius: 0.125rem;
+}
+
+hr {
+  border-width: 0;
+  height: 0.25rem;
+  background-color: #edf2f7;
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
 }
 
 .fade-in-bottom {

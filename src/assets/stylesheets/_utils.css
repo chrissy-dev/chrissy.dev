@@ -19,6 +19,11 @@
   @apply shadow-lg;
 }
 
+.hover\:opacity-50:hover {
+  @apply opacity-50;
+}
+
+
 .transition {
   transition: all .3s cubic-bezier(.0, 0, .07, 1);
 }
@@ -35,4 +40,8 @@
   vertical-align: middle;
   margin-left: 0.5rem;
   @apply bg-gray-200 rounded-sm;
+}
+
+hr {
+  @apply border-0 h-1 bg-gray-200 my-10;
 }

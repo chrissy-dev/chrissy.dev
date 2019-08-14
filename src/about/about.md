@@ -12,6 +12,23 @@ I began writing code at 9 years old; with the solid help of Geocities, Dreamweav
  
 I am a passionate supporter of the open web and care deeply about user experience, digital privacy and the inclusion of every single person on the web. 
 
-## Offline
-
 Away from a computer you’ll find me taking photos around Scotland or up a mountain. See my [hiking log](https://log.chriscollins.me) and [Instagram](https://www.instagram.com/scottishstoater) for photos. 
+
+--- 
+
+## Experience 
+
+**UX Engineer**  
+Arnold Clark Automobiles Ltd  
+*October 2016 – Present*    
+Glasgow, United Kingdom  
+
+**Web Designer**  
+Arnold Clark Automobiles Ltd  
+*March 2015 – October 2016 (1 year 7 months)*  
+Glasgow, United Kingdom  
+
+**Web Developer**  
+Ultralinx Themes
+*September 2013 – Feburary 2014 (6 months)*  
+Glasgow/London, United Kingdom  
