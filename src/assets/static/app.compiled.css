@@ -8085,8 +8085,41 @@ hr {
   }
 }
 
+@font-face {
+  font-family: 'Public Sans';
+
+  src: url('/assets/static/fonts/publicsans-bold-webfont.woff2') format('woff2'),
+         url('/assets/static/fonts/publicsans-bold-webfont.woff') format('woff');
+
+  font-weight: 700;
+
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Public Sans';
+
+  src: url('/assets/static/fonts/publicsans-italic-webfont.woff2') format('woff2'),
+         url('/assets/static/fonts/publicsans-italic-webfont.woff') format('woff');
+
+  font-weight: 400;
+
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Public Sans';
+
+  src: url('/assets/static/fonts/publicsans-regular-webfont.woff2') format('woff2'),
+         url('/assets/static/fonts/publicsans-regular-webfont.woff') format('woff');
+
+  font-weight: normal;
+
+  font-style: normal;
+}
+
 html {
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'Public Sans', sans-serif;
 }
 
 body {
