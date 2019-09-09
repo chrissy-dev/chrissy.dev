@@ -40,6 +40,13 @@ body {
 	font-weight: 400;
 }
 
+.box-shadow {
+	box-shadow: 0.2rem 0.2rem #000;
+}
+
+.box-shadow-teal {
+	box-shadow: 0.2rem 0.2rem #4DCBCF;
+}
 
 .avatar-icon {
 	position: relative;	

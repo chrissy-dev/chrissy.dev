@@ -11797,7 +11797,7 @@ pre[class*="language-"].language-scss>code {
 }
 
 .container {
-  max-width: 64rem;
+  max-width: 72rem;
   margin-left: auto;
   margin-right: auto;
   padding-left: 2rem;
@@ -11940,6 +11940,14 @@ body {
   color: #1a202c;
   font-size: 1rem;
   font-weight: 400;
+}
+
+.box-shadow {
+  box-shadow: 0.2rem 0.2rem #000;
+}
+
+.box-shadow-teal {
+  box-shadow: 0.2rem 0.2rem #4DCBCF;
 }
 
 .avatar-icon {
