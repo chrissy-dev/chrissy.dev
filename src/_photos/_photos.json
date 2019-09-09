@@ -1,0 +1,5 @@
+{
+  "layout": "layouts/photo",
+  "tags": "photos",
+  "permalink": "photo/{{ page.date | date: '%Y/%m/%d' }}/{{ title | slug }}/index.html"
+}

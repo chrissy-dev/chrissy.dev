@@ -1,6 +1,10 @@
 ---
 title: Photos - Chris Collins
 layout: layouts/base
+pagination:
+    data: collections.photos
+    size: 20
+    alias: sorted
 ---
 
 <section class="container mx-auto my-4">
@@ -10,6 +14,16 @@ layout: layouts/base
             a follow on <a href="https://www.instagram.com/scottishstoater/" target="_blank">Instagram</a> for more.
         </p>
 
+        {% assign photos = sorted | reverse %}
+
+
+        <ul class="my-8 -mx-8 md:mx-0">
+                {% for photo in photos %}
+                    <li class="mb-8"> <a class="block no-underline bg-white border-b border-gray-200 hover:bg-gray-100" href="{{ photo.url }}">
+                           <img src="{{ photo.data.photo }}" class="hover:opacity-75" alt="{{ photo.data.title }}">
+                        </a></li>
+                {% endfor %}
+                </ul>
 
 
         <section class="mt-8"><h3 class="text-gray-500 uppercase font-bold tracking-wider text-xs mb-2">Recent on Instagram</h3>

@@ -1,0 +1,18 @@
+---
+layout: layouts/base
+---
+
+<article class="container mx-auto leading-normal h-entry mb-8">
+    <header class="sm:text-center mb-4 pb-2 sm:mb-8 sm:py-8 mx-auto">
+        <a href="{{ page.url }}" class="no-underline u-url"><h1 class="text-3xl sm:text-3xl md:text-5xl dm-serif-display mb-4 leading-tight p-name">{{ title }}</h1></a>
+        <time class="text-gray-500 uppercase text-xs font-bold tracking-wider dt-published" datetime="{{ page.date | w3cDate }}">{{ page.date | date: "%d%q %B %Y" }}</time>
+    </header>
+
+    <figure class="-mx-8 md:mx-0">
+        <img src="{{ photo }}" alt="{{ title }}">
+        <figcaption class="px-8 py-4 max-w-xl mx-auto">{{ caption }}</figcaption>
+    </figure>
+     <div class="max-w-xl mx-auto e-content md:text-lg leading-normal mt-8 border-t">
+        {% include partials/webmentions.html %}
+    </div>
+</article>
