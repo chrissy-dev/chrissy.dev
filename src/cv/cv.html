@@ -13,14 +13,11 @@ layout: layouts/base
       <div class="hideBots"><label>Don’t fill this out if you're human: <input name="bot-field" /></label></div>
       <div class="mb-4 w-full max-w-xl">
         <label class="font-bold text-lg" for="email">Your email address</label>
-        <div class="flex">
-            <input type="email" class="block w-full p-3 border-2 focus:bg-gray-100 flex-1" name="email" required />
-            <button type="submit" class="py-3 px-6 bg-gray-300 font-bold text-lg hover:bg-teal-600 hover:text-white">Request CV</button>
-          </div>
-
-          <label for="recruiter" class="block">
-              <input type="checkbox" name="recruiter"> I am a recruiter
-          </label>
+        <input type="email" class="appearance-none rounded-none block w-full p-3 border-2 focus:bg-gray-100 md:flex-1" name="email" required />
+        <label for="recruiter" class="block">
+            <input type="checkbox" id="recruiter" name="recruiter"> I'm a recruiter
+        </label>
+        <button type="submit" class="mt-2 py-3 px-6 bg-gray-300 font-bold text-lg hover:bg-teal-600 hover:text-white">Request CV</button>
       </div>
     </form>
   </div>
