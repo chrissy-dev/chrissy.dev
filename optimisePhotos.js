@@ -39,4 +39,4 @@ const optimise = async (inputDir, outputDir) => {
   );
 };
 
-optimise('src/assets/images/photos', 'dist/assets/images/photos');
+optimise('./src/assets/images/photos', './dist/assets/images/photos');
