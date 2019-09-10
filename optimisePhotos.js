@@ -1,6 +1,7 @@
 const Jimp = require('jimp');
 const path = require("path");
 const glob = require('fast-glob');
+
 /**
  * Resize + optimize images.
  *  
@@ -11,7 +12,7 @@ const glob = require('fast-glob');
 const optimise = async (inputDir, outputDir) => {
   console.log(`Attempting to generate images...`);
 
-  const images = await glob.sync([`${inputDir}/**/*.jpg`]);
+  const images = await glob([`${inputDir}/**/*.jpg`]);
 
   console.log(`Images: [${images}]`);
 
@@ -43,5 +44,5 @@ const optimise = async (inputDir, outputDir) => {
 };
 
 (async function () {
-  await optimise(`${__dirname}/src/assets/images/photos`, `${__dirname}/dist/assets/images/photos`);
+  await optimise(`src/assets/images/photos`, `dist/assets/images/photos`);
 })();
