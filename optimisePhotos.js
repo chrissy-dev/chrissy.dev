@@ -11,7 +11,7 @@ const glob = require('fast-glob');
 const optimise = async (inputDir, outputDir) => {
   console.log(`Attempting to generate images...`);
 
-  const images = glob.sync([`${inputDir}/**/*.jpg`]);
+  const images = await glob.sync([`${inputDir}/**/*.jpg`]);
 
   console.log(`Images: [${images}]`);
 
