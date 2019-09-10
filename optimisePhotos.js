@@ -9,6 +9,8 @@ const path = require("path");
  */
 
 const optimise = async (inputDir, outputDir) => {
+  console.log(`Attempting to generate images...`);
+
   const images = glob.sync(`${inputDir}/**/*.jpg`);
 
   await Promise.all(
