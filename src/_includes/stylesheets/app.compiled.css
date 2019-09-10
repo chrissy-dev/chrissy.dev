@@ -725,6 +725,11 @@ img {
   margin-bottom: 2rem;
 }
 
+.mx-8 {
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -1589,6 +1594,16 @@ a.cool-link:hover:after, a:visited.cool-link:hover:after {
     margin-right: 0;
   }
 
+  .md\:mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .md\:-mx-4 {
+    margin-left: -1rem;
+    margin-right: -1rem;
+  }
+
   .md\:-mx-8 {
     margin-left: -2rem;
     margin-right: -2rem;
@@ -1598,8 +1613,16 @@ a.cool-link:hover:after, a:visited.cool-link:hover:after {
     margin-top: 0;
   }
 
+  .md\:mb-0 {
+    margin-bottom: 0;
+  }
+
   .md\:mr-4 {
     margin-right: 1rem;
+  }
+
+  .md\:p-4 {
+    padding: 1rem;
   }
 
   .md\:px-8 {
@@ -1642,6 +1665,10 @@ a.cool-link:hover:after, a:visited.cool-link:hover:after {
   .md\:w-16 {
     width: 4rem;
   }
+
+  .md\:w-1\/2 {
+    width: 50%;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -1651,7 +1678,16 @@ a.cool-link:hover:after, a:visited.cool-link:hover:after {
     display: flex;
   }
 
+  .lg\:-mx-8 {
+    margin-left: -2rem;
+    margin-right: -2rem;
+  }
+
   .lg\:mt-0 {
     margin-top: 0;
+  }
+
+  .lg\:p-8 {
+    padding: 2rem;
   }
 }
