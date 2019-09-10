@@ -10,40 +10,39 @@ pagination:
 <section class="container mx-auto my-4">
     <h1 class="text-4xl md:text-6xl dm-serif-display leading-tight dm-serif-display mb-6">Photos</h1>
     <div class="dm-sans leading-normal">
-        <p class="text-xl max-w-xl">I hike, climb and take photos around Scotland in my spare time. You can give me
-            a follow on <a href="https://www.instagram.com/scottishstoater/" target="_blank">Instagram</a> for more.
-        </p>
+        <p class="text-xl max-w-xl">I hike, climb and take photos around Scotland in my spare time. You can give me a follow on <a href="https://www.instagram.com/scottishstoater/" target="_blank">Instagram</a> for more.</p>
 
         {% assign photos = sorted | reverse %}
+        <ul class="my-8 md:-mx-4 lg:-mx-8 flex flex-wrap">
+            {% for photo in photos %}
+            <li class="md:p-4 lg:p-8 mb-8 md:mb-0 w-full md:w-1/2">
+                <a class="block no-underline bg-white border-b border-gray-200 hover:bg-gray-100" href="{{ photo.url }}">
+                    <img src="/assets/images/photos/{{ photo.data.filename }}_560{% if photo.data.ext %}{{ photo.data.ext }}{% else %}.jpg{% endif %}" class="hover:opacity-75 w-full" alt="{{ photo.data.title }}">
+                </a>
+            </li>
+            {% endfor %}
+        </ul>
 
 
-        <ul class="my-8 -mx-8 md:mx-0">
-                {% for photo in photos %}
-                    <li class="mb-8"> <a class="block no-underline bg-white border-b border-gray-200 hover:bg-gray-100" href="{{ photo.url }}">
-                           <img src="{{ photo.data.photo }}" class="hover:opacity-75" alt="{{ photo.data.title }}">
-                        </a></li>
-                {% endfor %}
-                </ul>
-
-
-        <section class="mt-8"><h3 class="text-gray-500 uppercase font-bold tracking-wider text-xs mb-2">Recent on Instagram</h3>
-            <ul class="flex flex-wrap">
+        <article class="mt-8">
+            <h3 class="text-gray-500 uppercase font-bold tracking-wider text-xs mb-2">Recent on Instagram</h3>
+            
+            <ul class="flex flex-wrap -mx-1">
                 {% for photo in instagram.graphql.user.edge_owner_to_timeline_media.edges %}
                 <li class="w-1/4 sm:w-1/6 md:flex-1">
                     <a href="//instagram.com/p/{{ photo.node.shortcode }}" target="_blank" class="no-underline text-white">
-                        <figure class="relative">
-                            <img src="{{ photo.node.thumbnail_resources[0].src }}" data-src="{{photo.node.thumbnail_resources[4].src}}" class="block w-full hover:opacity-75 lazy-image"
-                                alt="{{ photo.node.accessibility_caption }}">
+                        <figure class="relative p-1">
+                            <img src="{{ photo.node.thumbnail_resources[0].src }}" data-src="{{photo.node.thumbnail_resources[4].src}}" class="block w-full hover:opacity-75 lazy-image" alt="{{ photo.node.accessibility_caption }}">
                         </figure>
                     </a>
                 </li>
                 {% endfor %}
             </ul>
     
-    
-            <div class="mt-2 flex text-center justify-between items-center text-sm">
+            <footer class="mt-2 flex text-center justify-between items-center text-sm">
                 <h4 class="hidden md:block"><a href="//instagram.com/scottishstoater">@scottishstoater</a></h4>
-                <a href="//instagram.com/scottishstoater" target="_blank">View {{ instagram.graphql.user.edge_owner_to_timeline_media.count | minus:12 }} more...</a>
-            </div></section>
+                <a href="//instagram.com/scottishstoater" class="external_link" target="_blank">View {{ instagram.graphql.user.edge_owner_to_timeline_media.count | minus:12 }} more</a>
+            </footer>
+        </article>
     </div>
 </section>

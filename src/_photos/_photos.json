@@ -1,5 +1,5 @@
 {
   "layout": "layouts/photo",
   "tags": "photos",
-  "permalink": "photo/{{ page.date | date: '%Y/%m/%d' }}/{{ title | slug }}/index.html"
+  "permalink": "photos/{{ page.date | date: '%Y/%m/%d' }}/{{ title | slug }}/index.html"
 }

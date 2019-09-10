@@ -4,9 +4,9 @@
   "description": "Personal website of Chris Collins, UX Designer & Engineer from Glasgow.",
   "scripts": {
     "post": "postcss src/assets/stylesheets/app.css -o src/assets/static/app.compiled.css -w --verbose",
-    "start": "concurrently \"ELEVENTY_ENV=development eleventy --serve --watch\" \"npm run post\"",
+    "start": "concurrently \"node optimisePhotos.js\" \"ELEVENTY_ENV=development eleventy --serve --watch\" \"npm run post\"",
     "purge": "purgecss --config ./purgecss.config.js --out src/_includes/stylesheets",
-    "build": "del dist && eleventy && purgecss --config ./purgecss.config.js --out src/_includes/stylesheets && ELEVENTY_ENV=production eleventy"
+    "build": "del dist && eleventy && purgecss --config ./purgecss.config.js --out src/_includes/stylesheets && ELEVENTY_ENV=production eleventy && node optimisePhotos.js"
   },
   "author": "Chris Collins",
   "license": "ISC",
@@ -15,10 +15,13 @@
     "@11ty/eleventy-plugin-syntaxhighlight": "^2.0.1",
     "autoprefixer": "^9.6.1",
     "axios": "^0.19.0",
+    "chalk": "^2.4.2",
     "concurrently": "^4.1.2",
     "del-cli": "^2.0.0",
     "dotenv": "^8.1.0",
+    "glob": "^7.1.4",
     "html-minifier": "^3.5.21",
+    "jimp": "^0.8.0",
     "js-beautify": "^1.10.2",
     "node-fetch": "^2.5.0",
     "postcss-cli": "^6.1.3",

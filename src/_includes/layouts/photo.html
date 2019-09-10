@@ -9,10 +9,11 @@ layout: layouts/base
     </header>
 
     <figure class="-mx-8 md:mx-0">
-        <img src="{{ photo }}" alt="{{ title }}">
-        <figcaption class="px-8 py-4 max-w-xl mx-auto">{{ caption }}</figcaption>
+        <img src="/assets/images/photos/{{ filename }}_fullhd{% if ext %}{{ ext }}{% else %}.jpg{% endif %}" alt="{{ title }}">
+        <figcaption class="mx-8 max-w-xl md:mx-auto md:text-lg leading-normal mt-4">{{ caption }}</figcaption>
     </figure>
-     <div class="max-w-xl mx-auto e-content md:text-lg leading-normal mt-8 border-t">
+
+     <div class="max-w-xl mx-auto e-content md:text-lg leading-normal">
         {% include partials/webmentions.html %}
     </div>
 </article>
