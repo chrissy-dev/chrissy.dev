@@ -17,7 +17,8 @@ const optimise = async (images, outputDir) => {
     images.map(async imgPath => {
       const image = await Jimp.read(imgPath);
       const fileName = path.basename(imgPath, '.jpg') || path.basename(imgPath, '.JPG');
-
+      console.log(fileName);
+      
       await image.quality(80) // set JPEG quality
       await image.writeAsync(`${outputDir}/${fileName}_optimised.jpg`);
       console.log(`Generated: ${outputDir}/${fileName}_optimised.jpg`);
