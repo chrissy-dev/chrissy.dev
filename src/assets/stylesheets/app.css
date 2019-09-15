@@ -212,7 +212,7 @@ a:visited.cool-link {
 }
 
 .text-input {
-	@apply appearance-none block w-full p-3 border-2;
+	@apply appearance-none rounded-none block w-full p-3 border-2;
 
 	&:focus {
 		@apply bg-gray-100;

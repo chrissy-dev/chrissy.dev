@@ -12163,6 +12163,7 @@ a.cool-link:hover:after, a:visited.cool-link:hover:after {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
+  border-radius: 0;
   display: block;
   width: 100%;
   padding: 0.75rem;
