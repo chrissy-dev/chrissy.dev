@@ -5,31 +5,30 @@
 @import "_animation.css";
 
 @font-face {
-    font-family: 'Public Sans';
-    src: url('/assets/static/fonts/publicsans-bold-webfont.woff2') format('woff2'),
-         url('/assets/static/fonts/publicsans-bold-webfont.woff') format('woff');
-    font-weight: 700;
-    font-style: normal;
+	font-family: 'Public Sans';
+	src: url('/assets/static/fonts/publicsans-bold-webfont.woff2') format('woff2'),
+		url('/assets/static/fonts/publicsans-bold-webfont.woff') format('woff');
+	font-weight: 700;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Public Sans';
+	src: url('/assets/static/fonts/publicsans-italic-webfont.woff2') format('woff2'),
+		url('/assets/static/fonts/publicsans-italic-webfont.woff') format('woff');
+	font-weight: 400;
+	font-style: italic;
 
 }
 
 @font-face {
-    font-family: 'Public Sans';
-    src: url('/assets/static/fonts/publicsans-italic-webfont.woff2') format('woff2'),
-         url('/assets/static/fonts/publicsans-italic-webfont.woff') format('woff');
-    font-weight: 400;
-    font-style: italic;
-
+	font-family: 'Public Sans';
+	src: url('/assets/static/fonts/publicsans-regular-webfont.woff2') format('woff2'),
+		url('/assets/static/fonts/publicsans-regular-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
 }
 
-@font-face {
-    font-family: 'Public Sans';
-    src: url('/assets/static/fonts/publicsans-regular-webfont.woff2') format('woff2'),
-         url('/assets/static/fonts/publicsans-regular-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
 
 html {
 	font-family: 'Public Sans', sans-serif;
@@ -38,6 +37,10 @@ html {
 body {
 	@apply text-gray-900 text-base;
 	font-weight: 400;
+
+	@screen dark-mode {
+		@apply text-white bg-black;
+	}
 }
 
 .box-shadow {
@@ -49,7 +52,7 @@ body {
 }
 
 .avatar-icon {
-	position: relative;	
+	position: relative;
 
 	&:after,
 	&:before {
@@ -69,6 +72,11 @@ body {
 
 	&:before {
 		@apply bg-gray-400;
+
+		@screen dark-mode {
+			@apply bg-gray-700;
+		}
+
 		width: 100%;
 	}
 
@@ -82,6 +90,7 @@ body {
 
 .navbar ul li a {
 	position: relative;
+	@apply no-underline mr-1 py-3 mx-2;
 
 	&:after,
 	&:before {
@@ -94,6 +103,11 @@ body {
 
 	&:after {
 		@apply bg-gray-200;
+
+		@screen dark-mode {
+			@apply bg-gray-600;
+		}
+
 		width: 0;
 		transition: all .3s cubic-bezier(.86, 0, .07, 1);
 	}
@@ -108,6 +122,10 @@ body {
 	&.active {
 
 		@apply text-gray-900;
+
+		@screen dark-mode {
+			@apply text-white;
+		}
 
 		&:after {
 			@apply bg-teal-400;
@@ -144,17 +162,67 @@ a:visited.cool-link {
 
 	&:before {
 		@apply bg-gray-300;
+
+		@screen dark-mode {
+			@apply bg-gray-700;
+		}
+
 		width: 100%;
 	}
 
 	&:after {
 		@apply bg-teal-300;
+
+		@screen dark-mode {
+			@apply bg-teal-600;
+		}
+
 		width: 0;
 	}
 
 	&:hover {
 		&:after {
 			width: 100%;
+		}
+	}
+}
+
+.icons {
+	@screen dark-mode {
+		svg {
+			fill: #fff;
+		}
+	}
+}
+
+.button {
+	@apply p-3 bg-gray-300 font-bold text-lg;
+
+	&:hover {
+		@apply bg-teal-600 text-white;
+	}
+
+	@screen dark-mode {
+		@apply bg-teal-600 text-white;
+
+		&:hover {
+			@apply bg-teal-700;
+		}
+	}
+}
+
+.text-input {
+	@apply appearance-none block w-full p-3 border-2;
+
+	&:focus {
+		@apply bg-gray-100;
+	}
+
+	@screen dark-mode {
+		@apply bg-gray-900 border-gray-700;
+
+		&:focus {
+			@apply bg-gray-800;
 		}
 	}
 }

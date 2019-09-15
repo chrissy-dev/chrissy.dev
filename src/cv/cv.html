@@ -4,20 +4,17 @@ description: Request a copy of my CV. Chris Collins is a designer and developer 
 layout: layouts/base
 ---
 
-<section class="container mx-auto my-4">
+<section class="container my-4">
   <h1 class="text-4xl md:text-6xl dm-serif-display leading-tight dm-serif-display mb-6">CV (Résumé)</h1>
-  <div class="dm-sans leading-normal">
+  <div class="dm-sans ">
     <p class="text-xl max-w-2xl">Please leave your email and I'll get in touch with my CV.</p>
 
     <form name="cv" method="POST" data-netlify="true" action="/thank-you" class="mt-10">
       <div class="hideBots"><label>Don’t fill this out if you're human: <input name="bot-field" /></label></div>
       <div class="mb-4 w-full max-w-xl">
         <label class="font-bold text-lg" for="email">Your email address</label>
-        <input type="email" class="appearance-none rounded-none block w-full p-3 border-2 focus:bg-gray-100 md:flex-1" name="email" required />
-        <label for="recruiter" class="block">
-            <input type="checkbox" id="recruiter" name="recruiter"> I'm a recruiter
-        </label>
-        <button type="submit" class="mt-2 py-3 px-6 bg-gray-300 font-bold text-lg hover:bg-teal-600 hover:text-white">Request CV</button>
+        <input type="email" class="text-input md:flex-1" name="email" required />
+        <button type="submit" class="mt-2 button">Request CV</button>
       </div>
     </form>
   </div>

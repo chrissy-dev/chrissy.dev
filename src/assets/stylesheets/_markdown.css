@@ -106,7 +106,9 @@ a:visited {
 	}
 
 	&:after {
-		@apply bg-teal-300;
+    @screen dark-mode {
+      @apply bg-teal-700;
+    }
     width: 0;
     height: 100%;
 	}

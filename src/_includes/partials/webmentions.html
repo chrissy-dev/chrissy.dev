@@ -4,7 +4,7 @@
 
 <aside class="dm-sans">
   {% if likes.length == 0 and mentions.length == 0 %}
-  <p class="text-sm">This website supports <a href="https://indieweb.org/Webmention">Webmentions</a>.</p>
+  <p class="text-sm mt-4">This website supports <a href="https://indieweb.org/Webmention">Webmentions</a>.</p>
   {% endif %}
 
   {% if likes.length > 0 %}
@@ -29,7 +29,7 @@
       <article class="flex py-4 border-b">
         <img class="w-10 h-10 flex-none rounded-full mr-4 lazy-image" src="/assets/images/fallback-avatar.png"
           data-src="{{ item.author.photo }}" alt="Image of {{ item.author.name }}" loading="lazy" />
-        <div class="leading-normal w-full">
+        <div class=" w-full">
           <header class="leading-none mb-2">
            
             <h3 class="text-base font-bold"><a href="{{ item.url }}" class="no-underline hover:text-gray-600">{{ item.author.name }}</a></h3>

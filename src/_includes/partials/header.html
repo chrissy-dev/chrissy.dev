@@ -1,14 +1,14 @@
 <header>
     <div class="container py-8 md:flex justify-between items-center">
-        <a href="/" class="w-12 h-12 md:w-16 md:h-16 inline-flex avatar-icon"><img src="/assets/images/avatar.jpg" alt=""></a>
+        <a href="/" class="w-12 h-12 md:w-16 md:h-16 inline-flex dark-mode:border dark-mode:border-gray-700 avatar-icon"><img src="/assets/images/avatar.jpg" alt=""></a>
 
         <nav class="text-sm md:text-base navbar mt-4 md:mt-0 -ml-2">
             <ul class="flex">
-                <li><a class="no-underline text-gray-600 mr-1 md:mr-4 py-3 mx-2 {% if page.url == '/' %} active {% endif %}" href="/">Home</a></li>
-                <li><a class="no-underline text-gray-600 mr-1 md:mr-4 py-3 mx-2 {% if page.url == '/about/' %} active {% endif %}" href="/about/">About</a></li>
-                <li><a class="no-underline text-gray-600 mr-1 md:mr-4 py-3 mx-2 {% if page.url contains '/photos/' %} active {% endif %}" href="/photos/">Photos</a></li>
-                <li><a class="no-underline text-gray-600 mr-1 md:mr-4 py-3 mx-2 {% if page.url contains '/notes/' %} active {% endif %}" href="/notes/">Notes</a></li>
-                <li><a class="no-underline text-gray-600 mr-1 md:mr-4 py-3 mx-2 {% if page.url contains '/contact/' %} active {% endif %}" href="/contact/">Contact</a></li>
+                <li><a class="no-underline mr-1 md:mr-4 py-3 mx-2 {% if page.url == '/' %} active {% endif %}" href="/">Home</a></li>
+                <li><a class="no-underline mr-1 md:mr-4 py-3 mx-2 {% if page.url == '/about/' %} active {% endif %}" href="/about/">About</a></li>
+                <li><a class="no-underline mr-1 md:mr-4 py-3 mx-2 {% if page.url contains '/photos/' %} active {% endif %}" href="/photos/">Photos</a></li>
+                <li><a class="no-underline mr-1 md:mr-4 py-3 mx-2 {% if page.url contains '/notes/' %} active {% endif %}" href="/notes/">Notes</a></li>
+                <li><a class="no-underline mr-1 md:mr-4 py-3 mx-2 {% if page.url contains '/contact/' %} active {% endif %}" href="/contact/">Contact</a></li>
             </ul>
         </nav>
     </div>

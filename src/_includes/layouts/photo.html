@@ -2,7 +2,7 @@
 layout: layouts/base
 ---
 
-<article class="container mx-auto leading-normal h-entry mb-8">
+<article class="container  h-entry mb-8">
     <header class="sm:text-center mb-4 pb-2 sm:mb-8 sm:py-8 mx-auto">
         <a href="{{ page.url }}" class="no-underline u-url"><h1 class="text-3xl sm:text-3xl md:text-5xl dm-serif-display mb-4 leading-tight p-name">{{ title }}</h1></a>
         <time class="text-gray-500 uppercase text-xs font-bold tracking-wider dt-published" datetime="{{ page.date | w3cDate }}">{{ page.date | date: "%d%q %B %Y" }}</time>
@@ -10,6 +10,6 @@ layout: layouts/base
 
     <figure class="-mx-8 md:mx-0">
         <img src="/assets/images/photos/{{ filename }}_fullhd{% if ext %}{{ ext }}{% else %}.jpg{% endif %}" alt="{{ title }}">
-        <figcaption class="mx-8 max-w-xl md:mx-auto text-sm md:text-center leading-normal mt-4">{{ caption }}</figcaption>
+        <figcaption class="mx-8 max-w-xl md:mx-auto text-sm md:text-center  mt-4">{{ caption }}</figcaption>
     </figure>
 </article>

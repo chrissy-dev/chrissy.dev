@@ -44,6 +44,10 @@
 
 hr {
   @apply border-0 h-1 bg-gray-200 my-10;
+
+  @screen dark-mode {
+    @apply bg-gray-700;
+  }  
 }
 
 .hideBots {

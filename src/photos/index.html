@@ -16,7 +16,7 @@ pagination:
         <ul class="my-8 md:-mx-4 lg:-mx-8 flex flex-wrap">
             {% for photo in photos %}
             <li class="md:p-4 lg:p-8 mb-8 md:mb-0 w-full md:w-1/2">
-                <a class="block no-underline bg-white border-b border-gray-200 hover:bg-gray-100" href="{{ photo.url }}">
+                <a class="block no-underline" href="{{ photo.url }}">
                     <img src="/assets/images/photos/{{ photo.data.filename }}_560{% if photo.data.ext %}{{ photo.data.ext }}{% else %}.jpg{% endif %}" class="hover:opacity-75 w-full" alt="{{ photo.data.title }}">
                 </a>
             </li>
