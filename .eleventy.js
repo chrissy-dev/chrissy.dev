@@ -11,6 +11,7 @@ module.exports = function (eleventyConfig) {
   // Folders to copy to build dir (See. 1.1)
   eleventyConfig.addPassthroughCopy("src/assets/images");
   eleventyConfig.addPassthroughCopy("src/assets/static");
+  eleventyConfig.addPassthroughCopy("src/admin");
 
   if (ENV === 'production') {
     // Minify HTML output
