@@ -14,3 +14,8 @@ fields:
 - type: text
   name: caption
   label: caption
+- name: photo
+  type: file
+  config:
+    maxSize: 250
+  label: Photo
