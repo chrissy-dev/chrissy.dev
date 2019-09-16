@@ -5,7 +5,7 @@
 <p align="center"><a href="https://www.chriscollins.me"><strong>chriscollins.me</strong></a></p>
 
 <p align="center"><em>Eleventy · Tailwind CSS · HTML · CSS · Netlify</em></p>
-<p align="center"><img src="https://api.netlify.com/api/v1/badges/be563c8f-e704-4135-87eb-ab90f9862134/deploy-status)](https://app.netlify.com/sites/chrisssy/deploys"></p>
+<p align="center"><img src="https://api.netlify.com/api/v1/badges/be563c8f-e704-4135-87eb-ab90f9862134/deploy-status"></p>
 
 
 ## What's used? 
