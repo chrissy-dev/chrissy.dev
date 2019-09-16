@@ -7,13 +7,12 @@ sections:
 - type: document
   path: src/bookmarks/index.html
   label: Bookmarks
-  match: "**/*"
 - type: directory
   path: src/_photos
   label: Photos
   create: all
   match: "**/*.md"
-  new_doc_ext: ".md"
+  new_doc_ext: md
 - type: directory
   path: src/_notes
   label: Notes
