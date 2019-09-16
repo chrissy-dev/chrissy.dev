@@ -1,0 +1,18 @@
+backend:
+  name: github
+  repo: chrisssycollins/chriscollins.me # Path to Github repository
+  branch: master # Branch to update
+publish_mode: editorial_workflow
+media_folder: "images" # Media files will be stored in the repo under images
+public_folder: "/images" # The src attribute for uploaded media will begin with /images
+
+collections:
+  - name: "notes" # Used in routes, e.g. /admin/collections/notes
+    label: "Notes" # Used in the UI
+    folder: "_notes" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    fields: # The fields for each document, usually in front matter
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Featured Image", name: "featured_image", widget: "image"}
+      - {label: "Body", name: "body", widget: "markdown"}
