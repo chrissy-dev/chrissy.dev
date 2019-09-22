@@ -1,0 +1,21 @@
+backend:
+  name: git-gateway
+  branch: master # Branch to update (optional; defaults to master)
+
+# Uncomment below to enable drafts
+# publish_mode: editorial_workflow
+
+media_folder: "assets/static" # Media files will be stored in the repo under assets/static
+
+collections:
+  # Our blog posts
+  - name: "notes" # Used in routes, e.g., /admin/collections/blog
+    label: "Note" # Used in the UI
+    folder: "_notes" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    fields: # The fields for each document, usually in front matter
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Tags", name: "tags", widget: "list", default: ["note"] }
+      - { label: "Body", name: "body", widget: "markdown" }
