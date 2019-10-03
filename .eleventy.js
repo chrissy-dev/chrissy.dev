@@ -2,7 +2,9 @@ require('dotenv').config();
 
 const htmlmin = require("html-minifier");
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
+const pluginRss = require("@11ty/eleventy-plugin-rss");
 const beautify = require('js-beautify').html;
+const { DateTime } = require("luxon");
 const webmentionsFilter = require('./src/_filters/webmentions-filter.js'); 
 const likesFilter = require('./src/_filters/likes-filter.js'); 
 const ENV = process.env.ELEVENTY_ENV;
@@ -45,11 +47,21 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addFilter('likesFilter', likesFilter); 
   eleventyConfig.addFilter('webmentionsFilter', webmentionsFilter); 
 
+  // https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-date-string
+  eleventyConfig.addFilter('htmlDateString', (dateObj) => {
+    return DateTime.fromJSDate(dateObj, {zone: 'utc'}).toFormat('yyyy-LL-dd');
+  });
+
+  eleventyConfig.addFilter("readableDate", dateObj => {
+    return DateTime.fromJSDate(dateObj, {zone: 'utc'}).toFormat("dd LLL yyyy");
+  });
+  
   eleventyConfig.addFilter("w3cDate", function(date) {
     return date.toISOString();
   });
 
   eleventyConfig.addPlugin(syntaxHighlight);
+  eleventyConfig.addPlugin(pluginRss);
 
   return {
     dir: {
@@ -57,8 +69,8 @@ module.exports = function (eleventyConfig) {
       output: "dist",
       includes: "_includes"
     },
-    templateFormats: ["html", "md", "liquid"],
-    htmlTemplateEngine: "liquid",
+    templateFormats: ["html", "md", "njk"],
+    htmlTemplateEngine: "njk",
 
     // 1.1 Enable elventy to pass dirs specified above
     passthroughFileCopy: true

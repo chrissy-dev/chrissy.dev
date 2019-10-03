@@ -1,6 +1,6 @@
-{% assign fullUrl = site.url | append: page.url %}
-{% assign likes = webmentions | likesFilter: fullUrl %}
-{% assign mentions = webmentions | webmentionsFilter: fullUrl %}
+{% set fullUrl = site.url + page.url %} 
+{% set likes = webmentions | likesFilter(fullUrl) %}
+{% set mentions = webmentions | webmentionsFilter(fullUrl) %}
 
 <aside class="dm-sans">
   {% if likes.length == 0 and mentions.length == 0 %}
@@ -33,8 +33,8 @@
           <header class="leading-none mb-2">
            
             <h3 class="text-base font-bold"><a href="{{ item.url }}" class="no-underline hover:text-gray-600">{{ item.author.name }}</a></h3>
-            <p><time datetime="{{ item['wm-received'] | w3DateFilter }}"
-                class="dt-published text-gray-500 font-light text-xs">{{ item['wm-received'] | date: "%d%q %B %Y" }}</time></p>
+            <p><time datetime="{{ item['wm-received'] | htmlDateString }}"
+                class="dt-published text-gray-500 font-light text-xs">{{ item['wm-received'] | readableDate }}</time></p>
 
           </header>
           {% if item.content.value %}

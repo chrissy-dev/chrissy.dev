@@ -1,7 +1,7 @@
 ---
 title: Privacy Policy - Chris Collins
 description: Chris Collins is a designer and developer from Scotland.
-layout: layouts/page
+layout: layouts/page.njk
 ---
 
 # Privacy Policy

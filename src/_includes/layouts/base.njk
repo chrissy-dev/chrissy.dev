@@ -4,11 +4,11 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="{% if description %}{{ description }}{% else %}{{ site.description }}{% endif %}" />
+    <meta name="description" content="{{ description or site.description }}" />
     <meta name="robots" content="index, follow">
     <meta name="theme-color" content="#ffffff">
 
-    <title>{% if title %}{{ title }}{% else %}{{ site.title }}{% endif %}</title>
+    <title>{{ title or site.title }}</title>
     <link rel="canonical" href="{{ site.url }}{{ page.url }}" />
     <link rel="shortcut icon" href="/assets/images/favicon.png">
     <link rel="author" href="{{ site.url }}">
@@ -23,21 +23,19 @@
 
     <!-- Open Graph meta -->
     <meta property="og:url" content="{{ site.url}}{{ page.url }}" />
-    <meta property="og:title" content="{% if title %}{{ title }}{% else %}{{ site.title }}{% endif %}" />
-    <meta property="og:description" content="{% if description %}{{ description }}{% else %}{{ site.description }}{% endif %}" />
+    <meta property="og:title" content="{{ title or site.title }}" />
+    <meta property="og:description" content="{{ description or site.description }}" />
     {% if site.social_meta.featured_image or featured_image %}
-    <meta property="og:image" content="{% if featured_image  %}{{ featured_image }}{% else %}{{ site.social_meta.featured_image }}{% endif %}" />
+    <meta property="og:image" content="{{ featured_image or site.social_meta.featured_image }}" />
     {% endif %}
-    <meta name="twitter:card" content="{% if description %}{{ description }}{% else %}{{ site.social_meta.description }}{% endif %}" />
+    <meta name="twitter:card" content="{{ description or site.social_meta.description }}" />
     {% if site.social_meta.twitter %}
     <meta name="twitter:site" content="{{ site.social_meta.twitter }}" />
     <meta name="twitter:creator" content="{{ site.social_meta.twitter }}" />
     {% endif %}
     
-    {% if site.ENV == 'production' %}
-      <!-- capture the CSS content as a Liquid variable -->
-      {% capture css %}{% include stylesheets/app.compiled.css %}{% endcapture %}
-      <!-- feed it through our cssmin filter to minify -->
+    {% if site.ENV === 'production' %}
+      {% set css %}{% include "stylesheets/app.compiled.css" %}{% endset %}
       <style> 
         {{ css | safe }}
       </style>
@@ -48,13 +46,13 @@
   </head>
   <body>
     <div class="min-h-screen flex flex-col">
-        {% include partials/header.html %}
+        {% include "partials/header.njk" %}
         <main id="main" class="flex-auto md:flex md:items-center fade-in-bottom">
-            {{ content }}
+            {{ content | safe }}
         </main>
-        {% include partials/footer.html %}
+        {% include "partials/footer.njk" %}
     </div>
-    {% capture scripts %}{% include scripts/app.js %}{% endcapture %}
+    {% set scripts %}{% include "scripts/app.js" %}{% endset %}
     <script>
         {{ scripts | safe }}
     </script>

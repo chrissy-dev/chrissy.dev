@@ -1,11 +1,11 @@
 ---
 title: Photos - Chris Collins
 description: Photos usually taken around the Scottish mountains.
-layout: layouts/base
+layout: layouts/base.njk
 pagination:
-    data: collections.photos
-    size: 20
-    alias: sorted
+ data: collections.photos
+ size: 20
+ alias: sorted
 ---
 
 <section class="container mx-auto my-4">
@@ -13,17 +13,16 @@ pagination:
     <div class="dm-sans leading-normal">
         <p class="text-xl max-w-xl">I hike, climb and take photos around Scotland in my spare time. You can give me a follow on <a href="https://www.instagram.com/scottishstoater/" target="_blank">Instagram</a> for more.</p>
 
-        {% assign photos = sorted | reverse %}
+        {% set photos = sorted | reverse %}
         <ul class="my-8 md:-mx-4 lg:-mx-8 flex flex-wrap">
             {% for photo in photos %}
             <li class="md:p-4 lg:p-8 mb-8 md:mb-0 w-full md:w-1/2">
                 <a class="block no-underline" href="{{ photo.url }}">
-                    <img src="/assets/images/photos/{{ photo.data.filename }}_560{% if photo.data.ext %}{{ photo.data.ext }}{% else %}.jpg{% endif %}" class="hover:opacity-75 w-full" alt="{{ photo.data.title }}">
+                    <img src="/assets/images/photos/{{ photo.data.filename }}_560.jpg" class="hover:opacity-75 w-full" alt="{{ photo.data.title }}">
                 </a>
             </li>
             {% endfor %}
         </ul>
-
 
         <article class="mt-8">
             <h3 class="text-gray-500 uppercase font-bold tracking-wider text-xs mb-2">Recent on Instagram</h3>
@@ -33,8 +32,8 @@ pagination:
                 <li class="w-1/4 sm:w-1/6 md:flex-1">
                     <a href="//instagram.com/p/{{ photo.node.shortcode }}" target="_blank" class="no-underline text-white">
                         <figure class="relative p-1">
-                            <img src="{{ photo.node.thumbnail_resources[0].src }}" data-src="{{photo.node.thumbnail_resources[4].src}}" class="block w-full hover:opacity-75 lazy-image" alt="{{ photo.node.accessibility_caption }}">
-                        </figure>
+                            <img src="{{ photo.node.thumbnail_resources[0].src }}" data-src="{{ photo.node.thumbnail_resources[4].src }}" class="block w-full hover:opacity-75 lazy-image" alt="{{ photo.node.accessibility_caption }}">
+                        </figure> 
                     </a>
                 </li>
                 {% endfor %}
@@ -42,7 +41,7 @@ pagination:
     
             <footer class="mt-2 flex text-center justify-between items-center text-sm">
                 <h4 class="hidden md:block"><a href="//instagram.com/scottishstoater">@scottishstoater</a></h4>
-                <a href="//instagram.com/scottishstoater" class="external_link" target="_blank">View {{ instagram.graphql.user.edge_owner_to_timeline_media.count | minus:12 }} more</a>
+                <a href="//instagram.com/scottishstoater" class="external_link" target="_blank">View all {{ instagram.graphql.user.edge_owner_to_timeline_media.count }}</a>
             </footer>
         </article>
     </div>

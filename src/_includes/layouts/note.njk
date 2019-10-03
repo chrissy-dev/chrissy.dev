@@ -1,11 +1,11 @@
 ---
-layout: layouts/base
+layout: layouts/base.njk
 ---
 
 <article class="container h-entry mb-8">
     <header class="sm:text-center mb-4 pb-2 sm:mb-8 sm:py-8 mx-auto">
         <a href="{{ page.url }}" class="no-underline u-url"><h1 class="text-3xl sm:text-3xl md:text-5xl dm-serif-display mb-4 leading-tight p-name">{{ title }}</h1></a>
-        <time class="text-gray-500 uppercase text-xs font-bold tracking-wider dt-published" datetime="{{ page.date | w3cDate }}">{{ page.date | date: "%d%q %B %Y" }}</time>
+        <time class="text-gray-500 uppercase text-xs font-bold tracking-wider dt-published" datetime="{{ page.date | htmlDateString }}">{{ page.date | readableDate }}</time>
     </header>
 
     {% if featured_image %}
@@ -13,10 +13,10 @@ layout: layouts/base
     {% endif %}
 
     <div class="max-w-xl mx-auto e-content md:text-lg  markdown">
-        {{ content }}
+        {{ content | safe }}
     </div>
 
      <div class="max-w-xl mx-auto e-content md:text-lg mt-8 border-t dark-mode:border-gray-700">
-        {% include partials/webmentions.html %}
+        {% include "partials/webmentions.njk" %}
     </div>
 </article>

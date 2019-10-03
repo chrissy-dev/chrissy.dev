@@ -1,0 +1,26 @@
+---
+layout: layouts/base.njk
+title: Notes - Chris Collins
+pagination:
+    data: collections.notes
+    size: 20
+    alias: sorted
+---
+
+<section class="container my-4">
+    <h1 class="text-4xl md:text-6xl dm-serif-display leading-tight dm-serif-display mb-6">Notes</h1>
+    <div class="dm-sans ">
+        <p class="text-xl max-w-xl">A random collection of personal notes and ramblings about anything and everything.</p>
+        
+        {% set notes = sorted | reverse %}
+
+        <ul class="my-8 -mx-4 md:-mx-8">
+        {% for note in notes %}
+            <li> <a class="block no-underline border-b border-gray-200 p-4 md:px-8 hover:bg-gray-100 dark-mode:border-gray-700 dark-mode:hover:bg-gray-900" href="{{ note.url }}">
+                    <h3 class=" mb-0 text-lg font-bold">{{ note.data.title }}</h3>
+                    <span class="text-gray-500 text-xs">{{ note.data.date | readableDate }}</span>
+                </a></li>
+        {% endfor %}
+        </ul>
+    </div>
+</section>
