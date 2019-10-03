@@ -4,10 +4,10 @@
   "description": "Personal website of Chris Collins, UX Designer & Engineer from Glasgow.",
   "scripts": {
     "post": "postcss src/assets/stylesheets/app.css -o src/assets/static/app.compiled.css -w --verbose",
-    "start": "concurrently \"node optimisePhotos.js\" \"ELEVENTY_ENV=development eleventy --serve --watch\" \"npm run post\"",
+    "start": "concurrently \"ELEVENTY_ENV=development eleventy --serve --watch\" \"npm run post\"",
     "purge": "purgecss --config ./purgecss.config.js --out src/_includes/stylesheets",
     "eleventy": "eleventy",
-    "build": "del dist && node ./optimisePhotos.js && eleventy && purgecss --config ./purgecss.config.js --out src/_includes/stylesheets && ELEVENTY_ENV=production eleventy"
+    "build": "del dist && eleventy && purgecss --config ./purgecss.config.js --out src/_includes/stylesheets && ELEVENTY_ENV=production eleventy"
   },
   "author": "Chris Collins",
   "license": "ISC",
