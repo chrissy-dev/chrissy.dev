@@ -53,7 +53,7 @@ module.exports = function (eleventyConfig) {
   });
 
   eleventyConfig.addFilter("readableDate", dateObj => {
-    return DateTime.fromJSDate(dateObj, {zone: 'utc'}).toFormat("dd LLL yyyy");
+    return DateTime.fromJSDate(new Date(dateObj), {zone: 'utc'}).toFormat("dd LLL yyyy");
   });
   
   eleventyConfig.addFilter("w3cDate", function(date) {

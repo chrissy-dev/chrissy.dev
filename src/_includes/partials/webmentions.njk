@@ -2,18 +2,18 @@
 {% set likes = webmentions | likesFilter(fullUrl) %}
 {% set mentions = webmentions | webmentionsFilter(fullUrl) %}
 
-<aside class="dm-sans">
+<aside class="public-sans">
   {% if likes.length == 0 and mentions.length == 0 %}
   <p class="text-sm mt-4">This website supports <a href="https://indieweb.org/Webmention">Webmentions</a>.</p>
   {% endif %}
 
   {% if likes.length > 0 %}
   <h2 class="text-xl font-bold my-8">Likes ({{ likes.length }})</h2>
-  <ol class="flex items-center">
+  <ol class="flex items-center ml-2">
     {% for like in likes %}
-    <li>
+    <li class="relative -ml-2">
       <a href="{{ like.author.url }}">
-        <img class="w-8 h-8 mr-1 flex-none rounded-full lazy-image" src="/assets/images/fallback-avatar.png"
+        <img class="w-8 h-8 flex-none rounded-full lazy-image border hover:opacity-75" src="/assets/images/fallback-avatar.png"
           data-src="{{ like.author.photo }}" alt="Image of {{ like.author.name }}" />
       </a>
     <li>

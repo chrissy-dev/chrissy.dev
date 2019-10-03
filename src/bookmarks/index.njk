@@ -49,7 +49,7 @@ bookmarks:
 ---
 <section class="container my-4">
     <h1 class="text-4xl md:text-6xl dm-serif-display leading-tight dm-serif-display mb-6">Bookmarks</h1>
-    <div class="dm-sans ">           
+    <div class="public-sans ">           
         <ul class="my-8 -mx-8 md:-mx-8">
         {% for bm in bookmarks %}
             <li><a class="block no-underline border-b border-gray-200 dark-mode:border-gray-700 px-8 py-3 md:px-8 hover:bg-gray-100 dark-mode:hover:bg-gray-900 lg:flex items-center justify-between" href="{{ bm.url }}" target="_blank"><h3 class="external_link">{{ bm.title }}</h3><p class="text-gray-500 text-xs md:text-sm mt-2 lg:mt-0">{{ bm.author }}</p></a></li>

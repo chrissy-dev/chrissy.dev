@@ -11823,8 +11823,8 @@ pre[class*="language-"].language-scss>code {
   text-shadow: 1px 1px 1px rgba(0, 0, 0, .4);
 }
 
-.dm-sans {
-  font-family: 'DM Sans', sans-serif;
+.public-sans {
+  font-family: 'Public Sans', sans-serif;
 }
 
 .dm-serif-display {
