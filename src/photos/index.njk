@@ -18,7 +18,7 @@ pagination:
             {% for photo in photos %}
             <li class="md:p-4 lg:p-8 mb-8 md:mb-0 w-full md:w-1/2">
                 <a class="block no-underline" href="{{ photo.url }}">
-                    <img src="/assets/images/photos/{{ photo.data.filename }}_560.jpg" class="hover:opacity-75 w-full" alt="{{ photo.data.title }}">
+                    <img src="/assets/images/{{ photo.data.filename }}_560.jpg" class="hover:opacity-75 w-full" alt="{{ photo.data.title }}">
                 </a>
             </li>
             {% endfor %}

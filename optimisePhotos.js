@@ -11,7 +11,6 @@ const glob = require('fast-glob');
 
 const optimise = async (images, outputDir) => {
   console.log(`Attempting to generate images...`);
-  console.log(`Images: [${images}]`);
 
   await Promise.all(
     images.map(async imgPath => {
@@ -41,5 +40,5 @@ const optimise = async (images, outputDir) => {
 };
 
 (async function () {
-  await glob([`src/assets/images/photos/**/*`]).then(files => optimise(files, `dist/assets/images/photos`));
+  await glob([`src/assets/images/photos/**/*`]).then(files => optimise(files, `src/assets/images`));
 })();
