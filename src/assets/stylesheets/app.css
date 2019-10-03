@@ -96,7 +96,7 @@ body {
 	&:before {
 		content: "";
 		position: absolute;
-		height: 0.20rem;
+		height: 0.10rem;
 		bottom: 0;
 		left: 0;
 	}
@@ -121,7 +121,7 @@ body {
 
 	&.active {
 
-		@apply text-gray-900;
+		@apply text-teal-600;
 
 		@screen dark-mode {
 			@apply text-white;

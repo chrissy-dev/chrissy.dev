@@ -12032,7 +12032,7 @@ body {
 	.navbar ul li a:before {
     content: "";
     position: absolute;
-    height: 0.20rem;
+    height: 0.10rem;
     bottom: 0;
     left: 0;
   }
@@ -12056,7 +12056,7 @@ body {
     }
 
 .navbar ul li a.active {
-    color: #1a202c;
+    color: #00A2A8;
   }
 
 @media (prefers-color-scheme: dark) {
