@@ -16,10 +16,12 @@ pagination:
 
         <ul class="my-8 -mx-4 md:-mx-8">
         {% for note in notes %}
-            <li> <a class="block no-underline border-b border-gray-200 p-4 md:px-8 hover:bg-gray-100 dark-mode:border-gray-700 dark-mode:hover:bg-gray-900" href="{{ note.url }}">
-                    <h3 class=" mb-0 text-lg font-bold">{{ note.data.title }}</h3>
+            <li>
+                <a class="block no-underline border-b border-gray-200 p-4 md:px-8 hover:bg-gray-100 dark-mode:border-gray-700 dark-mode:hover:bg-gray-900" href="{{ note.url }}">
+                    <h3 class=" mb-0 font-bold">{{ note.data.title }}</h3>
                     <span class="text-gray-500 text-xs">{{ note.data.date | readableDate }}</span>
-                </a></li>
+                </a>
+            </li>
         {% endfor %}
         </ul>
     </div>
