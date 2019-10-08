@@ -10,7 +10,7 @@ I respect the EU’s General Data Protection Regulations (GDPR) and this policy 
 
 ## What background data is collected?
 
-This website does not collect or store any personal data behind the scenes. It does not set any cookies and it does not use any third-party tracking scripts. No user analytics or other metrics are processed during your visit, and the server does not write any log files, which means your IP address is not stored anywhere. 
+This website does not collect or store any personally identifiable data behind the scenes. It does not set any cookies and it does not use any third-party hosted tracking scripts. This website uses a self-hosted [Fathom Analytics](https://usefathom.com/) instance to monitor usage of the website. Fathom Analytics truly anonymises visitors through complex hashes, making it possible to track unique visits in the most privacy-focused manner.
 
 ## How do I use the data you provide?
 
