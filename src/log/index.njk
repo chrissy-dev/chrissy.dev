@@ -1,0 +1,45 @@
+---
+layout: layouts/base.njk
+title: Log - Chris Collins
+pagination:
+    data: collections.hiking
+    size: 100
+    alias: sorted
+---
+
+<section class="container my-4">
+    <h1 class="text-4xl md:text-6xl dm-serif-display leading-tight dm-serif-display mb-6">Log</h1>
+    <div class="sans-serif ">
+        <p class="text-xl max-w-xl">Personal log of hikes, walks and climbs. {{ sorted.length }} logged.</p>
+        {% set hiking = sorted | reverse %}
+
+        <ul class="my-8">
+        {% for hike in hiking %}
+            <li class="md:flex md:items-center py-1 mb-4 md:mb-0">
+                <time class="font-mono text-gray-500 mr-4 tracking-wide">{{ hike.data.date | simpleDate }} </time>
+                <h3 class=" mb-0 text-lg mr-2">{{ hike.data.title }}</h3>
+                 {% if hike.data.dug %} 🐶{% endif %}
+                {% if hike.data.camping %} 🏕️ {% endif %}
+                {% if hike.data.munro %} 🏔️{% endif %}
+            </li>
+        {% endfor %}
+        </ul>
+    </div>
+
+    {% if pagination.pageLinks.length > 1 %}
+    <nav class="mt-6 pt-6 border-t border-grey-light flex justify-between text-sm">
+    <div> {% if pagination.previousPageLink %}
+        <a class="no-underline hover:underline" href="{{ pagination.previousPageHref | url }}">← Newer</a>
+        {% else %}
+        <span class="text-grey">← Newer</span>
+        {% endif %}</div>
+
+    <div> {% if pagination.nextPageLink %}
+        <a class="no-underline hover:underline" href="{{ pagination.nextPageHref | url }}">Older →</a>
+        {% else %}
+        <span class="text-grey">Older →</span>
+        {% endif %}</div>
+    </nav>
+    {% endif %}
+</section>
+
