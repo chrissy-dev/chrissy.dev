@@ -5,8 +5,8 @@ eleventyExcludeFromCollections: true
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 	<title>{{ site.title }}</title>
-	<subtitle>{{ site.feed.subtitle }}</subtitle>
-	<link href="{{ site.feed.url }}" rel="self"/>
+	<subtitle>{{ site.description }}</subtitle>
+	<link href="{{ site.url }}/feed/feed.xml" rel="self"/>
 	<link href="{{ site.url }}"/>
 	<updated>{{ collections.notes | rssLastUpdatedDate }}</updated>
 	<id>{{ site.feed.id }}</id>
@@ -14,7 +14,7 @@ eleventyExcludeFromCollections: true
 		<name>{{ site.author.name }}</name>
 		<email>{{ site.author.email }}</email>
 	</author>
-	{%- for note in collections.notes %}
+	{%- for note in collections.notes | reverse %}
 	{% set absolutePostUrl %}{{ note.url | url | absoluteUrl(site.url) }}{% endset %}
 	<entry>
 		<title>{{ note.data.title }}</title>
