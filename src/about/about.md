@@ -12,7 +12,7 @@ I began writing code at 9 years old; with the solid help of Geocities, Dreamweav
  
 I am a passionate supporter of the open web and care deeply about user experience, digital privacy and the inclusion of every single person on the web. 
 
-Away from a computer you’ll find me taking photos around Scotland or up a mountain. See my [hiking log](https://log.chriscollins.me) and [Instagram](https://www.instagram.com/scottishstoater) for photos. 
+Away from a computer you’ll find me taking photos around Scotland or up a mountain. See my [hiking log](/log) and [Instagram](https://www.instagram.com/scottishstoater) for photos. 
 
 --- 
 
@@ -20,7 +20,7 @@ Away from a computer you’ll find me taking photos around Scotland or up a moun
 
 **UX Engineer**  
 Arnold Clark Automobiles Ltd  
-*October 2016 – Present*    
+*October 2016 – November 2019*    
 Glasgow, United Kingdom  
 
 **Web Designer**  
