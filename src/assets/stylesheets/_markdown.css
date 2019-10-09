@@ -1,5 +1,4 @@
 .markdown {
-
   @apply leading-relaxed;
 
   p {
@@ -82,42 +81,4 @@
     line-height: 33px;
     @apply border p-2;
   }
-
-
-  a,
-a:visited {
-	position: relative;
-	@apply no-underline font-bold;
-
-	&:after,
-	&:before {
-		content: "";
-		position: absolute;
-		height: 2px;
-		bottom: 0;
-		left: 0;
-		z-index: -1;
-		transition: all .3s cubic-bezier(.86, 0, .07, 1);
-	}
-
-	&:before {
-		@apply bg-gray-500;
-		width: 100%;
-	}
-
-	&:after {
-    @screen dark-mode {
-      @apply bg-teal-700;
-    }
-    width: 0;
-    height: 100%;
-	}
-
-	&:hover {
-		&:after {
-			width: 100%;
-		}
-	}
-}
-
 }

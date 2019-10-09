@@ -4,34 +4,9 @@
 @import "_utils.css";
 @import "_animation.css";
 
-@font-face {
-	font-family: 'Public Sans';
-	src: url('/assets/static/fonts/publicsans-bold-webfont.woff2') format('woff2'),
-		url('/assets/static/fonts/publicsans-bold-webfont.woff') format('woff');
-	font-weight: 700;
-	font-style: normal;
-}
-
-@font-face {
-	font-family: 'Public Sans';
-	src: url('/assets/static/fonts/publicsans-italic-webfont.woff2') format('woff2'),
-		url('/assets/static/fonts/publicsans-italic-webfont.woff') format('woff');
-	font-weight: 400;
-	font-style: italic;
-
-}
-
-@font-face {
-	font-family: 'Public Sans';
-	src: url('/assets/static/fonts/publicsans-regular-webfont.woff2') format('woff2'),
-		url('/assets/static/fonts/publicsans-regular-webfont.woff') format('woff');
-	font-weight: normal;
-	font-style: normal;
-}
-
-
 html {
-	font-family: 'Public Sans', sans-serif;
+	font-family: 'Inter', sans-serif;
+	font-weight: 400;
 }
 
 body {
@@ -41,6 +16,10 @@ body {
 	@screen dark-mode {
 		@apply text-white bg-black;
 	}
+}
+
+.font-mono {
+	font-family: 'Inconsolata', monospace;
 }
 
 .box-shadow {
@@ -140,50 +119,7 @@ a:visited {
 	@apply underline;
 
 	&:hover {
-		@apply no-underline;
-	}
-}
-
-a.cool-link,
-a:visited.cool-link {
-	position: relative;
-	@apply no-underline;
-
-	&:after,
-	&:before {
-		content: "";
-		position: absolute;
-		height: 0.6rem;
-		bottom: 0;
-		left: 0;
-		z-index: -1;
-		transition: all .3s cubic-bezier(.86, 0, .07, 1);
-	}
-
-	&:before {
-		@apply bg-gray-300;
-
-		@screen dark-mode {
-			@apply bg-gray-700;
-		}
-
-		width: 100%;
-	}
-
-	&:after {
-		@apply bg-teal-300;
-
-		@screen dark-mode {
-			@apply bg-teal-600;
-		}
-
-		width: 0;
-	}
-
-	&:hover {
-		&:after {
-			width: 100%;
-		}
+		@apply text-teal-600;
 	}
 }
 

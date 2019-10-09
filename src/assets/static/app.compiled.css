@@ -11510,48 +11510,6 @@ video {
     padding: 0.5rem;
   }
 
-.markdown a,
-.markdown a:visited {
-    position: relative;
-    text-decoration: none;
-    font-weight: 700;
-  }
-
-.markdown a:after,
-	.markdown a:before,
-	.markdown a:visited:after,
-	.markdown a:visited:before {
-      content: "";
-      position: absolute;
-      height: 2px;
-      bottom: 0;
-      left: 0;
-      z-index: -1;
-      -webkit-transition: all .3s cubic-bezier(.86, 0, .07, 1);
-      transition: all .3s cubic-bezier(.86, 0, .07, 1);
-    }
-
-.markdown a:before, .markdown a:visited:before {
-      background-color: #a0aec0;
-      width: 100%;
-    }
-
-.markdown a:after, .markdown a:visited:after {
-      width: 0;
-      height: 100%;
-    }
-
-@media (prefers-color-scheme: dark) {
-
-.markdown a:after, .markdown a:visited:after {
-        background-color: #006C70;
-    }
-      }
-
-.markdown a:hover:after, .markdown a:visited:hover:after {
-        width: 100%;
-      }
-
 code[class*="language-"],
 pre[class*="language-"] {
   font-size: 0.875rem;
@@ -11823,8 +11781,15 @@ pre[class*="language-"].language-scss>code {
   text-shadow: 1px 1px 1px rgba(0, 0, 0, .4);
 }
 
-.public-sans {
-  font-family: 'Public Sans', sans-serif;
+.sans-serif {
+  font-family: 'Inter', sans-serif;
+  -webkit-font-feature-settings: "kern","kern";
+          font-feature-settings: "kern","kern";
+  -webkit-font-kerning: normal;
+          font-kerning: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
 }
 
 .dm-serif-display {
@@ -11921,41 +11886,9 @@ hr {
   }
 }
 
-@font-face {
-  font-family: 'Public Sans';
-
-  src: url('/assets/static/fonts/publicsans-bold-webfont.woff2') format('woff2'),
-		url('/assets/static/fonts/publicsans-bold-webfont.woff') format('woff');
-
-  font-weight: 700;
-
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Public Sans';
-
-  src: url('/assets/static/fonts/publicsans-italic-webfont.woff2') format('woff2'),
-		url('/assets/static/fonts/publicsans-italic-webfont.woff') format('woff');
-
-  font-weight: 400;
-
-  font-style: italic;
-}
-
-@font-face {
-  font-family: 'Public Sans';
-
-  src: url('/assets/static/fonts/publicsans-regular-webfont.woff2') format('woff2'),
-		url('/assets/static/fonts/publicsans-regular-webfont.woff') format('woff');
-
-  font-weight: normal;
-
-  font-style: normal;
-}
-
 html {
-  font-family: 'Public Sans', sans-serif;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
 }
 
 body {
@@ -11972,6 +11905,10 @@ body {
     background-color: #000
 }
   }
+
+.font-mono {
+  font-family: 'Inconsolata', monospace;
+}
 
 .box-shadow {
   box-shadow: 0.2rem 0.2rem #000;
@@ -12077,56 +12014,8 @@ a:visited {
 }
 
 a:hover, a:visited:hover {
-    text-decoration: none;
+    color: #00A2A8;
   }
-
-a.cool-link,
-a:visited.cool-link {
-  position: relative;
-  text-decoration: none;
-}
-
-a.cool-link:after,
-	a.cool-link:before,
-	a:visited.cool-link:after,
-	a:visited.cool-link:before {
-    content: "";
-    position: absolute;
-    height: 0.6rem;
-    bottom: 0;
-    left: 0;
-    z-index: -1;
-    -webkit-transition: all .3s cubic-bezier(.86, 0, .07, 1);
-    transition: all .3s cubic-bezier(.86, 0, .07, 1);
-  }
-
-a.cool-link:before, a:visited.cool-link:before {
-    background-color: #e2e8f0;
-    width: 100%;
-  }
-
-@media (prefers-color-scheme: dark) {
-
-a.cool-link:before, a:visited.cool-link:before {
-      background-color: #4a5568;
-  }
-    }
-
-a.cool-link:after, a:visited.cool-link:after {
-    background-color: #99E1E4;
-    width: 0;
-  }
-
-@media (prefers-color-scheme: dark) {
-
-a.cool-link:after, a:visited.cool-link:after {
-      background-color: #00A2A8;
-  }
-    }
-
-a.cool-link:hover:after, a:visited.cool-link:hover:after {
-      width: 100%;
-    }
 
 @media (prefers-color-scheme: dark) {
     .icons svg {
