@@ -5,7 +5,7 @@ featured_image: /assets/images/11ty.jpg
 ---
 
 <p class="px-8 py-4 bg-yellow-100 border-t border-b md:border border-yellow-300 text-sm mb-6 -mx-8 text-black">
-    <strong>This post is now archived.</strong> LiquidJS provides a tag out the box to handle ordinal dates (<a href="https://twitter.com/eleven_ty/status/1149721782926135298">Thanks Zach for the heads up!</a>).  I'll keep this post available just incase someone finds it useful. 
+    <strong>This post is now archived.</strong> LiquidJS provides a tag out the box to handle ordinal dates (<a href="https://twitter.com/eleven_ty/status/1149721782926135298">Thanks Zach for the heads up!</a>).  I'll keep this post available incase someone finds it useful. 
 </p>
 
 

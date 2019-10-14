@@ -6,7 +6,7 @@ featured_image: /assets/images/unsplash.jpg
 
 > This post has been lifted from my medium article and updated slightly, I have decided to stop posting on Medium.
 
-It’s scary to think just how much Unsplash and sites like it have influenced the stock photography industry. You don’t have to go far to find an extensive collection of completely free stock photos.
+It’s scary to think how much Unsplash and sites like it have influenced the stock photography industry. You don’t have to go far to find an extensive collection of completely free stock photos.
 
 [Unsplash](http://unsplash.com/scottishstoater) is great and is the go to place for many people but here is a list of other offerings in the once humble free stock photos industry.
 
