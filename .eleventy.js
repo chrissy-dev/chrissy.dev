@@ -3,6 +3,7 @@ require('dotenv').config();
 const htmlmin = require("html-minifier");
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
+const inclusiveLangPlugin = require("@11ty/eleventy-plugin-inclusive-language");
 const { DateTime } = require("luxon");
 const webmentionsFilter = require('./src/_filters/webmentions-filter.js'); 
 const likesFilter = require('./src/_filters/likes-filter.js'); 
@@ -52,6 +53,7 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addPlugin(syntaxHighlight);
   eleventyConfig.addPlugin(pluginRss);
+  eleventyConfig.addPlugin(inclusiveLangPlugin);
 
   return {
     dir: {
