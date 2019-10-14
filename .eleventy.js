@@ -3,7 +3,6 @@ require('dotenv').config();
 const htmlmin = require("html-minifier");
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
-const beautify = require('js-beautify').html;
 const { DateTime } = require("luxon");
 const webmentionsFilter = require('./src/_filters/webmentions-filter.js'); 
 const likesFilter = require('./src/_filters/likes-filter.js'); 
@@ -30,19 +29,6 @@ module.exports = function (eleventyConfig) {
       return content;
     });
   } 
-  else {
-    // Pretty Output
-    eleventyConfig.addTransform("beautifyHTML", function (content, outputPath) {
-      if (outputPath.endsWith(".html")) {
-        let beautified = beautify(content, {
-          indent_size: 2,
-          space_in_empty_paren: true
-        });
-        return beautified;
-      }
-      return content;
-    });
-  }
 
   eleventyConfig.addFilter('likesFilter', likesFilter); 
   eleventyConfig.addFilter('webmentionsFilter', webmentionsFilter); 
