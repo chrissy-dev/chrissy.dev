@@ -44,7 +44,7 @@ module.exports = function (eleventyConfig) {
   });
 
   eleventyConfig.addFilter("simpleDate", dateObj => {
-    return DateTime.fromJSDate(new Date(dateObj), {zone: 'utc'}).toFormat("dd/LL/yy");
+    return DateTime.fromJSDate(new Date(dateObj), {zone: 'utc'}).toFormat("dd.LL.yy");
   });
   
   eleventyConfig.addFilter("w3cDate", function(date) {

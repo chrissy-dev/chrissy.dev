@@ -16,9 +16,12 @@ pagination:
         {% set photos = sorted | reverse %}
         <ul class="my-8 md:-mx-4 lg:-mx-8 flex flex-wrap">
             {% for photo in photos %}
-            <li class="md:p-4 lg:p-8 mb-8 md:mb-0 w-full md:w-1/2">
+            <li class="md:p-4 lg:p-8 mb-8 md:mb-0 w-full md:w-1/3">
                 <a class="block no-underline" href="{{ photo.url }}">
-                    <img src="/assets/images/{{ photo.data.filename }}_560.jpg" class="hover:opacity-75 w-full" alt="{{ photo.data.title }}">
+                    <figure class="relative">
+                        <img src="/assets/images/photos/optimised/{{ photo.data.filename }}_560.jpg" class="hover:opacity-75 w-full" alt="{{ photo.data.title }}">
+                        <figcaption class="font-mono absolute bottom-0 right-0 bg-black p-2 text-white tracking-widest text-xs font-bold">{{ photo.date | simpleDate }}</figcaption>
+                    </figure>
                 </a>
             </li>
             {% endfor %}
