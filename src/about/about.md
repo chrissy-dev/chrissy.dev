@@ -1,6 +1,6 @@
 ---
-title: About - Chris Collins
-description: Chris Collins is a designer and developer from Scotland.
+title: About Chris Collins | UX Designer & Developer
+description: I'm Chris, a web designer and developer currently based in Glasgow, Scotland.
 layout: layouts/page.njk
 ---
 

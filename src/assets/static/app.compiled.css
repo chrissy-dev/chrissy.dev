@@ -11872,6 +11872,19 @@ body {
   box-shadow: 0.2rem 0.2rem #4DCBCF;
 }
 
+.home-photo {
+  -webkit-clip-path: polygon(0 15%, 100% 0, 100% 100%, 0% 100%);
+          clip-path: polygon(0 15%, 100% 0, 100% 100%, 0% 100%);
+}
+
+@media (min-width: 1024px) {
+
+.home-photo {
+    -webkit-clip-path: polygon(10% 0, 100% 0%, 100% 100%, 0% 100%);
+            clip-path: polygon(10% 0, 100% 0%, 100% 100%, 0% 100%)
+}
+  }
+
 .avatar-icon {
   position: relative;
 }
