@@ -1,7 +1,7 @@
 ---
 title: JIRA Desktop App Icon
 date: 2019-04-25
-featured_image: /assets/images/jira_icon.jpg
+featured_image: /assets/images/notes/jira_icon.jpg
 ---
 
 A clean desktop icon for JIRA for using with electron or pinning it to the dock. The icon sits perfectly next to the Chrome, Spotify etc.

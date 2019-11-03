@@ -1,7 +1,7 @@
 ---
 title: I've added support for Webmentions 🥳
 date: 2019-07-16
-featured_image: /assets/images/webmentions.jpg
+featured_image: /assets/images/notes/webmentions.jpg
 ---
 
 I stumbled across the [IndieWeb](https://indieweb.org/) movement late last year during a work/life burnout period and it's safe to say it was a godsend that has reignited my love for the web. I spend a lot of my time working on commercial enterprise applications and had lost touch with maintaining a personal space on the web. I'm back and I'm loving it!
