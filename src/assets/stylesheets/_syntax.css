@@ -68,7 +68,7 @@ pre[class*="language-"] {
 	@apply bg-gray-800 shadow-lg px-8 py-4 my-8 -mx-8;
 
 	@media (min-width: 768px) {
-		@apply rounded;
+		@apply rounded mx-0;
 	}
 }
 

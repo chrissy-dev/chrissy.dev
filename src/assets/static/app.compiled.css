@@ -11362,7 +11362,7 @@ video {
 }
 
 .markdown {
-  line-height: 1.625;
+  line-height: 1.5;
 }
 
 .markdown p {
@@ -11397,7 +11397,7 @@ video {
 
 .markdown blockquote {
     margin-top: 1.5rem;
-    margin-bottom: 1.5rem
+    margin-bottom: 1.5rem;
   }
 
 /* Headings */
@@ -11571,7 +11571,11 @@ pre[class*="language-"] {
 @media (min-width: 768px) {
 
 pre[class*="language-"] {
-    border-radius: 0.25rem
+    border-radius: 0.25rem;
+
+    margin-left: 0;
+
+    margin-right: 0
 }
   }
 

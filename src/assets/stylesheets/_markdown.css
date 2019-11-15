@@ -1,5 +1,5 @@
 .markdown {
-  @apply leading-base;
+  @apply leading-normal;
 
   p {
     @apply my-6;
@@ -26,7 +26,7 @@
   }
 
   blockquote {
-    @apply my-6
+    @apply my-6;
   }
 
   /* Headings */
