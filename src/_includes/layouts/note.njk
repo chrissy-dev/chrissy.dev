@@ -3,7 +3,7 @@ layout: layouts/base.njk
 ---
 
 <article class="container h-entry mb-8">
-    <header class="sm:text-center mb-4 pb-2 sm:mb-8 sm:py-8 mx-auto">
+    <header class="sm:text-center mb-4 pb-2 sm:mb-8 sm:py-8 max-w-2xl mx-auto">
         <h1 class="text-3xl sm:text-3xl md:text-5xl dm-serif-display mb-4 leading-tight p-name"><a href="{{ page.url }}" class="no-underline u-url">{{ title }}</a></h1>
         <time class="text-gray-500 uppercase text-xs font-bold tracking-wider dt-published" datetime="{{ page.date | htmlDateString }}">{{ page.date | readableDate }}</time>
     </header>

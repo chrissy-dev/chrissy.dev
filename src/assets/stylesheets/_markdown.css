@@ -1,5 +1,5 @@
 .markdown {
-  @apply leading-relaxed;
+  @apply leading-base;
 
   p {
     @apply my-6;
@@ -36,7 +36,7 @@
   h4,
   h5,
   h6 {
-    @apply mb-0 mt-6 leading-tight font-bold;
+    @apply my-10 leading-tight font-bold;
   }
 
   h1 {
@@ -49,23 +49,23 @@
   }
 
   h2 {
-    @apply text-2xl;
+    @apply text-3xl;
   }
 
   h3 {
-    @apply text-xl;
+    @apply text-2xl;
   }
 
   h4 {
-    @apply text-lg;
+    @apply text-xl;
   }
 
   h5 {
-    @apply text-base;
+    @apply text-lg;
   }
 
   h6 {
-    @apply text-sm;
+    @apply text-base;
   }
 
   /* Tables */

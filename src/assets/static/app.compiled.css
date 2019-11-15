@@ -11408,8 +11408,8 @@ video {
   .markdown h4,
   .markdown h5,
   .markdown h6 {
-    margin-bottom: 0;
-    margin-top: 1.5rem;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
     line-height: 1.25;
     font-weight: 700;
   }
@@ -11431,23 +11431,23 @@ video {
     }
 
 .markdown h2 {
-    font-size: 1.5rem;
+    font-size: 1.875rem;
   }
 
 .markdown h3 {
-    font-size: 1.25rem;
+    font-size: 1.5rem;
   }
 
 .markdown h4 {
-    font-size: 1.125rem;
+    font-size: 1.25rem;
   }
 
 .markdown h5 {
-    font-size: 1rem;
+    font-size: 1.125rem;
   }
 
 .markdown h6 {
-    font-size: 0.875rem;
+    font-size: 1rem;
   }
 
 /* Tables */
@@ -11521,8 +11521,7 @@ pre[class*="language-"] ::selection {
 }
 
 :not(pre)>code {
-  background-color: #f7fafc;
-  border-width: 1px;
+  background-color: #edf2f7;
   border-radius: 0.25rem;
   font-size: 0.875rem;
   vertical-align: middle;
