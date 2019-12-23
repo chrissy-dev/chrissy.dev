@@ -30,10 +30,14 @@
     {% if site.social_meta.featured_image or featured_image %}
     <meta property="og:image" content="{{ featured_image or site.social_meta.featured_image }}" />
     {% endif %}
-    <meta name="twitter:card" content="{{ description or site.social_meta.description }}" />
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{{ title or site.title }}" />
     {% if site.social_meta.twitter %}
     <meta name="twitter:site" content="{{ site.social_meta.twitter }}" />
     <meta name="twitter:creator" content="{{ site.social_meta.twitter }}" />
+    {% endif %}
+    {% if site.social_meta.featured_image or featured_image %}
+    <meta property="twitter:image" content="{{ featured_image or site.social_meta.featured_image }}" />
     {% endif %}
     
     {% if site.ENV === 'production' %}
