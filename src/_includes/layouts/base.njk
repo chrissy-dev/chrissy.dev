@@ -10,7 +10,6 @@
 
     <title>{{ title or site.title }}</title>
     <link rel="canonical" href="{{ site.url }}{{ page.url }}" />
-    <link rel="shortcut icon" href="/assets/images/favicon.png">
     <link rel="author" href="{{ site.url }}">
 
     <link href="https://github.com/chrisssycollins" rel="me">
@@ -39,6 +38,11 @@
     {% if site.social_meta.featured_image or featured_image %}
     <meta property="twitter:image" content="{{ site.url }}{{ featured_image or site.social_meta.featured_image }}" />
     {% endif %}
+
+    <!-- Apple Touch Icon (reuse 192px icon.png) & standard favicons -->
+    <link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon-16x16.png">
     
     {% if site.ENV === 'production' %}
       {% set css %}{% include "stylesheets/app.compiled.css" %}{% endset %}
@@ -64,20 +68,5 @@
         {{ scripts | safe }}
     </script>
     <script src="https://instant.page/2.0.0" type="module" defer integrity="sha384-D7B5eODAUd397+f4zNFAVlnDNDtO1ppV8rPnfygILQXhqu3cUndgHvlcJR2Bhig8"></script>
-    <!-- Fathom - simple website analytics - https://github.com/usefathom/fathom -->
-      <script>
-      (function(f, a, t, h, o, m){
-        a[h]=a[h]||function(){
-          (a[h].q=a[h].q||[]).push(arguments)
-        };
-        o=f.createElement('script'),
-        m=f.getElementsByTagName('script')[0];
-        o.async=1; o.src=t; o.id='fathom-script';
-        m.parentNode.insertBefore(o,m)
-      })(document, window, 'https://stats.chriscollins.me/tracker.js', 'fathom');
-      fathom('set', 'siteId', 'YVUMS');
-      fathom('trackPageview');
-      </script>
-    <!-- / Fathom -->
   </body>
 </html>

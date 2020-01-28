@@ -5,7 +5,7 @@
 @import "_animation.css";
 
 html {
-	font-family: 'Inter', sans-serif;
+	font-family: -apple-system, 'Inter', BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 	font-weight: 400;
 }
 
@@ -37,42 +37,7 @@ body {
 		clip-path: polygon(10% 0, 100% 0%, 100% 100%, 0% 100%);
 	}
 }
-.avatar-icon {
-	position: relative;
 
-	&:after,
-	&:before {
-		content: "";
-		z-index: -1;
-		position: absolute;
-		height: 0.8rem;
-		bottom: -0.4rem;
-		left: 0.4rem;
-	}
-
-	&:after {
-		@apply bg-teal-400;
-		width: 0;
-		transition: all .3s cubic-bezier(.86, 0, .07, 1);
-	}
-
-	&:before {
-		@apply bg-gray-400;
-
-		@screen dark-mode {
-			@apply bg-gray-700;
-		}
-
-		width: 100%;
-	}
-
-	&:hover {
-		&:after {
-			width: 100%;
-			;
-		}
-	}
-}
 
 .navbar ul li a {
 	position: relative;

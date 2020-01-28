@@ -11844,7 +11844,7 @@ hr {
 }
 
 html {
-  font-family: 'Inter', sans-serif;
+  font-family: -apple-system, 'Inter', BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   font-weight: 400;
 }
 
@@ -11887,42 +11887,6 @@ body {
             clip-path: polygon(10% 0, 100% 0%, 100% 100%, 0% 100%)
 }
   }
-
-.avatar-icon {
-  position: relative;
-}
-
-.avatar-icon:after,
-	.avatar-icon:before {
-    content: "";
-    z-index: -1;
-    position: absolute;
-    height: 0.8rem;
-    bottom: -0.4rem;
-    left: 0.4rem;
-  }
-
-.avatar-icon:after {
-    background-color: #4DCBCF;
-    width: 0;
-    transition: all .3s cubic-bezier(.86, 0, .07, 1);
-  }
-
-.avatar-icon:before {
-    background-color: #cbd5e0;
-    width: 100%;
-  }
-
-@media (prefers-color-scheme: dark) {
-
-.avatar-icon:before {
-      background-color: #4a5568;
-  }
-    }
-
-.avatar-icon:hover:after {
-      width: 100%;
-    }
 
 .navbar ul li a {
   position: relative;
