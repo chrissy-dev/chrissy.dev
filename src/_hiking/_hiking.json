@@ -1,5 +1,4 @@
 {
   "layout": "layouts/note.njk",
-  "tags": "hiking",
   "permalink": false
 }      

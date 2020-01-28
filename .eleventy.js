@@ -51,6 +51,12 @@ module.exports = function (eleventyConfig) {
     return date.toISOString();
   });
 
+  eleventyConfig.addCollection("log", function (collection) {
+      return collection.getFilteredByGlob("src/_hiking/*.md").sort(function (a, b) {          
+          return new Date(b.data.date) - new Date(a.data.date);
+      });
+  });
+
   eleventyConfig.addPlugin(syntaxHighlight);
   eleventyConfig.addPlugin(pluginRss);
   eleventyConfig.addPlugin(inclusiveLangPlugin);
