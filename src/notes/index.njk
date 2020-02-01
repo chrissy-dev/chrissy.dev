@@ -8,7 +8,7 @@ pagination:
 ---
 
 <section class="container my-4">
-    <h1 class="text-4xl md:text-6xl dm-serif-display leading-tight dm-serif-display mb-6">Notes</h1>
+    <h1 class="text-4xl md:text-6xl  leading-tight  mb-6 font-semibold">Notes</h1>
     <div class="sans-serif ">
         <p class="text-lg max-w-xl">A random collection of personal notes and ramblings about anything and everything.</p>
         
@@ -17,7 +17,7 @@ pagination:
         <ul class="my-8">
         {% for note in notes %}
             <li class="md:flex md:items-center py-1 mb-4 md:mb-0">
-                <time class="font-mono text-gray-500 mr-4 tracking-wide">{{ note.data.date | simpleDate }} </time>
+                <time class="text-gray-500 mr-4 tracking-wide">{{ note.data.date | simpleDate }} </time>
                 <a href="{{ note.url }}">
                     <h3 class=" mb-0 text-lg">{{ note.data.title }}</h3>
                 </a>

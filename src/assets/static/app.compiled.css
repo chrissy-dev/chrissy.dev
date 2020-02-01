@@ -11363,6 +11363,7 @@ video {
 
 .markdown {
   line-height: 1.5;
+  font-size: 1.125rem;
 }
 
 .markdown p {
@@ -11417,10 +11418,9 @@ video {
 .markdown h1 {
     font-size: 2.25rem;
     line-height: 1.25;
-    font-family: 'DM Serif Display', serif;
+    margin-top: 0;
     margin-bottom: 1.5rem;
-    font-weight: 500;
-    font-family: 'DM Serif Display', serif;
+    font-weight: 600;
   }
 
 @media (min-width: 768px) {
@@ -11748,17 +11748,13 @@ pre[class*="language-"].language-scss>code {
 }
 
 .sans-serif {
-  font-family: 'Inter', sans-serif;
+  font-family: 'IBM Plex Sans', -apple-system, 'Inter', BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   font-feature-settings: "kern","kern";
   -webkit-font-kerning: normal;
           font-kerning: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-weight: 400;
-}
-
-.dm-serif-display {
-  font-family: 'DM Serif Display', serif;
 }
 
 .hover\:scale-down:hover {
@@ -11844,14 +11840,12 @@ hr {
 }
 
 html {
-  font-family: -apple-system, 'Inter', BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-  font-weight: 400;
+  font-family: 'IBM Plex Sans', -apple-system, 'Inter', BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
 
 body {
   color: #1a202c;
-  font-size: 1rem;
-  font-weight: 400;
+  font-size: 1.125rem;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -11862,6 +11856,16 @@ body {
     background-color: #000
 }
   }
+
+.filter-grayscale {
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+}
+
+.hover\:filter-none {
+  -webkit-filter: none;
+          filter: none;
+}
 
 .font-mono {
   font-family: 'Inconsolata', monospace;
@@ -11876,17 +11880,12 @@ body {
 }
 
 .home-photo {
-  -webkit-clip-path: polygon(0 15%, 100% 0, 100% 100%, 0% 100%);
-          clip-path: polygon(0 15%, 100% 0, 100% 100%, 0% 100%);
-}
+  /* clip-path: polygon(0 15%, 100% 0, 100% 100%, 0% 100%);
 
-@media (min-width: 1024px) {
-
-.home-photo {
-    -webkit-clip-path: polygon(10% 0, 100% 0%, 100% 100%, 0% 100%);
-            clip-path: polygon(10% 0, 100% 0%, 100% 100%, 0% 100%)
+	@media (min-width: 1024px) {
+		clip-path: polygon(10% 0, 100% 0%, 100% 100%, 0% 100%);
+	} */
 }
-  }
 
 .navbar ul li a {
   position: relative;

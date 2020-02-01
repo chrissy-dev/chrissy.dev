@@ -5,17 +5,23 @@
 @import "_animation.css";
 
 html {
-	font-family: -apple-system, 'Inter', BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-	font-weight: 400;
+	font-family: 'IBM Plex Sans', -apple-system, 'Inter', BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
 
 body {
-	@apply text-gray-900 text-base;
-	font-weight: 400;
+	@apply text-gray-900 text-lg;
 
 	@screen dark-mode {
 		@apply text-white bg-black;
 	}
+}
+
+.filter-grayscale {
+	filter: grayscale(100%);
+}
+
+.hover\:filter-none {
+	filter: none;
 }
 
 .font-mono {
@@ -31,11 +37,11 @@ body {
 }
 
 .home-photo {
-	clip-path: polygon(0 15%, 100% 0, 100% 100%, 0% 100%);
+	/* clip-path: polygon(0 15%, 100% 0, 100% 100%, 0% 100%);
 
 	@media (min-width: 1024px) {
 		clip-path: polygon(10% 0, 100% 0%, 100% 100%, 0% 100%);
-	}
+	} */
 }
 
 

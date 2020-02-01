@@ -4,26 +4,45 @@ description: Chris Collins is a designer and developer from Scotland currently w
 layout: layouts/base.njk
 ---
 
-<div class="container my-8 lg:flex items-center justify-between">
-    <section class="dm-serif-display max-w-xl md:pr-8">
-        <h1 class="text-xl md:text-3xl text-gray-600 dark-mode:text-gray-400 mb-1 leading-tight">Hello, I’m Chris</h1>
-        <h2 class="text-4xl sm:text-6xl md:text-6xl dm-serif-display leading-none mb-4 md:mb-6">I design and build digital products.</span></h2>
-        <p class="text-lg md:text-xl sans-serif max-w-xl">I currently work as a Full Stack Developer at <a href="https://www.stv.tv/news" class="cool-link" target="_blank">STV News</a>. Previously, I was a UX Engineer at <a href="https://www.arnoldclark.com/">Arnold Clark</a>.</p>
+<div class="container md:my-8">
+    <div class="lg:flex items-center justify-between">
+        <section class=" max-w-xl">
+            <h1 class="text-xl md:text-3xl text-gray-600 dark-mode:text-gray-400 mb-1 leading-tight">Hello, I’m Chris</h1>
+            <h2 class="text-3xl md:text-4xl leading-tight mb-4 md:mb-6 font-bold">I design and build digital products, hike and take photos.</span></h2>
+            <p class="text-lg md:text-xl sans-serif max-w-xl">I'm currently a Full Stack Developer based in Glasgow, Scotland building things at <a href="https://news.stv.tv" class="cool-link" target="_blank">STV News</a>.</p>
+        </section>
+    </div>
 
-        <aside class="sans-serif mt-8">
-            <h3 class="text-gray-500 uppercase font-bold tracking-wider text-xs">Recent Projects</h3>   
-            <ul class="my-2 text-sm md:text-base text-gray-600 md:flex leading-normal">
-                <li class="mr-4 pr-4 md:border-r"><a class="text-gray-900 dark-mode:text-gray-200"  href="https://github.com/chrisssycollins/web-starter">Web Starter</a></li>
-                <li class="mr-4 pr-4 md:border-r"><a class="text-gray-900 dark-mode:text-gray-200"  href="https://www.stillgamequiz.com">Still Game Quiz</a></li>
-                <li><a class="text-gray-900 dark-mode:text-gray-200" href="https://github.com/chrisssycollins/simple-journal">Simple Journal</a></li>
-            </ul>
-        </aside>
-    </section>
+    <aside class="sans-serif mt-8">
+        <h3 class="text-gray-500 uppercase font-bold tracking-wider text-xs">Personal Projects</h3>
+        <ul class="my-4 text-sm md:text-base text-gray-600 md:flex leading-normal">
+            <li class="mr-4 mb-4">
+                <a class="no-underline text-gray-900 hover:text-gray-700 dark-mode:text-white" href="https://github.com/chrisssycollins/web-starter">
+                    <article class="max-w-xs flex items-start">
+                        <figure class="rounded-full shadow-lg w-10 flex items-center">
+                            <img class="rounded-full filter-grayscale hover:filter-none" src="/assets/images/jamstack-webstarter.svg">
+                        </figure>
+                        <div class="ml-2">
+                            <h3 class="font-semibold text-lg leading-none mb-1">Web Starter</h3>
+                            <p class="text-sm leading-tight">A modern static website workflow</p>
+                        </div>
+                    </article>
+                </a>
+            </li>
 
-    {# <section class="lg:flex dm-serif-display items-center lg:justify-end mt-8 lg:mt-0 lg:pl-8">
-        <figure class="block sm:hidden lg:block max-w-md w-full">
-            <img src="/assets/images/bidean.jpg" class="shadow-lg home-photo" alt="Photo of Chris climbing Bidean Nam Bian in Scotland">
-            <figcaption class="py-1 px-2 text-center font-bold text-center sans-serif text-xs">Close to the summit of Bidean Nam Bian</figcaption>
-        </figure>        
-    </section> #}
+            <li class="mr-4 mb-4">
+                <a class="no-underline text-gray-900 hover:text-gray-700 dark-mode:text-white dark-mode:hovertext-white" href="https://github.com/chrisssycollins/web-starter">
+                    <article class="max-w-xs flex items-start">
+                        <figure class="rounded-full shadow-lg w-10 flex items-center">
+                            <img class="rounded-full filter-grayscale hover:filter-none" src="/assets/images/stillgamequiz.svg">
+                        </figure>
+                        <div class="ml-2">
+                            <h3 class="font-semibold text-lg leading-none mb-1">Still Game Quiz</h3>
+                            <p class="text-sm leading-tight">Quiz about the TV show Still Game</p>
+                        </div>
+                    </article>
+                </a>
+            </li>
+        </ul>
+    </aside>
 </div>

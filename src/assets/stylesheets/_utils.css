@@ -7,16 +7,12 @@
 }
 
 .sans-serif {
-  font-family: 'Inter', sans-serif;
+	font-family: 'IBM Plex Sans', -apple-system, 'Inter', BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   font-feature-settings: "kern","kern";
   font-kerning: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-weight: 400;
-}
-
-.dm-serif-display {
-  font-family: 'DM Serif Display', serif;
 }
 
 .hover\:scale-down:hover {

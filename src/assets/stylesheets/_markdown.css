@@ -1,5 +1,5 @@
 .markdown {
-  @apply leading-normal;
+  @apply leading-normal text-lg;
 
   p {
     @apply my-6;
@@ -40,8 +40,7 @@
   }
 
   h1 {
-    @apply text-4xl leading-tight dm-serif-display mb-6 font-medium;
-    font-family: 'DM Serif Display', serif;
+    @apply text-4xl leading-tight mt-0 mb-6 font-semibold;
 
     @media (min-width: 768px) {
       @apply text-6xl;
