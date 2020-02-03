@@ -1,7 +1,7 @@
 ---
 title: Why I use plain text files for my notes
 date: 2018-12-29
-featured_image: /assets/images/notes/plain-text-notes.jpg
+featured_image: /static/plain-text-notes.jpg
 ---
 
 Recently I noticed a colleague using [TextEdit](https://support.apple.com/en-gb/guide/textedit/welcome/mac) on her Mac as her primary method of taking notes. I asked her why she doesn’t use something more modern like [Apple Notes](https://support.apple.com/en-gb/guide/notes/welcome/mac), [Evernote](https://evernote.com/) or any from the ever growing pool of specific note taking apps available. She replied a beautifully simplistic answer:

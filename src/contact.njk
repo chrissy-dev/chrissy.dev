@@ -1,0 +1,34 @@
+---
+title: Contact - Chris Collins
+description: Have a question, or want to work together on a project? Chris Collins is a designer and developer from Scotland.
+layout: base.njk
+---
+
+<section class="container">
+  <h1 class="text-4xl md:text-6xl  leading-tight  mb-6 font-semibold">Contact</h1>
+  <div class="font-sans ">
+    <p class="text-xl max-w-2xl">Have a question, or want to work together on a project? You can fill out the form below
+      or email me directly at <a href="mailto:hello@chriscollins.me">hello@chriscollins.me</a>.</p>
+
+    <form name="contact" method="POST" data-netlify="true" action="/thank-you" class="mt-10 max-w-lg">
+      <div class="hideBots"><label>Don’t fill this out if you're human: <input name="bot-field" /></label></div>
+      <div class="mb-4 w-full">
+        <label class="font-bold text-lg" for="name">Name</label>
+        <input type="text" class="text-input" name="name" required />
+      </div>
+
+      <div class="mb-4 w-full">
+        <label class="font-bold text-lg" for="email">Email</label>
+        <input type="email" class="text-input" name="email" required />
+      </div>
+
+      <div class="mb-4 w-full">
+        <label class="font-bold text-lg" for="message">Message</label>
+        <textarea class="text-input" name="message" required></textarea>
+      </div>
+
+      <button type="submit" class="button">Send
+        message</button>
+    </form>
+  </div>
+</section>

@@ -1,7 +1,7 @@
 ---
 title: Alternatives to Unsplash for free stock photos
 date: 2018-12-24
-featured_image: /assets/images/notes/unsplash.jpg
+featured_image: /static/unsplash.jpg
 ---
 
 > This post has been lifted from my medium article and updated slightly, I have decided to stop posting on Medium.

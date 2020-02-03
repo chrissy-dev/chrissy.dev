@@ -1,7 +1,7 @@
 ---
 title: Using ordinal indicators with dates in Eleventy 
 date: 2019-05-24
-featured_image: /assets/images/notes/11ty.jpg
+featured_image: /static/11ty.jpg
 ---
 
 <p class="px-8 py-4 bg-yellow-100 border-t border-b md:border border-yellow-300 text-sm mb-6 -mx-8 text-black">

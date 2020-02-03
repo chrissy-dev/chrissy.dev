@@ -23,7 +23,7 @@ npx npm-check-updates -u
 
 It should take a minute or so to run and it'll tell you what has been updated. **It's worthwhile noting what packages have been *major* bumped (those are highlighted in red) as these could cause a break**.
 
-![Terminal showing command being executed](/assets/images/notes/npm-check-updates.png)
+![Terminal showing command being executed](/static/npm-check-updates.png)
 
 The package `npm-check-updates` only modifies your `package.json ` file. You'll need to run `npm install` to update installed packages and `package-lock.json`.
 

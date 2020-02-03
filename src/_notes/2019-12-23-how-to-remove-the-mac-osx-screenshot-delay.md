@@ -1,7 +1,7 @@
 ---
 title: How To Remove the Mac OS X Screenshot Delay
 date: 2019-12-23
-featured_image: /assets/images/notes/screenshot-delay.png
+featured_image: /static/screenshot-delay.png
 ---
 
 Mac OS X version 10.14 came with a lot of improvements - one of which was the additional tooling to the screenshot app. 

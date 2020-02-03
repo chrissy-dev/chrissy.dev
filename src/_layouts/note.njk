@@ -1,0 +1,26 @@
+---
+layout: base.njk
+---
+
+<article class="container h-entry mb-8">
+    <div class="max-w-2xl">
+        <header class="mb-4 pb-2 sm:mb-8 sm:py-8">
+            <h1 class="text-3xl md:text-5xl  mb-4 leading-tight p-name font-semibold"><a href="{{ page.url }}" class="no-underline u-url">{{ title }}</a></h1>
+            <time class="text-gray-500 uppercase text-xs font-bold tracking-wider dt-published" datetime="{{ page.date | htmlDateString }}">{{ page.date | readableDate }}</time>
+        </header>
+
+        {% if featured_image %}
+        <figure>
+            <img src="{{featured_image}}" class="mb-10" alt="{{ title }}" />
+        </figure>
+        {% endif %}
+
+        <div class="e-content md:text-lg  markdown">
+            {{ content | safe }}
+        </div>
+
+        <div class="e-content md:text-lg mt-8 border-t dark-mode:border-gray-700">
+            {% include "webmentions.njk" %}
+        </div>
+    </div>
+</article>

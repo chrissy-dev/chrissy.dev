@@ -1,0 +1,53 @@
+{% set fullUrl = site.url + page.url %} 
+{% set likes = webmentions | likesFilter(fullUrl) %}
+{% set mentions = webmentions | webmentionsFilter(fullUrl) %}
+
+<aside class="sans-serif">
+  {% if likes.length == 0 and mentions.length == 0 %}
+  <p class="text-sm mt-4">This website supports <a href="https://indieweb.org/Webmention">Webmentions</a>.</p>
+  {% endif %}
+
+  {% if likes.length > 0 %}
+  <h2 class="text-xl font-bold my-8">Likes ({{ likes.length }})</h2>
+  <ol class="flex items-center ml-2">
+    {% for like in likes %}
+    <li class="relative -ml-2">
+      <a href="{{ like.author.url }}">
+        <img class="w-8 h-8 flex-none rounded-full lazy-image border hover:opacity-75" src="/static/fallback-avatar.png"
+          data-src="{{ like.author.photo }}" alt="Image of {{ like.author.name }}" />
+      </a>
+    <li>
+      {% endfor %}
+  </ol>
+  {% endif %}
+
+  {% if mentions.length > 1 %}
+  <h2 class="text-xl font-bold my-8">Replies ({{ mentions.length }})</h2>
+  <ol>
+    {% for item in mentions %}
+    <li>
+      <article class="flex py-4 border-b">
+        <img class="w-10 h-10 flex-none rounded-full mr-4 lazy-image" src="/static/fallback-avatar.png"
+          data-src="{{ item.author.photo }}" alt="Image of {{ item.author.name }}" loading="lazy" />
+        <div class=" w-full">
+          <header class="leading-none mb-2">
+           
+            <h3 class="text-base font-bold"><a href="{{ item.url }}" class="no-underline hover:text-gray-600">{{ item.author.name }}</a></h3>
+            <p><time datetime="{{ item['wm-received'] | htmlDateString }}"
+                class="dt-published text-gray-500 font-light text-xs">{{ item['wm-received'] | readableDate }}</time></p>
+
+          </header>
+          {% if item.content.value %}
+          <div class="text-base">
+            {{ item.content.value | safe }}
+          </div>
+          {% else %}
+          <p class="text-base">{{ item.content.text }}</p>
+          {% endif %}
+        </div>
+      </article>
+    </li>
+    {% endfor %}
+  </ol>
+  {% endif %}
+</aside>
