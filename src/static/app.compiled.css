@@ -11402,178 +11402,109 @@ video {
 }
 
 .markdown {
-  color: #1a202c;
   line-height: 1.5;
-  overflow-wrap: break-word;
-}
-
-.markdown > * + * {
-  margin-top: 0;
-  margin-bottom: 1rem;
-}
-
-.markdown li + li {
-  margin-top: 0.25rem;
-}
-
-.markdown li > p + p {
-  margin-top: 1.5rem;
-}
-
-.markdown strong {
-  font-weight: 600;
-}
-
-.markdown a {
-  color: #3182ce;
-  font-weight: 600;
-}
-
-.markdown strong a {
-  font-weight: 700;
-}
-
-.markdown h1 {
-  line-height: 1.25;
-  border-bottom-width: 1px;
-  font-size: 2.25rem;
-  font-weight: 600;
-  margin-bottom: 1rem;
-  margin-top: 1.5rem;
-  padding-bottom: 0.5rem;
-}
-
-.markdown h2 {
-  line-height: 1.25;
-  border-bottom-width: 1px;
-  font-size: 1.5rem;
-  font-weight: 600;
-  margin-bottom: 1rem;
-  margin-top: 1.5rem;
-  padding-bottom: 0.5rem;
-}
-
-.markdown h3 {
-  line-height: 1.375;
   font-size: 1.125rem;
-  font-weight: 600;
-  margin-bottom: 1rem;
-  margin-top: 1.5rem;
 }
 
-.markdown h4 {
-  line-height: 1;
-  font-size: 1rem;
-  font-weight: 600;
-  margin-bottom: 1rem;
-  margin-top: 1.5rem;
-}
+.markdown p {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
 
-.markdown h5 {
-  line-height: 1.25;
-  font-size: 0.875rem;
-  font-weight: 600;
-  margin-bottom: 1rem;
-  margin-top: 1.5rem;
-}
-
-.markdown h6 {
-  line-height: 1.25;
-  font-size: 0.875rem;
-  font-weight: 600;
-  color: #718096;
-  margin-bottom: 1rem;
-  margin-top: 1.5rem;
-}
-
-.markdown blockquote {
-  font-size: 1rem;
-  border-left-width: 4px;
-  border-color: #e2e8f0;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  color: #718096;
-}
-
-.markdown code {
-  font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-  font-size: 0.875rem;
-  display: inline;
-  background-color: #edf2f7;
-  border-radius: 0.25rem;
-  padding-left: 0.25rem;
-  padding-right: 0.25rem;
-  padding-top: 0.25rem;
-  padding-bottom: 0.25rem;
-}
-
-.markdown pre {
-  background-color: #f7fafc;
-  border-radius: 0.25rem;
-  padding: 1rem;
-}
-
-.markdown pre code {
-  display: block;
-  background-color: transparent;
-  padding: 0;
-  overflow: visible;
-  border-radius: 0;
-}
+.markdown ul,
+  .markdown ol {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    margin-left: 0.75rem;
+    list-style-position: inside;
+  }
 
 .markdown ul {
-  font-size: 1rem;
-  padding-left: 2rem;
-  list-style-type: disc;
-}
+    list-style-type: disc;
+  }
 
 .markdown ol {
-  font-size: 1rem;
-  padding-left: 2rem;
-  list-style-type: decimal;
-}
+    list-style-type: decimal;
+  }
 
-.markdown kbd {
-  font-size: 0.75rem;
-  display: inline-block;
-  border-radius: 0.25rem;
-  border-width: 1px;
-  padding-left: 0.25rem;
-  padding-right: 0.25rem;
-  padding-top: 0.25rem;
-  padding-bottom: 0.25rem;
-  vertical-align: middle;
-  font-weight: 400;
-  font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
-}
+.markdown ul ul,
+  .markdown ol ul,
+  .markdown ul ol,
+  .markdown ol ol {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0.75rem;
+  }
+
+.markdown blockquote {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+/* Headings */
+
+.markdown h1,
+  .markdown h2,
+  .markdown h3,
+  .markdown h4,
+  .markdown h5,
+  .markdown h6 {
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+    line-height: 1.25;
+    font-weight: 700;
+  }
+
+.markdown h1 {
+    font-size: 2.25rem;
+    line-height: 1.25;
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+  }
+
+@media (min-width: 768px) {
+
+.markdown h1 {
+      font-size: 4rem
+  }
+    }
+
+.markdown h2 {
+    font-size: 1.875rem;
+  }
+
+.markdown h3 {
+    font-size: 1.5rem;
+  }
+
+.markdown h4 {
+    font-size: 1.25rem;
+  }
+
+.markdown h5 {
+    font-size: 1.125rem;
+  }
+
+.markdown h6 {
+    font-size: 1rem;
+  }
+
+/* Tables */
 
 .markdown table {
-  font-size: 1rem;
-  border-color: #718096;
-}
+    margin-top: 1.5rem;
+    border-spacing: 0px;
+    border-collapse: collapse;
+  }
 
-.markdown th {
-  border-width: 1px;
-  padding-top: 0.25rem;
-  padding-bottom: 0.25rem;
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
-}
-
-.markdown td {
-  border-width: 1px;
-  padding-top: 0.25rem;
-  padding-bottom: 0.25rem;
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
-}
-
-/* Override pygments style background color. */
-
-.markdown .highlight pre {
-  background-color: #f7fafc !important;
-}
+.markdown table td,
+  .markdown table th {
+    padding: 0;
+    line-height: 33px;
+    border-width: 1px;
+    padding: 0.5rem;
+  }
 
 code[class*="language-"],
 pre[class*="language-"] {
