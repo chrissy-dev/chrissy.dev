@@ -13,11 +13,16 @@ pagination:
         <p class="text-lg max-w-xl">Personal log of hikes, walks and climbs. Total of {{ collections.log.length }} logged so far.</p>
 
 
-        <ul class="my-8">
+        <ul class="my-8 flex flex-wrap -mx-4">
         {% for hike in log %}
-            <li class="py-1 mb-2 md:mb-0">
-                <div class="text-xs text-gray-500 tracking-wider font-bold uppercase"><time>{{ hike.data.date | simpleDate }}</time> {% if hike.data.munro %} <span class="text-gray-800"> - </span>  Munro {% endif %}</div>
-                <h3 class=" mb-0 mr-2">{{ hike.data.title }}</h3>               
+            <li class="py-1 mb-4 w-full sm:w-1/2 md:w-1/3 p-4">
+                <article class="border rounded h-full p-2 flex flex-col">
+                 <div class="text-xs text-gray-500 tracking-wider font-bold uppercase flex justify-between">
+                    <time>{{ hike.data.date | simpleDate }}</time> 
+                    {% if hike.data.munro %} <span class="text-orange-400 leading-none">Munro</span> {% endif %}
+                </div>
+                <h3 class="truncate item-end mb-0 mr-2 text-base">{{ hike.data.title }}</h3>          
+                </article>     
             </li>
         {% endfor %}
         </ul>
@@ -25,8 +30,6 @@ pagination:
 
     {% if pagination.pageLinks.length > 1 %}
     <nav class="mt-6 pt-6 border-t border-grey-light flex justify-between text-sm">
-
-
     <div> {% if pagination.nextPageHref %}
         <a class="no-underline hover:underline" href="{{ pagination.nextPageHref | url }}">← Newer</a>
         {% endif %}</div>

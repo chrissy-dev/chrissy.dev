@@ -1,1 +1,100 @@
-!function(e){var t={};function n(r){if(t[r])return t[r].exports;var o=t[r]={i:r,l:!1,exports:{}};return e[r].call(o.exports,o,o.exports,n),o.l=!0,o.exports}n.m=e,n.c=t,n.d=function(e,t,r){n.o(e,t)||Object.defineProperty(e,t,{enumerable:!0,get:r})},n.r=function(e){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},n.t=function(e,t){if(1&t&&(e=n(e)),8&t)return e;if(4&t&&"object"==typeof e&&e&&e.__esModule)return e;var r=Object.create(null);if(n.r(r),Object.defineProperty(r,"default",{enumerable:!0,value:e}),2&t&&"string"!=typeof e)for(var o in e)n.d(r,o,function(t){return e[t]}.bind(null,o));return r},n.n=function(e){var t=e&&e.__esModule?function(){return e.default}:function(){return e};return n.d(t,"a",t),t},n.o=function(e,t){return Object.prototype.hasOwnProperty.call(e,t)},n.p="",n(n.s=0)}([function(e,t){!function(){"use strict";var e=document.querySelector('[data-id="nav-toggle"]'),t=document.querySelector('[data-id="nav-items"]'),n=!1;e.addEventListener("click",(function(r){n=!n,e.textContent=n?"Close":"Menu",t.classList.toggle("hidden")}),!1);const r=document.querySelectorAll("img.lazy-image"),o=e=>{const t=e.dataset.src;var n;(n=t,new Promise((e,t)=>{const r=new Image;r.src=n,r.onload=e,r.onerror=t})).then(()=>{e.src=t})},u=new IntersectionObserver((e,t)=>{e.forEach(e=>{e.intersectionRatio>0&&o(e.target)})},{root:null,rootMargin:"0px",threshold:.1});r.forEach(e=>{u.observe(e)})}()}]);
+/******/ (function(modules) { // webpackBootstrap
+/******/ 	// The module cache
+/******/ 	var installedModules = {};
+/******/
+/******/ 	// The require function
+/******/ 	function __webpack_require__(moduleId) {
+/******/
+/******/ 		// Check if module is in cache
+/******/ 		if(installedModules[moduleId]) {
+/******/ 			return installedModules[moduleId].exports;
+/******/ 		}
+/******/ 		// Create a new module (and put it into the cache)
+/******/ 		var module = installedModules[moduleId] = {
+/******/ 			i: moduleId,
+/******/ 			l: false,
+/******/ 			exports: {}
+/******/ 		};
+/******/
+/******/ 		// Execute the module function
+/******/ 		modules[moduleId].call(module.exports, module, module.exports, __webpack_require__);
+/******/
+/******/ 		// Flag the module as loaded
+/******/ 		module.l = true;
+/******/
+/******/ 		// Return the exports of the module
+/******/ 		return module.exports;
+/******/ 	}
+/******/
+/******/
+/******/ 	// expose the modules object (__webpack_modules__)
+/******/ 	__webpack_require__.m = modules;
+/******/
+/******/ 	// expose the module cache
+/******/ 	__webpack_require__.c = installedModules;
+/******/
+/******/ 	// define getter function for harmony exports
+/******/ 	__webpack_require__.d = function(exports, name, getter) {
+/******/ 		if(!__webpack_require__.o(exports, name)) {
+/******/ 			Object.defineProperty(exports, name, { enumerable: true, get: getter });
+/******/ 		}
+/******/ 	};
+/******/
+/******/ 	// define __esModule on exports
+/******/ 	__webpack_require__.r = function(exports) {
+/******/ 		if(typeof Symbol !== 'undefined' && Symbol.toStringTag) {
+/******/ 			Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
+/******/ 		}
+/******/ 		Object.defineProperty(exports, '__esModule', { value: true });
+/******/ 	};
+/******/
+/******/ 	// create a fake namespace object
+/******/ 	// mode & 1: value is a module id, require it
+/******/ 	// mode & 2: merge all properties of value into the ns
+/******/ 	// mode & 4: return value when already ns object
+/******/ 	// mode & 8|1: behave like require
+/******/ 	__webpack_require__.t = function(value, mode) {
+/******/ 		if(mode & 1) value = __webpack_require__(value);
+/******/ 		if(mode & 8) return value;
+/******/ 		if((mode & 4) && typeof value === 'object' && value && value.__esModule) return value;
+/******/ 		var ns = Object.create(null);
+/******/ 		__webpack_require__.r(ns);
+/******/ 		Object.defineProperty(ns, 'default', { enumerable: true, value: value });
+/******/ 		if(mode & 2 && typeof value != 'string') for(var key in value) __webpack_require__.d(ns, key, function(key) { return value[key]; }.bind(null, key));
+/******/ 		return ns;
+/******/ 	};
+/******/
+/******/ 	// getDefaultExport function for compatibility with non-harmony modules
+/******/ 	__webpack_require__.n = function(module) {
+/******/ 		var getter = module && module.__esModule ?
+/******/ 			function getDefault() { return module['default']; } :
+/******/ 			function getModuleExports() { return module; };
+/******/ 		__webpack_require__.d(getter, 'a', getter);
+/******/ 		return getter;
+/******/ 	};
+/******/
+/******/ 	// Object.prototype.hasOwnProperty.call
+/******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
+/******/
+/******/ 	// __webpack_public_path__
+/******/ 	__webpack_require__.p = "";
+/******/
+/******/
+/******/ 	// Load entry module and return exports
+/******/ 	return __webpack_require__(__webpack_require__.s = "./src/_assets/scripts/app.js");
+/******/ })
+/************************************************************************/
+/******/ ({
+
+/***/ "./src/_assets/scripts/app.js":
+/*!************************************!*\
+  !*** ./src/_assets/scripts/app.js ***!
+  \************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("(function () {\n  'use strict';\n\n  var navigationToggle = document.querySelector('[data-id=\"nav-toggle\"]');\n  var navigationItems = document.querySelector('[data-id=\"nav-items\"]');\n  var isOpen = false;\n  navigationToggle.addEventListener('click', function (event) {\n    isOpen = !isOpen;\n    isOpen ? navigationToggle.textContent = \"Close\" : navigationToggle.textContent = \"Menu\";\n    navigationItems.classList.toggle('hidden');\n  }, false); // Stolen from: https://scotch.io/tutorials/lazy-loading-images-for-performance-using-intersection-observer\n\n  const images = document.querySelectorAll('img.lazy-image');\n  const options = {\n    // If the image gets within 50px in the Y axis, start the download.\n    root: null,\n    // Page as root\n    rootMargin: '0px',\n    threshold: 0.1\n  };\n\n  const fetchImage = url => {\n    return new Promise((resolve, reject) => {\n      const image = new Image();\n      image.src = url;\n      image.onload = resolve;\n      image.onerror = reject;\n    });\n  };\n\n  const loadImage = image => {\n    const src = image.dataset.src;\n    fetchImage(src).then(() => {\n      image.src = src;\n    });\n  };\n\n  const handleIntersection = (entries, observer) => {\n    entries.forEach(entry => {\n      if (entry.intersectionRatio > 0) {\n        loadImage(entry.target);\n      }\n    });\n  }; // The observer for the images on the page\n\n\n  const observer = new IntersectionObserver(handleIntersection, options);\n  images.forEach(img => {\n    observer.observe(img);\n  });\n})();\n\n//# sourceURL=webpack:///./src/_assets/scripts/app.js?");
+
+/***/ })
+
+/******/ });
