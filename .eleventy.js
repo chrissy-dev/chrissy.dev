@@ -14,9 +14,9 @@ module.exports = function (eleventyConfig) {
     eleventyConfig.addPassthroughCopy("src/static");
     
     if (process.env.ELEVENTY_ENV === 'production') {
-        // Minify HTML (including inlined CSS and JS) 
-        eleventyConfig.addTransform("compressHTML", function (content, outputPath) {
-            if (outputPath.endsWith(".html")) {
+        // Minify HTML output
+        eleventyConfig.addTransform("htmlmin", function (content, outputPath) {            
+            if (outputPath && outputPath.endsWith(".html")) {
                 let minified = htmlmin.minify(content, {
                     useShortDoctype: true,
                     removeComments: true,
@@ -28,7 +28,7 @@ module.exports = function (eleventyConfig) {
             }
             return content;
         });
-    }
+    } 
     
     eleventyConfig.addFilter('likesFilter', likesFilter); 
     eleventyConfig.addFilter('webmentionsFilter', webmentionsFilter); 

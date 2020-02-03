@@ -44,8 +44,8 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/static/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/static/favicon-16x16.png">
     
-    {% if site.ENV === 'production' %}
-      {% set css %}{% include "stylesheets/app.compiled.css" %}{% endset %}
+    {% if env === 'production' %}
+      {% set css %}{% include "app.compiled.css" %}{% endset %}
       <style> 
         {{ css | safe }}
       </style>
@@ -63,10 +63,7 @@
         </main>
         {% include "footer.njk" %}
     </div>
-    {% set scripts %}{% include "scripts/app.js" %}{% endset %}
-    <script>
-        {{ scripts | safe }}
-    </script>
+    <script src="/static/app.bundled.js" defer></script>
     <script src="https://instant.page/2.0.0" type="module" defer integrity="sha384-D7B5eODAUd397+f4zNFAVlnDNDtO1ppV8rPnfygILQXhqu3cUndgHvlcJR2Bhig8"></script>
   </body>
 </html>
