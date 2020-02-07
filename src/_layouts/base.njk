@@ -26,17 +26,25 @@
     <meta property="og:url" content="{{ site.url}}{{ page.url }}" />
     <meta property="og:title" content="{{ title or site.title }}" />
     <meta property="og:description" content="{{ description or site.description }}" />
-    {% if site.social_meta.featured_image or featured_image %}
-    <meta property="og:image" content="{{ site.url}}{{ featured_image or site.social_meta.featured_image }}" />
+    {%- if site.social_meta.featured_image or featured_image %}
+      {%- if imagesInSameLocation %}
+        <meta property="og:image" content="{{ site.url}}{{ page.url }}{{ featured_image }}" />
+      {% else %}
+        <meta property="og:image" content="{{ site.url}}{{ featured_image or site.social_meta.featured_image }}" />
+      {% endif %} 
     {% endif %}
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="{{ title or site.title }}" />
-    {% if site.social_meta.twitter %}
+    {%- if site.social_meta.twitter %}
     <meta name="twitter:site" content="{{ site.social_meta.twitter }}" />
     <meta name="twitter:creator" content="{{ site.social_meta.twitter }}" />
     {% endif %}
-    {% if site.social_meta.featured_image or featured_image %}
-    <meta property="twitter:image" content="{{ site.url }}{{ featured_image or site.social_meta.featured_image }}" />
+    {%- if site.social_meta.featured_image or featured_image %}
+      {%- if imagesInSameLocation %}
+        <meta property="og:image" content="{{ site.url}}{{ page.url }}{{ featured_image }}" />
+      {% else %}
+        <meta property="og:image" content="{{ site.url}}{{ featured_image or site.social_meta.featured_image }}" />
+      {% endif %} 
     {% endif %}
 
     <!-- Apple Touch Icon (reuse 192px icon.png) & standard favicons -->
@@ -44,7 +52,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/static/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/static/favicon-16x16.png">
     
-    {% if env === 'production' %}
+    {%- if env === 'production' %}
       {% set css %}{% include "app.compiled.css" %}{% endset %}
       <style> 
         {{ css | safe }}

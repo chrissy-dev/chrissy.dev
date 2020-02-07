@@ -12,17 +12,18 @@ pagination:
     <div class="sans-serif ">
         <p class="text-lg max-w-xl">Personal log of hikes, walks and climbs. Total of {{ collections.log.length }} logged so far.</p>
 
-
         <ul class="my-8 flex flex-wrap -mx-4">
         {% for hike in log %}
             <li class="py-1 mb-4 w-full sm:w-1/2 md:w-1/3 p-4">
-                <article class="border dark-mode:border-gray-800 rounded h-full p-2 flex flex-col">
-                 <div class="text-xs text-gray-500 tracking-wider font-bold uppercase flex justify-between">
+                {% if hike.url %}<a href="{{ hike.url | url }}" class="no-underline hover:text-black">{% endif %}
+                <article class="border dark-mode:border-gray-800 rounded h-full p-2 flex flex-col {% if hike.url == false %}opacity-50 cursor-not-allowed{% endif %}">
+                 <div class="text-xs text-gray-500 tracking-wider font-bold uppercase flex items-center justify-between">
                     <time>{{ hike.data.date | simpleDate }}</time> 
-                    {% if hike.data.munro %} <span class="text-orange-400 leading-none">Munro</span> {% endif %}
+                    {% if hike.url %} <span class="text-gray-400 opacity-50">{{ hike | readingTime }} read</span> {% endif %}
                 </div>
                 <h3 class="truncate item-end mb-0 mr-2 text-base">{{ hike.data.title }}</h3>          
                 </article>     
+                {% if hike.url %}</a>{% endif %}
             </li>
         {% endfor %}
         </ul>
