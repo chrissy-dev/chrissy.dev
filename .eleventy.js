@@ -82,7 +82,7 @@ module.exports = function (eleventyConfig) {
 
     eleventyConfig.addPlugin(syntaxHighlight);
     eleventyConfig.addPlugin(pluginRss);
-    eleventyConfig.addPlugin(inclusiveLangPlugin);
+    // eleventyConfig.addPlugin(inclusiveLangPlugin);
     eleventyConfig.addPlugin(readingTime);
     
     eleventyConfig.addCollection("log", function (collection) {
