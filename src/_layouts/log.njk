@@ -4,11 +4,13 @@ layout: base.njk
 
 <article class="container h-entry mb-8">
     <div class="max-w-xl">
-        <a href="/log" class="icons flex items-center text-xs -mx-2 p-2 mb-8"><svg class="w-4 mr-1" version="1.1"  viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M30.83 32.67l-9.17-9.17 9.17-9.17 -2.83-2.83 -12 12 12 12Z"></path><path fill="none" d="M0-.5h48v48h-48Z"></path></svg> Back to log</a>
+        <nav class="border-b mb-6 border-gray-100 dark-mode:border-gray-900">
+            <a href="/log" class="-mt-6 icons flex items-center text-sm -mx-3 p-2 mb-2"><svg class="w-6" version="1.1"  viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M30.83 32.67l-9.17-9.17 9.17-9.17 -2.83-2.83 -12 12 12 12Z"></path><path fill="none" d="M0-.5h48v48h-48Z"></path></svg> Back to log</a>
+        </nav>
 
         <header class="mb-4 sm:py-4">
-            <h1 class="text-xl md:text-3xl mb-8 leading-tight p-name font-semibold"><a href="{{ page.url }}" class="no-underline u-url">{{ title }}</a></h1>
-            <ul class="text-gray-500 uppercase text-xs font-bold tracking-wider border-t border-b border-gray-100 dark-mode:border-gray-800 py-8">
+            <h1 class="text-xl md:text-3xl leading-tight mb-4 p-name font-semibold"><a href="{{ page.url }}" class="no-underline u-url">{{ title }}</a></h1>
+            <ul class="text-gray-500 uppercase text-xs font-bold tracking-wider border-b border-gray-100 dark-mode:border-gray-800 pb-8">
               <li class="flex py-1 justify-between">Date: <time class="dt-published" datetime="{{ page.date | htmlDateString }}">{{ page.date | readableDate }}</time></li>
               <li class="flex py-1 justify-between">Time taken: <span>{{ time }}</span></li>
               <li class="flex py-1 justify-between">Ascent: <span>{{ ascent }}</span></li>

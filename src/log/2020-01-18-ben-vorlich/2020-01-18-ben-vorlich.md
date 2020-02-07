@@ -3,7 +3,7 @@ title: Ben Vorlich (Loch Lomond)
 date: 2020-01-18
 
 munros: Ben Vorlich
-time: 5hours
+time: 5 hours
 ascent: 3,100ft
 rating: 🥾🥾🥾
 featured_image: 01182020_121753.jpg
