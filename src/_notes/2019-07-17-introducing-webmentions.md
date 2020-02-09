@@ -1,5 +1,5 @@
 ---
-title: I have added support for Webmentions 🥳
+title:  I have added support for Webmentions 🥳
 date: 2019-07-16
 featured_image: /static/webmentions.jpg
 ---

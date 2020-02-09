@@ -1,5 +1,5 @@
 ---
-title: Using ordinal indicators with dates in Eleventy 
+title:  Using ordinal indicators with dates in Eleventy 
 date: 2019-05-24
 featured_image: /static/11ty.jpg
 ---

@@ -1,5 +1,5 @@
 ---
-title: How To Remove the Mac OS X Screenshot Delay
+title:  How To Remove the Mac OS X Screenshot Delay
 date: 2019-12-23
 featured_image: /static/screenshot-delay.png
 ---

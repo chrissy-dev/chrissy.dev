@@ -9,13 +9,13 @@ layout: base.njk
         </nav>
 
         <header class="mb-4 sm:py-4">
-            <h1 class="text-xl md:text-3xl leading-tight mb-4 p-name font-semibold"><a href="{{ page.url }}" class="no-underline u-url">{{ title }}</a></h1>
+            <h1 class="text-xl md:text-3xl leading-tight mb-4 p-name font-semibold"><a href="{{ page.url }}" class="no-underline u-url">{{ name }}</a></h1>
             <ul class="text-gray-500 uppercase text-xs font-bold tracking-wider border-b border-gray-100 dark-mode:border-gray-800 pb-8">
               <li class="flex py-1 justify-between">Date: <time class="dt-published" datetime="{{ page.date | htmlDateString }}">{{ page.date | readableDate }}</time></li>
-              <li class="flex py-1 justify-between">Time taken: <span>{{ time }}</span></li>
-              <li class="flex py-1 justify-between">Ascent: <span>{{ ascent }}</span></li>
-              <li class="flex py-1 justify-between">Munros: <span>{{ munros }}</span></li>
-              <li class="flex py-1 justify-between">Rating: <span>{{ rating }}</span></li>
+              <li class="flex py-1 justify-between">Time taken: <span class="ml-2 text-right">{{ time }}</span></li>
+              <li class="flex py-1 justify-between">Ascent: <span class="ml-2 text-right">{{ ascent }}</span></li>
+              <li class="flex py-1 justify-between">Munros: <span class="ml-2 text-right">{{ munros }}</span></li>
+              <li class="flex py-1 justify-between">Rating: <span class="ml-2 text-right">{{ rating }}</span></li>
             </ul>
         </header>
 

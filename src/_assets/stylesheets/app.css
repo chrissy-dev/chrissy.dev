@@ -16,6 +16,22 @@ body {
 	}
 }
 
+.fadeIn {
+  animation-duration: 0.7s;
+  animation-fill-mode: both;
+  animation-name: fadeIn;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
 .filter-grayscale {
 	filter: grayscale(100%);
 }

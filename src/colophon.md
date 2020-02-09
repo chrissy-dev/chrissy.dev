@@ -1,5 +1,5 @@
 ---
-title: Colophon | How this website is built | Chris Collins
+name: Colophon | How this website is built | Chris Collins
 description: Some quick facts about how this site is built and maintained.
 layout: page.njk
 ---

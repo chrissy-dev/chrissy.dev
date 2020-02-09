@@ -1,5 +1,5 @@
 ---
-title: Why I use plain text files for my notes
+title:  Why I use plain text files for my notes
 date: 2018-12-29
 featured_image: /static/plain-text-notes.jpg
 ---

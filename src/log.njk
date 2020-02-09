@@ -21,7 +21,7 @@ pagination:
                     <time>{{ hike.data.date | simpleDate }}</time> 
                     {% if hike.url %} <span class="text-gray-400 opacity-50">{{ hike | readingTime }} read</span> {% endif %}
                 </div>
-                <h3 class="truncate item-end mb-0 mr-2 text-base">{{ hike.data.title }}</h3>          
+                <h3 class="truncate item-end mb-0 mr-2 text-base">{{ hike.data.name }}</h3>          
                 </article>     
                 {% if hike.url %}</a>{% endif %}
             </li>

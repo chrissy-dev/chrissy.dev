@@ -1,5 +1,5 @@
 ---
-title: Alternatives to Unsplash for free stock photos
+title:  Alternatives to Unsplash for free stock photos
 date: 2018-12-24
 featured_image: /static/unsplash.jpg
 ---

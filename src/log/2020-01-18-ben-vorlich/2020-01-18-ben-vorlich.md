@@ -1,5 +1,5 @@
 ---
-title: Ben Vorlich (Loch Lomond)
+name: Ben Vorlich (Loch Lomond)
 date: 2020-01-18
 
 munros: Ben Vorlich

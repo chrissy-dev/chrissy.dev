@@ -11,45 +11,47 @@
     navigationItems.classList.toggle('hidden');
   }, false);
 
-  // Stolen from: https://scotch.io/tutorials/lazy-loading-images-for-performance-using-intersection-observer
+  var images = document.querySelectorAll('img.lazy');
 
-  const images = document.querySelectorAll('img.lazy-image');
-
-  const options = {
-    // If the image gets within 50px in the Y axis, start the download.
-    root: null, // Page as root
-    rootMargin: '0px',
-    threshold: 0.1
+  var options = {
+  // If the image gets within 50px in the Y axis, start the download.
+  root: null, // Page as root
+  rootMargin: '0px',
+  threshold: 0.1
   };
 
-  const fetchImage = (url) => {
-    return new Promise((resolve, reject) => {
-      const image = new Image();
+  var fetchImage = function (url) {
+  return new Promise(function(resolve, reject) {
+      var image = new Image();
       image.src = url;
       image.onload = resolve;
       image.onerror = reject;
-    });
+  });
   }
-
-  const loadImage = (image) => {
-    const src = image.dataset.src;
-    fetchImage(src).then(() => {
+  var loadImage = function (image) {
+  var src = image.dataset.src;
+  fetchImage(src).then(function() {
+      image.classList.add('fadeIn');
       image.src = src;
-    })
+  })
   }
-
-  const handleIntersection = (entries, observer) => {
-    entries.forEach(entry => {
+  var handleIntersection = function (entries, observer) {
+  entries.forEach(function(entry) {
       if (entry.intersectionRatio > 0) {
-        loadImage(entry.target)
+      loadImage(entry.target)
       }
-    })
+  })
   }
-
   // The observer for the images on the page
-  const observer = new IntersectionObserver(handleIntersection, options);
+  var observer = new IntersectionObserver(handleIntersection, options);
 
-  images.forEach(img => {
-    observer.observe(img);
+  images.forEach(function (img) {
+      if ('IntersectionObserver' in window) {
+          // LazyLoad images using IntersectionObserver
+          observer.observe(img);
+      }  else {
+          // Load all images at once
+          loadImage(img);
+      }
   })
 })();

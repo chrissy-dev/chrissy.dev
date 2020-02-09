@@ -1,5 +1,5 @@
 ---
-title: How to quickly update Node dependencies to their latest version
+title:  How to quickly update Node dependencies to their latest version
 date: 2019-11-15
 ---
 

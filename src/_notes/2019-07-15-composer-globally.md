@@ -1,5 +1,5 @@
 ---
-title: Install Composer globally on Mac OS
+title:  Install Composer globally on Mac OS
 date: 2019-07-15
 featured_image: /static/composer.jpg
 ---

@@ -1,5 +1,5 @@
 ---
-title: JIRA Desktop App Icon
+title:  JIRA Desktop App Icon
 date: 2019-04-25
 featured_image: /static/jira_icon.png
 ---

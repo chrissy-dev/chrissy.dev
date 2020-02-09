@@ -1,5 +1,5 @@
 ---
-title: Accessible text gradients using CSS
+title:  Accessible text gradients using CSS
 date: 2019-02-19
 featured_image: /static/gradient-text.jpg
 ---
