@@ -531,6 +531,10 @@ img {
   }
 }
 
+.bg-gray-100 {
+  background-color: #f7fafc;
+}
+
 .bg-gray-200 {
   background-color: #edf2f7;
 }
@@ -545,6 +549,10 @@ img {
 
 .hover\:bg-gray-300:hover {
   background-color: #e2e8f0;
+}
+
+.border-gray-100 {
+  border-color: #f7fafc;
 }
 
 .border-gray-200 {
@@ -573,6 +581,10 @@ img {
 
 .border-b {
   border-bottom-width: 1px;
+}
+
+.cursor-not-allowed {
+  cursor: not-allowed;
 }
 
 .block {
@@ -678,6 +690,11 @@ img {
   margin-bottom: 2rem;
 }
 
+.-mx-3 {
+  margin-left: -0.75rem;
+  margin-right: -0.75rem;
+}
+
 .-mx-4 {
   margin-left: -1rem;
   margin-right: -1rem;
@@ -706,6 +723,10 @@ img {
 
 .mr-2 {
   margin-right: 0.5rem;
+}
+
+.mb-2 {
+  margin-bottom: 0.5rem;
 }
 
 .ml-2 {
@@ -760,6 +781,10 @@ img {
   margin-left: -0.5rem;
 }
 
+.-mt-6 {
+  margin-top: -1.5rem;
+}
+
 .max-w-xs {
   max-width: 20rem;
 }
@@ -778,6 +803,10 @@ img {
 
 .min-h-screen {
   min-height: 100vh;
+}
+
+.opacity-50 {
+  opacity: 0.5;
 }
 
 .hover\:opacity-50:hover {
@@ -811,6 +840,11 @@ img {
   padding-bottom: 0.5rem;
 }
 
+.px-2 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
 .py-3 {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
@@ -839,16 +873,44 @@ img {
   padding-top: 0.75rem;
 }
 
+.pb-8 {
+  padding-bottom: 2rem;
+}
+
 .static {
   position: static;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.relative {
+  position: relative;
+}
+
+.right-0 {
+  right: 0;
+}
+
+.bottom-0 {
+  bottom: 0;
 }
 
 .shadow-lg {
   box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
 }
 
+.text-right {
+  text-align: right;
+}
+
 .text-black {
   color: #000;
+}
+
+.text-gray-400 {
+  color: #cbd5e0;
 }
 
 .text-gray-500 {
@@ -861,10 +923,6 @@ img {
 
 .text-gray-900 {
   color: #1a202c;
-}
-
-.text-orange-400 {
-  color: #f6ad55;
 }
 
 .hover\:text-black:hover {
@@ -919,6 +977,10 @@ img {
   letter-spacing: 0.05em;
 }
 
+.tracking-widest {
+  letter-spacing: 0.1em;
+}
+
 .visible {
   visibility: visible;
 }
@@ -931,6 +993,10 @@ img {
 
 .w-4 {
   width: 1rem;
+}
+
+.w-6 {
+  width: 1.5rem;
 }
 
 .w-10 {
@@ -1129,6 +1195,10 @@ pre[class*="language-"].language-css>code {
   color: #fd9170;
 }
 
+[class*="language-"] .namespace {
+  opacity: 0.7;
+}
+
 .token.attr-name {
   color: #ffcb6b;
 }
@@ -1194,6 +1264,10 @@ pre[class*="language-"].language-css>code {
   color: #ff6666;
 }
 
+.token.url {
+  color: #ff6666;
+}
+
 .token.variable {
   color: #ff6666;
 }
@@ -1202,8 +1276,12 @@ pre[class*="language-"].language-css>code {
   max-width: 72rem;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 2rem;
-  padding-right: 2rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.text-shadow {
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, .4);
 }
 
 .sans-serif {
@@ -1298,6 +1376,25 @@ body {
     background-color: #000
 }
   }
+
+.fadeIn {
+  -webkit-animation-duration: 0.7s;
+          animation-duration: 0.7s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-name: fadeIn;
+          animation-name: fadeIn;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
 
 .filter-grayscale {
   -webkit-filter: grayscale(100%);
@@ -1454,6 +1551,11 @@ a:hover, a:visited:hover {
     margin-bottom: 2rem;
   }
 
+  .sm\:py-4 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
   .sm\:py-8 {
     padding-top: 2rem;
     padding-bottom: 2rem;
@@ -1499,6 +1601,11 @@ a:hover, a:visited:hover {
     height: 4rem;
   }
 
+  .md\:mx-0 {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
   .md\:my-8 {
     margin-top: 2rem;
     margin-bottom: 2rem;
@@ -1527,6 +1634,10 @@ a:hover, a:visited:hover {
 
   .md\:mb-6 {
     margin-bottom: 1.5rem;
+  }
+
+  .md\:p-4 {
+    padding: 1rem;
   }
 
   .md\:py-8 {
