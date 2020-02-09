@@ -69,7 +69,7 @@ The route to Stob Coire Sgreamhach is nothing more than a walk and can feel a li
 
 {% photo src="05152019_113950.jpg", caption="Looking down on the Lost Valley" %}
 
-The descent into the Lost Valley is fairly tricky. The main path was blocked by snow and there's a lot of loose scree and rocks, combined with the steep descent care that was needed not to dislodge rocks for folk below. 
+The descent into the Lost Valley is fairly tricky. The main path was blocked by snow and there's a lot of loose scree and rocks, combined with the steep descent care was needed not to dislodge rocks for folk below. 
 
 {% photo src="05152019_130505.jpg", caption="The descent into the Lost Valley, it looks simpler than it is." %}
 
