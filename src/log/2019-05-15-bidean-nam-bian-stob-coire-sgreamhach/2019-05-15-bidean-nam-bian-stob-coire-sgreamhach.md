@@ -11,7 +11,7 @@ rating: 🥾🥾🥾🥾🥾
 featured_image: 05152019_101709.jpg
 ---
 
-After a failed winter attempt with [Grant Elliot](https://grantelliott.co) in March 2018, having turned back at Stob Coire nan Lochan, I had Bidean nam Bian on my radar since. 
+After a failed winter attempt with [Grant Elliott](https://grantelliott.co) in March 2018, having turned back at Stob Coire nan Lochan, I had Bidean nam Bian on my radar since. 
 
 I took a Wednesday off work and got super lucky with the weather. It was over 20°C at points during the day - which made it tough but you can't beat a shorts and t-shirt day on the hills.
 
