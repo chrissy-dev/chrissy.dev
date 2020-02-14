@@ -27,7 +27,7 @@
     {% for item in mentions %}
     <li>
       <article class="flex py-4 border-b">
-        <img class="w-10 h-10 flex-none rounded-full mr-4 lazy-image" src="/static/fallback-avatar.png"
+        <img class="w-10 h-10 flex-none rounded-full mr-4 lazy" src="/static/fallback-avatar.png"
           data-src="{{ item.author.photo }}" alt="Image of {{ item.author.name }}" loading="lazy" />
         <div class=" w-full">
           <header class="leading-none mb-2">
