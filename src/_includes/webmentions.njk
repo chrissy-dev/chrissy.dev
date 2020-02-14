@@ -13,7 +13,7 @@
     {% for like in likes %}
     <li class="relative -ml-2">
       <a href="{{ like.author.url }}">
-        <img class="w-8 h-8 flex-none rounded-full lazy border hover:opacity-75" src="/static/image-placeholder.png"
+        <img class="w-8 h-8 flex-none rounded-full lazy shadow-lg hover:opacity-75" src="/static/image-placeholder.png"
           data-src="{{ like.author.photo }}" alt="Image of {{ like.author.name }}" />
       </a>
     <li>
