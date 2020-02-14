@@ -70,7 +70,7 @@ module.exports = function (eleventyConfig) {
     eleventyConfig.addNunjucksShortcode("photo", function(img) {
         return `<figure class="-mx-6 md:mx-0 my-8">
                     <div class="relative">
-                        <img src="${img.src}">
+                        <img class="lazy" src="/static/image-placeholder.png" data-src="${img.src}">
                         <span style="text-shadow: 1px 1px 1px rgba(0,0,0,1); font-size: 0.5rem;" class="bottom-0 right-0 absolute p-2 uppercase tracking-widest opacity-50">© All Photos Copyright Chris Collins</span>
                     </div>
                     ${img.caption ? `<figcaption class="py-2 px-2 md:p-4 text-sm dark-mode:bg-gray-900 dark-mode:text-white bg-gray-100 text-black">${img.caption}</figcaption>` : ''}
