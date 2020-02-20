@@ -8,6 +8,8 @@ const readingTime = require('eleventy-plugin-reading-time');
 // Filters
 const webmentionsFilter = require('./src/_filters/webmentions-filter.js'); 
 const likesFilter = require('./src/_filters/likes-filter.js'); 
+var sizeOf = require('image-size');
+const ColorThief = require('colorthief');
 
 module.exports = function (eleventyConfig) {
     // Folders to copy to build dir (See. 1.1)
@@ -67,15 +69,20 @@ module.exports = function (eleventyConfig) {
         return filename
     });
 
-    eleventyConfig.addNunjucksShortcode("photo", function(img) {
-        return `<figure class="-mx-6 md:mx-0 my-8">
-                    <div class="relative">
-                        <img class="lazy" src="/static/image-placeholder.png" data-src="${img.src}">
-                        <span style="text-shadow: 1px 1px 1px rgba(0,0,0,1); font-size: 0.5rem;" class="bottom-0 right-0 absolute p-2 uppercase tracking-widest opacity-50">© All Photos Copyright Chris Collins</span>
-                    </div>
-                    ${img.caption ? `<figcaption class="py-2 px-2 md:p-4 text-sm dark-mode:bg-gray-900 dark-mode:text-white bg-gray-100 text-black">${img.caption}</figcaption>` : ''}
-                </figure>`;
-      });
+    eleventyConfig.addNunjucksAsyncShortcode("photo", function(img) {
+        let imgPath = `./src${img.context}${img.src}`;
+        let d = sizeOf(imgPath);
+      
+        return ColorThief.getColor(imgPath).then(color => { 
+            return `<figure class="-mx-6 md:mx-0 my-8">
+                <div class="relative" style="background-color: rgba(${color},1); padding-bottom: calc(${d.height}/${d.width} * 100%);">
+                    <img class="lazy w-full h-full absolute object-cover top-0 left-0" src="/static/image-placeholder.png" data-src="${img.src}">
+                    <span style="text-shadow: 1px 1px 1px rgba(0,0,0,1); font-size: 0.5rem;" class="bottom-0 right-0 absolute p-2 uppercase tracking-widest opacity-50">© All Photos Copyright Chris Collins</span>
+                </div>
+                ${img.caption ? `<figcaption class="py-2 px-2 md:p-4 text-sm dark-mode:bg-gray-900 dark-mode:text-white bg-gray-100 text-black">${img.caption}</figcaption>` : ''}
+            </figure>`;
+        })
+    });
 
     // Add YAML support for data files
     eleventyConfig.addDataExtension("yaml", contents => yaml.safeLoad(contents));
