@@ -15,10 +15,10 @@
     var images = document.querySelectorAll('img.lazy');
 
     var options = {
-        // If the image gets within 50px in the Y axis, start the download.
         root: null, // Page as root
-        rootMargin: '-50px',
-        threshold: 0.1
+        // rootMargin: (top, right bottom, left)
+        rootMargin: '10px 540px 320px 10px',
+        threshold: 0
     };
 
     var fetchImage = function (url) {
