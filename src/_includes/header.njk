@@ -9,6 +9,7 @@
                 {% set activePage = page.url | url %}
                 <li><a class="block no-underline mr-1 md:mr-4 py-3 px-1 mx-2 {% if activePage === '/' %} active {% endif %}" href="/">Home</a></li>
                 <li><a class="block no-underline mr-1 md:mr-4 py-3 px-1 mx-2 {% if activePage === '/about/' %} active {% endif %}" href="/about/">About</a></li>
+                <li><a class="block no-underline mr-1 md:mr-4 py-3 px-1 mx-2 {% if activePage === '/uses/' %} active {% endif %}" href="/uses/">Uses</a></li>
                 <li><a class="block no-underline mr-1 md:mr-4 py-3 px-1 mx-2 {% if '/notes/' in activePage %} active {% endif %}" href="/notes/">Notes</a></li>
                 <li><a class="block no-underline mr-1 md:mr-4 py-3 px-1 mx-2 {% if '/log/' in activePage %} active {% endif %}" href="/log/">Hiking</a></li>
                 <li><a class="block no-underline mr-1 md:mr-4 py-3 px-1 mx-2 {% if '/contact/' in activePage %} active {% endif %}" href="/contact/">Contact</a></li>

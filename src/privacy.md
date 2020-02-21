@@ -1,5 +1,5 @@
 ---
-name: Privacy Policy - Chris Collins
+title: Privacy Policy - Chris Collins
 layout: page.njk
 ---
 

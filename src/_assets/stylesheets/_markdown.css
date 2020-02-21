@@ -7,7 +7,15 @@
 
   ul,
   ol {
-    @apply my-6 ml-3 list-inside;
+    @apply my-6 ml-4 list-outside;
+    li {
+      @apply my-1;
+
+      ul {
+        @apply my-3;
+        list-style-type: circle;
+      }
+    }
   }
 
   ul {
@@ -48,19 +56,19 @@
   }
 
   h2 {
-    @apply text-3xl;
-  }
-
-  h3 {
     @apply text-2xl;
   }
 
+  h3 {
+    @apply text-1xl;
+  }
+
   h4 {
-    @apply text-xl;
+    @apply text-lg;
   }
 
   h5 {
-    @apply text-lg;
+    @apply text-md;
   }
 
   h6 {
