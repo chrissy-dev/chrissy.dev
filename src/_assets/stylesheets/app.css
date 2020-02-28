@@ -1,19 +1,20 @@
-@import "_tailwind.css";
-@import "_markdown.css";
-@import "_syntax.css";
-@import "_utils.css";
-@import "_animation.css";
+@import '_tailwind.css';
+@import '_markdown.css';
+@import '_syntax.css';
+@import '_utils.css';
+@import '_animation.css';
 
 html {
-	font-family: 'IBM Plex Sans', -apple-system, 'Inter', BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-family: 'IBM Plex Sans', -apple-system, 'Inter', BlinkMacSystemFont,
+    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
 }
 
 body {
-	@apply text-gray-900 text-lg;
+  @apply text-gray-900 text-lg;
 
-	@screen dark-mode {
-		@apply text-white bg-black;
-	}
+  @screen dark-mode {
+    @apply text-white bg-black;
+  }
 }
 
 .fadeIn {
@@ -33,105 +34,103 @@ body {
 }
 
 .filter-grayscale {
-	filter: grayscale(100%);
+  filter: grayscale(100%) contrast(1.2);
 }
 
 .hover\:filter-none {
-	filter: none;
+  filter: none;
 }
 
 .navbar ul li a {
-	position: relative;
-	@apply no-underline mr-1 py-3 mx-2;
+  position: relative;
+  @apply no-underline mr-1 py-3 mx-2;
 
-	&:after,
-	&:before {
-		content: "";
-		position: absolute;
-		height: 0.10rem;
-		bottom: 0;
-		left: 0;
-	}
+  &:after,
+  &:before {
+    content: '';
+    position: absolute;
+    height: 0.2rem;
+    bottom: 0;
+    left: 0;
+    @apply rounded-full;
+  }
 
-	&:after {
-		@apply bg-gray-200;
+  &:after {
+    @apply bg-gray-200;
 
-		@screen dark-mode {
-			@apply bg-gray-600;
-		}
+    @screen dark-mode {
+      @apply bg-gray-600;
+    }
 
-		width: 0;
-		transition: all .3s cubic-bezier(.86, 0, .07, 1);
-	}
+    width: 0;
+    transition: all 0.3s cubic-bezier(0.86, 0, 0.07, 1);
+  }
 
-	&:hover {
-		&:after {
-			width: 100%;
-			;
-		}
-	}
+  &:hover {
+    &:after {
+      width: 100%;
+    }
+  }
 
-	&.active {
+  &.active {
+    @apply text-blue-500;
 
-		@apply text-teal-600;
+    @screen dark-mode {
+      @apply text-white;
+    }
 
-		@screen dark-mode {
-			@apply text-white;
-		}
-
-		&:after {
-			@apply bg-teal-400;
-			width: 100%;
-		}
-	}
+    &:after {
+      @apply bg-blue-500;
+      width: 100%;
+    }
+  }
 }
-
 
 a,
 a:visited {
-	@apply underline;
+  @apply underline;
 
-	&:hover {
-		@apply text-teal-600;
-	}
+  &:hover {
+    @apply text-blue-600;
+  }
 }
 
 .icons {
-	@screen dark-mode {
-		svg {
-			fill: #fff;
-		}
-	}
+  @screen dark-mode {
+    svg {
+      fill: #fff;
+    }
+  }
 }
 
 .button {
-	@apply p-3 bg-gray-300 font-bold text-lg;
+  @apply p-3 bg-gray-300 font-bold text-lg;
 
-	&:hover {
-		@apply bg-teal-600 text-white;
-	}
+  &:hover {
+    @apply bg-blue-600 text-white;
+  }
 
-	@screen dark-mode {
-		@apply bg-teal-600 text-white;
+  @screen dark-mode {
+    @apply bg-blue-600 text-white;
 
-		&:hover {
-			@apply bg-teal-700;
-		}
-	}
+    &:hover {
+      @apply bg-blue-700;
+    }
+  }
 }
 
 .text-input {
-	@apply appearance-none rounded-none block w-full p-3 border-2;
+  @apply appearance-none rounded-none block w-full p-3 border-2;
 
-	&:focus {
-		@apply bg-gray-100;
-	}
+  &:focus {
+    @apply bg-gray-100;
+  }
 
-	@screen dark-mode {
-		@apply bg-gray-900 border-gray-700;
+  @screen dark-mode {
+    @apply bg-gray-900 border-gray-700;
 
-		&:focus {
-			@apply bg-gray-800;
-		}
-	}
+    &:focus {
+      @apply bg-gray-800;
+    }
+  }
 }

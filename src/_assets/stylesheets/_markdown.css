@@ -5,9 +5,13 @@
     @apply my-6;
   }
 
+  a {
+    @apply text-blue-600;
+  }
+
   ul,
   ol {
-    @apply my-6 ml-4 list-outside;
+    @apply my-6 ml-8 list-outside;
     li {
       @apply my-1;
 
