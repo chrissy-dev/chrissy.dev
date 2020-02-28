@@ -11,10 +11,6 @@ html {
 
 body {
   @apply text-gray-900 text-lg;
-
-  @screen dark-mode {
-    @apply text-white bg-black;
-  }
 }
 
 .fadeIn {
@@ -57,11 +53,6 @@ body {
 
   &:after {
     @apply bg-gray-200;
-
-    @screen dark-mode {
-      @apply bg-gray-600;
-    }
-
     width: 0;
     transition: all 0.3s cubic-bezier(0.86, 0, 0.07, 1);
   }
@@ -74,10 +65,6 @@ body {
 
   &.active {
     @apply text-blue-500;
-
-    @screen dark-mode {
-      @apply text-white;
-    }
 
     &:after {
       @apply bg-blue-500;
@@ -95,27 +82,11 @@ a:visited {
   }
 }
 
-.icons {
-  @screen dark-mode {
-    svg {
-      fill: #fff;
-    }
-  }
-}
-
 .button {
   @apply p-3 bg-gray-300 font-bold text-lg;
 
   &:hover {
     @apply bg-blue-600 text-white;
-  }
-
-  @screen dark-mode {
-    @apply bg-blue-600 text-white;
-
-    &:hover {
-      @apply bg-blue-700;
-    }
   }
 }
 
@@ -124,13 +95,5 @@ a:visited {
 
   &:focus {
     @apply bg-gray-100;
-  }
-
-  @screen dark-mode {
-    @apply bg-gray-900 border-gray-700;
-
-    &:focus {
-      @apply bg-gray-800;
-    }
   }
 }
