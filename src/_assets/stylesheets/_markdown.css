@@ -68,11 +68,11 @@
   }
 
   h5 {
-    @apply text-md;
+    @apply text-base;
   }
 
   h6 {
-    @apply text-base;
+    @apply text-sm;
   }
 
   /* Tables */

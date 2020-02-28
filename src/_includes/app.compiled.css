@@ -583,10 +583,6 @@ img {
   border-bottom-width: 1px;
 }
 
-.cursor-not-allowed {
-  cursor: not-allowed;
-}
-
 .block {
   display: block;
 }
@@ -700,6 +696,11 @@ img {
   margin-right: -1rem;
 }
 
+.-mx-6 {
+  margin-left: -1.5rem;
+  margin-right: -1.5rem;
+}
+
 .-mx-8 {
   margin-left: -2rem;
   margin-right: -2rem;
@@ -805,12 +806,21 @@ img {
   min-height: 100vh;
 }
 
+.object-cover {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .opacity-50 {
   opacity: 0.5;
 }
 
 .hover\:opacity-50:hover {
   opacity: 0.5;
+}
+
+.hover\:opacity-75:hover {
+  opacity: 0.75;
 }
 
 .p-2 {
@@ -889,12 +899,20 @@ img {
   position: relative;
 }
 
+.top-0 {
+  top: 0;
+}
+
 .right-0 {
   right: 0;
 }
 
 .bottom-0 {
   bottom: 0;
+}
+
+.left-0 {
+  left: 0;
 }
 
 .shadow-lg {
@@ -923,10 +941,6 @@ img {
 
 .text-gray-900 {
   color: #1a202c;
-}
-
-.hover\:text-black:hover {
-  color: #000;
 }
 
 .hover\:text-gray-700:hover {
@@ -1025,9 +1039,20 @@ img {
   .markdown ol {
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
-    margin-left: 0.75rem;
-    list-style-position: inside;
+    margin-left: 1rem;
+    list-style-position: outside;
   }
+
+.markdown ul li, .markdown ol li {
+      margin-top: 0.25rem;
+      margin-bottom: 0.25rem;
+    }
+
+.markdown ul li ul, .markdown ol li ul {
+        margin-top: 0.75rem;
+        margin-bottom: 0.75rem;
+        list-style-type: circle;
+      }
 
 .markdown ul {
     list-style-type: disc;
@@ -1079,15 +1104,15 @@ img {
     }
 
 .markdown h2 {
-    font-size: 1.875rem;
-  }
-
-.markdown h3 {
     font-size: 1.5rem;
   }
 
-.markdown h4 {
+.markdown h3 {
     font-size: 1.25rem;
+  }
+
+.markdown h4 {
+    font-size: 1.125rem;
   }
 
 /* Tables */
@@ -1276,8 +1301,8 @@ pre[class*="language-"].language-css>code {
   max-width: 72rem;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .text-shadow {
@@ -1296,6 +1321,11 @@ pre[class*="language-"].language-css>code {
 
 .hover\:opacity-50:hover {
   opacity: 0.5;
+}
+
+.transition {
+  -webkit-transition: all .3s cubic-bezier(.0, 0, .07, 1);
+  transition: all .3s cubic-bezier(.0, 0, .07, 1);
 }
 
 .external_link::after {
@@ -1378,8 +1408,8 @@ body {
   }
 
 .fadeIn {
-  -webkit-animation-duration: 0.7s;
-          animation-duration: 0.7s;
+  -webkit-animation-duration: 1.2s;
+          animation-duration: 1.2s;
   -webkit-animation-fill-mode: both;
           animation-fill-mode: both;
   -webkit-animation-name: fadeIn;
