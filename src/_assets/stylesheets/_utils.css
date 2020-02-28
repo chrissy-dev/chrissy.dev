@@ -1,14 +1,15 @@
 .container {
-  @apply max-w-6xl mx-auto px-4;
+  @apply max-w-6xl mx-auto px-6;
 }
 
 .text-shadow {
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, .4);
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
 }
 
 .sans-serif {
-	font-family: 'IBM Plex Sans', -apple-system, 'Inter', BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-  font-feature-settings: "kern","kern";
+  font-family: 'IBM Plex Sans', -apple-system, 'Inter', BlinkMacSystemFont,
+    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  font-feature-settings: 'kern', 'kern';
   font-kerning: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -24,16 +25,16 @@
   @apply opacity-50;
 }
 
-
 .transition {
-  transition: all .3s cubic-bezier(.0, 0, .07, 1);
+  transition: all 0.3s cubic-bezier(0, 0, 0.07, 1);
 }
 
 .external_link::after {
   display: inline-flex;
   align-items: center;
   content: '';
-	background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNOC41LDE4LjMxTDUuNjksMTUuNUwxMi4wNiw5LjEySDcuMTFWNS42OUgxOC4zMVYxNi44OUgxNC44OVYxMS45NEw4LjUsMTguMzFaIiAvPjwvc3ZnPg==);  background-position: center;
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNOC41LDE4LjMxTDUuNjksMTUuNUwxMi4wNiw5LjEySDcuMTFWNS42OUgxOC4zMVYxNi44OUgxNC44OVYxMS45NEw4LjUsMTguMzFaIiAvPjwvc3ZnPg==);
+  background-position: center;
   background-repeat: no-repeat;
   background-size: 100%;
   width: 0.8rem;
@@ -48,7 +49,7 @@ hr {
 
   @screen dark-mode {
     @apply bg-gray-700;
-  }  
+  }
 }
 
 .hideBots {

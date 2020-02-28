@@ -9629,6 +9629,41 @@ video {
   left: 0;
 }
 
+.inset-1 {
+  top: 0.5rem;
+  right: 0.5rem;
+  bottom: 0.5rem;
+  left: 0.5rem;
+}
+
+.inset-2 {
+  top: 1rem;
+  right: 1rem;
+  bottom: 1rem;
+  left: 1rem;
+}
+
+.inset-3 {
+  top: 1.5rem;
+  right: 1.5rem;
+  bottom: 1.5rem;
+  left: 1.5rem;
+}
+
+.inset-4 {
+  top: 2rem;
+  right: 2rem;
+  bottom: 2rem;
+  left: 2rem;
+}
+
+.inset-5 {
+  top: 2.5rem;
+  right: 2.5rem;
+  bottom: 2.5rem;
+  left: 2.5rem;
+}
+
 .inset-auto {
   top: auto;
   right: auto;
@@ -9644,6 +9679,56 @@ video {
 .inset-x-0 {
   right: 0;
   left: 0;
+}
+
+.inset-y-1 {
+  top: 0.5rem;
+  bottom: 0.5rem;
+}
+
+.inset-x-1 {
+  right: 0.5rem;
+  left: 0.5rem;
+}
+
+.inset-y-2 {
+  top: 1rem;
+  bottom: 1rem;
+}
+
+.inset-x-2 {
+  right: 1rem;
+  left: 1rem;
+}
+
+.inset-y-3 {
+  top: 1.5rem;
+  bottom: 1.5rem;
+}
+
+.inset-x-3 {
+  right: 1.5rem;
+  left: 1.5rem;
+}
+
+.inset-y-4 {
+  top: 2rem;
+  bottom: 2rem;
+}
+
+.inset-x-4 {
+  right: 2rem;
+  left: 2rem;
+}
+
+.inset-y-5 {
+  top: 2.5rem;
+  bottom: 2.5rem;
+}
+
+.inset-x-5 {
+  right: 2.5rem;
+  left: 2.5rem;
 }
 
 .inset-y-auto {
@@ -9670,6 +9755,86 @@ video {
 
 .left-0 {
   left: 0;
+}
+
+.top-1 {
+  top: 0.5rem;
+}
+
+.right-1 {
+  right: 0.5rem;
+}
+
+.bottom-1 {
+  bottom: 0.5rem;
+}
+
+.left-1 {
+  left: 0.5rem;
+}
+
+.top-2 {
+  top: 1rem;
+}
+
+.right-2 {
+  right: 1rem;
+}
+
+.bottom-2 {
+  bottom: 1rem;
+}
+
+.left-2 {
+  left: 1rem;
+}
+
+.top-3 {
+  top: 1.5rem;
+}
+
+.right-3 {
+  right: 1.5rem;
+}
+
+.bottom-3 {
+  bottom: 1.5rem;
+}
+
+.left-3 {
+  left: 1.5rem;
+}
+
+.top-4 {
+  top: 2rem;
+}
+
+.right-4 {
+  right: 2rem;
+}
+
+.bottom-4 {
+  bottom: 2rem;
+}
+
+.left-4 {
+  left: 2rem;
+}
+
+.top-5 {
+  top: 2.5rem;
+}
+
+.right-5 {
+  right: 2.5rem;
+}
+
+.bottom-5 {
+  bottom: 2.5rem;
+}
+
+.left-5 {
+  left: 2.5rem;
 }
 
 .top-auto {
@@ -11794,17 +11959,18 @@ pre[class*="language-"].language-scss>code {
   max-width: 72rem;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }
 
 .text-shadow {
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, .4);
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
 }
 
 .sans-serif {
-  font-family: 'IBM Plex Sans', -apple-system, 'Inter', BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-  font-feature-settings: "kern","kern";
+  font-family: 'IBM Plex Sans', -apple-system, 'Inter', BlinkMacSystemFont,
+    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  font-feature-settings: 'kern', 'kern';
   -webkit-font-kerning: normal;
           font-kerning: normal;
   -webkit-font-smoothing: antialiased;
@@ -11823,8 +11989,8 @@ pre[class*="language-"].language-scss>code {
 }
 
 .transition {
-  -webkit-transition: all .3s cubic-bezier(.0, 0, .07, 1);
-  transition: all .3s cubic-bezier(.0, 0, .07, 1);
+  -webkit-transition: all 0.3s cubic-bezier(0, 0, 0.07, 1);
+  transition: all 0.3s cubic-bezier(0, 0, 0.07, 1);
 }
 
 .external_link::after {
@@ -11833,7 +11999,8 @@ pre[class*="language-"].language-scss>code {
   -webkit-box-align: center;
           align-items: center;
   content: '';
-  background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNOC41LDE4LjMxTDUuNjksMTUuNUwxMi4wNiw5LjEySDcuMTFWNS42OUgxOC4zMVYxNi44OUgxNC44OVYxMS45NEw4LjUsMTguMzFaIiAvPjwvc3ZnPg==);  background-position: center;
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNOC41LDE4LjMxTDUuNjksMTUuNUwxMi4wNiw5LjEySDcuMTFWNS42OUgxOC4zMVYxNi44OUgxNC44OVYxMS45NEw4LjUsMTguMzFaIiAvPjwvc3ZnPg==);
+  background-position: center;
   background-repeat: no-repeat;
   background-size: 100%;
   width: 0.8rem;
@@ -21085,6 +21252,41 @@ a:hover, a:visited:hover {
     left: 0;
   }
 
+  .sm\:inset-1 {
+    top: 0.5rem;
+    right: 0.5rem;
+    bottom: 0.5rem;
+    left: 0.5rem;
+  }
+
+  .sm\:inset-2 {
+    top: 1rem;
+    right: 1rem;
+    bottom: 1rem;
+    left: 1rem;
+  }
+
+  .sm\:inset-3 {
+    top: 1.5rem;
+    right: 1.5rem;
+    bottom: 1.5rem;
+    left: 1.5rem;
+  }
+
+  .sm\:inset-4 {
+    top: 2rem;
+    right: 2rem;
+    bottom: 2rem;
+    left: 2rem;
+  }
+
+  .sm\:inset-5 {
+    top: 2.5rem;
+    right: 2.5rem;
+    bottom: 2.5rem;
+    left: 2.5rem;
+  }
+
   .sm\:inset-auto {
     top: auto;
     right: auto;
@@ -21100,6 +21302,56 @@ a:hover, a:visited:hover {
   .sm\:inset-x-0 {
     right: 0;
     left: 0;
+  }
+
+  .sm\:inset-y-1 {
+    top: 0.5rem;
+    bottom: 0.5rem;
+  }
+
+  .sm\:inset-x-1 {
+    right: 0.5rem;
+    left: 0.5rem;
+  }
+
+  .sm\:inset-y-2 {
+    top: 1rem;
+    bottom: 1rem;
+  }
+
+  .sm\:inset-x-2 {
+    right: 1rem;
+    left: 1rem;
+  }
+
+  .sm\:inset-y-3 {
+    top: 1.5rem;
+    bottom: 1.5rem;
+  }
+
+  .sm\:inset-x-3 {
+    right: 1.5rem;
+    left: 1.5rem;
+  }
+
+  .sm\:inset-y-4 {
+    top: 2rem;
+    bottom: 2rem;
+  }
+
+  .sm\:inset-x-4 {
+    right: 2rem;
+    left: 2rem;
+  }
+
+  .sm\:inset-y-5 {
+    top: 2.5rem;
+    bottom: 2.5rem;
+  }
+
+  .sm\:inset-x-5 {
+    right: 2.5rem;
+    left: 2.5rem;
   }
 
   .sm\:inset-y-auto {
@@ -21126,6 +21378,86 @@ a:hover, a:visited:hover {
 
   .sm\:left-0 {
     left: 0;
+  }
+
+  .sm\:top-1 {
+    top: 0.5rem;
+  }
+
+  .sm\:right-1 {
+    right: 0.5rem;
+  }
+
+  .sm\:bottom-1 {
+    bottom: 0.5rem;
+  }
+
+  .sm\:left-1 {
+    left: 0.5rem;
+  }
+
+  .sm\:top-2 {
+    top: 1rem;
+  }
+
+  .sm\:right-2 {
+    right: 1rem;
+  }
+
+  .sm\:bottom-2 {
+    bottom: 1rem;
+  }
+
+  .sm\:left-2 {
+    left: 1rem;
+  }
+
+  .sm\:top-3 {
+    top: 1.5rem;
+  }
+
+  .sm\:right-3 {
+    right: 1.5rem;
+  }
+
+  .sm\:bottom-3 {
+    bottom: 1.5rem;
+  }
+
+  .sm\:left-3 {
+    left: 1.5rem;
+  }
+
+  .sm\:top-4 {
+    top: 2rem;
+  }
+
+  .sm\:right-4 {
+    right: 2rem;
+  }
+
+  .sm\:bottom-4 {
+    bottom: 2rem;
+  }
+
+  .sm\:left-4 {
+    left: 2rem;
+  }
+
+  .sm\:top-5 {
+    top: 2.5rem;
+  }
+
+  .sm\:right-5 {
+    right: 2.5rem;
+  }
+
+  .sm\:bottom-5 {
+    bottom: 2.5rem;
+  }
+
+  .sm\:left-5 {
+    left: 2.5rem;
   }
 
   .sm\:top-auto {
@@ -31861,6 +32193,41 @@ a:hover, a:visited:hover {
     left: 0;
   }
 
+  .md\:inset-1 {
+    top: 0.5rem;
+    right: 0.5rem;
+    bottom: 0.5rem;
+    left: 0.5rem;
+  }
+
+  .md\:inset-2 {
+    top: 1rem;
+    right: 1rem;
+    bottom: 1rem;
+    left: 1rem;
+  }
+
+  .md\:inset-3 {
+    top: 1.5rem;
+    right: 1.5rem;
+    bottom: 1.5rem;
+    left: 1.5rem;
+  }
+
+  .md\:inset-4 {
+    top: 2rem;
+    right: 2rem;
+    bottom: 2rem;
+    left: 2rem;
+  }
+
+  .md\:inset-5 {
+    top: 2.5rem;
+    right: 2.5rem;
+    bottom: 2.5rem;
+    left: 2.5rem;
+  }
+
   .md\:inset-auto {
     top: auto;
     right: auto;
@@ -31876,6 +32243,56 @@ a:hover, a:visited:hover {
   .md\:inset-x-0 {
     right: 0;
     left: 0;
+  }
+
+  .md\:inset-y-1 {
+    top: 0.5rem;
+    bottom: 0.5rem;
+  }
+
+  .md\:inset-x-1 {
+    right: 0.5rem;
+    left: 0.5rem;
+  }
+
+  .md\:inset-y-2 {
+    top: 1rem;
+    bottom: 1rem;
+  }
+
+  .md\:inset-x-2 {
+    right: 1rem;
+    left: 1rem;
+  }
+
+  .md\:inset-y-3 {
+    top: 1.5rem;
+    bottom: 1.5rem;
+  }
+
+  .md\:inset-x-3 {
+    right: 1.5rem;
+    left: 1.5rem;
+  }
+
+  .md\:inset-y-4 {
+    top: 2rem;
+    bottom: 2rem;
+  }
+
+  .md\:inset-x-4 {
+    right: 2rem;
+    left: 2rem;
+  }
+
+  .md\:inset-y-5 {
+    top: 2.5rem;
+    bottom: 2.5rem;
+  }
+
+  .md\:inset-x-5 {
+    right: 2.5rem;
+    left: 2.5rem;
   }
 
   .md\:inset-y-auto {
@@ -31902,6 +32319,86 @@ a:hover, a:visited:hover {
 
   .md\:left-0 {
     left: 0;
+  }
+
+  .md\:top-1 {
+    top: 0.5rem;
+  }
+
+  .md\:right-1 {
+    right: 0.5rem;
+  }
+
+  .md\:bottom-1 {
+    bottom: 0.5rem;
+  }
+
+  .md\:left-1 {
+    left: 0.5rem;
+  }
+
+  .md\:top-2 {
+    top: 1rem;
+  }
+
+  .md\:right-2 {
+    right: 1rem;
+  }
+
+  .md\:bottom-2 {
+    bottom: 1rem;
+  }
+
+  .md\:left-2 {
+    left: 1rem;
+  }
+
+  .md\:top-3 {
+    top: 1.5rem;
+  }
+
+  .md\:right-3 {
+    right: 1.5rem;
+  }
+
+  .md\:bottom-3 {
+    bottom: 1.5rem;
+  }
+
+  .md\:left-3 {
+    left: 1.5rem;
+  }
+
+  .md\:top-4 {
+    top: 2rem;
+  }
+
+  .md\:right-4 {
+    right: 2rem;
+  }
+
+  .md\:bottom-4 {
+    bottom: 2rem;
+  }
+
+  .md\:left-4 {
+    left: 2rem;
+  }
+
+  .md\:top-5 {
+    top: 2.5rem;
+  }
+
+  .md\:right-5 {
+    right: 2.5rem;
+  }
+
+  .md\:bottom-5 {
+    bottom: 2.5rem;
+  }
+
+  .md\:left-5 {
+    left: 2.5rem;
   }
 
   .md\:top-auto {
@@ -42637,6 +43134,41 @@ a:hover, a:visited:hover {
     left: 0;
   }
 
+  .lg\:inset-1 {
+    top: 0.5rem;
+    right: 0.5rem;
+    bottom: 0.5rem;
+    left: 0.5rem;
+  }
+
+  .lg\:inset-2 {
+    top: 1rem;
+    right: 1rem;
+    bottom: 1rem;
+    left: 1rem;
+  }
+
+  .lg\:inset-3 {
+    top: 1.5rem;
+    right: 1.5rem;
+    bottom: 1.5rem;
+    left: 1.5rem;
+  }
+
+  .lg\:inset-4 {
+    top: 2rem;
+    right: 2rem;
+    bottom: 2rem;
+    left: 2rem;
+  }
+
+  .lg\:inset-5 {
+    top: 2.5rem;
+    right: 2.5rem;
+    bottom: 2.5rem;
+    left: 2.5rem;
+  }
+
   .lg\:inset-auto {
     top: auto;
     right: auto;
@@ -42652,6 +43184,56 @@ a:hover, a:visited:hover {
   .lg\:inset-x-0 {
     right: 0;
     left: 0;
+  }
+
+  .lg\:inset-y-1 {
+    top: 0.5rem;
+    bottom: 0.5rem;
+  }
+
+  .lg\:inset-x-1 {
+    right: 0.5rem;
+    left: 0.5rem;
+  }
+
+  .lg\:inset-y-2 {
+    top: 1rem;
+    bottom: 1rem;
+  }
+
+  .lg\:inset-x-2 {
+    right: 1rem;
+    left: 1rem;
+  }
+
+  .lg\:inset-y-3 {
+    top: 1.5rem;
+    bottom: 1.5rem;
+  }
+
+  .lg\:inset-x-3 {
+    right: 1.5rem;
+    left: 1.5rem;
+  }
+
+  .lg\:inset-y-4 {
+    top: 2rem;
+    bottom: 2rem;
+  }
+
+  .lg\:inset-x-4 {
+    right: 2rem;
+    left: 2rem;
+  }
+
+  .lg\:inset-y-5 {
+    top: 2.5rem;
+    bottom: 2.5rem;
+  }
+
+  .lg\:inset-x-5 {
+    right: 2.5rem;
+    left: 2.5rem;
   }
 
   .lg\:inset-y-auto {
@@ -42678,6 +43260,86 @@ a:hover, a:visited:hover {
 
   .lg\:left-0 {
     left: 0;
+  }
+
+  .lg\:top-1 {
+    top: 0.5rem;
+  }
+
+  .lg\:right-1 {
+    right: 0.5rem;
+  }
+
+  .lg\:bottom-1 {
+    bottom: 0.5rem;
+  }
+
+  .lg\:left-1 {
+    left: 0.5rem;
+  }
+
+  .lg\:top-2 {
+    top: 1rem;
+  }
+
+  .lg\:right-2 {
+    right: 1rem;
+  }
+
+  .lg\:bottom-2 {
+    bottom: 1rem;
+  }
+
+  .lg\:left-2 {
+    left: 1rem;
+  }
+
+  .lg\:top-3 {
+    top: 1.5rem;
+  }
+
+  .lg\:right-3 {
+    right: 1.5rem;
+  }
+
+  .lg\:bottom-3 {
+    bottom: 1.5rem;
+  }
+
+  .lg\:left-3 {
+    left: 1.5rem;
+  }
+
+  .lg\:top-4 {
+    top: 2rem;
+  }
+
+  .lg\:right-4 {
+    right: 2rem;
+  }
+
+  .lg\:bottom-4 {
+    bottom: 2rem;
+  }
+
+  .lg\:left-4 {
+    left: 2rem;
+  }
+
+  .lg\:top-5 {
+    top: 2.5rem;
+  }
+
+  .lg\:right-5 {
+    right: 2.5rem;
+  }
+
+  .lg\:bottom-5 {
+    bottom: 2.5rem;
+  }
+
+  .lg\:left-5 {
+    left: 2.5rem;
   }
 
   .lg\:top-auto {
@@ -53413,6 +54075,41 @@ a:hover, a:visited:hover {
     left: 0;
   }
 
+  .xl\:inset-1 {
+    top: 0.5rem;
+    right: 0.5rem;
+    bottom: 0.5rem;
+    left: 0.5rem;
+  }
+
+  .xl\:inset-2 {
+    top: 1rem;
+    right: 1rem;
+    bottom: 1rem;
+    left: 1rem;
+  }
+
+  .xl\:inset-3 {
+    top: 1.5rem;
+    right: 1.5rem;
+    bottom: 1.5rem;
+    left: 1.5rem;
+  }
+
+  .xl\:inset-4 {
+    top: 2rem;
+    right: 2rem;
+    bottom: 2rem;
+    left: 2rem;
+  }
+
+  .xl\:inset-5 {
+    top: 2.5rem;
+    right: 2.5rem;
+    bottom: 2.5rem;
+    left: 2.5rem;
+  }
+
   .xl\:inset-auto {
     top: auto;
     right: auto;
@@ -53428,6 +54125,56 @@ a:hover, a:visited:hover {
   .xl\:inset-x-0 {
     right: 0;
     left: 0;
+  }
+
+  .xl\:inset-y-1 {
+    top: 0.5rem;
+    bottom: 0.5rem;
+  }
+
+  .xl\:inset-x-1 {
+    right: 0.5rem;
+    left: 0.5rem;
+  }
+
+  .xl\:inset-y-2 {
+    top: 1rem;
+    bottom: 1rem;
+  }
+
+  .xl\:inset-x-2 {
+    right: 1rem;
+    left: 1rem;
+  }
+
+  .xl\:inset-y-3 {
+    top: 1.5rem;
+    bottom: 1.5rem;
+  }
+
+  .xl\:inset-x-3 {
+    right: 1.5rem;
+    left: 1.5rem;
+  }
+
+  .xl\:inset-y-4 {
+    top: 2rem;
+    bottom: 2rem;
+  }
+
+  .xl\:inset-x-4 {
+    right: 2rem;
+    left: 2rem;
+  }
+
+  .xl\:inset-y-5 {
+    top: 2.5rem;
+    bottom: 2.5rem;
+  }
+
+  .xl\:inset-x-5 {
+    right: 2.5rem;
+    left: 2.5rem;
   }
 
   .xl\:inset-y-auto {
@@ -53454,6 +54201,86 @@ a:hover, a:visited:hover {
 
   .xl\:left-0 {
     left: 0;
+  }
+
+  .xl\:top-1 {
+    top: 0.5rem;
+  }
+
+  .xl\:right-1 {
+    right: 0.5rem;
+  }
+
+  .xl\:bottom-1 {
+    bottom: 0.5rem;
+  }
+
+  .xl\:left-1 {
+    left: 0.5rem;
+  }
+
+  .xl\:top-2 {
+    top: 1rem;
+  }
+
+  .xl\:right-2 {
+    right: 1rem;
+  }
+
+  .xl\:bottom-2 {
+    bottom: 1rem;
+  }
+
+  .xl\:left-2 {
+    left: 1rem;
+  }
+
+  .xl\:top-3 {
+    top: 1.5rem;
+  }
+
+  .xl\:right-3 {
+    right: 1.5rem;
+  }
+
+  .xl\:bottom-3 {
+    bottom: 1.5rem;
+  }
+
+  .xl\:left-3 {
+    left: 1.5rem;
+  }
+
+  .xl\:top-4 {
+    top: 2rem;
+  }
+
+  .xl\:right-4 {
+    right: 2rem;
+  }
+
+  .xl\:bottom-4 {
+    bottom: 2rem;
+  }
+
+  .xl\:left-4 {
+    left: 2rem;
+  }
+
+  .xl\:top-5 {
+    top: 2.5rem;
+  }
+
+  .xl\:right-5 {
+    right: 2.5rem;
+  }
+
+  .xl\:bottom-5 {
+    bottom: 2.5rem;
+  }
+
+  .xl\:left-5 {
+    left: 2.5rem;
   }
 
   .xl\:top-auto {
@@ -64189,6 +65016,41 @@ a:hover, a:visited:hover {
     left: 0;
   }
 
+  .dark-mode\:inset-1 {
+    top: 0.5rem;
+    right: 0.5rem;
+    bottom: 0.5rem;
+    left: 0.5rem;
+  }
+
+  .dark-mode\:inset-2 {
+    top: 1rem;
+    right: 1rem;
+    bottom: 1rem;
+    left: 1rem;
+  }
+
+  .dark-mode\:inset-3 {
+    top: 1.5rem;
+    right: 1.5rem;
+    bottom: 1.5rem;
+    left: 1.5rem;
+  }
+
+  .dark-mode\:inset-4 {
+    top: 2rem;
+    right: 2rem;
+    bottom: 2rem;
+    left: 2rem;
+  }
+
+  .dark-mode\:inset-5 {
+    top: 2.5rem;
+    right: 2.5rem;
+    bottom: 2.5rem;
+    left: 2.5rem;
+  }
+
   .dark-mode\:inset-auto {
     top: auto;
     right: auto;
@@ -64204,6 +65066,56 @@ a:hover, a:visited:hover {
   .dark-mode\:inset-x-0 {
     right: 0;
     left: 0;
+  }
+
+  .dark-mode\:inset-y-1 {
+    top: 0.5rem;
+    bottom: 0.5rem;
+  }
+
+  .dark-mode\:inset-x-1 {
+    right: 0.5rem;
+    left: 0.5rem;
+  }
+
+  .dark-mode\:inset-y-2 {
+    top: 1rem;
+    bottom: 1rem;
+  }
+
+  .dark-mode\:inset-x-2 {
+    right: 1rem;
+    left: 1rem;
+  }
+
+  .dark-mode\:inset-y-3 {
+    top: 1.5rem;
+    bottom: 1.5rem;
+  }
+
+  .dark-mode\:inset-x-3 {
+    right: 1.5rem;
+    left: 1.5rem;
+  }
+
+  .dark-mode\:inset-y-4 {
+    top: 2rem;
+    bottom: 2rem;
+  }
+
+  .dark-mode\:inset-x-4 {
+    right: 2rem;
+    left: 2rem;
+  }
+
+  .dark-mode\:inset-y-5 {
+    top: 2.5rem;
+    bottom: 2.5rem;
+  }
+
+  .dark-mode\:inset-x-5 {
+    right: 2.5rem;
+    left: 2.5rem;
   }
 
   .dark-mode\:inset-y-auto {
@@ -64230,6 +65142,86 @@ a:hover, a:visited:hover {
 
   .dark-mode\:left-0 {
     left: 0;
+  }
+
+  .dark-mode\:top-1 {
+    top: 0.5rem;
+  }
+
+  .dark-mode\:right-1 {
+    right: 0.5rem;
+  }
+
+  .dark-mode\:bottom-1 {
+    bottom: 0.5rem;
+  }
+
+  .dark-mode\:left-1 {
+    left: 0.5rem;
+  }
+
+  .dark-mode\:top-2 {
+    top: 1rem;
+  }
+
+  .dark-mode\:right-2 {
+    right: 1rem;
+  }
+
+  .dark-mode\:bottom-2 {
+    bottom: 1rem;
+  }
+
+  .dark-mode\:left-2 {
+    left: 1rem;
+  }
+
+  .dark-mode\:top-3 {
+    top: 1.5rem;
+  }
+
+  .dark-mode\:right-3 {
+    right: 1.5rem;
+  }
+
+  .dark-mode\:bottom-3 {
+    bottom: 1.5rem;
+  }
+
+  .dark-mode\:left-3 {
+    left: 1.5rem;
+  }
+
+  .dark-mode\:top-4 {
+    top: 2rem;
+  }
+
+  .dark-mode\:right-4 {
+    right: 2rem;
+  }
+
+  .dark-mode\:bottom-4 {
+    bottom: 2rem;
+  }
+
+  .dark-mode\:left-4 {
+    left: 2rem;
+  }
+
+  .dark-mode\:top-5 {
+    top: 2.5rem;
+  }
+
+  .dark-mode\:right-5 {
+    right: 2.5rem;
+  }
+
+  .dark-mode\:bottom-5 {
+    bottom: 2.5rem;
+  }
+
+  .dark-mode\:left-5 {
+    left: 2.5rem;
   }
 
   .dark-mode\:top-auto {

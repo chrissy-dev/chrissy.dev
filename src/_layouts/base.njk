@@ -4,72 +4,72 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="{{ description or site.description }}" />
+    <meta name="description" content="{{ description or site.description }}"/>
     <meta name="robots" content="index, follow">
     <meta name="theme-color" content="#ffffff">
 
     <title>{{ title or site.title }}</title>
-    <link rel="canonical" href="{{ site.url }}{{ page.url }}" />
+    <link rel="canonical" href="{{ site.url }}{{ page.url }}"/>
     <link rel="author" href="{{ site.url }}">
 
     <link href="https://github.com/scottishstoater" rel="me">
     <link href="https://twitter.com/scottishstoater" rel="me">
     <link href="https://instagram.com/scottishstoater" rel="me">
 
-    <link rel="webmention" href="https://webmention.io/www.chriscollins.me/webmention" />
-    <link rel="pingback" href="https://webmention.io/www.chriscollins.me/xmlrpc" />
+    <link rel="webmention" href="https://webmention.io/www.chriscollins.me/webmention"/>
+    <link rel="pingback" href="https://webmention.io/www.chriscollins.me/xmlrpc"/>
     <link rel="authorization_endpoint" href="https://indieauth.com/auth">
 
     <link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="{{ site.title }}">
 
     <!-- Open Graph meta -->
-    <meta property="og:url" content="{{ site.url}}{{ page.url }}" />
-    <meta property="og:title" content="{{ title or site.title }}" />
-    <meta property="og:description" content="{{ description or site.description }}" />
+    <meta property="og:url" content="{{ site.url}}{{ page.url }}"/>
+    <meta property="og:title" content="{{ title or site.title }}"/>
+    <meta property="og:description" content="{{ description or site.description }}"/>
     {%- if site.social_meta.featured_image or featured_image %}
       {%- if imagesInSameLocation %}
-        <meta property="og:image" content="{{ site.url}}{{ page.url }}{{ featured_image }}" />
+        <meta property="og:image" content="{{ site.url}}{{ page.url }}{{ featured_image }}"/>
       {% else %}
-        <meta property="og:image" content="{{ site.url}}{{ featured_image or site.social_meta.featured_image }}" />
-      {% endif %} 
+        <meta property="og:image" content="{{ site.url}}{{ featured_image or site.social_meta.featured_image }}"/>
+      {% endif %}
     {% endif %}
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="{{ title or site.title }}" />
+    <meta name="twitter:title" content="{{ title or site.title }}"/>
     {%- if site.social_meta.twitter %}
-    <meta name="twitter:site" content="{{ site.social_meta.twitter }}" />
-    <meta name="twitter:creator" content="{{ site.social_meta.twitter }}" />
+      <meta name="twitter:site" content="{{ site.social_meta.twitter }}"/>
+      <meta name="twitter:creator" content="{{ site.social_meta.twitter }}"/>
     {% endif %}
     {%- if site.social_meta.featured_image or featured_image %}
       {%- if imagesInSameLocation %}
-        <meta property="og:image" content="{{ site.url}}{{ page.url }}{{ featured_image }}" />
+        <meta property="og:image" content="{{ site.url}}{{ page.url }}{{ featured_image }}"/>
       {% else %}
-        <meta property="og:image" content="{{ site.url}}{{ featured_image or site.social_meta.featured_image }}" />
-      {% endif %} 
+        <meta property="og:image" content="{{ site.url}}{{ featured_image or site.social_meta.featured_image }}"/>
+      {% endif %}
     {% endif %}
 
     <!-- Apple Touch Icon (reuse 192px icon.png) & standard favicons -->
     <link rel="apple-touch-icon" href="/static/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/static/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/static/favicon-16x16.png">
-    
+
     {%- if env === 'production' %}
       {% set css %}{% include "app.compiled.css" %}{% endset %}
-      <style> 
-        {{ css | safe }}
+      <style>
+        {{css | safe}}
       </style>
     {% else %}
-    <link rel="stylesheet" href="/static/app.compiled.css">
+      <link rel="stylesheet" href="/static/app.compiled.css">
     {% endif %}
 
     <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,400i,600,600i&display=swap" rel="stylesheet">
   </head>
   <body>
     <div class="min-h-screen flex flex-col">
-        {% include "header.njk" %}
-        <main id="main" class="flex-auto md:flex md:items-center fade-in-bottom">
-            {{ content | safe }}
-        </main>
-        {% include "footer.njk" %}
+      {% include "header.njk" %}
+      <main id="main" class="flex-auto md:flex md:items-center fade-in-bottom">
+        {{ content | safe }}
+      </main>
+      {% include "footer.njk" %}
     </div>
     <script src="/static/app.bundled.js"></script>
     <script src="https://instant.page/2.0.0" type="module" defer integrity="sha384-D7B5eODAUd397+f4zNFAVlnDNDtO1ppV8rPnfygILQXhqu3cUndgHvlcJR2Bhig8"></script>

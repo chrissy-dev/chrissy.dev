@@ -1,11 +1,11 @@
 module.exports = {
   theme: {
     extend: {
-      screens: {
-        'dark-mode': {
-          'raw': '(prefers-color-scheme: dark)'
-        },
-      },
+      // screens: {
+      //   'dark-mode': {
+      //     'raw': '(prefers-color-scheme: dark)'
+      //   },
+      // },
       colors: {
         'blue': {
           100: '#E6F0FF',
@@ -18,6 +18,13 @@ module.exports = {
           800: '#003072',
           900: '#00204C',
         }
+      },
+      inset: {
+        '1': '0.5rem',
+        '2': '1rem',
+        '3': '1.5rem',
+        '4': '2rem',
+        '5': '2.5rem'
       }
     }
   },

@@ -15,43 +15,46 @@ pagination:
         <h2 class="text-xl mt-8 leading-tight  mb-6 font-semibold">Walk Reports</h2>
 
         <ul class="my-8 flex flex-wrap -mx-4">
-        {% for hike in log %}
-            {% if hike.url %}
-            <li class="py-1 mb-4 w-full sm:w-1/2 md:w-1/3 p-4">
-                <a href="{{ hike.url | url }}" class="no-underline ">
-                <article class="border dark-mode:border-gray-800 rounded h-full flex flex-col hover:opacity-75 transition">
-                <img src="{{ hike.url | url }}{{ hike.data.featured_image }}">
-                 <div class="p-2">
-                 <div class="text-xs text-gray-500 tracking-wider font-bold uppercase flex items-center justify-between">
-                    <time>{{ hike.data.date | simpleDate }}</time> 
-                    {% if hike.url %} <span class="text-gray-400 opacity-50">{{ hike | readingTime }} read</span> {% endif %}
-                </div>
-                <h3 class="truncate item-end mb-0 mr-2 text-base">{{ hike.data.name }}</h3>  
-                 </div>        
-                </article>     
-               </a>
-            </li>
-            {% endif %}
-        {% endfor %}
+            {% for hike in log %}
+                {% if hike.url %}
+                    <li class="py-1 mb-4 w-full sm:w-1/2 md:w-1/3 p-4">
+                        <a href="{{ hike.url | url }}" class="no-underline ">
+                            <article class="bg-gray-100 rounded h-full flex flex-col hover:bg-gray-200 transition">
+                                <img class="rounded-t" src="{{ hike.url | url }}{{ hike.data.featured_image }}">
+                                <div class="p-3">
+                                    <div class="text-xs text-gray-500 tracking-wider font-bold uppercase flex items-center justify-between">
+                                        <time>{{ hike.data.date | simpleDate }}</time>
+                                        {% if hike.url %}
+                                            <span class="text-gray-600 opacity-50">{{ hike | readingTime }} read</span>
+                                        {% endif %}
+                                    </div>
+                                    <h3 class="truncate item-end mb-0 mr-2 text-base font-bold">{{ hike.data.name }}</h3>
+                                </div>
+                            </article>
+                        </a>
+                    </li>
+                {% endif %}
+            {% endfor %}
         </ul>
 
         <h2 class="text-xl  leading-tight  mb-6 font-semibold">Other entries</h2>
 
         <ul class="my-8 flex flex-wrap -mx-4">
-        {% for hike in log %}
-            {% if not hike.url %}
-            <li class="py-1 mb-4 w-full sm:w-1/2 md:w-1/3 p-4">
-                <article class="border-b dark-mode:border-gray-800 h-full p-2 flex flex-col ">
-                 <div class="text-xs text-gray-500 tracking-wider font-bold uppercase flex items-center justify-between">
-                    <time>{{ hike.data.date | simpleDate }}</time> 
-                    {% if hike.url %} <span class="text-gray-400 opacity-50">{{ hike | readingTime }} read</span> {% endif %}
-                </div>
-                <h3 class="truncate item-end mb-0 mr-2 text-base">{{ hike.data.name }}</h3>          
-                </article>     
-            </li>
-            {% endif %}
-        {% endfor %}
+            {% for hike in log %}
+                {% if not hike.url %}
+                    <li class="py-1 mb-4 w-full sm:w-1/2 md:w-1/3 p-4">
+                        <article class="border-b dark-mode:border-gray-800 h-full p-2 flex flex-col ">
+                            <div class="text-xs text-gray-500 tracking-wider font-bold uppercase flex items-center justify-between">
+                                <time>{{ hike.data.date | simpleDate }}</time>
+                                {% if hike.url %}
+                                    <span class="text-gray-400 opacity-50">{{ hike | readingTime }} read</span>
+                                {% endif %}
+                            </div>
+                            <h3 class="truncate item-end mb-0 mr-2 text-base">{{ hike.data.name }}</h3>
+                        </article>
+                    </li>
+                {% endif %}
+            {% endfor %}
         </ul>
     </div>
 </section>
-
