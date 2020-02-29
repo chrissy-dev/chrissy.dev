@@ -2,8 +2,8 @@
     <div class="container py-4 md:py-8 md:flex items-center justify-between">
         <div class="flex justify-between items-center sm:justify-start">
             <a href="/" class="w-12 h-12 md:w-16 md:h-16 inline-flex">
-                <figure class="rounded-full overflow-hidden shadow-lg transition">
-                    <img class="filter-grayscale" src="/static/avatar.png" alt=""/>
+                <figure>
+                    <img class="rounded-full shadow-lg hover:filter-grayscale transition" src="/static/avatar.png" alt=""/>
                 </figure>
                 <span class="sr-only">Chris Collins</span>
             </a>
@@ -19,7 +19,7 @@
                     <a class="block no-underline mr-1 md:mr-4 py-3 px-1 mx-2 {% if activePage === '/about/' %} active {% endif %}" href="/about/">About</a>
                 </li>
                 <li>
-                    <a class="block no-underline mr-1 md:mr-4 py-3 px-1 mx-2 {% if activePage === '/uses/' %} active {% endif %}" href="/uses/">Uses</a>
+                    <a class="block no-underline mr-1 md:mr-4 py-3 px-1 mx-2 {% if activePage === '/uses/' %} active {% endif %}" href="/uses/">Stuff I Use</a>
                 </li>
                 <li>
                     <a class="block no-underline mr-1 md:mr-4 py-3 px-1 mx-2 {% if '/notes/' in activePage %} active {% endif %}" href="/notes/">Notes</a>

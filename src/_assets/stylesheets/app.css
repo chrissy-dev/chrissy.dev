@@ -33,6 +33,10 @@ body {
   filter: grayscale(100%) contrast(1.2);
 }
 
+.hover\:filter-grayscale:hover {
+  filter: grayscale(100%) contrast(1.2);
+}
+
 .hover\:filter-none {
   filter: none;
 }
