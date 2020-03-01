@@ -34,7 +34,7 @@
   ol ul,
   ul ol,
   ol ol {
-    @apply my-0 ml-3;
+    @apply my-0 ml-4;
   }
 
   blockquote {

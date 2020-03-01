@@ -2,10 +2,9 @@
 title: Why I use plain text files for my notes
 date: 2018-12-29
 featured_image: /static/plain-text-notes.jpg
-tags: ['featured_post']
 ---
 
-Recently I noticed a colleague using [TextEdit](https://support.apple.com/en-gb/guide/textedit/welcome/mac) on her Mac as her primary method of taking notes. I asked her why she doesn’t use something more modern like [Apple Notes](https://support.apple.com/en-gb/guide/notes/welcome/mac), [Evernote](https://evernote.com/) or any from the ever growing pool of specific note taking apps available. She replied a beautifully simplistic answer:
+Recently I noticed a colleague using [TextEdit](https://support.apple.com/en-gb/guide/textedit/welcome/mac) on her Mac as her primary method of taking notes. I asked her why she doesn’t use something more modern like [Apple Notes](https://support.apple.com/en-gb/guide/notes/welcome/mac), [Evernote](https://evernote.com/) or any from the ever-growing pool of specific note-taking apps available. She replied a beautifully simplistic answer:
 
 > “I’ve been taking notes like this since I started using a computer”.
 
@@ -17,25 +16,25 @@ When I looked at my [Apple Notes](https://support.apple.com/en-gb/HT205773), [Ev
 
 ## Why plain text?
 
-I decided that I wanted to go with something hassle free, minimal options for styling, tiny **interoperable** files and that I can **organise** and store wherever and however I wanted. Plain text files combined with some minimal amounts of markdown seemed to fit the bill.
+I decided that I wanted to go with something hassle-free, minimal options for styling, tiny **interoperable** files and that I can **organise** and store wherever and however I wanted. Plain text files combined with some minimal amounts of markdown seemed to fit the bill.
 
 ## Where do I host my files?
 
-This is what I love, I can through them anywhere and pick them up anywhere. I use Apple hardware for my personal and professional life so naturally my notes live in a folder on iCloud Drive. I love knowing that I can lift that folder and drop it into Dropbox, Google Drive or a self-hosted solution whenever I like.
+This is what I love, I can through them anywhere and pick them up anywhere. I use Apple hardware for my personal and professional life so naturally, my notes live in a folder on iCloud Drive. I love knowing that I can lift that folder and drop it into Dropbox, Google Drive or a self-hosted solution whenever I like.
 
 ## What text editor do I use?
 
-This is something I spent a bit of experimenting with. Although I currently use a commercial app down to preference I was pleasantly surprised at the open source options and the pre-installed solutions.
+This is something I spent a bit of experimenting with. Although I currently use a commercial app down to preference I was pleasantly surprised at the open-source options and the pre-installed solutions.
 
 ### Plain Text editors for Mac
 
-On my Mac, I use [iA Writer](https://ia.net/writer) as my primary note taking tool. I love everything about this application. The UI is beautiful, it has a file explorer baked in, smart folders and hashtag organisation. The best part is that it’s purely a client sitting on top of my text files, it doesn’t try to take ownership of my files and wrap me into an ecosystem.
+On my Mac, I use [iA Writer](https://ia.net/writer) as my primary note-taking tool. I love everything about this application. The UI is beautiful, it has a file explorer baked in, smart folders and hashtag organisation. The best part is that it’s purely a client sitting on top of my text files, it doesn’t try to take ownership of my files and wrap me into an ecosystem.
 
 #### Notable mentions
 
-[Nota](https://github.com/brunophilipe/noto) - A fantastic open source app for Mac really clean and lightweight.
+[Nota](https://github.com/brunophilipe/noto) - A fantastic open source app for Mac clean and lightweight.
 
-[FSNotes](https://fsnot.es/) - I wanted to use this as my daily app but it’s not as refined as iA, being open source though (with a paid option) it’s still a very nice txt editor that shouldn’t be overlooked.
+[FSNotes](https://fsnot.es/) - I wanted to use this as my daily app but it’s not as refined as iA, being open source though (with a paid option) it’s still a very nice text editor that shouldn’t be overlooked.
 
 ### iPhone & iPad On my iPhone
 
