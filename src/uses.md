@@ -7,7 +7,7 @@ layout: page.njk
 
 I use a lot of stuff in my day-to-day, some of which can be found on this page.
 
-**None of the links on this page are affiliate links and each link contain no tracking UTMs. There's also zero no third party tracking on this page. Browse at ease ☺️.**
+**None of the links on this page are affiliate links and each link contain no tracking UTMs. There's also zero no third party tracking on this page. Browse at ease 😊.**
 
 ## Hardware
 
@@ -45,11 +45,16 @@ I use a mix of open-source software, leased and commerical software. I lease app
 - [ImageOptim](https://imageoptim.com) - Crunching images for the web, save some space or strip personally identifiable metadata.
 - [Marked 2](https://marked2app.com/) - Previewing markdown I'm writing in Visual Studio Code.
 - [Paw](https://paw.cloud/) - I love native apps, Paw is an API tool for Mac.
+- [Tower](https://www.git-tower.com/mac/) - The only Git client I have ever needed.
 
 ### Design
 
 - [Sketch](https://www.sketch.com/) - Been using it for years for UI design, I've heard of the rest but I'm happy and productive with Sketch.
 - [IconJar](https://geticonjar.com/) - I have a few open-source icon collections stored in IconJar, it's scary how much I use this app.
+  - [Iconcons](https://ionicons.com/)
+  - [Material Design Icons](https://materialdesignicons.com/)
+  - [Simple Icons](https://simpleicons.org/)
+  - [Weather Icons](https://erikflowers.github.io/weather-icons/)
 
 ### Photography/Photo Editing
 
@@ -66,6 +71,7 @@ I use a mix of open-source software, leased and commerical software. I lease app
   - [Google Chrome](https://www.google.co.uk/chrome) - Temporarily back using Chrome because Firefox has reset to default settings twice in a month.
 - [ohmyzsh](https://github.com/ohmyzsh/ohmyzsh) - I'm not a 10x Developer...but ohmyzsh makes me feel like one.
 - [Kap](https://getkap.co/) - Screen recorder of choice, can't believe this is a free app.
+- [Rectangle](https://rectangleapp.com/) - Used to use [Spectacle](https://www.spectacleapp.com/) but Rectangle is the open-source maintained fork of it.
 
 ## Mobile Applications & Tools
 
@@ -105,3 +111,4 @@ I use a mix of open-source software, leased and commerical software. I lease app
 ## Other stuff
 
 - [Trakke Assynt Backpack](https://trakke.co.uk/collections/waxed-canvas-backpacks/products/assynt-waxed-canvas-backpack)
+- [NAD C 556 Turntable](https://nadelectronics.com/product/c-556-turntable/)
