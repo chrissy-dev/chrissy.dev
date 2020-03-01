@@ -1,5 +1,5 @@
 ---
-title: Contact - Chris Collins
+title: Contact – Chris Collins
 description: Have a question, or want to work together on a project? Chris Collins is a designer and developer from Scotland.
 layout: base.njk
 ---
@@ -11,15 +11,17 @@ layout: base.njk
       or email me directly at <a href="mailto:hello@chriscollins.me">hello@chriscollins.me</a>.</p>
 
     <form name="contact" method="POST" data-netlify="true" action="/thank-you" class="mt-10 max-w-lg">
-      <div class="hideBots"><label>Don’t fill this out if you're human: <input name="bot-field" /></label></div>
+      <div class="hideBots">
+        <label>Don’t fill this out if you're human: <input name="bot-field"/></label>
+      </div>
       <div class="mb-4 w-full">
         <label class="font-bold text-lg" for="name">Name</label>
-        <input type="text" class="text-input" name="name" required />
+        <input type="text" class="text-input" name="name" required/>
       </div>
 
       <div class="mb-4 w-full">
         <label class="font-bold text-lg" for="email">Email</label>
-        <input type="email" class="text-input" name="email" required />
+        <input type="email" class="text-input" name="email" required/>
       </div>
 
       <div class="mb-4 w-full">
@@ -27,7 +29,7 @@ layout: base.njk
         <textarea class="text-input" name="message" required></textarea>
       </div>
 
-      <button type="submit" class="button">Send
+      <button type="submit" class="button rounded">Send
         message</button>
     </form>
   </div>

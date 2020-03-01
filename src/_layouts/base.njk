@@ -64,9 +64,10 @@
     <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,400i,600,600i&display=swap" rel="stylesheet">
   </head>
   <body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
     <div class="min-h-screen flex flex-col">
       {% include "header.njk" %}
-      <main id="main" class="flex-auto flex md:items-center fade-in-bottom">
+      <main id="main-content" class="flex-auto flex md:items-center fade-in-bottom">
         {{ content | safe }}
       </main>
       {% include "footer.njk" %}

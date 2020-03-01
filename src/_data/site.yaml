@@ -1,14 +1,14 @@
-#  Your global data folder is controlled by the dir.data configuration option. 
-#  All *.json and module.exports values from *.js files in this directory will 
+#  Your global data folder is controlled by the dir.data configuration option.
+#  All *.json and module.exports values from *.js files in this directory will
 #  be added into a global data object available to all templates.
 
 #  This file can be accessed using: {{ site.title }}
 
-title: "Chris Collins" # Appears after the title Page eg. Page Title - [title]
-description: "Chris Collins is a designer and full stack developer based in Glasgow, Scotland." 
-url: "https://www.chriscollins.me"
+title: 'Chris Collins' # Appears after the title Page eg. Page Title - [title]
+description: 'Chris Collins is a Full Stack Developer & Digital Designer based in Glasgow, Scotland.'
+url: 'https://www.chriscollins.me'
 
-author: "Chris Collins"
-meta_data: 
- twitter: "@scottishstoater"
- default_social_image: "/static/default_social_image.jpg"
+author: 'Chris Collins'
+meta_data:
+  twitter: '@scottishstoater'
+  default_social_image: '/static/default_social_image.jpg'

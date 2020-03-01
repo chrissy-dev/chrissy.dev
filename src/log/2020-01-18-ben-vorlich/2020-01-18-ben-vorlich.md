@@ -1,5 +1,5 @@
 ---
-title: Ben Vorlich (Loch Lomond) - Walk Report
+title: Ben Vorlich (Loch Lomond) – Walk Report
 
 name: Ben Vorlich (Loch Lomond)
 date: 2020-01-18

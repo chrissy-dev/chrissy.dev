@@ -92,4 +92,33 @@
     line-height: 33px;
     @apply border p-2;
   }
+
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    position: relative;
+
+    .anchor {
+      display: none;
+      position: absolute;
+      top: 0;
+      left: -1em;
+      width: 1em;
+      opacity: 0;
+
+      &:hover {
+        display: block;
+        opacity: 1 !important;
+      }
+    }
+
+    &:hover {
+      > .anchor {
+        display: block;
+        opacity: 1;
+      }
+    }
+  }
 }

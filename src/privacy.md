@@ -1,5 +1,5 @@
 ---
-title: Privacy Policy - Chris Collins
+title: Privacy Policy – Chris Collins
 layout: page.njk
 ---
 
@@ -15,7 +15,7 @@ This website does not collect or store any personally identifiable data behind t
 
 If you sign up for my newsletter, I only collect your name and email address.  
 If you use the contact form I will use the data you provide to correspond with you.  
-This website does not collect anymore information.   
+This website does not collect anymore information.
 
 ## Where do I store your data?
 

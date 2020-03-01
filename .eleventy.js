@@ -13,14 +13,17 @@ const likesFilter = require('./src/_filters/likes-filter.js');
 var sizeOf = require('image-size');
 const ColorThief = require('colorthief');
 
-module.exports = function (eleventyConfig) {
+const markdownIt = require('markdown-it')
+const markdownItAnchor = require('markdown-it-anchor')
+
+module.exports = function (config) {
     // Folders to copy to build dir (See. 1.1)
-    eleventyConfig.addPassthroughCopy("src/static");
-    eleventyConfig.addPassthroughCopy("src/log/**/*.{jpg,jpeg}");
+    config.addPassthroughCopy("src/static");
+    config.addPassthroughCopy("src/log/**/*.{jpg,jpeg}");
 
     if (process.env.ELEVENTY_ENV === 'production') {
         // Minify HTML output
-        eleventyConfig.addTransform("htmlmin", function (content, outputPath) {
+        config.addTransform("htmlmin", function (content, outputPath) {
             if (outputPath && outputPath.endsWith(".html")) {
                 let minified = htmlmin.minify(content, {
                     useShortDoctype: true,
@@ -35,40 +38,56 @@ module.exports = function (eleventyConfig) {
         });
     }
 
-    eleventyConfig.addFilter('likesFilter', likesFilter);
-    eleventyConfig.addFilter('webmentionsFilter', webmentionsFilter);
+    // Markdown Parsing
+    config.setLibrary(
+        'md',
+        markdownIt({
+            html: true,
+            breaks: true,
+            typographer: true
+        }).use(markdownItAnchor, {
+            permalink: true,
+            permalinkSymbol: '#',
+            permalinkClass: 'anchor',
+            permalinkBefore: true,
+            level: 2
+        })
+    )
+
+    config.addFilter('likesFilter', likesFilter);
+    config.addFilter('webmentionsFilter', webmentionsFilter);
 
     // https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-date-string
-    eleventyConfig.addFilter('htmlDateString', (dateObj) => {
+    config.addFilter('htmlDateString', (dateObj) => {
         return DateTime.fromJSDate(dateObj, {
             zone: 'utc'
         }).toFormat('yyyy-LL-dd');
     });
 
-    eleventyConfig.addFilter('urlDate', (dateObj) => {
+    config.addFilter('urlDate', (dateObj) => {
         return DateTime.fromJSDate(dateObj, {
             zone: 'utc'
         }).toFormat('dd-LL-yyyy');
     });
 
-    eleventyConfig.addFilter("readableDate", dateObj => {
+    config.addFilter("readableDate", dateObj => {
         return DateTime.fromJSDate(new Date(dateObj), {
             zone: 'utc'
         }).toFormat("dd LLL yyyy");
     });
 
-    eleventyConfig.addFilter("simpleDate", dateObj => {
+    config.addFilter("simpleDate", dateObj => {
         return DateTime.fromJSDate(new Date(dateObj), {
             zone: 'utc'
         }).toFormat("dd.LL.yy");
     });
 
-    eleventyConfig.addFilter("w3cDate", function (date) {
+    config.addFilter("w3cDate", function (date) {
         return date.toISOString();
     });
 
 
-    eleventyConfig.addFilter("media", function (filename, page) {
+    config.addFilter("media", function (filename, page) {
         console.log('FILENAME: ' + filename, 'PAGE: ' + page);
 
         const path = page.inputPath.split('/')
@@ -79,7 +98,7 @@ module.exports = function (eleventyConfig) {
         return filename
     });
 
-    eleventyConfig.addNunjucksAsyncShortcode("photo", function (img) {
+    config.addNunjucksAsyncShortcode("photo", function (img) {
         let imgPath = `./src${img.context}${img.src}`;
         let d = sizeOf(imgPath);
 
@@ -95,14 +114,14 @@ module.exports = function (eleventyConfig) {
     });
 
     // Add YAML support for data files
-    eleventyConfig.addDataExtension("yaml", contents => yaml.safeLoad(contents));
+    config.addDataExtension("yaml", contents => yaml.safeLoad(contents));
 
-    eleventyConfig.addPlugin(syntaxHighlight);
-    eleventyConfig.addPlugin(pluginRss);
-    // eleventyConfig.addPlugin(inclusiveLangPlugin);
-    eleventyConfig.addPlugin(readingTime);
+    config.addPlugin(syntaxHighlight);
+    config.addPlugin(pluginRss);
+    // config.addPlugin(inclusiveLangPlugin);
+    config.addPlugin(readingTime);
 
-    eleventyConfig.addCollection("log", function (collection) {
+    config.addCollection("log", function (collection) {
         return collection.getFilteredByGlob("src/log/**/*.md").sort(function (a, b) {
             return new Date(b.data.date) - new Date(a.data.date);
         });

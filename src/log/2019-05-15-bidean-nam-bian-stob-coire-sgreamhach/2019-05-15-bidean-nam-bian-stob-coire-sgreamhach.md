@@ -1,5 +1,5 @@
 ---
-title: Bidean nam Bian & Stob Coire Sgreamhach - Walk Report
+title: Bidean nam Bian & Stob Coire Sgreamhach – Walk Report
 
 name: Bidean nam Bian
 date: 2019-05-15
@@ -9,9 +9,11 @@ time: 6 hours
 ascent: 3,772ft
 rating: 🥾🥾🥾🥾🥾
 featured_image: 05152019_101709.jpg
+
+tags: ['featured_post']
 ---
 
-After a failed winter attempt with [Grant Elliott](https://grantelliott.co) in March 2018, having turned back at Stob Coire nan Lochan, I had Bidean nam Bian on my radar since. 
+After a failed winter attempt with [Grant Elliott](https://grantelliott.co) in March 2018, having turned back at Stob Coire nan Lochan, I had Bidean nam Bian on my radar since.
 
 I took a Wednesday off work and got super lucky with the weather. It was over 20°C at points during the day - which made it tough but you can't beat a shorts and t-shirt day on the hills.
 
@@ -29,11 +31,9 @@ The initial climb (once you're on the hill) is steep, but the path is in decent 
 
 Doing a solo climb usually means I don't get a photo of myself on the hill but because it was such a nice day I had the tripod with me and managed to get a couple.
 
-
 {% photo src="05152019_075801.jpg", caption="Respectable self photo", context=page.url %}
 
 {% photo src="05152019_075942.jpg", caption="A wanky one but it turned out not bad", context=page.url %}
-
 
 After my photoshoot, there was a short but steep hill up to a large grassy plateau with Coire nan Lochan towering above.
 
@@ -42,12 +42,12 @@ Stob Coire nan Lochan is a magnificent mountain. I think it's a shame it's not c
 {% photo src="05152019_082131.jpg", caption="Stob Coire nan Lochan", context=page.url %}
 {% photo src="05152019_084131.jpg", caption="Stob Coire nan Lochan", context=page.url %}
 
-The standard route up without using ropes is to venture to the right and go up the side, which is very gradual but has a decent amount of boulders and requires mild scrambling at times. Here you get up close to the crags you had just seen from below. They are just as impressive. 
+The standard route up without using ropes is to venture to the right and go up the side, which is very gradual but has a decent amount of boulders and requires mild scrambling at times. Here you get up close to the crags you had just seen from below. They are just as impressive.
 
 {% photo src="05152019_090334.jpg", caption="Stob Coire nan Lochan", context=page.url %}
 {% photo src="05152019_090350.jpg", caption="View back down to the A82 cutting through the mountains", context=page.url %}
 
-Only after reaching the summit of Stob Coire nan Lochan you are faced with Bidean, quietly sitting behind. There's a simple but steep descent and similar steep accent required to summit Bidean. 
+Only after reaching the summit of Stob Coire nan Lochan you are faced with Bidean, quietly sitting behind. There's a simple but steep descent and similar steep accent required to summit Bidean.
 
 {% photo src="05152019_093148.jpg", caption="Bidean nam Bian summit from Stob Coire nan Lochan", context=page.url %}
 
@@ -69,13 +69,12 @@ The route to Stob Coire Sgreamhach is nothing more than a walk and can feel a li
 
 {% photo src="05152019_113950.jpg", caption="Looking down on the Lost Valley", context=page.url %}
 
-The descent into the Lost Valley is fairly tricky. The main path was blocked by snow and there's a lot of loose scree and rocks, combined with the steep descent care was needed not to dislodge rocks for folk below. 
+The descent into the Lost Valley is fairly tricky. The main path was blocked by snow and there's a lot of loose scree and rocks, combined with the steep descent care was needed not to dislodge rocks for folk below.
 
 {% photo src="05152019_130505.jpg", caption="The descent into the Lost Valley, it looks simpler than it is.", context=page.url %}
 
-By the time I got into the Lost Valley, I'd climbed 3 peaks on a roasting hot day and was pretty knackered. When I crossed the footbridge across the River Coe I was choking for a freezing cold glass of Coke. 
+By the time I got into the Lost Valley, I'd climbed 3 peaks on a roasting hot day and was pretty knackered. When I crossed the footbridge across the River Coe I was choking for a freezing cold glass of Coke.
 
 {% photo src="05152019_135838.jpg", caption="Looking back up at where I had been", context=page.url %}
 
 I stopped in at Kingshouse on my way home and sat with the deer and had 2 pints of Coke looking at Stob Dearg. What a day out!
-

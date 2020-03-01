@@ -57,3 +57,21 @@ hr {
   width: 0;
   z-index: -1;
 }
+
+.skip-link {
+  clip: rect(1px, 1px, 1px, 1px);
+  display: block;
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+  z-index: 999;
+
+  &:focus {
+    clip: auto;
+    height: auto;
+    overflow: visible;
+    width: auto;
+    @apply bg-blue-500 p-3 text-white;
+  }
+}
