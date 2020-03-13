@@ -26,7 +26,9 @@ layout: base.njk
                 </li>
                 <li class="flex py-1 justify-between">Time taken: <span class="ml-2 text-right">{{ time }}</span></li>
                 <li class="flex py-1 justify-between">Ascent: <span class="ml-2 text-right">{{ ascent }}</span></li>
-                <li class="flex py-1 justify-between">Munros: <span class="ml-2 text-right">{{ munros }}</span></li>
+                {% if munros %}
+                    <li class="flex py-1 justify-between">Munros: <span class="ml-2 text-right">{{ munros }}</span></li>
+                {% endif %}
                 <li class="flex py-1 justify-between">Rating: <span class="ml-2 text-right">{{ rating }}</span></li>
             </ul>
         </aside>
