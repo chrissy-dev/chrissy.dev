@@ -17,6 +17,10 @@ I use a lot of stuff in my day-to-day, some of which can be found on this page.
 - Mac Mini (2012) - Used as a home server.
 - [DELL U3219Q Display](https://www.dell.com/en-uk/shop/dell-ultrasharp-32-4k-usb-c-monitor-u3219q/apd/210-aquo/monitors-monitor-accessories)
 - [Durgod Taurus K320 TKL Keyboard](https://www.amazon.co.uk/Durgod-Taurus-Mechanical-Gaming-Keyboard-Space-Grey/dp/B081LZQ7R7/)
+
+### Audio
+
+- [Sony NW-A45 Walkman](https://www.amazon.co.uk/Sony-Display-Resolution-Walkman-Battery/dp/B0798LBBJW)
 - [Sony WH-1000XM3 Headphones](https://www.amazon.co.uk/Sony-WH-1000XM3-Wireless-Cancelling-Headphones-Black/dp/B07GDR2LYK)
 
 ### Photography Gear
