@@ -1,7 +1,7 @@
 ---
-title: Bidean nam Bian & Stob Coire Sgreamhach – Walk Report
+title: Bidean nam Bian & Stob Coire Sgreamhach, Glencoe, Scotland – Walk Report
 
-name: Bidean nam Bian
+name: Bidean nam Bian, Glencoe
 date: 2019-05-15
 
 munros: Bidean nam Bian, Stob Coire Sgreamhach
