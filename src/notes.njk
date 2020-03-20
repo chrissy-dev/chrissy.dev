@@ -28,11 +28,11 @@ pagination:
         <ul class="flex flex-wrap md:-mx-6 my-6">
             {% for note in notes %}
                 <li class="scroll-snap-child py-3 md:p-6 w-full md:w-1/2 lg:w-1/3 flex-none overflow-hidden">
-                    <a class="bg-gray-100 no-underline h-full hover:bg-white hover:bg-gray-200 transition rounded overflow-hidden block" href="{{ note.url }}">
-                        <img class="rounded-t" src="{{ note.data.featured_image }}">
-                        <div class="p-4 h-full flex-col">
+                    <a class="no-underline h-full rounded overflow-hidden block" href="{{ note.url }}">
+                        <img class="rounded-lg" src="{{ note.data.featured_image }}">
+                        <div class="py-4 h-full flex-col">
+                            <span class="text-xs leading-none opacity-50 font-bold">{{ note.data.date | simpleDate }}</span>
                             <h5 class="font-semibold leading-tight">{{ note.data.title }}</h5>
-                            <span class="text-xs leading-none opacity-50">{{ note.data.date | simpleDate }}</span>
                         </div>
                     </a>
                 </li>

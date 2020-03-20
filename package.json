@@ -33,6 +33,7 @@
     "luxon": "^1.22.0",
     "markdown-it": "^10.0.0",
     "markdown-it-anchor": "^5.2.5",
+    "markdown-it-toc-done-right": "^4.1.0",
     "node-fetch": "^2.6.0",
     "postcss-cli": "^7.1.0",
     "postcss-import": "^12.0.1",

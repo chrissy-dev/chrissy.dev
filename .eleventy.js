@@ -15,6 +15,7 @@ const ColorThief = require('colorthief');
 
 const markdownIt = require('markdown-it')
 const markdownItAnchor = require('markdown-it-anchor')
+const markdownItAnchorToc = require("markdown-it-toc-done-right")
 
 module.exports = function (config) {
     // Folders to copy to build dir (See. 1.1)
@@ -51,8 +52,11 @@ module.exports = function (config) {
             permalinkClass: 'anchor',
             permalinkBefore: true,
             level: 2
+        }).use(markdownItAnchorToc, {
+            listType: 'ul',
+            level: 2
         })
-    )
+    );
 
     config.addFilter('likesFilter', likesFilter);
     config.addFilter('webmentionsFilter', webmentionsFilter);

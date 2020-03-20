@@ -1,5 +1,5 @@
 ---
-title: Uses - Software & Hardware I use on a daily basis - Chris Collins
+title: Uses - Software & Hardware I use daily - Chris Collins
 layout: page.njk
 ---
 
@@ -8,6 +8,11 @@ layout: page.njk
 I use a lot of stuff in my day-to-day, some of which can be found on this page.
 
 **None of the links on this page are affiliate links and each link contain no tracking UTMs. There's also zero no third party tracking on this page. Browse at ease 😊.**
+
+## Contents 
+
+${toc}
+
 
 ## Hardware
 
