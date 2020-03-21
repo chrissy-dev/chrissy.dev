@@ -14749,6 +14749,11 @@ body {
   font-size: 1.125rem;
 }
 
+:focus {
+  outline: solid  0.2rem rgba(0,0,0,0.1);
+  outline-offset: 0.2rem;
+}
+
 .fadeIn {
   -webkit-animation-duration: 1.2s;
           animation-duration: 1.2s;

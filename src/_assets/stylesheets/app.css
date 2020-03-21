@@ -12,6 +12,11 @@ body {
   @apply text-gray-900 text-lg;
 }
 
+:focus {
+    outline: solid  0.2rem rgba(0,0,0,0.1);
+    outline-offset: 0.2rem;
+}
+
 .fadeIn {
   animation-duration: 1.2s;
   animation-fill-mode: both;
