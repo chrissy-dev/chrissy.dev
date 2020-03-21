@@ -41,6 +41,10 @@ I love full manual older lenses. You can get extremely well built lenses with gr
 - [Olympus OM G.Zuiko (MC) Auto-S 50mm F/1.4](https://lens-db.com/olympus-om-gzuiko-auto-s-50mm-f14/)
 - [Olympus OM Zuiko (MC) Auto-W 28mm F/2.8](https://lens-db.com/olympus-om-zuiko-auto-w-28mm-f28/)
 
+#### Accessories
+
+- [Viltrox VX-T60 Tripod](https://www.amazon.com/VILTROX-VX-T60-Lightweight-Flexible-Camcorder/dp/B07BSFY5XP)
+
 ## Desktop Applications & Tools
 
 I use a mix of open-source software, leased and commerical software. I lease apps through [SetApp](https://setapp.com/), I love it.
