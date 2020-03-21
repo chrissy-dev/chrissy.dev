@@ -27,6 +27,7 @@ ${toc}
 
 - [Sony NW-A45 Walkman](https://www.amazon.co.uk/Sony-Display-Resolution-Walkman-Battery/dp/B0798LBBJW)
 - [Sony WH-1000XM3 Headphones](https://www.amazon.co.uk/Sony-WH-1000XM3-Wireless-Cancelling-Headphones-Black/dp/B07GDR2LYK)
+- [NAD C 556 Turntable](https://nadelectronics.com/product/c-556-turntable/)
 
 ### Photography Gear
 
@@ -117,7 +118,31 @@ I use a mix of open-source software, leased and commerical software. I lease app
 - [TouchRetouch](https://apps.apple.com/gb/app/touchretouch/id373311252) - One app that solves one problem well - and better than others attempt to.
 - [Lively](https://apps.apple.com/gb/app/lively-live-photo-to-gif/id1049711205) - Exporting live photos as GIFs and Movies.
 
-## Other stuff
+## Hiking
 
-- [Trakke Assynt Backpack](https://trakke.co.uk/collections/waxed-canvas-backpacks/products/assynt-waxed-canvas-backpack)
-- [NAD C 556 Turntable](https://nadelectronics.com/product/c-556-turntable/)
+### Backpacks 
+
+- [Osprey Stratos 36 Backpack](https://www.ospreyeurope.com/shop/gb_en/stratos-36-17) - Fantastic backpack for climbing and hiking. 
+- [Trakke Assynt Backpack](https://trakke.co.uk/collections/waxed-canvas-backpacks/products/assynt-waxed-canvas-backpack) - Great for a day out taking photos, walking or commuting. 
+
+### Footwear
+
+- [Scarpa Terra GTX boots](https://www.scarpa.co.uk/trek/terra-gtx/)
+- [SIMOND Mountaineering boots](https://www.decathlon.co.uk/alpinism-bleu-boot-id_8324356.html)
+
+### Equipment 
+
+- [SIMOND 12-point crampons](https://www.decathlon.co.uk/caiman-2-strap-on-crampons-id_8212786.html)
+- [Grivel Munro Ice Axe](https://www.grivelgb.co.uk/products/ice-axes/munro-sa/)
+
+### Jackets
+
+- [The North Face Mens Triclimate II Jacket](https://www.cotswoldoutdoor.com/p/the-north-face-mens-selsley-triclimate-ii-jacket-A1314095.html)
+- [Montane Atomic Waterproof Jacket](https://www.nevisport.com/montane-atomic-mens-waterproof-jacket)
+- [Patagonia Crosstrek Fleece Hoody](https://www.patagonia.com/product/mens-crosstrek-fleece-hoody/23790.html)
+
+### Accessories
+
+- [The North Face Mens Apex Etip Glove](https://www.cotswoldoutdoor.com/p/the-north-face-mens-apex-etip-glove-A3215687.html?colour=124)
+- [Silva Classic Compass](https://www.cotswoldoutdoor.com/p/silva-classic-compass-E9224025.html?colour=97)
+- [LE LED Torch](https://www.amazon.co.uk/gp/product/B005FEGYCO/)
