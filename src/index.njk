@@ -9,8 +9,8 @@ pagination:
     alias: log
 ---
 
-<div class="container md:my-8 md:-mt-8">
-    <div class="lg:flex items-center justify-between lg:text-center">
+<div class="container md:my-8">
+    <div class="lg:flex items-center justify-between lg:text-center mb-8">
         <section class="max-w-xl mx-auto">
             <h1 class="text-xl md:text-3xl text-gray-600 dark-mode:text-gray-400 mb-1 leading-tight">Hello, I’m Chris</h1>
             <h2 class="text-3xl md:text-4xl leading-tight mb-4 md:mb-6 font-bold">I design and build digital products, hike and take photos.</h2>
@@ -18,23 +18,21 @@ pagination:
         </section>
     </div>
 
-    <h2 class="text-xl mt-8 leading-tight  mb-6 font-semibold">Latest Walk Reports</h2>
+    <section class="flex justify-between items-center my-8">
+        <h2 class="text-xl leading-tight font-semibold">Latest Walk Reports</h2>
+        <a href="/log">View all</a>
+    </section>
 
-    <ul class="my-8 flex -mx-4 scroll-snap scrolling-touch overflow-x-scroll">
+    <ul class="flex -mx-6 scroll-snap scrolling-touch overflow-x-scroll">
         {% for hike in log %}
             {% if hike.url %}
-                <li class="scroll-snap-child py-1 mb-4 sm:w-1/2 md:w-1/3 p-4" style="min-width: 260px;">
-                    <a href="{{ hike.url | url }}" class="no-underline ">
-                        <article class="h-full flex flex-col">
-                            <img class="rounded-lg" src="{{ hike.url | url }}{{ hike.data.featured_image }}">
-                            <div class="py-4">
-                                <div class="text-xs text-gray-500 tracking-wider font-bold uppercase flex items-center justify-between">
-                                    <time>{{ hike.data.date | simpleDate }}</time>
-                                    <span class="text-gray-600 opacity-50">{{ hike | readingTime }} read</span>
-                                </div>
-                                <h3 class="truncate item-end mb-0 mr-2 text-base font-bold">{{ hike.data.name }}</h3>
-                            </div>
-                        </article>
+                <li class="scroll-snap-child py-3 px-6 w-9/12 md:w-1/2 lg:w-1/3 flex-none overflow-hidden" style="min-width: 290px;">
+                    <a class="no-underline h-full rounded overflow-hidden block mb-4" href="{{ hike.url | url }}">
+                        <img class="rounded-lg" src="{{ hike.url | url }}{{ hike.data.featured_image }}">
+                        <div class="h-full flex-col">
+                            <span class="text-xs leading-none opacity-50 font-bold">{{ hike.data.date | simpleDate }}</span>
+                            <h5 class="font-semibold leading-snug md:text-xl">{{ hike.data.name }}</h5>
+                        </div>
                     </a>
                 </li>
             {% endif %}

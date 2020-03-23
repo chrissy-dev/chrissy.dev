@@ -14407,12 +14407,15 @@ pre[class*='language-'] ::selection {
 }
 
 :not(pre) > code {
-  background-color: #edf2f7;
+  background-color: #fff;
   border-radius: 0.25rem;
   font-size: 0.875rem;
   vertical-align: middle;
   padding-left: 0.5rem;
   padding-right: 0.5rem;
+  border-width: 1px;
+  border-color: #cbd5e0;
+  border-bottom-width: 2px;
   padding-top: 0.2rem;
   padding-bottom: 0.2rem;
 }
@@ -14749,9 +14752,13 @@ body {
   font-size: 1.125rem;
 }
 
-:focus {
-  outline: solid  0.2rem rgba(0,0,0,0.1);
-  outline-offset: 0.2rem;
+:focus, button:focus {
+  outline: solid  3px rgba(0,0,0,0.1);
+  outline-offset: 4px;
+}
+
+input:focus, textarea:focus {
+  outline-offset: 0;
 }
 
 .fadeIn {
@@ -14864,7 +14871,7 @@ a:hover, a:visited:hover {
   font-size: 1.125rem;
 }
 
-.button:hover {
+.button:hover, .button:focus {
     background-color: #005FE5;
     color: #fff;
   }
@@ -14882,7 +14889,16 @@ a:hover, a:visited:hover {
 
 .text-input:focus {
     background-color: #f7fafc;
+    border-color: #000;
   }
+
+.input-label {
+  font-weight: 700;
+  font-size: 1.125rem;
+  line-height: 1.5;
+  margin-bottom: 0.25rem;
+  display: block;
+}
 
 @media (min-width: 640px) {
   .sm\:sr-only {

@@ -12,9 +12,13 @@ body {
   @apply text-gray-900 text-lg;
 }
 
-:focus {
-    outline: solid  0.2rem rgba(0,0,0,0.1);
-    outline-offset: 0.2rem;
+:focus, button:focus {
+    outline: solid  3px rgba(0,0,0,0.1);
+    outline-offset: 4px;
+}
+
+input:focus, textarea:focus {
+    outline-offset: 0;
 }
 
 .fadeIn {
@@ -102,7 +106,7 @@ a:visited {
 .button {
   @apply p-3 bg-gray-300 font-bold text-lg;
 
-  &:hover {
+  &:hover , &:focus {
     @apply bg-blue-600 text-white;
   }
 }
@@ -111,6 +115,10 @@ a:visited {
   @apply appearance-none rounded-none block w-full p-3 border-2;
 
   &:focus {
-    @apply bg-gray-100;
+    @apply bg-gray-100 border-black;
   }
+}
+
+.input-label {
+  @apply font-bold text-lg leading-normal mb-1 block;
 }

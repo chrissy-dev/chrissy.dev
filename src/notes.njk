@@ -14,25 +14,14 @@ pagination:
 
         {% set notes = sorted | reverse %}
 
-        {# <ul class="my-8">
-        {% for note in notes %}
-            <li class="md:flex md:items-center py-1 mb-4 md:mb-0">
-                <time class="text-gray-500 mr-4 tracking-wide">{{ note.data.date | simpleDate }} </time>
-                <a href="{{ note.url }}">
-                    <h3 class=" mb-0 text-lg">{{ note.data.title }}</h3>
-                </a>
-            </li>
-        {% endfor %}
-        </ul> #}
-
         <ul class="flex flex-wrap md:-mx-6 my-6">
             {% for note in notes %}
                 <li class="scroll-snap-child py-3 md:p-6 w-full md:w-1/2 lg:w-1/3 flex-none overflow-hidden">
-                    <a class="no-underline h-full rounded overflow-hidden block" href="{{ note.url }}">
+                    <a class="no-underline h-full rounded overflow-hidden block mb-4" href="{{ note.url }}">
                         <img class="rounded-lg" src="{{ note.data.featured_image }}">
-                        <div class="py-4 h-full flex-col">
+                        <div class="h-full flex-col">
                             <span class="text-xs leading-none opacity-50 font-bold">{{ note.data.date | simpleDate }}</span>
-                            <h5 class="font-semibold leading-tight">{{ note.data.title }}</h5>
+                            <h5 class="font-semibold leading-snug md:text-xl">{{ note.data.title }}</h5>
                         </div>
                     </a>
                 </li>

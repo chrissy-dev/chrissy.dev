@@ -15,21 +15,16 @@ pagination:
 
         <h2 class="text-xl mt-8 leading-tight  mb-6 font-semibold">Walk Reports</h2>
 
-        <ul class="my-8 flex flex-wrap -mx-4">
+        <ul class="my-8 flex flex-wrap -mx-6">
             {% for hike in log %}
                 {% if hike.url %}
-                    <li class="py-1 mb-4 w-full sm:w-1/2 md:w-1/3 p-4">
-                        <a href="{{ hike.url | url }}" class="no-underline ">
-                            <article class="h-full flex flex-col">
-                                <img class="rounded-lg" src="{{ hike.url | url }}{{ hike.data.featured_image }}">
-                                <div class="py-4">
-                                    <div class="text-xs text-gray-500 tracking-wider font-bold uppercase flex items-center justify-between">
-                                        <time>{{ hike.data.date | simpleDate }}</time>
-                                        <span class="text-gray-600 opacity-50">{{ hike | readingTime }} read</span>
-                                    </div>
-                                    <h3 class="truncate item-end mb-0 mr-2 text-base font-bold">{{ hike.data.name }}</h3>
-                                </div>
-                            </article>
+                    <li class="py-3 px-6 w-full md:w-1/2 lg:w-1/3 flex-none overflow-hidden">
+                        <a class="no-underline h-full rounded overflow-hidden block mb-4" href="{{ hike.url | url }}">
+                            <img class="rounded-lg" src="{{ hike.url | url }}{{ hike.data.featured_image }}">
+                            <div class="h-full flex-col">
+                                <span class="text-xs leading-none opacity-50 font-bold">{{ hike.data.date | simpleDate }}</span>
+                                <h5 class="font-semibold leading-snug md:text-xl">{{ hike.data.name }}</h5>
+                            </div>
                         </a>
                     </li>
                 {% endif %}
@@ -42,7 +37,7 @@ pagination:
             {% for hike in log %}
                 {% if not hike.url %}
                     <li class="py-1 mb-4 w-full sm:w-1/2 md:w-1/3 p-4">
-                        <article class="border-b dark-mode:border-gray-800 h-full p-2 flex flex-col ">
+                        <article class="border-b-2 dark-mode:border-gray-800 h-full p-2 flex flex-col ">
                             <div class="text-xs text-gray-500 tracking-wider font-bold uppercase flex items-center justify-between">
                                 <time>{{ hike.data.date | simpleDate }}</time>
                                 {% if hike.url %}
