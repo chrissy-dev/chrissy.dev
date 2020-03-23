@@ -9,7 +9,7 @@ I respect the EU’s General Data Protection Regulations (GDPR) and this policy 
 
 ## What background data is collected?
 
-This website does not collect or store any personally identifiable data behind the scenes. It does not set any cookies and it does not use any third-party hosted tracking scripts.
+This website does not collect or store any personally identifiable data behind the scenes.
 
 ## How do I use the data you provide?
 
@@ -58,6 +58,10 @@ If your personal data was published in a webmention, you may at any time
 demand the removal of it from this website. To do so, please [notify me](mailto:hello@chriscollins.me)
 and point me to the entry in question.
 
+## Analytics
+
+In common with almost most websites, I use a web analytics service (Google Analytics) to help me understand how people use my website. These cookies are served by Google - a third party. I have enabled the 'Anonymize IP' option so that the analytics data does not contain any information that identifies you personally.
+
 ## Changes to the policy
 
 If I change the contents of this policy, those changes will become effective the moment I publish them on my website.
@@ -65,3 +69,5 @@ If I change the contents of this policy, those changes will become effective the
 ## Complaints
 
 If you’ve any reason to complain about the ways I handle your privacy, please contact me (Chris Collins) by email at [hello@chriscollins.me](mailto:hello@chriscollins.me).
+
+Last updated: 23 March 2020
