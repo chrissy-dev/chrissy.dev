@@ -8,6 +8,8 @@ time: 2 hours
 ascent: 2,358ft
 rating: 🥾
 featured_image: 20200313155352.jpg
+featured_image_alt: Old Man of Storr with clouds wrapping around one of the pinnacles
+
 ---
 
 More to follow...

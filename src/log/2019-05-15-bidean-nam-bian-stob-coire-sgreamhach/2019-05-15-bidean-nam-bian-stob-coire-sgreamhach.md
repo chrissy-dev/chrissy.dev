@@ -1,19 +1,21 @@
 ---
 title: Bidean nam Bian & Stob Coire Sgreamhach, Glencoe, Scotland – Walk Report
-
+excerpt: After a failed winter attempt with Grant Elliott in March 2018, having turned back at Stob Coire nan Lochan, I had Bidean nam Bian on my radar since.
 name: Bidean nam Bian, Glencoe
 date: 2019-05-15
 
-munros: Bidean nam Bian, Stob Coire Sgreamhach
+munros: 
+  - Bidean nam Bian
+  - Stob Coire Sgreamhach
+  
 time: 6 hours
 ascent: 3,772ft
-rating: 🥾🥾🥾🥾🥾
+rating: 🥾🥾🥾🥾
+
 featured_image: 05152019_101709.jpg
+featured_image_alt: Chris walking near the summit of Bidean Nam Bian
 
-tags: ['featured_post']
 ---
-
-After a failed winter attempt with [Grant Elliott](https://grantelliott.co) in March 2018, having turned back at Stob Coire nan Lochan, I had Bidean nam Bian on my radar since.
 
 I took a Wednesday off work and got super lucky with the weather. It was over 20°C at points during the day - which made it tough but you can't beat a shorts and t-shirt day on the hills.
 

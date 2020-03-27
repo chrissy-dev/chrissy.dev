@@ -14752,6 +14752,8 @@ body {
   font-size: 1.125rem;
 }
 
+/* purgecss start ignore */
+
 :focus, button:focus {
   outline: solid  3px rgba(0,0,0,0.1);
   outline-offset: 4px;
@@ -14760,6 +14762,8 @@ body {
 input:focus, textarea:focus {
   outline-offset: 0;
 }
+
+/* purgecss end ignore */
 
 .fadeIn {
   -webkit-animation-duration: 1.2s;

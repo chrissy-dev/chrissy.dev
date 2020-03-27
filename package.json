@@ -38,6 +38,7 @@
     "postcss-cli": "^7.1.0",
     "postcss-import": "^12.0.1",
     "postcss-nested": "^4.2.1",
+    "purgecss": "^2.1.0",
     "sanitize-html": "^1.21.1",
     "tailwindcss": "^1.2.0",
     "webpack": "^4.41.6",

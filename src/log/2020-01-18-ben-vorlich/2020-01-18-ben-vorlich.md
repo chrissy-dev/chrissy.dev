@@ -4,13 +4,14 @@ title: Ben Vorlich (Loch Lomond), Arrochar Alps, Scotland – Walk Report
 name: Ben Vorlich (Loch Lomond)
 date: 2020-01-18
 
-munros: Ben Vorlich
+munros: 
+  - Ben Vorlich
 time: 5 hours
 ascent: 3,100ft
 rating: 🥾🥾🥾
 featured_image: 01182020_121753.jpg
+featured_image_alt: Snow falling in the foreground with mountains in the background
 
-tags: ['featured_post']
 ---
 
 I left the house at 07:50 am, stopped at McDonald's in Balloch on the way for my usual coffee and porridge.
