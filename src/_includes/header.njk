@@ -1,10 +1,8 @@
-<header class="mb-8">
-    <div class="container py-4 md:py-8 md:flex items-center justify-between">
+<header class="mb-8 container">
+    <div class="py-6 md:py-8 md:flex items-center justify-between border-b border-gray-200">
         <div class="flex justify-between items-center sm:justify-start">
-            <a href="/" class="w-12 h-12 md:w-16 md:h-16 inline-flex">
-                <figure>
-                    <img class="rounded-full shadow-lg hover:filter-grayscale transition" src="/static/avatar.jpg" alt=""/>
-                </figure>
+            <a href="/" class="no-underline w-12 h-12 md:w-16 md:h-16 font-bold overflow-hidden justify-center text-xl flex items-center bg-blue-400 hover:bg-gray-500 shadow-lg text-white no-underline rounded-full">
+                <img src="/static/chriscollins.png">
                 <span class="sr-only">Chris Collins</span>
             </a>
             <button class="block rounded-full sm:hidden bg-gray-200 dark-mode:bg-gray-900 dark-mode:hover:bg-gray-700 hover:bg-gray-300 px-4 py-2" data-id="nav-toggle">Menu</button>
@@ -13,22 +11,22 @@
             <ul class="sm:flex">
                 {% set activePage = page.url | url %}
                 <li>
-                    <a class="block no-underline mr-1 md:mr-4 py-3 px-1 mx-2 {% if activePage === '/' %} active {% endif %}" href="/">Home</a>
+                    <a class="block no-underline mr-1 md:mr-4 py-2 px-1 mx-2 {% if activePage === '/' %} active {% endif %}" href="/">Home</a>
                 </li>
                 <li>
-                    <a class="block no-underline mr-1 md:mr-4 py-3 px-1 mx-2 {% if activePage === '/about/' %} active {% endif %}" href="/about/">About</a>
+                    <a class="block no-underline mr-1 md:mr-4 py-2 px-1 mx-2 {% if activePage === '/about/' %} active {% endif %}" href="/about/">About</a>
                 </li>
                 <li>
-                    <a class="block no-underline mr-1 md:mr-4 py-3 px-1 mx-2 {% if activePage === '/uses/' %} active {% endif %}" href="/uses/">Stuff I Use</a>
+                    <a class="block no-underline mr-1 md:mr-4 py-2 px-1 mx-2 {% if activePage === '/uses/' %} active {% endif %}" href="/uses/">Stuff I Use</a>
                 </li>
                 <li>
-                    <a class="block no-underline mr-1 md:mr-4 py-3 px-1 mx-2 {% if '/notes/' in activePage %} active {% endif %}" href="/notes/">Notes</a>
+                    <a class="block no-underline mr-1 md:mr-4 py-2 px-1 mx-2 {% if '/notes/' in activePage %} active {% endif %}" href="/notes/">Notes</a>
                 </li>
                 <li>
-                    <a class="block no-underline mr-1 md:mr-4 py-3 px-1 mx-2 {% if '/log/' in activePage %} active {% endif %}" href="/log/">Hiking Log</a>
+                    <a class="block no-underline mr-1 md:mr-4 py-2 px-1 mx-2 {% if '/log/' in activePage %} active {% endif %}" href="/log/">Hiking Log</a>
                 </li>
                 <li>
-                    <a class="block no-underline mr-1 md:mr-4 py-3 px-1 mx-2 {% if '/contact/' in activePage %} active {% endif %}" href="/contact/">Contact</a>
+                    <a class="block no-underline mr-1 md:mr-4 py-2 px-1 mx-2 {% if '/contact/' in activePage %} active {% endif %}" href="/contact/">Contact</a>
                 </li>
             </ul>
         </nav>

@@ -14743,19 +14743,18 @@ hr {
 }
 
 html {
-  font-family: 'IBM Plex Sans', -apple-system, 'Inter', BlinkMacSystemFont,
+  font-family: 'Inter', -apple-system, 'Inter', BlinkMacSystemFont,
     'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
 }
 
 body {
   color: #1a202c;
-  font-size: 1.125rem;
 }
 
 /* purgecss start ignore */
 
 :focus, button:focus {
-  outline: solid  3px rgba(0,0,0,0.1);
+  outline: solid  3px rgba(0,0,0,0.05);
   outline-offset: 4px;
 }
 
@@ -14833,7 +14832,7 @@ input:focus, textarea:focus {
   .navbar ul li a:before {
     content: '';
     position: absolute;
-    height: 0.2rem;
+    height: 2px;
     bottom: 0;
     left: 0;
     border-radius: 9999px;
@@ -14855,7 +14854,7 @@ input:focus, textarea:focus {
   }
 
 .navbar ul li a.active:after {
-      background-color: #006AFE;
+      background-color: #e2e8f0;
       width: 100%;
     }
 

@@ -2,7 +2,7 @@
 {% set likes = webmentions | likesFilter(fullUrl) %}
 {% set mentions = webmentions | webmentionsFilter(fullUrl) %}
 
-<aside class="sans-serif">
+<aside class="">
   {% if likes.length == 0 and mentions.length == 0 %}
   <p class="text-sm mt-4">This website supports <a href="https://indieweb.org/Webmention">Webmentions</a>.</p>
   {% endif %}

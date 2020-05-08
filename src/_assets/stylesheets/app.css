@@ -5,16 +5,16 @@
 @import '_animation.css';
 
 html {
-  font-family: 'IBM Plex Sans', -apple-system, 'Inter', BlinkMacSystemFont,
+  font-family: 'Inter', -apple-system, 'Inter', BlinkMacSystemFont,
     'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
 }
 body {
-  @apply text-gray-900 text-lg;
+  @apply text-gray-900;
 }
 
 /* purgecss start ignore */
 :focus, button:focus {
-    outline: solid  3px rgba(0,0,0,0.1);
+    outline: solid  3px rgba(0,0,0,0.05);
     outline-offset: 4px;
 }
 
@@ -68,7 +68,7 @@ input:focus, textarea:focus {
   &:before {
     content: '';
     position: absolute;
-    height: 0.2rem;
+    height: 2px;
     bottom: 0;
     left: 0;
     @apply rounded-full;
@@ -90,7 +90,7 @@ input:focus, textarea:focus {
     @apply text-blue-500;
 
     &:after {
-      @apply bg-blue-500;
+      @apply bg-gray-300;
       width: 100%;
     }
   }
