@@ -22,7 +22,7 @@ pagination:
                         <a class="no-underline h-full rounded overflow-hidden block mb-4" href="{{ hike.url | url }}">
                             <img class="rounded-lg" src="{{ hike.url | url }}{{ hike.data.featured_image }}">
                             <div class="h-full flex-col">
-                                <span class="text-xs leading-none opacity-50 font-bold">{{ hike.data.date | simpleDate }}</span>
+                            <span class="text-sm leading-none opacity-50 my-3 block">{{ hike.data.date | simpleDate }}</span>
                                 <h5 class="font-semibold leading-snug md:text-xl">{{ hike.data.name }}</h5>
                             </div>
                         </a>
@@ -37,14 +37,9 @@ pagination:
             {% for hike in log %}
                 {% if not hike.url %}
                     <li class="py-1 mb-4 w-full sm:w-1/2 md:w-1/3 p-4">
-                        <article class="border-b-2 dark-mode:border-gray-800 h-full p-2 flex flex-col ">
-                            <div class="text-xs text-gray-500 tracking-wider font-bold uppercase flex items-center justify-between">
-                                <time>{{ hike.data.date | simpleDate }}</time>
-                                {% if hike.url %}
-                                    <span class="text-gray-400 opacity-50">{{ hike | readingTime }} read</span>
-                                {% endif %}
-                            </div>
-                            <h3 class="truncate item-end mb-0 mr-2 text-base">{{ hike.data.name }}</h3>
+                        <article class="border-b h-full p-2 flex flex-col ">
+                            <span class="text-sm leading-none opacity-50 my-2 block">{{ hike.data.date | simpleDate }}</span>
+                            <h3 class="truncate item-end mb-0 mr-2 text-base font-bold">{{ hike.data.name }}</h3>
                         </article>
                     </li>
                 {% endif %}

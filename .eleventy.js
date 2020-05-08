@@ -83,7 +83,7 @@ module.exports = function (config) {
     config.addFilter("simpleDate", dateObj => {
         return DateTime.fromJSDate(new Date(dateObj), {
             zone: 'utc'
-        }).toFormat("dd.LL.yy");
+        }).toFormat("dd MMMM yyyy");
     });
 
     config.addFilter("w3cDate", function (date) {

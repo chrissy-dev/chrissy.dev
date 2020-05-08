@@ -97,6 +97,8 @@ I use a mix of open-source software, leased and commerical software. I lease app
 - [IFTTT](https://apps.apple.com/gb/app/ifttt/id660944635) - Turns my lights on and off and sunrise/sunset.
 - [Bitwarden](https://bitwarden.com/) - Password Manager of choice.
 - [Apple Books](https://apps.apple.com/gb/app/apple-books/id364709193)
+- [GoodTask](https://goodtaskapp.com/) - Basically everything that iOS/Mac Reminders should be - fantastic app with no subscription.
+
 
 ### Weather
 
@@ -150,3 +152,9 @@ I use a mix of open-source software, leased and commerical software. I lease app
 - [The North Face Mens Apex Etip Glove](https://www.cotswoldoutdoor.com/p/the-north-face-mens-apex-etip-glove-A3215687.html?colour=124)
 - [Silva Classic Compass](https://www.cotswoldoutdoor.com/p/silva-classic-compass-E9224025.html?colour=97)
 - [LE LED Torch](https://www.amazon.co.uk/gp/product/B005FEGYCO/)
+
+## Cycling 
+
+- [B'TWIN Rockrider 540 (2017)](https://www.google.com/search?q=btwin+rockrider+540+2017)
+- [Pinnacle Arkose 2 (2016)](https://www.evanscycles.com/pinnacle-arkose-2-2016-adventure-road-bike-EV244108) 
+  - Soon to be replaced with a Cannondale Topstone Tiagra (2020).
