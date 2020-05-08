@@ -14207,7 +14207,6 @@ video {
 
 .markdown {
   line-height: 1.5;
-  font-size: 1.125rem;
 }
 
 .markdown p {
@@ -14891,8 +14890,8 @@ a:hover, a:visited:hover {
 }
 
 .text-input:focus {
-    background-color: #f7fafc;
-    border-color: #000;
+    background-color: #fff;
+    border-color: #006AFE;
   }
 
 .input-label {

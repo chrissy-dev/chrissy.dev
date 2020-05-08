@@ -1,5 +1,5 @@
 .markdown {
-  @apply leading-normal text-lg;
+  @apply leading-normal;
 
   p {
     @apply my-6;

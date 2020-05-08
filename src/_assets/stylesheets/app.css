@@ -117,7 +117,7 @@ a:visited {
   @apply appearance-none rounded-none block w-full p-3 border-2;
 
   &:focus {
-    @apply bg-gray-100 border-black;
+    @apply bg-white border-blue-500;
   }
 }
 

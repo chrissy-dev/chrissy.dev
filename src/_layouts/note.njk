@@ -15,11 +15,11 @@ layout: base.njk
         </figure>
         {% endif %}
 
-        <div class="e-content md:text-lg  markdown">
+        <div class="e-content markdown">
             {{ content | safe }}
         </div>
 
-        <div class="e-content md:text-lg mt-8 border-t dark-mode:border-gray-700">
+        <div class="e-content mt-8 border-t dark-mode:border-gray-700">
             {% include "webmentions.njk" %}
         </div>
     </div>
