@@ -61,7 +61,7 @@ pre[class*='language-'] {
   overflow: auto;
   position: relative;
   color: #eee;
-  @apply bg-gray-800 shadow-lg px-8 py-4 my-8 -mx-8;
+  @apply bg-gray-800 shadow-lg px-8 py-4 my-8 -mx-6;
 
   @media (min-width: 768px) {
     @apply rounded mx-0;

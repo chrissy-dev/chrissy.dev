@@ -1,0 +1,22 @@
+---
+layout: base.njk
+---
+
+<article class="container h-entry mb-8">
+    <div class="max-w-2xl">
+        <header class="mb-4 pb-2 sm:mb-8 sm:py-8">
+            <h1 class="text-3xl md:text-5xl  mb-4 leading-tight p-name font-semibold"><a href="{{ page.url }}" class="no-underline u-url">{{ title }}</a></h1>
+            <time class="text-gray-500 uppercase text-xs font-bold tracking-wider dt-published" datetime="{{ page.date | htmlDateString }}">{{ page.date | prettyDate }}</time>
+        </header>
+
+        {% if featured_image %}
+        <figure class="-mx-6 md:mx-0">
+            <img src="{{featured_image}}" class="mb-10 md:rounded-lg" alt="{{ title }}" />
+        </figure>
+        {% endif %}
+
+        <div class="e-content markdown">
+            {{ content | safe }}
+        </div>
+    </div>
+</article>

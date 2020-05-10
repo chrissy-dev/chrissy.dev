@@ -1,11 +1,6 @@
 module.exports = {
   theme: {
     extend: {
-      // screens: {
-      //   'dark-mode': {
-      //     'raw': '(prefers-color-scheme: dark)'
-      //   },
-      // },
       colors: {
         'blue': {
           100: '#E6F0FF',
@@ -19,6 +14,9 @@ module.exports = {
           900: '#00204C',
         }
       },
+      spacing: {
+        '16/9': '56.25%'
+      },
       inset: {
         '1': '0.5rem',
         '2': '1rem',
@@ -29,5 +27,9 @@ module.exports = {
     }
   },
   variants: {},
-  plugins: []
+  plugins: [],
+  purge: process.env.NODE_ENV === 'production' ? {
+    enabled: true,
+    content: ['./dist/**/*.html', './dist/**/*.js'],
+  } : {}
 }

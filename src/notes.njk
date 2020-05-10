@@ -20,7 +20,7 @@ pagination:
                     <a class="no-underline h-full rounded overflow-hidden block mb-4" href="{{ note.url }}">
                         <img class="rounded-lg" src="{{ note.data.featured_image }}">
                         <div class="h-full flex-col">
-                            <span class="text-sm leading-none opacity-50 my-3 block">{{ note.data.date | simpleDate }}</span>
+                            <span class="text-sm leading-none opacity-50 my-3 block">{{ note.data.date | prettyDate }}</span>
                             <h5 class="font-semibold leading-snug md:text-xl">{{ note.data.title }}</h5>
                         </div>
                     </a>

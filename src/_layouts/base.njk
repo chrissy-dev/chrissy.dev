@@ -52,7 +52,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/static/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/static/favicon-16x16.png">
 
-    {%- if env === 'production' %}
+    {%- if site.env === 'production' %}
       {% set css %}{% include "app.compiled.css" %}{% endset %}
       <style>
         {{css | safe}}
@@ -71,7 +71,7 @@
         {{ content | safe }}
       </main>
       {% include "footer.njk" %}
-      <button id="scroll-to-top" class="text-sm hidden fixed right-2 bottom-2 shadow-lg bg-blue-500 text-white p-3 rounded-full transition">Back to top</button>
+      <button id="scroll-to-top" class="text-sm hidden fixed right-2 bottom-3 shadow-lg bg-blue-500 text-white p-3 rounded-full transition">Back to top</button>
     </div>
     <script src="/static/app.bundled.js"></script>
     <script src="https://instant.page/2.0.0" type="module" defer integrity="sha384-D7B5eODAUd397+f4zNFAVlnDNDtO1ppV8rPnfygILQXhqu3cUndgHvlcJR2Bhig8"></script>
