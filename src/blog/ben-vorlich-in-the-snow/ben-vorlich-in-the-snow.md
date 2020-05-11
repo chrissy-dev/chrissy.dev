@@ -15,7 +15,8 @@ featured_image: 01182020_121753.jpg
 featured_image_alt: Snow falling in the foreground with mountains in the background
 
 tags:
-  - 'hiking'
+  - 'scotland'
+  - 'photos'
 ---
 
 I left the house at 07:50 am, stopped at McDonald's in Balloch on the way for my usual coffee and porridge.
