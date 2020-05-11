@@ -19393,6 +19393,8 @@ video {
   transition-delay: 1000ms;
 }
 
+/* purgecss start ignore */
+
 .markdown {
   line-height: 1.5;
 }
@@ -19973,8 +19975,6 @@ input:focus, textarea:focus {
   outline-offset: 0;
 }
 
-/* purgecss end ignore */
-
 .fadeIn {
   -webkit-animation-duration: 1.2s;
           animation-duration: 1.2s;
@@ -20130,6 +20130,8 @@ a:hover, a:visited:hover {
   margin-bottom: 0.25rem;
   display: block;
 }
+
+/* purgecss end ignore */
 
 @media (min-width: 640px) {
   .sm\:space-y-0 > :not(template) ~ :not(template) {

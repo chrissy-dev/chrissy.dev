@@ -1,4 +1,7 @@
 @import '_tailwind.css';
+
+/* purgecss start ignore */
+
 @import '_markdown.css';
 @import '_syntax.css';
 @import '_utils.css';
@@ -13,6 +16,7 @@ body {
 }
 
 /* purgecss start ignore */
+
 :focus, button:focus {
     outline: solid  3px rgba(0,0,0,0.05);
     outline-offset: 4px;
@@ -21,7 +25,6 @@ body {
 input:focus, textarea:focus {
     outline-offset: 0;
 }
-/* purgecss end ignore */
 
 .fadeIn {
   animation-duration: 1.2s;
@@ -124,3 +127,5 @@ a:visited {
 .input-label {
   @apply font-bold text-lg leading-normal mb-1 block;
 }
+
+/* purgecss end ignore */

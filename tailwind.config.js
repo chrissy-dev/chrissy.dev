@@ -30,6 +30,6 @@ module.exports = {
   plugins: [],
   purge: process.env.NODE_ENV === 'production' ? {
     enabled: true,
-    content: ['./dist/**/*.html', './dist/**/*.js'],
+    content: ['./src/**/*.html', './src/**/*.njk', './src/**/*.js'],
   } : {}
 }
