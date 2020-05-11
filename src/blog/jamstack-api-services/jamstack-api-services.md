@@ -1,5 +1,5 @@
 ---
-title:  Useful APIs and services to know about when building a JAMstack application or website
+title:  Useful APIs and services for JAMstack websites
 date: 2020-03-20
 featured_image: jamstack.png
 tags: 
