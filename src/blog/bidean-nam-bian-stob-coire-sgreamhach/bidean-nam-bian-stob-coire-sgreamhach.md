@@ -15,7 +15,9 @@ rating: 🥾🥾🥾🥾
 featured_image: 05152019_101709.jpg
 featured_image_alt: Chris walking near the summit of Bidean Nam Bian
 
-tags: ['hiking']
+tags:
+  - Scotland
+  - Photography
 ---
 
 I took a Wednesday off work and got super lucky with the weather. It was over 20°C at points during the day - which made it tough but you can't beat a shorts and t-shirt day on the hills.

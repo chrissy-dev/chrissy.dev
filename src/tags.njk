@@ -1,0 +1,31 @@
+---
+layout: base.njk
+pagination:
+  data: collections
+  size: 1
+  alias: tag
+permalink: /blog/{{ tag }}/
+---
+
+{% set taglist = collections[ tag ] %}
+<section class="container">
+    <h1 class="text-4xl md:text-6xl leading-tight  mb-6 font-semibold">{{ tag | capitalize }}</h1>
+    <nav>
+        <ol class="flex">
+            <li><a href="/blog" class="text-blue font-bold">Blog</a></li>
+            <li><span class="mx-2">/</span></li>
+            <li>{{ tag | capitalize }}</li>
+        </ol>
+    </nav>
+    <div class=" ">
+        {% set posts = sorted | reverse %}
+
+        <ol class="flex flex-wrap md:-mx-6 my-6">
+            {% for post in taglist | reverse %}
+                <li class="py-3 md:p-6 w-full md:w-1/2 lg:w-1/3">
+                    {% include "components/blog-card.njk" %}
+                </li>
+            {% endfor %}
+        </ol>
+    </div>
+</section>

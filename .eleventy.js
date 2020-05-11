@@ -3,6 +3,7 @@ const pluginRss = require("@11ty/eleventy-plugin-rss");
 
 const filters = require('./utils/filters.js')
 const transforms = require('./utils/transforms.js')
+const collections = require('./utils/collections.js')
 
 var sizeOf = require('image-size');
 const ColorThief = require('colorthief');
@@ -26,6 +27,10 @@ module.exports = function (eleventyConfig) {
         eleventyConfig.addTransform(transformName, transforms[transformName])
     })
 
+    // Collections
+    Object.keys(collections).forEach((collectionName) => {
+        eleventyConfig.addCollection(collectionName, collections[collectionName])
+    })
 
     // Markdown Parsing
     eleventyConfig.setLibrary(

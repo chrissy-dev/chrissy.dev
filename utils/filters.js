@@ -22,5 +22,9 @@ module.exports = {
         return `/static/log/${subdir}/${filename}`;
       }
       return filename;
+    },
+    
+    keys: (obj) => {
+      return Object.keys(obj);
     }
 }

@@ -1,0 +1,13 @@
+<div class="flex md:flex-col items-start no-underline h-full rounded block">
+  <a href="{{ post.url }}" aria-hidden="true" tabindex="-1" class="relative mr-3 md:mr-0 w-32 h-24 md:w-full md:h-auto md:pb-16/9 rounded-lg overflow-hidden">
+    <img class="absolute h-full w-full object-cover transform hover:scale-105 transition ease-in-out" src="{{ post.url | url }}{{ post.data.featured_image }}" alt="{{ post.data.featured_image_alt }}">
+  </a>
+
+  <div class="flex-1">
+    <a href="{{ post.url }}" class="no-underline">
+      <h3 class="font-semibold leading-snug mb-2 md:my-3 md:text-lg">{{ post.data.title }}</h3>
+    </a>
+
+    {% include "components/post-meta.njk" %}
+  </div>
+</div>
