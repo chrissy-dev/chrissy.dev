@@ -3,10 +3,10 @@ layout: base.njk
 ---
 
 <article class="container h-entry mb-8">
-    <div class="max-w-2xl">
-        <header class="mb-4 pb-2 sm:mb-8 sm:py-8">
+    <div class="max-w-2xl mx-auto">
+        <header class="mb-4 pb-2 sm:mb-8 sm:py-8 md:text-center">
             <h1 class="text-3xl md:text-5xl  mb-4 leading-tight p-name font-semibold"><a href="{{ page.url }}" class="no-underline u-url">{{ title }}</a></h1>
-            <div class="text-xs md:text-sm leading-none opacity-50 md:my-3 flex items-center">
+            <div class="text-xs md:text-sm leading-none opacity-50 md:my-3 flex items-center md:justify-center">
                 <svg class="mr-2" width="14px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink">
                     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                     <g id="11″-iPad-Pro" transform="translate(-703.000000, -580.000000)">
@@ -47,14 +47,25 @@ layout: base.njk
             </div>
         </header>
 
-        {% if featured_image %}
+        {% if featured_image and not dump_photos %}
         <figure class="-mx-6 md:mx-0">
-            <img src="{{featured_image}}" class="mb-10 md:rounded-lg" alt="{{ title }}" />
+            <img src="{{featured_image}}" class="mb-10" alt="{{ title }}" />
         </figure>
         {% endif %}
 
         <div class="e-content markdown">
             {{ content | safe }}
+
+            {% if dump_photos %}
+                {% set page_url = page.url %}
+                {% for photo in photos %}
+                    {% if page_url in photo %}
+                        {% photo src=photo %}
+                    {% endif %}
+                {% endfor %} 
+            {% endif %}
         </div>
     </div>
 </article>
+
+

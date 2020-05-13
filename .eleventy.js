@@ -52,7 +52,7 @@ module.exports = function (eleventyConfig) {
     );
 
     eleventyConfig.addNunjucksAsyncShortcode("photo", function (img) {
-        let imgPath = `./src${img.context}${img.src}`;
+        let imgPath = img.context !== undefined ? `./src${img.context}${img.src}` : `./src${img.src}`;
         let d = sizeOf(imgPath);
 
         return ColorThief.getColor(imgPath).then(color => {
