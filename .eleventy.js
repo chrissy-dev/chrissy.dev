@@ -14,9 +14,11 @@ const markdownItAnchorToc = require("markdown-it-toc-done-right")
 
 module.exports = function (eleventyConfig) {
     // Folders to copy to build dir (See. 1.1)
-    eleventyConfig.addPassthroughCopy("src/static");
-    eleventyConfig.addPassthroughCopy("src/blog/**/*.{jpg,jpeg,png,gif}");
-    eleventyConfig.addPassthroughCopy("_redirects");
+    let filesToCopy = ["src/static", "src/blog/**/*.{jpg,jpeg,png,gif}", "_redirects", "src/admin"]
+
+    filesToCopy.forEach((file) => {
+        eleventyConfig.addPassthroughCopy(file);
+    })
 
     // Filters 
     Object.keys(filters).forEach((filterName) => {
