@@ -10,9 +10,9 @@ collections:
     files:
       - name: "posts"
         label: "Posts"
-        folder: "src/posts"
+        folder: "src/blog"
         slug: "{{slug}}"
-        preview_path: "posts/{{slug}}"
+        preview_path: "blog/{{slug}}"
         create: true
         fields:
           - {label: "Layout", name: "layout", widget: "hidden", default: "layouts/post.njk"}
