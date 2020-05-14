@@ -16,6 +16,7 @@ module.exports = function (eleventyConfig) {
     // Folders to copy to build dir (See. 1.1)
     eleventyConfig.addPassthroughCopy("src/static");
     eleventyConfig.addPassthroughCopy("src/blog/**/*.{jpg,jpeg,png,gif}");
+    eleventyConfig.addPassthroughCopy("_redirects");
 
     // Filters 
     Object.keys(filters).forEach((filterName) => {
