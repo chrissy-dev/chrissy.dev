@@ -22,21 +22,21 @@ tags:
 
 I took a Wednesday off work and got super lucky with the weather. It was over 20°C at points during the day - which made it tough but you can't beat a shorts and t-shirt day on the hills.
 
-{% photo src="05152019_072159.jpg", caption="I always get a good feeling when I see the Buachaille Etive Mòr", context=page.url %}
+{% photo src="05152019_072159.jpg", alt="Driving towards Glencoe. Buachaille Etive Mòr in the distance", caption="I always get a good feeling when I see the Buachaille Etive Mòr", context=page.url %}
 
-{% photo src="05152019_063743.jpg", caption="One of the three sisters with Stob Coire nan Lochan at the top left", context=page.url %}
+{% photo src="05152019_063743.jpg", alt="One of the three sisters. Stob Coire nan Lochan visible high in the top left", caption="One of the three sisters with Stob Coire nan Lochan at the top left.", context=page.url %}
 
-{% photo src="05152019_063752.jpg", caption="Summer mornings in Glencoe", context=page.url %}
+{% photo src="05152019_063752.jpg", alt="Sun rising through the mountains causing a haze", caption="Summer mornings in Glencoe", context=page.url %}
 
 The initial climb (once you're on the hill) is steep, but the path is in decent enough condition to make it a nice walk/hike. Climbing between Gear Aonach and Aonach Dubh, you can't help but keep looking back as you gain height pretty quickly and the views back are brilliant.
 
-{% photo src="05152019_071535.jpg", caption="Looking back over the A82 after a few minutes of walking", context=page.url %}
+{% photo src="05152019_071535.jpg", alt="Looking down on the A82 road from height. The road is visibly surrounded by mountains.", caption="Looking back over the A82 after a few minutes of walking", context=page.url %}
 
-{% photo src="05152019_073118.jpg", caption="Stopped at this wee pool the first time, the water is crystal clear (and freezing cold)", context=page.url %}
+{% photo src="05152019_073118.jpg", alt="Waterfall leading to a small pool of crystal clear water.", caption="Stopped at this wee pool the first time, the water is crystal clear (and freezing cold)", context=page.url %}
 
 Doing a solo climb usually means I don't get a photo of myself on the hill but because it was such a nice day I had the tripod with me and managed to get a couple.
 
-{% photo src="05152019_075801.jpg", caption="Respectable self photo", context=page.url %}
+{% photo src="05152019_075801.jpg", alt="Chris standing with mountains behind him. Wearing shorts, a blue t-shirt and hiking boots.", caption="Respectable self photo", context=page.url %}
 
 {% photo src="05152019_075942.jpg", caption="A wanky one but it turned out not bad", context=page.url %}
 

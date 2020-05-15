@@ -58,10 +58,12 @@ module.exports = function (eleventyConfig) {
         let imgPath = img.context !== undefined ? `./src${img.context}${img.src}` : `./src${img.src}`;
         let d = sizeOf(imgPath);
 
+        let alt = img.alt !== undefined ? img.alt : "";
+
         return ColorThief.getColor(imgPath).then(color => {
             return `<figure class="-mx-6 md:mx-0 my-8">
                 <div class="relative" style="background-color: rgba(${color},1); padding-bottom: calc(${d.height}/${d.width} * 100%);">
-                    <img class="lazy w-full h-full absolute object-cover top-0 left-0" src="/static/image-placeholder.png" data-src="${img.src}">
+                    <img class="lazy w-full h-full absolute object-cover top-0 left-0" src="/static/image-placeholder.png" data-src="${img.src}" alt="${alt}">
                     <span style="font-size: 0.5rem;" class="bottom-0 right-0 absolute text-white p-2 uppercase tracking-widest opacity-50">© All Photos Copyright Chris Collins</span>
                 </div>
                 ${img.caption ? `<figcaption class="py-3 px-6 md:p-4 text-sm bg-gray-200 text-black">${img.caption}</figcaption>` : ''}

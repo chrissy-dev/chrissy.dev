@@ -6,14 +6,14 @@ layout: base.njk
     <div class="max-w-2xl mx-auto">
         <header class="mb-4 pb-2 sm:mb-8 sm:py-8 md:text-center">
             <h1 class="text-3xl md:text-5xl  mb-4 leading-tight p-name font-semibold"><a href="{{ page.url }}" class="no-underline u-url">{{ title }}</a></h1>
-            <div class="text-xs md:text-sm leading-none opacity-50 md:my-3 flex items-center md:justify-center">
+            <div class="text-xs md:text-sm leading-none opacity-75 md:my-3 flex items-center md:justify-center">
                 <svg class="mr-2" width="14px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink">
-                    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                    <g id="11″-iPad-Pro" transform="translate(-703.000000, -580.000000)">
-                        <g id="ic-access-time-24px" transform="translate(702.000000, 579.000000)">
+                    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                    <g transform="translate(-703.000000, -580.000000)">
+                        <g transform="translate(702.000000, 579.000000)">
                         <path d="M8.9925,1.5 C4.8525,1.5 1.5,4.86 1.5,9 C1.5,13.14 4.8525,16.5 8.9925,16.5 C13.14,16.5 16.5,13.14 16.5,9 C16.5,4.86 13.14,1.5 8.9925,1.5 Z M9,15 C5.685,15 3,12.315 3,9 C3,5.685 5.685,3 9,3 C12.315,3 15,5.685 15,9 C15,12.315 12.315,15 9,15 Z" id="Shape" fill="#000000" fill-rule="nonzero"></path>
-                        <polygon id="Path" points="0 0 18 0 18 18 0 18"></polygon>
-                        <polygon id="Path" fill="#000000" fill-rule="nonzero" points="9.375 5.25 8.25 5.25 8.25 9.75 12.1875 12.1125 12.75 11.19 9.375 9.1875"></polygon>
+                        <polygon points="0 0 18 0 18 18 0 18"></polygon>
+                        <polygon fill="#000000" fill-rule="nonzero" points="9.375 5.25 8.25 5.25 8.25 9.75 12.1875 12.1125 12.75 11.19 9.375 9.1875"></polygon>
                         </g>
                     </g>
                     </g>
@@ -23,11 +23,11 @@ layout: base.njk
 
                 {% if tags.length > 1 %}
                     <svg class="mx-2" width="14px" height="14px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                        <g id="11″-iPad-Pro" transform="translate(-882.000000, -578.000000)">
-                        <g id="pricetag-outline" transform="translate(883.000000, 579.000000)">
-                            <path d="M14.8942308,-1.09362948e-06 L10.1673077,-1.09362948e-06 C10.0203306,-1.09362948e-06 9.87928666,0.0579692616 9.775,0.161538462 L0.325,9.61153846 C-0.105772365,10.0444264 -0.105772365,10.7440352 0.325,11.1769231 L4.825,15.6769231 C5.25788789,16.1076954 5.95749673,16.1076954 6.39038462,15.6769231 L15.8365385,6.23076923 C15.9401077,6.12648257 15.9980901,5.98543867 15.9980901,5.83846154 L15.9980901,1.10769231 C15.9995112,0.814143474 15.8837976,0.532147627 15.676586,0.324214097 C15.4693745,0.116280567 15.1877828,-0.000413206981 14.8942308,-1.09362948e-06 Z" id="Path" stroke="#000000" stroke-width="1.23076923" stroke-linecap="round" stroke-linejoin="round"></path>
-                            <path d="M12.9230769,4.30769231 C12.2433418,4.30769231 11.6923077,3.75665815 11.6923077,3.07692308 C11.6923077,2.397188 12.2433418,1.84615385 12.9230769,1.84615385 C13.602812,1.84615385 14.1538462,2.397188 14.1538462,3.07692308 C14.1538462,3.40334337 14.0241762,3.71639434 13.7933622,3.94720835 C13.5625482,4.17802235 13.2494972,4.30769231 12.9230769,4.30769231 Z" id="Path" fill="#000000" fill-rule="nonzero"></path>
+                    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                        <g transform="translate(-882.000000, -578.000000)">
+                        <g transform="translate(883.000000, 579.000000)">
+                            <path d="M14.8942308,-1.09362948e-06 L10.1673077,-1.09362948e-06 C10.0203306,-1.09362948e-06 9.87928666,0.0579692616 9.775,0.161538462 L0.325,9.61153846 C-0.105772365,10.0444264 -0.105772365,10.7440352 0.325,11.1769231 L4.825,15.6769231 C5.25788789,16.1076954 5.95749673,16.1076954 6.39038462,15.6769231 L15.8365385,6.23076923 C15.9401077,6.12648257 15.9980901,5.98543867 15.9980901,5.83846154 L15.9980901,1.10769231 C15.9995112,0.814143474 15.8837976,0.532147627 15.676586,0.324214097 C15.4693745,0.116280567 15.1877828,-0.000413206981 14.8942308,-1.09362948e-06 Z" stroke="#000000" stroke-width="1.23076923" stroke-linecap="round" stroke-linejoin="round"></path>
+                            <path d="M12.9230769,4.30769231 C12.2433418,4.30769231 11.6923077,3.75665815 11.6923077,3.07692308 C11.6923077,2.397188 12.2433418,1.84615385 12.9230769,1.84615385 C13.602812,1.84615385 14.1538462,2.397188 14.1538462,3.07692308 C14.1538462,3.40334337 14.0241762,3.71639434 13.7933622,3.94720835 C13.5625482,4.17802235 13.2494972,4.30769231 12.9230769,4.30769231 Z" fill="#000000" fill-rule="nonzero"></path>
                         </g>
                         </g>
                     </g>
