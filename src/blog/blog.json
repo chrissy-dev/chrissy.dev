@@ -1,4 +1,5 @@
 {
   "layout": "post",
-  "tags": "posts"
+  "tags": "posts",
+  "imagesInSameLocation": true
 }

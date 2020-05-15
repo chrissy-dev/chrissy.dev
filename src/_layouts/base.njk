@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    {% if description %}<meta name="description" content="{{ description }}"/>{% endif %}
+    {% if description or excerpt %}<meta name="description" content="{{ description or excerpt }}"/>{% endif %}
     <meta name="robots" content="index, follow">
     <meta name="theme-color" content="#ffffff">
 
