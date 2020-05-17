@@ -155,6 +155,6 @@ I use a mix of open-source software, leased and commerical software. I lease app
 
 ## Cycling 
 
-- [B'TWIN Rockrider 540 (2017)](https://www.google.com/search?q=btwin+rockrider+540+2017)
+- [Cannondale Topstone Tiagra (2020)](https://www.evanscycles.com/cannondale-topstone-alloy-tiagra-2020-gravel-bike-EV3609830)
 - [Pinnacle Arkose 2 (2016)](https://www.evanscycles.com/pinnacle-arkose-2-2016-adventure-road-bike-EV244108) 
-  - Soon to be replaced with a Cannondale Topstone Tiagra (2020).
+- [B'TWIN Rockrider 540 (2017)](https://www.google.com/search?q=btwin+rockrider+540+2017)
