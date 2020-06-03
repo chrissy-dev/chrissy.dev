@@ -47,9 +47,9 @@ layout: base.njk
             </div>
         </header>
 
-        {% if featured_image and not dump_photos %}
+        {% if featured_image and not dump_photos and not hide_featured_image %}
         <figure class="-mx-6 md:mx-0">
-            <img src="{{featured_image}}" class="mb-10" alt="{{ title }}" />
+            <img src="/static/image-placeholder.png" data-src="{{featured_image}}" class="mb-10 lazy md:rounded-lg" alt="{{ title }}" />
         </figure>
         {% endif %}
 

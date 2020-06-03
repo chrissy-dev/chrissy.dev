@@ -1,6 +1,6 @@
 <div class="flex md:flex-col items-start no-underline h-full rounded block">
-  <a href="{{ post.url }}" aria-hidden="true" tabindex="-1" class="relative mr-3 md:mr-0 w-32 h-24 md:w-full md:h-auto md:pb-16/9 rounded-lg overflow-hidden">
-    <img class="absolute h-full w-full object-cover transform hover:scale-105 transition ease-in-out" src="{{ post.url | url }}{{ post.data.featured_image }}" alt="{{ post.data.featured_image_alt }}">
+  <a href="{{ post.url }}" aria-hidden="true" tabindex="-1" class="relative mr-3 md:mr-0 w-32 h-24 md:w-full md:h-auto md:pb-16/9 rounded-lg overflow-hidden bg-gray-200">
+    <img class="lazy absolute h-full w-full object-cover transform hover:scale-105 transition ease-in-out" src="/static/image-placeholder.png" data-src="{{ post.url | url }}{{ post.data.featured_image }}" alt="{{ post.data.featured_image_alt }}">
   </a>
 
   <div class="flex-1">
