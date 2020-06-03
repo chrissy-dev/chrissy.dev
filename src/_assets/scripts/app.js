@@ -17,7 +17,7 @@
     var options = {
         root: null, // Page as root
         // rootMargin: (top, right bottom, left)
-        rootMargin: '10px 540px 320px 10px',
+        rootMargin: '1px 1px 1px 1px',
         threshold: 0
     };
 
