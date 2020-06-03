@@ -1,5 +1,6 @@
 ---
 title:  Durgod Taurus K320 Mechanical Keyboard for Mac OS
+excerpt: After pondering with the idea of getting a mechanical keyboard for a while, earlier this year I bit the bullet and ended up with the Durgod Taurus K320.
 date: 2020-06-03
 featured_image: 2020_06_03_125414.jpg
 tags: 
