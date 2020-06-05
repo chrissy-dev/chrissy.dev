@@ -38,13 +38,13 @@ Doing a solo climb usually means I don't get a photo of myself on the hill but b
 
 {% photo src="05152019_075801.jpg", alt="Chris standing with mountains behind him. Wearing shorts, a blue t-shirt and hiking boots.", caption="Respectable self photo", context=page.url %}
 
-{% photo src="05152019_075942.jpg", caption="A wanky one but it turned out not bad", context=page.url %}
+{% photo src="05152019_075942.jpg", alt="Chris sitting down looking out towards the mountains", caption="A wanky one but it turned out not bad", context=page.url %}
 
 After my photoshoot, there was a short but steep hill up to a large grassy plateau with Coire nan Lochan towering above.
 
 Stob Coire nan Lochan is a magnificent mountain. I think it's a shame it's not classed as a separate Munro and baggers may completely miss it by taking a different route up Bidean.
 
-{% photo src="05152019_082131.jpg", caption="Stob Coire nan Lochan", context=page.url %}
+{% photo src="05152019_082131.jpg", alt="Craggy cliffs of Stob Coire nan Lochan. Light patches of snow between the crags. Sky is cloudless and blue.", caption="Stob Coire nan Lochan", context=page.url %}
 {% photo src="05152019_084131.jpg", caption="Stob Coire nan Lochan", context=page.url %}
 
 The standard route up without using ropes is to venture to the right and go up the side, which is very gradual but has a decent amount of boulders and requires mild scrambling at times. Here you get up close to the crags you had just seen from below. They are just as impressive.

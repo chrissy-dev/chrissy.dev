@@ -1,5 +1,5 @@
 ---
-title: "Pacific Quay, Glasgow: 14th Nov 2019"
+title: "Pacific Quay, Glasgow - 14th Nov 2019"
 date: 2019-07-14
 featured_image: 2019_11_14_085103.jpg
 tags:
