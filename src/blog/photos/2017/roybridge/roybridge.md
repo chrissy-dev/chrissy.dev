@@ -1,5 +1,5 @@
 ---
-title: "Trip to Roybridge - Oct 2019"
+title: "Trip to Roybridge - Oct 2017"
 date: 2017-10-28
 featured_image: 2017_10_28_162253.jpg
 tags:
