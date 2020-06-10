@@ -1,5 +1,5 @@
 <p align="center">
-	<img src="/src/static/avatar.png" alt="Rocket icon" width="56" align="center" />
+	<img src="/src/static/chriscollins.png" alt="Rocket icon" width="56" align="center" />
 </p>
 
 <p align="center"><a href="https://www.chriscollins.me"><strong>chriscollins.me</strong></a></p>
