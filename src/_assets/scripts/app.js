@@ -7,11 +7,27 @@
 
     navigationToggle.addEventListener('click', function (event) {
         isOpen = !isOpen;
-        isOpen ? navigationToggle.textContent = "Close" : navigationToggle.textContent = "Menu"
+        isOpen ? navigationToggle.querySelector('span').textContent = "Close" : navigationToggle.querySelector('span').textContent = "Menu"
         navigationItems.classList.toggle('hidden');
     }, false);
 
-    
+    // If there's more than 2 windows worth of scrolling
+    var isDeepContent = (window.innerHeight * 2) <= document.body.clientHeight ? true : false;
+
+    if(isDeepContent) {
+        let scrollToTop = document.querySelector('[data-id="scroll-top"]');
+        scrollToTop.classList.remove('hidden');
+
+        scrollToTop.addEventListener('click', (e) => {
+            e.preventDefault();
+            
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth',
+            })
+        })
+    }
+
     var images = document.querySelectorAll('img.lazy');
 
     var options = {

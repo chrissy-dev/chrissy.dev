@@ -20029,51 +20029,6 @@ input:focus, textarea:focus {
           filter: none;
 }
 
-.navbar ul li a {
-  position: relative;
-  text-decoration: none;
-  margin-right: 0.25rem;
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
-  margin-left: 0.5rem;
-  margin-right: 0.5rem;
-}
-
-.navbar ul li a:after,
-  .navbar ul li a:before {
-    content: '';
-    position: absolute;
-    height: 2px;
-    bottom: 0;
-    left: 0;
-    border-radius: 9999px;
-  }
-
-.navbar ul li a:after {
-    --bg-opacity: 1;
-    background-color: #edf2f7;
-    background-color: rgba(237, 242, 247, var(--bg-opacity));
-    width: 0;
-    transition: all 0.3s cubic-bezier(0.86, 0, 0.07, 1);
-  }
-
-.navbar ul li a:hover:after {
-      width: 100%;
-    }
-
-.navbar ul li a.active {
-    --text-opacity: 1;
-    color: #FC5200;
-    color: rgba(252, 82, 0, var(--text-opacity));
-  }
-
-.navbar ul li a.active:after {
-      --bg-opacity: 1;
-      background-color: #e2e8f0;
-      background-color: rgba(226, 232, 240, var(--bg-opacity));
-      width: 100%;
-    }
-
 a,
 a:visited {
   text-decoration: underline;

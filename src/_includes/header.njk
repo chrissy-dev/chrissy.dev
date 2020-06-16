@@ -5,25 +5,25 @@
                 <img src="/static/chriscollins.png" alt="">
                 <span class="sr-only">Chris Collins</span>
             </a>
-            <button class="block rounded-full sm:hidden bg-gray-200 dark-mode:bg-gray-900 dark-mode:hover:bg-gray-700 hover:bg-gray-300 px-4 py-2" data-id="nav-toggle">Menu</button>
+            <button class="flex items-center rounded-full sm:hidden bg-white shadow-sm px-4 py-3" data-id="nav-toggle"><svg class="w-6 h-6 mr-2 fill-current text-gray-900" version="1.1" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M0 0h18v18h-18Z" fill="none"></path><path d="M2 13.5h14v-1.5h-14Zm0-4h14v-1.5h-14Zm0-5.5v1.5h14v-1.5Z"></path></svg> <span>Menu</span></button>
         </div>
         <nav class="hidden sm:block navbar mt-4 md:mt-0 -ml-2 md:ml-4 lg:ml-8" data-id="nav-items">
             <ul class="sm:flex">
                 {% set activePage = page.url | url %}
                 <li>
-                    <a class="block no-underline mr-1 md:mr-4 py-2 px-1 mx-2 {% if activePage === '/' %} active {% endif %}" href="/">Home</a>
+                    <a class="block no-underline mr-1 md:mr-1 py-3 px-4 rounded-full {% if activePage === '/' %} bg-white shadow-sm text-orange-500 {% endif %}" href="/">Home</a>
                 </li>
                 <li>
-                    <a class="block no-underline mr-1 md:mr-4 py-2 px-1 mx-2 {% if activePage === '/about/' %} active {% endif %}" href="/about/">About</a>
+                    <a class="block no-underline mr-1 md:mr-1 py-3 px-4 rounded-full {% if activePage === '/about/' %} bg-white shadow-sm text-orange-500 {% endif %}" href="/about/">About</a>
                 </li>
                 <li>
-                    <a class="block no-underline mr-1 md:mr-4 py-2 px-1 mx-2 {% if activePage === '/uses/' %} active {% endif %}" href="/uses/">Stuff I Use</a>
+                    <a class="block no-underline mr-1 md:mr-1 py-3 px-4 rounded-full {% if activePage === '/uses/' %} bg-white shadow-sm text-orange-500 {% endif %}" href="/uses/">Stuff I Use</a>
                 </li>
                 <li>
-                    <a class="block no-underline mr-1 md:mr-4 py-2 px-1 mx-2 {% if '/blog/' in activePage %} active {% endif %}" href="/blog/">Blog</a>
+                    <a class="block no-underline mr-1 md:mr-1 py-3 px-4 rounded-full {% if '/blog/' in activePage %} bg-white shadow-sm text-orange-500 {% endif %}" href="/blog/">Blog</a>
                 </li>
                 <li>
-                    <a class="block no-underline mr-1 md:mr-4 py-2 px-1 mx-2 {% if '/contact/' in activePage %} active {% endif %}" href="/contact/">Contact</a>
+                    <a class="block no-underline mr-1 md:mr-1 py-3 px-4 rounded-full {% if '/contact/' in activePage %} bg-white shadow-sm text-orange-500 {% endif %}" href="/contact/">Contact</a>
                 </li>
             </ul>
         </nav>

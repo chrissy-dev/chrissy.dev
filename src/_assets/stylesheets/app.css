@@ -63,42 +63,6 @@ input:focus, textarea:focus {
   filter: none;
 }
 
-.navbar ul li a {
-  position: relative;
-  @apply no-underline mr-1 py-3 mx-2;
-
-  &:after,
-  &:before {
-    content: '';
-    position: absolute;
-    height: 2px;
-    bottom: 0;
-    left: 0;
-    @apply rounded-full;
-  }
-
-  &:after {
-    @apply bg-gray-200;
-    width: 0;
-    transition: all 0.3s cubic-bezier(0.86, 0, 0.07, 1);
-  }
-
-  &:hover {
-    &:after {
-      width: 100%;
-    }
-  }
-
-  &.active {
-    @apply text-orange-500;
-
-    &:after {
-      @apply bg-gray-300;
-      width: 100%;
-    }
-  }
-}
-
 a,
 a:visited {
   @apply underline;
