@@ -80,7 +80,7 @@ I use a mix of open-source software, leased and commerical software. I lease app
 
 - [Bartender](https://www.macbartender.com/) - I used to use [DozerApp](https://github.com/Mortennn/Dozer) but Bartender is included in SetApp.
 - [CleanMyMac X](https://macpaw.com/cleanmymac)
-- [iA Writer](https://ia.net/writer) - I use Plain Text for all my notes, see [my post about it](https://www.chriscollins.me/notes/why-i-use-plain-text-files-for-my-notes/).
+- [iA Writer](https://ia.net/writer) - I use Plain Text for all my notes, see [my post about it](/blog/why-i-use-plain-text-files-for-my-notes/).
 - ~~[Mozilla Firefox](https://www.mozilla.org/en-GB/firefox/new/)~~
   - [Google Chrome](https://www.google.co.uk/chrome) - Temporarily back using Chrome because Firefox has reset to default settings twice in a month.
 - [ohmyzsh](https://github.com/ohmyzsh/ohmyzsh) - I'm not a 10x Developer...but ohmyzsh makes me feel like one.
@@ -91,7 +91,7 @@ I use a mix of open-source software, leased and commerical software. I lease app
 
 ### Productivity
 
-- [iA Writer](https://apps.apple.com/gb/app/ia-writer/id775737172) - I use Plain Text for all my notes, see [my post about it](https://www.chriscollins.me/notes/why-i-use-plain-text-files-for-my-notes/).
+- [iA Writer](https://apps.apple.com/gb/app/ia-writer/id775737172) - I use Plain Text for all my notes, see [my post about it](/blog/why-i-use-plain-text-files-for-my-notes/).
 - [Shortcuts](https://apps.apple.com/us/app/shortcuts/id915249334)
 - [News Explorer](https://apps.apple.com/ua/app/news-explorer/id1032668306) - The RSS I always wanted with fantastic iCloud syncing.
 - [IFTTT](https://apps.apple.com/gb/app/ifttt/id660944635) - Turns my lights on and off and sunrise/sunset.
