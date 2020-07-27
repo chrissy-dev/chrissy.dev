@@ -72,6 +72,6 @@ hr {
     height: auto;
     overflow: visible;
     width: auto;
-    @apply bg-orange-500 p-3 text-white;
+    @apply bg-blue-500 p-3 text-white;
   }
 }

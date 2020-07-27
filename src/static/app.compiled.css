@@ -19406,8 +19406,8 @@ video {
 
 .markdown a {
     --text-opacity: 1;
-    color: #FC5200;
-    color: rgba(252, 82, 0, var(--text-opacity));
+    color: #006AFE;
+    color: rgba(0, 106, 254, var(--text-opacity));
   }
 
 .markdown ul,
@@ -19916,8 +19916,8 @@ hr {
     overflow: visible;
     width: auto;
     --bg-opacity: 1;
-    background-color: #FC5200;
-    background-color: rgba(252, 82, 0, var(--bg-opacity));
+    background-color: #006AFE;
+    background-color: rgba(0, 106, 254, var(--bg-opacity));
     padding: 0.75rem;
     --text-opacity: 1;
     color: #fff;
@@ -19967,7 +19967,7 @@ body {
 /* purgecss start ignore */
 
 :focus, button:focus {
-  outline: solid  3px rgba(0,0,0,0.05);
+  outline: solid  2px rgba(0,0,0,0.05);
   outline-offset: 4px;
 }
 
@@ -20034,12 +20034,6 @@ a:visited {
   text-decoration: underline;
 }
 
-a:hover, a:visited:hover {
-    --text-opacity: 1;
-    color: #FC5200;
-    color: rgba(252, 82, 0, var(--text-opacity));
-  }
-
 .button {
   padding: 0.75rem;
   --bg-opacity: 1;
@@ -20051,8 +20045,8 @@ a:hover, a:visited:hover {
 
 .button:hover, .button:focus {
     --bg-opacity: 1;
-    background-color: #FC5200;
-    background-color: rgba(252, 82, 0, var(--bg-opacity));
+    background-color: #006AFE;
+    background-color: rgba(0, 106, 254, var(--bg-opacity));
     --text-opacity: 1;
     color: #fff;
     color: rgba(255, 255, 255, var(--text-opacity));
@@ -20062,11 +20056,12 @@ a:hover, a:visited:hover {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
-  border-radius: 0;
+  border-radius: 0.5rem;
   display: block;
   width: 100%;
   padding: 0.75rem;
   border-width: 2px;
+  outline: 0;
 }
 
 .text-input:focus {
@@ -20074,8 +20069,8 @@ a:hover, a:visited:hover {
     background-color: #fff;
     background-color: rgba(255, 255, 255, var(--bg-opacity));
     --border-opacity: 1;
-    border-color: #FC5200;
-    border-color: rgba(252, 82, 0, var(--border-opacity));
+    border-color: #006AFE;
+    border-color: rgba(0, 106, 254, var(--border-opacity));
   }
 
 .input-label {

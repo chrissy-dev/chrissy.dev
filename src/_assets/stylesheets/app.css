@@ -18,7 +18,7 @@ body {
 /* purgecss start ignore */
 
 :focus, button:focus {
-    outline: solid  3px rgba(0,0,0,0.05);
+    outline: solid  2px rgba(0,0,0,0.05);
     outline-offset: 4px;
 }
 
@@ -66,25 +66,22 @@ input:focus, textarea:focus {
 a,
 a:visited {
   @apply underline;
-
-  &:hover {
-    @apply text-orange-500;
-  }
 }
 
 .button {
   @apply p-3 bg-gray-300 font-bold text-lg;
 
   &:hover , &:focus {
-    @apply bg-orange-500 text-white;
+    @apply bg-blue-500 text-white;
   }
 }
 
 .text-input {
-  @apply appearance-none rounded-none block w-full p-3 border-2;
+  @apply appearance-none rounded-lg block w-full p-3 border-2;
+  outline: 0;
 
   &:focus {
-    @apply bg-white border-orange-500;
+    @apply bg-white border-blue-500;
   }
 }
 

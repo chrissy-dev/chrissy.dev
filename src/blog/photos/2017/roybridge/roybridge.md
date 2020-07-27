@@ -5,6 +5,7 @@ featured_image: 2017_10_28_162253.jpg
 tags:
   - photos
   - scotland
+  - 'hiking'
 
 dump_photos: true
 ---

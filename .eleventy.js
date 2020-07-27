@@ -14,7 +14,7 @@ const markdownItAnchorToc = require("markdown-it-toc-done-right")
 
 module.exports = function (eleventyConfig) {
     // Folders to copy to build dir (See. 1.1)
-    let filesToCopy = ["src/static", "src/blog/**/*.{jpg,jpeg,png,gif}", "_redirects", "src/admin"]
+    let filesToCopy = ["src/static", "src/blog/**/*.{jpg,jpeg,png,gif}", "_redirects", "src/uses/**/*.{jpg,jpeg,png,gif}"]
 
     filesToCopy.forEach((file) => {
         eleventyConfig.addPassthroughCopy(file);
@@ -64,9 +64,8 @@ module.exports = function (eleventyConfig) {
             return `<figure class="-mx-6 md:mx-0 my-8">
                 <div class="relative" style="background-color: rgba(${color},1); padding-bottom: calc(${d.height}/${d.width} * 100%);">
                     <img class="lazy w-full h-full absolute object-cover top-0 left-0" src="/static/image-placeholder.png" data-src="${img.src}" alt="${alt}">
-                    <span style="font-size: 0.5rem;" class="bottom-0 right-0 absolute text-white p-2 uppercase tracking-widest opacity-50">© All Photos Copyright Chris Collins</span>
                 </div>
-                ${img.caption ? `<figcaption class="py-3 px-6 md:p-4 text-sm bg-gray-200 text-black">${img.caption}</figcaption>` : ''}
+                ${img.caption ? `<figcaption class="py-3 px-6 text-xs text-center text-black">${img.caption}</figcaption>` : ''}
             </figure>`;
         })
     });
