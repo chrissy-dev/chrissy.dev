@@ -35,6 +35,8 @@
     {% endif %}
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="{{ title or site.title }}"/>
+    <meta property="twitter:description" content="{{ description or site.description }}"/>
+
     {%- if site.social_meta.twitter %}
       <meta name="twitter:site" content="{{ site.social_meta.twitter }}"/>
       <meta name="twitter:creator" content="{{ site.social_meta.twitter }}"/>
