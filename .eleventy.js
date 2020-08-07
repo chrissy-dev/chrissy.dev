@@ -11,6 +11,7 @@ const ColorThief = require('colorthief');
 const markdownIt = require('markdown-it')
 const markdownItAnchor = require('markdown-it-anchor')
 const markdownItAnchorToc = require("markdown-it-toc-done-right")
+const htmlmin = require("html-minifier");
 
 module.exports = function (eleventyConfig) {
     // Folders to copy to build dir (See. 1.1)
@@ -59,14 +60,14 @@ module.exports = function (eleventyConfig) {
         let d = sizeOf(imgPath);
 
         let alt = img.alt !== undefined ? img.alt : "";
-
+        let caption = img.caption !== undefined ? img.caption : false;
         return ColorThief.getColor(imgPath).then(color => {
-            return `<figure class="-mx-6 md:mx-0 my-8">
+            return htmlmin.minify(`<figure class="-mx-6 lg:-mx-24 my-8 md:my-16 lg:my-24">
                 <div class="relative" style="background-color: rgba(${color},1); padding-bottom: calc(${d.height}/${d.width} * 100%);">
-                    <img class="lazy w-full h-full absolute object-cover top-0 left-0" src="/static/image-placeholder.png" data-src="${img.src}" alt="${alt}">
+                    <img class="lazy w-full h-full absolute object-cover top-0 left-0 lg:rounded" src="/static/image-placeholder.png" data-src="${img.src}" alt="${alt}">
                 </div>
-                ${img.caption ? `<figcaption class="py-3 px-6 text-xs text-center text-black">${img.caption}</figcaption>` : ''}
-            </figure>`;
+                ${caption ? `<figcaption class="py-3 px-6 text-xs text-center text-black">${caption}</figcaption>` : ``}
+            </figure>`, { collapseWhitespace: true});
         })
     });
 
