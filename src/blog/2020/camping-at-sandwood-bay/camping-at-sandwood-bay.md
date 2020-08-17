@@ -3,7 +3,7 @@ title: "Wild Camping at Sandwood Bay"
 description: "After months of Covid restrictions being imposed on Scotland, I managed to escape Glasgow and head up North for a night of wild camping on Sandwood Bay."
 layout: "photo-post.njk"
 date: 2020-08-01
-featured_image: 2020-08-01_212234.jpg
+featured_image: 2020-08-01_211927.jpg
 tags:
   - photos
   - scotland
