@@ -1,6 +1,7 @@
 ---
 title: Uses - Software & Hardware I use daily - Chris Collins
 layout: page.njk
+show_webmentions: true
 ---
 
 # Uses

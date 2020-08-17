@@ -1,0 +1,63 @@
+{% set fullUrl = site.url + page.url %} 
+{% set likes = webmentions | likesFilter(fullUrl) %}
+{% set mentions = webmentions | webmentionsFilter(fullUrl) %}
+
+<aside class="my-12">
+  <div class="flex flex-wrap items-center border-t border-b py-6">
+    <a class="no-underline rounded bg-blue-500 hover:bg-blue-600 text-white shadow-sm p-3 inline-flex items-center mr-6" target="_blank" href="https://twitter.com/intent/tweet/?text={{ fullUrl }}">Post a comment 
+      <svg aria-hidden="true" focusable="false" class="w-6 ml-3" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path></svg>
+    </a>
+  <span class="text-xs mt-3 md:mt-0 md:w-2/3">If you post a tweet with a link to this page, it will appear here as a <a href="https://indieweb.org/Webmention">webmention</a> (Webmentions are updated daily).</span>
+</div>
+
+  {% if likes.length > 0 %}
+  <div class="flex items-center my-6">
+    <h2 class="font-bold mr-3">Likes:</h2>
+    <ol class="flex items-center ml-1">
+      {% for like in likes.slice(0, 5) %}
+      <li class="relative -ml-1">
+        <a href="{{ like.author.url }}">
+          <img class="w-8 h-8 flex-none rounded-full lazy shadow-lg hover:opacity-75" src="/static/image-placeholder.png"
+            data-src="{{ like.author.photo }}" alt="Image of {{ like.author.name }}" />
+        </a>
+      <li>
+      {% endfor %}
+      {% if likes.length > 5 %}
+        <li class="-ml-1">
+          <span class="w-8 h-8 rounded-full bg-gray-200 text-xs justify-center flex items-center">+{{ likes.length - 5 }}</span>
+        </li>
+      {% endif %}
+    </ol>
+  </div>
+  {% endif %}
+
+  {% if mentions.length > 1 %}
+  <h2 class="text-xl font-bold my-8">Replies ({{ mentions.length }})</h2>
+  <ol>
+    {% for item in mentions %}
+    <li>
+      <article class="flex py-4 border-b">
+        <img class="w-10 h-10 flex-none rounded-full mr-4 lazy" src="/static/fallback-avatar.png"
+          data-src="{{ item.author.photo }}" alt="Image of {{ item.author.name }}" loading="lazy" />
+        <div class=" w-full">
+          <header class="leading-none mb-2">
+           
+            <h3 class="text-base font-bold"><a href="{{ item.url }}" class="no-underline hover:text-gray-600">{{ item.author.name }}</a></h3>
+            <p><time datetime="{{ item['wm-received'] | htmlDateString }}"
+                class="dt-published text-gray-500 font-light text-xs">{{ item['wm-received'] | readableDate }}</time></p>
+
+          </header>
+          {% if item.content.value %}
+          <div class="text-base">
+            {{ item.content.value | safe }}
+          </div>
+          {% else %}
+          <p class="text-base">{{ item.content.text }}</p>
+          {% endif %}
+        </div>
+      </article>
+    </li>
+    {% endfor %}
+  </ol>
+  {% endif %}
+</aside>
