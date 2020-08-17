@@ -1,9 +1,9 @@
-<header class="mb-8 px-6">
+<header class="mb-8 px-6 bg-white">
     <div class="py-6 md:flex items-center justify-between">
         <div class="flex justify-between items-center sm:justify-start">
-            <a href="/" class="no-underline w-12 h-12 font-bold overflow-hidden justify-center text-xl flex items-center shadow-lg text-white no-underline rounded-full">
-                <img src="/static/chriscollins.png" alt="">
-                <span class="sr-only">Chris Collins</span>
+            <a href="/" class="font-bold justify-center flex items-center no-underline">
+                <img class="w-12 h-12 shadow-lg rounded-full mr-2" src="/static/chriscollins.png" alt="">
+                <span>Chris Collins</span>
             </a>
             <button class="flex items-center sm:hidden px-4 py-3" data-id="nav-toggle"><svg class="w-6 h-6 mr-2 fill-current text-gray-900" version="1.1" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M0 0h18v18h-18Z" fill="none"></path><path d="M2 13.5h14v-1.5h-14Zm0-4h14v-1.5h-14Zm0-5.5v1.5h14v-1.5Z"></path></svg> <span>Menu</span></button>
         </div>
@@ -11,19 +11,19 @@
             <ul class="sm:flex">
                 {% set activePage = page.url | url %}
                 <li>
-                    <a class="block no-underline px-3 py-2 mx-1 hover:underline {% if activePage === '/' %} text-blue-500 font-bold {% endif %}" href="/">Home</a>
+                    <a class="block no-underline px-3 py-3 md:py-2 mx-1 hover:underline {% if activePage === '/' %} text-white bg-black rounded font-bold {% endif %}" href="/">Home</a>
                 </li>
                 <li>
-                    <a class="block no-underline px-3 py-2 mx-1 hover:underline {% if activePage === '/about/' %} text-blue-500 font-bold {% endif %}" href="/about/">About</a>
+                    <a class="block no-underline px-3 py-3 md:py-2 mx-1 hover:underline {% if activePage === '/about/' %} text-white bg-black rounded font-bold {% endif %}" href="/about/">About</a>
                 </li>
                 <li>
-                    <a class="block no-underline px-3 py-2 mx-1 hover:underline {% if activePage === '/uses/' %} text-blue-500 font-bold {% endif %}" href="/uses/">Stuff I Use</a>
+                    <a class="block no-underline px-3 py-3 md:py-2 mx-1 hover:underline {% if activePage === '/uses/' %} text-white bg-black rounded font-bold {% endif %}" href="/uses/">Stuff I Use</a>
                 </li>
                 <li>
-                    <a class="block no-underline px-3 py-2 mx-1 hover:underline {% if '/blog/' in activePage %} text-blue-500 font-bold {% endif %}" href="/blog/">Blog</a>
+                    <a class="block no-underline px-3 py-3 md:py-2 mx-1 hover:underline {% if '/blog/' in activePage %} text-white bg-black rounded font-bold {% endif %}" href="/blog/">Blog</a>
                 </li>
                 <li>
-                    <a class="block no-underline px-3 py-2 mx-1 hover:underline {% if '/contact/' in activePage %} text-blue-500 font-bold {% endif %}" href="/contact/">Contact</a>
+                    <a class="block no-underline px-3 py-3 md:py-2 mx-1 hover:underline {% if '/contact/' in activePage %} text-white bg-black rounded font-bold {% endif %}" href="/contact/">Contact</a>
                 </li>
             </ul>
         </nav>
