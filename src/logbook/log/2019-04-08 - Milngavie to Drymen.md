@@ -1,0 +1,6 @@
+---
+title: Milngavie to Drymen
+date: 2019-04-08
+---
+
+First leg of the West Highland Way. Set off from Milngavie at 8:30am and arrived in Drymen at around 1ish. Weather was on our side, blue skies and sun throughout. Probably could've done another 10 mile.

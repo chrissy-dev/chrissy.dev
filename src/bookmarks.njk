@@ -1,0 +1,68 @@
+---
+layout: page.njk
+title: Bookmarks
+bookmarks:
+  - title: Beautiful Scrolling Experiences – Without Libraries
+    author: Michelle Barker
+    url: https://24ways.org/2019/beautiful-scrolling-experiences-without-libraries/
+  - title: Resilient Web Design
+    author: Jeremy Keith
+    url: https://resilientwebdesign.com/
+  - title: What Does it Mean to Be “Full Stack”?
+    author: Chris Coyier 
+    url: https://css-tricks.com/what-does-it-mean-to-be-full-stack/
+  - title: Where to put buttons on forms
+    author: Adam Silver
+    url: https://adamsilver.io/articles/where-to-put-buttons-in-forms/
+  - title: How to write accessible content for your website
+    author: Rob Simpson
+    url: https://robsimpson.digital/articles/how-to-write-accessible-web-content
+  - title: Dynamic Social Sharing Images
+    author: Drew McLellan
+    url: https://24ways.org/2018/dynamic-social-sharing-images/
+  - title: Write HTML Like It's 1999
+    author: Bradley Taunt
+    url: https://bradleytaunt.com/html-like-1999/
+  - title: Finally… A Post on Finally in Promises
+    author: Sarah Drasner
+    url: https://css-tricks.com/finally-a-post-on-finally-in-promises/
+  - title: Frontend Design, React, and a Bridge over the Great Divide
+    author: Brad Frost
+    url: http://bradfrost.com/blog/post/frontend-design-react-and-a-bridge-over-the-great-divide/
+  - title: I'm a designer with Nystagmus - A sweary account of living and working with Nystagmus
+    author: Craig McLachlan
+    url: http://craigmclachlan.co.uk/notes/designer-with-nystagmus.html
+  - title: 'Accessibility for Vestibular Disorders: How My Temporary Disability Changed
+      My Perspective'
+    author: A List Apart
+    url: https://alistapart.com/article/accessibility-for-vestibular/
+  - title: Semantic JSX
+    author: Max Böck
+    url: https://mxb.dev/blog/semantic-jsx/
+  - title: All-time visible navigation
+    author: Enterprise UX
+    url: https://medium.com/enterprise-ux/all-time-visible-navigation-f346d9320d52
+  - title: Look Ma, No Media Queries! Responsive Layouts Using CSS Grid
+    author: CSS Tricks
+    url: https://css-tricks.com/look-ma-no-media-queries-responsive-layouts-using-css-grid/
+  - title: The CSS Mindset
+    author: Max Böck
+    url: https://mxb.dev/blog/the-css-mindset/
+  - title: Everything Easy is Hard Again
+    author: Frank Chimero
+    url: https://frankchimero.com/writing/everything-easy-is-hard-again/
+  - title: Google HTML/CSS Style Guide
+    author: Google
+    url: https://google.github.io/styleguide/htmlcssguide.html
+
+---
+
+<ul>
+  {% for bm in bookmarks %}
+    <li>
+      <a href="{{ bm.url }}" target="_blank">
+        {{ bm.title }}
+      </a>
+    </li>
+  {% endfor %}
+</ul>

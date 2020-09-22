@@ -1,0 +1,27 @@
+---
+layout: base.njk
+title: Notes
+
+pagination:
+  data: collections.notes
+  size: 10
+---
+
+
+<main class="my-20">
+  <div class="container">
+    <h1 class="my-20 text-center font-bold text-3xl">{{ title }}</h1>
+
+    <div class="prose prose-sm text-black text-center my-20 max-w-lg mx-auto">
+      <p>Personal notes and snippets of code.</p>
+    </div>
+
+    <ul>
+      {% set items = pagination.items | reverse %}
+
+      {% for entry in items %}
+      <li class="mb-3 lg:mb-0"><a class="py-1 lg:flex items-center justify-between no-underline" href="{{ entry.url }}"><span class="underline">{{ entry.data.title }}</span> <time data-date="{{ entry.date }}" datetime="{{ entry.date | htmlDateString }}" class="post-date block text-gray-500 text-xs mt-1 lg:mt-0">{{ entry.date | prettyDate }}</time></a></li>
+      {% endfor %}
+    </ul>
+  </div>
+</main>

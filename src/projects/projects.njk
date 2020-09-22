@@ -1,0 +1,36 @@
+---
+layout: base.njk
+title: Web Projects
+
+pagination:
+  data: collections.projects
+  size: 10
+
+permalink: "/projects/index.html"
+---
+
+
+<main class="my-20">
+  <div class="container">
+    <h1 class="my-20 text-center font-bold text-3xl">{{ title }}</h1>
+
+    <div class="prose prose-sm text-black text-center my-20 max-w-lg mx-auto">
+      <p>Personal projects that scratch an itch.</p>
+    </div>
+
+    <ul>
+      {% set items = pagination.items | reverse %}
+
+      {% for entry in items %}
+      <li class="mb-6 pb-6 border-b last:border-b-0 border-dotted">
+        <article>
+          <h2 class="font-bold text-lg">{{ entry.data.title }}</h2>
+          <time datetime="{{ entry.date | htmlDateString }}" class="block text-gray-500 text-xs mt-1">{{ entry.date | formatDate("y") }}</time>
+          <p class="text-xs my-2">{{ entry.data.description }}</p>
+          <a class="py-1" href="{{ entry.data.project_url }}" target="_blank">View Project</a>
+        </article>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</main>

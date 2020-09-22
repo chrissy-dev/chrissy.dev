@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {% include "head.njk" %}
+    {% if site.env %}
+      <!-- capture the CSS content as a Liquid variable -->
+      {% set css %}{% include "app.compiled.css" %}{% endset %}
+      <style> 
+        {{ css | safe }}
+      </style>
+    {% else %}
+    <link rel="stylesheet" href="/static/app.compiled.css">
+    {% endif %}
+  </head>
+  <body>
+    <a href="#main" class="skip-link">Skip to main content</a>
+    <a href="#nav" class="skip-link">Skip to navigation</a>
+    <main id="main">
+      {{ content | safe }}
+    </main>
+    <div class="container">
+      <section id="nav">
+        {% include "navigation.njk" %}
+      </section>
+      {% include "footer.njk" %}
+    </div>
+  </body>
+  <script src="/static/app.bundled.js"></script>
+</html>

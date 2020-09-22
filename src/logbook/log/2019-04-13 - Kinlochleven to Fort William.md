@@ -1,0 +1,5 @@
+---
+title: Kinlochleven to Fort William
+date: 2019-04-13
+permalink: false
+---

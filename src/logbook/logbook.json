@@ -1,0 +1,4 @@
+{
+  "layout": "post.njk",
+  "permalink": "/logbook/{{ date | htmlDateString }}-{{ title | slug }}/index.html"
+}

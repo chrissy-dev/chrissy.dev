@@ -1,0 +1,38 @@
+
+@import 'utils/_tailwind.css';
+@import 'utils/_accessibility.css';
+
+/* purgecss start ignore */
+@import 'utils/_syntax.css';
+
+::selection { 
+	@apply bg-yellow-200;
+}
+
+body {
+	@apply font-body text-sm;
+}
+
+a {
+	@apply underline;
+
+	&:hover {
+		@apply text-gray-800;
+	}
+}
+
+.container {
+	@apply mx-auto max-w-2xl px-6;
+}
+
+.prose figure {
+	@apply my-3;
+}
+
+@media (min-width: 1024px) { 
+	.prose figure {
+		@apply my-6;
+	}
+}
+
+/* purgecss end ignore */

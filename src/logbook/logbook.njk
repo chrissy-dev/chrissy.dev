@@ -1,0 +1,46 @@
+---
+layout: base.njk
+title: Logbook
+
+pagination:
+  data: collections.log
+  size: 1000
+
+permalink: /logbook/index.html
+---
+
+
+<main class="my-20">
+  <div class="container">
+    <h1 class="my-20 text-center font-bold text-3xl">{{ title }}</h1>
+
+    <div class="prose prose-sm text-black text-center my-20 max-w-lg mx-auto">
+      <p>Personal log of hikes, camps and cycles.</p>
+    </div>
+
+    <ul>
+      {% set items = pagination.items | reverse %}
+
+      {% for entry in items %}
+
+      {% if entry.data.symbol %}
+        {% set symbol = entry.data.symbol %}
+      {% else %}
+        {% set symbol = "🥾" %}
+      {% endif %}
+
+      {% if entry.url %}
+        <li>
+          <a href="{{ entry.url }}" class="no-underline mb-1 lg:mb-0 flex items-center justify-between py-1">
+            <span class="text-xs">{{ symbol }} <span class="ml-2 text-sm underline">{{ entry.data.title }}</span></span> <time class="block text-gray-500 text-xs mt-1 lg:mt-0">{{ entry.date | prettyDate }}</time>
+          </a>
+        </li>
+      {% else %}
+        <li class="mb-1 lg:mb-0 flex items-center justify-between py-1">
+            <span>{{ symbol }} <span class="ml-2">{{ entry.data.title }}</span></span> <time class="block text-gray-500 text-xs mt-1 lg:mt-0">{{ entry.date | prettyDate }}</time>
+        </li>
+      {% endif %}
+      {% endfor %}
+    </ul>
+  </div>
+</main>
