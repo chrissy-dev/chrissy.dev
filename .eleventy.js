@@ -6,6 +6,7 @@ const pluginRss = require("@11ty/eleventy-plugin-rss");
 const filters = require('./utils/filters.js')
 const transforms = require('./utils/transforms.js')
 const collections = require('./utils/collections.js')
+const shortcodes = require('./utils/shortcodes.js')
 
 var sizeOf = require('image-size');
 const ColorThief = require('colorthief');
@@ -36,6 +37,11 @@ module.exports = function (eleventyConfig) {
     // Collections
     Object.keys(collections).forEach((collectionName) => {
         eleventyConfig.addCollection(collectionName, collections[collectionName])
+    })
+
+    // Shortcodes
+    Object.keys(shortcodes).forEach((shortcodeName) => {
+        eleventyConfig.addCollection(shortcodeName, shortcodes[shortcodeName])
     })
 
     // Markdown Parsing
