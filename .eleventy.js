@@ -8,7 +8,7 @@ const pluginRss = require("@11ty/eleventy-plugin-rss");
 
 module.exports = function (eleventyConfig) {
     // Folders to copy to build dir (See. 1.1)
-    let filesToCopy = ["src/static", "src/notes/**/*.{jpg,jpeg,png,gif,webp}", "src/_redirects"]
+    let filesToCopy = ["src/static/**/*", "src/notes/**/*.{jpg,jpeg,png,gif,webp}", "src/_redirects"]
 
     filesToCopy.forEach((file) => {
         eleventyConfig.addPassthroughCopy(file);
