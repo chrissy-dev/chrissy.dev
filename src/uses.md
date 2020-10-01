@@ -130,7 +130,7 @@ I use a mix of open-source software, leased, and commercial software. I lease ap
 ### Equipment 
 
 - [SIMOND 12-point crampons](https://www.decathlon.co.uk/caiman-2-strap-on-crampons-id_8212786.html)
-- ~~Grivel Munro Ice Axe~~ (https://www.grivelgb.co.uk/products/ice-axes/munro-sa/) (_dead link_)
+- Grivel Munro Ice Axe
 
 ### Jackets
 
@@ -142,7 +142,7 @@ I use a mix of open-source software, leased, and commercial software. I lease ap
 
 - [The North Face Mens Apex Etip Glove](https://www.cotswoldoutdoor.com/p/the-north-face-mens-apex-etip-glove-A3215687.html?colour=124)
 - [Silva Classic Compass](https://www.cotswoldoutdoor.com/p/silva-classic-compass-E9224025.html?colour=97)
-- ~~LE LED Torch (https://www.amazon.co.uk/gp/product/B005FEGYCO/)~~ (_dead link_)
+- LE LED Torch 
 
 ## Cycling 
 
