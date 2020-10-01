@@ -43,8 +43,8 @@ I use a mix of open-source software, leased, and commercial software. I lease ap
 ### Development
 
 - [Visual Studio Code](https://code.visualstudio.com/) - My editor of choice right now, can't really fault it.
-  - [Gatito Theme](https://marketplace.visualstudio.com/items?itemName=pawelgrzybek.gatito-theme) by [Paweł Grzybek](pawelgrzybek.com/)
-- [iTerm 2 Nightly](https://www.iterm2.com/downloads/nightly/section/home) - I prefer the customisation options you get with iTerm, also the global hotkey is a must.
+  - [Gatito Theme](https://marketplace.visualstudio.com/items?itemName=pawelgrzybek.gatito-theme) by [Paweł Grzybek](https://pawelgrzybek.com/)
+- [iTerm 2 Nightly](https://www.iterm2.com/downloads/nightly/#/section/home) - I prefer the customisation options you get with iTerm, also the global hotkey is a must.
 - [SequelPro](https://www.sequelpro.com/) - Use for all my relational database needs, used it for years.
 - [FileZilla](https://filezilla-project.org/) - Whenever I need to quickly get into a server and see what I'm doing.
 - [ImageOptim](https://imageoptim.com) - Crunching images for the web, save some space or strip personally identifiable metadata.
@@ -71,7 +71,7 @@ I use a mix of open-source software, leased, and commercial software. I lease ap
 
 - [Bartender](https://www.macbartender.com/) - I used to use [DozerApp](https://github.com/Mortennn/Dozer) but Bartender is included in SetApp.
 - [CleanMyMac X](https://macpaw.com/cleanmymac)
-- [iA Writer](https://ia.net/writer) - I use Plain Text for all my notes, see [my post about it](/blog/why-i-use-plain-text-files-for-my-notes/).
+- [iA Writer](https://ia.net/writer) - I use Plain Text for all my notes, see [my post about it](/notes/why-i-use-plain-text-files-for-my-notes/).
 - ~~[Mozilla Firefox](https://www.mozilla.org/en-GB/firefox/new/)~~
   - [Google Chrome](https://www.google.co.uk/chrome) - Temporarily back using Chrome because Firefox has reset to default settings twice in a month.
 - [ohmyzsh](https://github.com/ohmyzsh/ohmyzsh) - I'm not a 10x Developer...but ohmyzsh makes me feel like one.
@@ -82,7 +82,7 @@ I use a mix of open-source software, leased, and commercial software. I lease ap
 
 ### Productivity
 
-- [iA Writer](https://apps.apple.com/gb/app/ia-writer/id775737172) - I use Plain Text for all my notes, see [my post about it](/blog/why-i-use-plain-text-files-for-my-notes/).
+- [iA Writer](https://apps.apple.com/gb/app/ia-writer/id775737172) - I use Plain Text for all my notes, see [my post about it](/notes/why-i-use-plain-text-files-for-my-notes/).
 - [Shortcuts](https://apps.apple.com/us/app/shortcuts/id915249334)
 - [News Explorer](https://apps.apple.com/ua/app/news-explorer/id1032668306) - The RSS I always wanted with fantastic iCloud syncing.
 - [IFTTT](https://apps.apple.com/gb/app/ifttt/id660944635) - Turns my lights on and off and sunrise/sunset.
@@ -130,7 +130,7 @@ I use a mix of open-source software, leased, and commercial software. I lease ap
 ### Equipment 
 
 - [SIMOND 12-point crampons](https://www.decathlon.co.uk/caiman-2-strap-on-crampons-id_8212786.html)
-- [Grivel Munro Ice Axe](https://www.grivelgb.co.uk/products/ice-axes/munro-sa/)
+- ~~Grivel Munro Ice Axe~~ (https://www.grivelgb.co.uk/products/ice-axes/munro-sa/) (_dead link_)
 
 ### Jackets
 
@@ -142,7 +142,7 @@ I use a mix of open-source software, leased, and commercial software. I lease ap
 
 - [The North Face Mens Apex Etip Glove](https://www.cotswoldoutdoor.com/p/the-north-face-mens-apex-etip-glove-A3215687.html?colour=124)
 - [Silva Classic Compass](https://www.cotswoldoutdoor.com/p/silva-classic-compass-E9224025.html?colour=97)
-- [LE LED Torch](https://www.amazon.co.uk/gp/product/B005FEGYCO/)
+- ~~LE LED Torch (https://www.amazon.co.uk/gp/product/B005FEGYCO/)~~ (_dead link_)
 
 ## Cycling 
 
