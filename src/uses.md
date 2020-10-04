@@ -24,6 +24,7 @@ I use a lot of <i>stuff</i> in my day-to-day life, some of which can be found on
 
 - [FUJIFILM X100F](https://www.fujifilm.com/products/digital_cameras/x/fujifilm_x100f/)
 - [FUJIFILM X-T1](https://www.fujifilm.com/products/digital_cameras/x/fujifilm_x_t1/)
+- [Ricoh GR II](http://www.ricoh-imaging.co.jp/english/products/gr-2/)
 
 #### Lenses
 
@@ -72,8 +73,7 @@ I use a mix of open-source software, leased, and commercial software. I lease ap
 - [Bartender](https://www.macbartender.com/) - I used to use [DozerApp](https://github.com/Mortennn/Dozer) but Bartender is included in SetApp.
 - [CleanMyMac X](https://macpaw.com/cleanmymac)
 - [iA Writer](https://ia.net/writer) - I use Plain Text for all my notes, see [my post about it](/blog/why-i-use-plain-text-files-for-my-notes/).
-- ~~[Mozilla Firefox](https://www.mozilla.org/en-GB/firefox/new/)~~
-  - [Google Chrome](https://www.google.co.uk/chrome) - Temporarily back using Chrome because Firefox has reset to default settings twice in a month.
+- [Google Chrome](https://www.google.co.uk/chrome) - Used to use Firefox but had issues with it resetting to default settings.
 - [ohmyzsh](https://github.com/ohmyzsh/ohmyzsh) - I'm not a 10x Developer...but ohmyzsh makes me feel like one.
 - [Kap](https://getkap.co/) - Screen recorder of choice, can't believe this is a free app.
 - [Rectangle](https://rectangleapp.com/) - Used to use [Spectacle](https://www.spectacleapp.com/) but Rectangle is the open-source maintained fork of it.
