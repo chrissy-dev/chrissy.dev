@@ -24,6 +24,7 @@ I use a lot of <i>stuff</i> in my day-to-day life, some of which can be found on
 
 - [FUJIFILM X100F](https://www.fujifilm.com/products/digital_cameras/x/fujifilm_x100f/)
 - [FUJIFILM X-T1](https://www.fujifilm.com/products/digital_cameras/x/fujifilm_x_t1/)
+- [Ricoh GR II](http://www.ricoh-imaging.co.jp/english/products/gr-2/)
 
 #### Lenses
 
