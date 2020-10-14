@@ -6,11 +6,11 @@ layout: base.njk
    <div class="my-20 text-center">
     <h1 class="font-bold text-3xl mb-4">{{ title }}</h1>
     {% if last_updated %}
-      <p class="text-xs text-gray-600">Last updated <time data-date="{{ page.date }}" datetime="{{ page.date | htmlDateString }}" class="post-date">{{ page.date | prettyDate }}</time></p>
+      <p class="text-sm text-gray-600">Last updated <time data-date="{{ last_updated }}" datetime="{{ last_updated | htmlDateString }}" class="post-date">{{ last_updated | prettyDate }}</time></p>
     {% endif %}
   </div>
 
-  <div class="prose prose-sm text-black my-20">
+  <div class="prose text-black my-20">
     {{ content | safe }}
   </div>
 </main>

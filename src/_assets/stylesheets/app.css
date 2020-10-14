@@ -10,7 +10,7 @@
 }
 
 body {
-	@apply font-body text-sm;
+	@apply font-body;
 }
 
 a {
@@ -33,6 +33,19 @@ a {
 	.prose figure {
 		@apply my-6;
 	}
+}
+
+.fade-in {
+	animation: fade-in 0.4s cubic-bezier(0.165, 0.840, 0.440, 1.000) both;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 /* purgecss end ignore */

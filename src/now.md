@@ -2,16 +2,19 @@
 title: Now
 layout: page.njk
 
-last_updated: 2020-09-22T11:02:55+00:00
+last_updated: 2020-10-14T21:29:00+00:00 
 ---
 
 ## At work:
 - Re-writing mobile apps to use Swift and Swift UI on iOS and TWA on Android. 
 - Archiving decades worth of news content but keeping it all publically accessible for historic reference. 
-- Migrating our full stack over to AWS. 
+- Optimising loads of complex WordPress queries to squeeze some ms off them.
+- Trying to get my head around IAB v2 and the dodgy world of cookies. 
+- Building a bespoke static site boilerplate/workflow for a small team to help them kickstart their client projects. It's my first project where the client has specifically asked for Eleventy. Woohoo! 
 
 ## In life:
 - I’ve been doing a lot of cycling since March (lockdown) and I really want/need to keep this up over winter. I'm averaging around 80-100km a week. 
+- About to join Zwift.
 - Preparing to move house in October after a hefty delay in the process. 
 
 ## Reading:

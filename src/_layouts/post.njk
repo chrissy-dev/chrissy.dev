@@ -8,7 +8,7 @@ layout: base.njk
     <time data-date="{{ page.date }}" datetime="{{ page.date | htmlDateString }}" class="post-date text-gray-600">{{ page.date | prettyDate }}</time>
   </div>
 
-  <div class="prose prose-sm text-black my-20">
+  <div class="prose text-black my-20">
     {{ content | safe }}
   </div>
 </main>

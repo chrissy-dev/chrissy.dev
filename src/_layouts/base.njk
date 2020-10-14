@@ -15,7 +15,30 @@
   <body>
     <a href="#main" class="skip-link">Skip to main content</a>
     <a href="#nav" class="skip-link">Skip to navigation</a>
-    <main id="main">
+    {% if not hide_header %}
+    <header class="flex items-center justify-between p-6">
+      <a href="/">
+        <img class="w-10 rounded-full" src="/static/chris.jpg" alt="Black and white photo of Chris smiling.">
+      </a>
+        <ul class="leading-relaxed flex items-center gap-3 lg:gap-4">
+          <li><a href="/about">About</a></li>
+          <li><a href="/uses">Uses</a></li>
+          <li><a href="/now">Now</a></li>
+          <li>
+            <button id="nav-toggle" aria-expanded="false" aria-controls="menu-list" class="underline flex items-center">Indexes <span class="caret transform"><svg class="w-3 mx-1" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M64 144l192 224 192-224 -384 0Z"/></svg></span></button>
+            
+            <ul class="leading-relaxed w-48 absolute p-2 bg-black text-white transform -translate-x-12 mt-2 shadow-2xl z-10" hidden>
+              <li><a class="no-underline hover:text-white hover:underline py-1 block px-2" href="/logbook">Hiking & Camping</a></li>
+              <li><a class="no-underline hover:text-white hover:underline py-1 block px-2" href="/projects">Projects</a></li>
+              <li><a class="no-underline hover:text-white hover:underline py-1 block px-2" href="/notes">Notes</a></li>
+              <li><a class="no-underline hover:text-white hover:underline py-1 block px-2" href="/bookmarks">Bookmarks</a></li>
+            </ul>
+          </li>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
+    </header>
+    {% endif %}
+    <main id="main" class="fade-in">
       {{ content | safe }}
     </main>
     <div class="container">

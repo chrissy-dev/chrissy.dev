@@ -25,8 +25,8 @@ permalink: "/projects/index.html"
       <li class="mb-6 pb-6 border-b last:border-b-0 border-dotted">
         <article>
           <h2 class="font-bold text-lg">{{ entry.data.title }}</h2>
-          <time datetime="{{ entry.date | htmlDateString }}" class="block text-gray-500 text-xs mt-1">{{ entry.date | formatDate("y") }}</time>
-          <p class="text-xs my-2">{{ entry.data.description }}</p>
+          <time datetime="{{ entry.date | htmlDateString }}" class="block text-gray-500 text-sm mt-1">{{ entry.date | formatDate("y") }}</time>
+          <p class="text-sm my-2">{{ entry.data.description }}</p>
           <a class="py-1" href="{{ entry.data.project_url }}" target="_blank">View Project</a>
         </article>
       </li>

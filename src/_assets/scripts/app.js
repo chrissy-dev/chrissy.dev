@@ -7,3 +7,13 @@ dateSlots.forEach(function (slot) {
     slot.innerHTML = `${formatDistanceToNowStrict(new Date(slot.dataset.date))} ago`;
   }
 });
+
+var navButton = document.querySelector('#nav-toggle');
+
+navButton.addEventListener('click', function () {
+  let expanded = this.getAttribute('aria-expanded') === 'true' || false;
+  this.setAttribute('aria-expanded', !expanded);
+  this.querySelector('.caret').classList.toggle('-rotate-180');
+  let menu = this.nextElementSibling;
+  menu.hidden = !menu.hidden;
+});

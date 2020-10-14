@@ -1,6 +1,7 @@
 ---
 layout: base.njk
 title: Chris Collins - This is my personal space on the web
+hide_header: true
 ---
 
 <div class="container">
@@ -8,9 +9,9 @@ title: Chris Collins - This is my personal space on the web
         <img class="w-16 mb-10 lg:mb-20 rounded-full" src="/static/chris.jpg" alt="Black and white photo of Chris smiling.">
         <p>I’m <i>Chris Collins</i>, and this is my personal space on the web. I use it to house things that interest me like <a href="/logbook">hiking</a>, <a href="/projects">web projects</a> and my <a href="/notes">notes</a>. </p>
         {% if site.availability.status %}
-            <p class="inline-block mt-4 bg-green-200 text-xs rounded-sm p-2">I'm currently <i class="font-bold">available</i> for small to medium sized web projects.</p>
+            <p class="inline-block mt-4 bg-green-200 text-sm rounded-full px-4 py-2">I'm currently <strong class="font-bold">available</strong> for small to medium sized web projects.</p>
         {% else %}
-            <p class="inline-block mt-4 bg-gray-200 text-xs rounded-sm p-2">I'm currently <i class="font-bold">unavailable</i> for projects until {{ site.availability.until }}.</p>
+            <p class="inline-block mt-4 bg-gray-200 text-sm rounded-full px-4 py-2">I'm currently <strong class="font-bold">unavailable</strong> for projects until {{ site.availability.until }}.</p>
         {% endif %}
     </main>
 </div>

@@ -1,7 +1,7 @@
 module.exports = {
   theme: {
     fontFamily: {
-      'body': ['Libre Baskerville', 'serif'],
+      'body': ['Lora', 'serif'],
     },
     typography: {
       default: {

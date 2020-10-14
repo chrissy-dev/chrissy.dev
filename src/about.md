@@ -3,7 +3,14 @@ layout: page.njk
 title: About
 ---
 
-I'm a software engineer, okay-ish designer, and photo taker living in Glasgow, Scotland. 
+<div class="mb-10 -mx-6 lg:-mx-20">
+  <figure>
+    <img class="object-cover object-center" src="/static/bendorainsummit.jpg" alt="Chris at the summit of Ben Dorain, blue sky">
+    <figcaption class="text-sm px-6 md:text-center">Summit of Ben Dorain, Sept 2020</figcaption>
+  </figure>
+</div>
+
+I'm a software engineer, okay-ish designer, and very amatuer photographer living in Glasgow, Scotland. 
 
 I work at [STV News](https://news.stv.tv), where I build and maintain digital products alongside the editorial team. Previously, I was a UX Engineer at [Arnold Clark](https://www.arnoldclark.com) and a Web Developer at [Ultralinx](https://theultralinx.com).
 
@@ -11,4 +18,4 @@ I began writing code at 9 years old; with the solid help of Geocities, Dreamweav
 
 I am a passionate supporter and believer in the open web. I care deeply about great user experiences, digital privacy and the inclusion of every person using the web.
 
-Away from a computer you’ll find me taking photos around Scotland, up a mountain or cycling. See my [Instagram](https://instagram.com/scottishstoater) for photos.
+Away from a computer you’ll find me taking photos around Scotland, up a mountain or cycling. You can check out my [Instagram](https://instagram.com/scottishstoater) for photos.
