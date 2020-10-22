@@ -16,11 +16,11 @@
     <a href="#main" class="skip-link">Skip to main content</a>
     <a href="#nav" class="skip-link">Skip to navigation</a>
     {% if not hide_header %}
-    <header class="flex items-center justify-between p-6">
-      <a href="/">
+    <header class="flex justify-center flex-col md:flex-row md:items-center md:justify-between p-6">
+      <a href="/" class="mx-auto md:mx-0">
         <img class="w-10 rounded-full" src="/static/chris.jpg" alt="Black and white photo of Chris smiling.">
       </a>
-        <ul class="text-sm md:text-base leading-relaxed flex items-center">
+        <ul class="mt-4 md:mt-0 text-sm md:text-base leading-relaxed flex items-center justify-center">
           <li class="px-1 md:px-3"><a href="/about">About</a></li>
           <li class="px-1 md:px-3"><a href="/uses">Uses</a></li>
           <li class="px-1 md:px-3"><a href="/now">Now</a></li>

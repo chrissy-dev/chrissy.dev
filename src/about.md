@@ -5,7 +5,7 @@ title: About
 
 <div class="mb-10 -mx-6 lg:-mx-20">
   <figure>
-    <img class="object-cover object-center" src="/static/bendorainsummit.jpg" alt="Chris at the summit of Ben Dorain, blue sky">
+    {% Image "./src/static/bendorainsummit.jpg", "Chris at the summit of Ben Dorain, blue sky" %}
     <figcaption class="text-sm px-6 md:text-center">Summit of Ben Dorain, Sept 2020</figcaption>
   </figure>
 </div>

@@ -5,6 +5,7 @@ const shortcodes = require('./utils/shortcodes.js');
 const blocks = require('./utils/blocks.js');
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
+const Image = require("@11ty/eleventy-img");
 
 module.exports = function (eleventyConfig) {
     // Folders to copy to build dir (See. 1.1)
@@ -37,13 +38,52 @@ module.exports = function (eleventyConfig) {
     // Blocks
     Object.keys(blocks).forEach((blockName) => {
         eleventyConfig.addPairedShortcode(blockName, blocks[blockName])
-    })  
+    })
+
+    eleventyConfig.addNunjucksAsyncShortcode("Image", async (src, alt) => {
+        if (!alt) {
+            throw new Error(`Missing \`alt\` on myImage from: ${src}`);
+        }
+
+        let stats = await Image(src, {
+            widths: [25, 320, 640, 960, 1024],
+            formats: ["jpeg"],
+            urlPath: "/static/",
+            outputDir: "./dist/static/",
+        });
+
+        let lowestSrc = stats["jpeg"][0];
+
+        const srcset = Object.keys(stats).reduce(
+            (acc, format) => ({
+                ...acc,
+                [format]: stats[format].reduce(
+                    (_acc, curr) => `${_acc} ${curr.srcset} ,`,
+                    ""
+                ),
+            }), {}
+        );
+
+        const source = `<source type="image/jpeg" data-srcset="${srcset["jpeg"]}" >`;
+
+        const img = `<img class="lazy w-full" 
+                            alt="${alt}"
+                            src = "${lowestSrc.url}"
+                            data-src="${lowestSrc.url}"
+                            data-sizes='(min-width: 1024px) 1024px, 100vw'
+                            data-srcset="${srcset["jpeg"]}"
+                            width="${lowestSrc.width}"
+                            height="${lowestSrc.height}">`;
+
+        return `<picture> ${source} ${img} </picture>`;
+    });
+
 
     // This allows Eleventy to watch for file changes during local development.
     eleventyConfig.setUseGitIgnore(false);
     // Opts in to a full deep merge when combining the Data Cascade.
     eleventyConfig.setDataDeepMerge(true);
-  
+
     eleventyConfig.addPlugin(syntaxHighlight);
     eleventyConfig.addPlugin(pluginRss);
 

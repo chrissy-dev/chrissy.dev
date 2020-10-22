@@ -1,4 +1,5 @@
 import formatDistanceToNowStrict from 'date-fns/formatDistanceToNowStrict'
+import LazyLoad from "vanilla-lazyload";
 
 const dateSlots = document.querySelectorAll(".post-date");
 
@@ -17,3 +18,5 @@ navButton.addEventListener('click', function () {
   let menu = this.nextElementSibling;
   menu.hidden = !menu.hidden;
 });
+
+var lazyLoadInstance = new LazyLoad();
