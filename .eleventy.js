@@ -6,6 +6,7 @@ const blocks = require('./utils/blocks.js');
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 const Image = require("@11ty/eleventy-img");
+const markdown = require("markdown-it");
 
 module.exports = function (eleventyConfig) {
     // Folders to copy to build dir (See. 1.1)
@@ -78,6 +79,11 @@ module.exports = function (eleventyConfig) {
         return `<picture> ${source} ${img} </picture>`;
     });
 
+    eleventyConfig.setLibrary("md", markdown({
+        html: true,
+        breaks: true,
+        linkify: true
+    }).use(require('markdown-it-footnote')));
 
     // This allows Eleventy to watch for file changes during local development.
     eleventyConfig.setUseGitIgnore(false);
