@@ -4,8 +4,8 @@ module.exports = {
   "url": "https://chriscollins.me",
   "author": "Chris Collins",
   "availability": {
-    "status": false,
-    "until": "late-October 2020"
+    "status": true,
+    "until": ""
   },
   "meta_data": {
     "twitter": "@scottishstoater",
