@@ -39,7 +39,7 @@ I love full manual older lenses. You can get extremely well built lenses with gr
 
 ## Desktop Applications & Tools
 
-I use a mix of open-source software, leased, and commercial software. I lease apps through [SetApp](https://setapp.com/), I love it.
+I use a mix of open-source software, leased, and commercial software. 
 
 ### Development
 
@@ -49,14 +49,13 @@ I use a mix of open-source software, leased, and commercial software. I lease ap
 - [SequelPro](https://www.sequelpro.com/) - Use for all my relational database needs, used it for years.
 - [FileZilla](https://filezilla-project.org/) - Whenever I need to quickly get into a server and see what I'm doing.
 - [ImageOptim](https://imageoptim.com) - Crunching images for the web, save some space or strip personally identifiable metadata.
-- [Marked 2](https://marked2app.com/) - Previewing markdown I'm writing in Visual Studio Code.
 - [Paw](https://paw.cloud/) - I love native apps, Paw is an API tool for Mac.
 - [Tower](https://www.git-tower.com/mac/) - The only Git client I have ever needed.
 
 ### Design
 
 - [Sketch](https://www.sketch.com/) - Been using it for years for UI design, I've heard of the rest but I'm happy and productive with Sketch.
-- [IconJar](https://geticonjar.com/) - I have a few open-source icon collections stored in IconJar, it's scary how much I use this app.
+- [Iconset](https://iconset.io/) - I have a few open-source icon collections stored in Iconset, it's scary how much I use this app.
   - [Iconcons](https://ionicons.com/)
   - [Material Design Icons](https://materialdesignicons.com/)
   - [Simple Icons](https://simpleicons.org/)
@@ -65,16 +64,13 @@ I use a mix of open-source software, leased, and commercial software. I lease ap
 ### Photography/Photo Editing
 
 - [Lightroom Classic](https://www.adobe.com/uk/products/photoshop-lightroom-classic.html) - I hope Adobe don't kill this. I don't mind Lightroom CC but I hate that your library has to live on the cloud.
-- [MetaImage](https://neededapps.com/metaimage/) - Clean and efficient way to edit photo metadata.
 - [Renamer](https://renamer.com/) - I have a couple of presets set up to organise my photos based on the metadata timestamps.
 
 ### Misc
 
-- [Bartender](https://www.macbartender.com/) - I used to use [DozerApp](https://github.com/Mortennn/Dozer) but Bartender is included in SetApp.
-- [CleanMyMac X](https://macpaw.com/cleanmymac)
+- [Vanilla](https://matthewpalmer.net/vanilla/)
 - [iA Writer](https://ia.net/writer) - I use Plain Text for all my notes, see [my post about it](/notes/why-i-use-plain-text-files-for-my-notes/).
-- ~~[Mozilla Firefox](https://www.mozilla.org/en-GB/firefox/new/)~~
-  - [Google Chrome](https://www.google.co.uk/chrome) - Temporarily back using Chrome because Firefox has reset to default settings twice in a month.
+- [Google Chrome](https://www.google.co.uk/chrome)
 - [ohmyzsh](https://github.com/ohmyzsh/ohmyzsh) - I'm not a 10x Developer...but ohmyzsh makes me feel like one.
 - [Kap](https://getkap.co/) - Screen recorder of choice, can't believe this is a free app.
 - [Rectangle](https://rectangleapp.com/) - Used to use [Spectacle](https://www.spectacleapp.com/) but Rectangle is the open-source maintained fork of it.
@@ -89,7 +85,7 @@ I use a mix of open-source software, leased, and commercial software. I lease ap
 - [IFTTT](https://apps.apple.com/gb/app/ifttt/id660944635) - Turns my lights on and off and sunrise/sunset.
 - [Bitwarden](https://bitwarden.com/) - Password Manager of choice.
 - [Apple Books](https://apps.apple.com/gb/app/apple-books/id364709193)
-- [GoodTask](https://goodtaskapp.com/) - Everything the Apple iOS/Mac Reminders should be. 
+- [Apple Reminders](https://support.apple.com/en-gb/HT205890) 
 
 ### Weather
 
@@ -147,4 +143,18 @@ I use a mix of open-source software, leased, and commercial software. I lease ap
 
 ## Cycling 
 
+### Bikes
 - [Cannondale Topstone Tiagra (2020)](https://www.cannondale.com/en-gb/bikes/road/gravel/topstone-alloy/topstone-tiagra-smu)
+- Single Speed made of random components.
+
+### Accessories
+- [Shimano PD-M520 Pedals (Silver)](https://www.wiggle.co.uk/shimano-pd-m520-pedals)
+- [Quad-lock Stem Mount](https://www.quadlockcase.co.uk/products/bike-mount)
+
+### Tyres
+- [WTB Nano 700 40c (Tan-wall)](https://www.wtb.com/products/nano-40c)
+- [Schwalbe G-One Allround](https://www.schwalbe.com/en/road-reader/schwalbe-g-one-allround)
+
+### Clothing 
+- [Rapha Jerseys](https://www.rapha.cc/gb/en/mens-products/cycling-jerseys/category/jerseys)
+- dhb Cycling Shorts
