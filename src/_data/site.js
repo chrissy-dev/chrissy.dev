@@ -11,5 +11,5 @@ module.exports = {
     "twitter": "@scottishstoater",
     "default_social_image": "/static/default_social_image.jpg"
   },
-  "env": process.env.ELEVENTY_ENV === 'production'
+  "isProduction": process.env.ELEVENTY_ENV === 'production'
 }

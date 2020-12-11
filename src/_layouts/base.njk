@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     {% include "head.njk" %}
-    {% if site.env %}
+    {% if site.isProduction %}
       <!-- capture the CSS content as a Liquid variable -->
       {% set css %}{% include "app.compiled.css" %}{% endset %}
       <style> 
