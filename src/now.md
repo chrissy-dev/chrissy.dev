@@ -2,7 +2,7 @@
 title: Now
 layout: page.njk
 
-last_updated: 2020-11-18T09:56:31+00:00
+last_updated: 2020-12-11T09:56:31+00:00
 ---
 
 ## At work:
@@ -12,11 +12,10 @@ last_updated: 2020-11-18T09:56:31+00:00
 
 ## In life:
 - Got my Wahoo Kickr set up and embarking on the world of Zwift.
-- Setting up a home office in my spare room, working from home is the norm now for me. I'm enjoying it though. 
 - Decorating, laying flooring and general new home chores.
-- Planning some winter wild camping for when restrictions are lifted.
+- Planning some winter climbing once the lockdown is lifted.
 
 ## For fun:
 - Setting up my garage as a man cave for all my hiking, cycling gear and tools. 
 - Converting all my family VHS tapes over to digital.
-- Building a web app that runs within my home network for my son to watch videos on his tablet.
+
