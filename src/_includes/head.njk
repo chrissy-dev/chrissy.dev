@@ -64,6 +64,9 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="{{ site.meta_data.twitter }}">
 <meta name="twitter:creator" content="{{ site.meta_data.twitter }}">
+{% if site.meta_data.default_social_image or featured_image %}
+  <meta property="twitter:image" content="{% if site.isProduction %}{{ site.url }}{% endif %}{% if featured_image  %}/{{ featured_image }}{% else %}/{{ site.meta_data.default_social_image }}{% endif %}" />
+{% endif %}
 
 <!-- disallow Twitter from using your site's info for personalization purposes -->
 <meta name="twitter:dnt" content="on">
