@@ -1,7 +1,7 @@
 module.exports = {
   theme: {
     fontFamily: {
-      'body': ['Lora', 'serif'],
+      'body': ['Inter', 'serif'],
     },
     typography: {
       default: {
