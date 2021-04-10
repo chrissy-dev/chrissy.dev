@@ -1,6 +1,8 @@
 ---
 title: Uses
 layout: page.njk
+
+last_updated: 2021-04-10T20:12:31+00:00
 ---
 
 I use a lot of <i>stuff</i> in my day-to-day life, some of which can be found on this page.
