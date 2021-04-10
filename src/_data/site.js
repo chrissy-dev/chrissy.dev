@@ -5,7 +5,7 @@ module.exports = {
   "author": "Chris Collins",
   "availability": {
     "status": false,
-    "until": "mid-January 2021"
+    "until": "mid-May 2021"
   },
   "meta_data": {
     "twitter": "@scottishstoater",
