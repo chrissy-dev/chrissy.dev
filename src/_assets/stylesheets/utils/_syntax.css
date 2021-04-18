@@ -40,7 +40,7 @@ pre[class*='language-'] ::selection {
 }
 
 :not(pre) > code {
-  @apply bg-white shadow-sm font-normal rounded border align-middle px-2 whitespace-no-wrap;
+  @apply bg-white shadow-sm font-normal rounded border align-middle px-2 whitespace-nowrap;
   padding-top: 0.2rem;
   padding-bottom: 0.2rem;
 }
@@ -62,10 +62,6 @@ pre[class*='language-'] {
   position: relative;
   color: #eee;
   @apply bg-gray-800 shadow-lg px-8 py-4 my-8 -mx-6;
-
-  @media (min-width: 768px) {
-    @apply rounded mx-0;
-  }
 }
 
 pre[class*='language-'].language-css > code,

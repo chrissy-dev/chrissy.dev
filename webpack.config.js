@@ -1,11 +1,11 @@
 module.exports = {
     mode: process.env.ELEVENTY_ENV || 'development',
     entry: {
-        app: __dirname + '/src/_assets/scripts/app.js',
+        scripts: __dirname + '/src/_assets/scripts/scripts.js',
     },
     output: {
         path: __dirname + '/src/static', // `/dist` is the destination
-        filename: 'app.bundled.js', // bundle created by webpack it will contain all our app logic. we will link to this .js file from our html page.
+        filename: 'scripts.min.js', // bundle created by webpack it will contain all our app logic. we will link to this .js file from our html page.
     },
     module: {
         rules: [{
