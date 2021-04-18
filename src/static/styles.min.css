@@ -734,7 +734,7 @@ video {
   line-height: 1.7142857;
   margin-top: 1.7142857em;
   margin-bottom: 1.7142857em;
-  border-radius: 0;
+  border-radius: 0.375rem;
   padding-top: 0.8571429em;
   padding-right: 1.1428571em;
   padding-bottom: 0.8571429em;
@@ -2858,7 +2858,7 @@ video {
 
 .divide-yellow-200 > :not([hidden]) ~ :not([hidden]) {
   --tw-divide-opacity: 1;
-  border-color: rgba(251, 241, 214, var(--tw-divide-opacity));
+  border-color: rgba(253, 230, 138, var(--tw-divide-opacity));
 }
 
 .divide-yellow-300 > :not([hidden]) ~ :not([hidden]) {
@@ -3460,7 +3460,7 @@ video {
 
 .bg-yellow-200 {
   --tw-bg-opacity: 1;
-  background-color: rgba(251, 241, 214, var(--tw-bg-opacity));
+  background-color: rgba(253, 230, 138, var(--tw-bg-opacity));
 }
 
 .bg-yellow-300 {
@@ -3878,7 +3878,7 @@ video {
 
 .group:hover .group-hover\:bg-yellow-200 {
   --tw-bg-opacity: 1;
-  background-color: rgba(251, 241, 214, var(--tw-bg-opacity));
+  background-color: rgba(253, 230, 138, var(--tw-bg-opacity));
 }
 
 .group:hover .group-hover\:bg-yellow-300 {
@@ -4296,7 +4296,7 @@ video {
 
 .focus-within\:bg-yellow-200:focus-within {
   --tw-bg-opacity: 1;
-  background-color: rgba(251, 241, 214, var(--tw-bg-opacity));
+  background-color: rgba(253, 230, 138, var(--tw-bg-opacity));
 }
 
 .focus-within\:bg-yellow-300:focus-within {
@@ -4714,7 +4714,7 @@ video {
 
 .hover\:bg-yellow-200:hover {
   --tw-bg-opacity: 1;
-  background-color: rgba(251, 241, 214, var(--tw-bg-opacity));
+  background-color: rgba(253, 230, 138, var(--tw-bg-opacity));
 }
 
 .hover\:bg-yellow-300:hover {
@@ -5132,7 +5132,7 @@ video {
 
 .focus\:bg-yellow-200:focus {
   --tw-bg-opacity: 1;
-  background-color: rgba(251, 241, 214, var(--tw-bg-opacity));
+  background-color: rgba(253, 230, 138, var(--tw-bg-opacity));
 }
 
 .focus\:bg-yellow-300:focus {
@@ -5587,8 +5587,8 @@ video {
 }
 
 .from-yellow-200 {
-  --tw-gradient-from: #FBF1D6;
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(251, 241, 214, 0));
+  --tw-gradient-from: #fde68a;
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(253, 230, 138, 0));
 }
 
 .from-yellow-300 {
@@ -5981,7 +5981,7 @@ video {
 }
 
 .via-yellow-200 {
-  --tw-gradient-stops: var(--tw-gradient-from), #FBF1D6, var(--tw-gradient-to, rgba(251, 241, 214, 0));
+  --tw-gradient-stops: var(--tw-gradient-from), #fde68a, var(--tw-gradient-to, rgba(253, 230, 138, 0));
 }
 
 .via-yellow-300 {
@@ -6317,7 +6317,7 @@ video {
 }
 
 .to-yellow-200 {
-  --tw-gradient-to: #FBF1D6;
+  --tw-gradient-to: #fde68a;
 }
 
 .to-yellow-300 {
@@ -6679,8 +6679,8 @@ video {
 }
 
 .hover\:from-yellow-200:hover {
-  --tw-gradient-from: #FBF1D6;
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(251, 241, 214, 0));
+  --tw-gradient-from: #fde68a;
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(253, 230, 138, 0));
 }
 
 .hover\:from-yellow-300:hover {
@@ -7073,7 +7073,7 @@ video {
 }
 
 .hover\:via-yellow-200:hover {
-  --tw-gradient-stops: var(--tw-gradient-from), #FBF1D6, var(--tw-gradient-to, rgba(251, 241, 214, 0));
+  --tw-gradient-stops: var(--tw-gradient-from), #fde68a, var(--tw-gradient-to, rgba(253, 230, 138, 0));
 }
 
 .hover\:via-yellow-300:hover {
@@ -7409,7 +7409,7 @@ video {
 }
 
 .hover\:to-yellow-200:hover {
-  --tw-gradient-to: #FBF1D6;
+  --tw-gradient-to: #fde68a;
 }
 
 .hover\:to-yellow-300:hover {
@@ -7771,8 +7771,8 @@ video {
 }
 
 .focus\:from-yellow-200:focus {
-  --tw-gradient-from: #FBF1D6;
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(251, 241, 214, 0));
+  --tw-gradient-from: #fde68a;
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(253, 230, 138, 0));
 }
 
 .focus\:from-yellow-300:focus {
@@ -8165,7 +8165,7 @@ video {
 }
 
 .focus\:via-yellow-200:focus {
-  --tw-gradient-stops: var(--tw-gradient-from), #FBF1D6, var(--tw-gradient-to, rgba(251, 241, 214, 0));
+  --tw-gradient-stops: var(--tw-gradient-from), #fde68a, var(--tw-gradient-to, rgba(253, 230, 138, 0));
 }
 
 .focus\:via-yellow-300:focus {
@@ -8501,7 +8501,7 @@ video {
 }
 
 .focus\:to-yellow-200:focus {
-  --tw-gradient-to: #FBF1D6;
+  --tw-gradient-to: #fde68a;
 }
 
 .focus\:to-yellow-300:focus {
@@ -9242,7 +9242,7 @@ video {
 
 .border-yellow-200 {
   --tw-border-opacity: 1;
-  border-color: rgba(251, 241, 214, var(--tw-border-opacity));
+  border-color: rgba(253, 230, 138, var(--tw-border-opacity));
 }
 
 .border-yellow-300 {
@@ -9660,7 +9660,7 @@ video {
 
 .group:hover .group-hover\:border-yellow-200 {
   --tw-border-opacity: 1;
-  border-color: rgba(251, 241, 214, var(--tw-border-opacity));
+  border-color: rgba(253, 230, 138, var(--tw-border-opacity));
 }
 
 .group:hover .group-hover\:border-yellow-300 {
@@ -10078,7 +10078,7 @@ video {
 
 .focus-within\:border-yellow-200:focus-within {
   --tw-border-opacity: 1;
-  border-color: rgba(251, 241, 214, var(--tw-border-opacity));
+  border-color: rgba(253, 230, 138, var(--tw-border-opacity));
 }
 
 .focus-within\:border-yellow-300:focus-within {
@@ -10496,7 +10496,7 @@ video {
 
 .hover\:border-yellow-200:hover {
   --tw-border-opacity: 1;
-  border-color: rgba(251, 241, 214, var(--tw-border-opacity));
+  border-color: rgba(253, 230, 138, var(--tw-border-opacity));
 }
 
 .hover\:border-yellow-300:hover {
@@ -10914,7 +10914,7 @@ video {
 
 .focus\:border-yellow-200:focus {
   --tw-border-opacity: 1;
-  border-color: rgba(251, 241, 214, var(--tw-border-opacity));
+  border-color: rgba(253, 230, 138, var(--tw-border-opacity));
 }
 
 .focus\:border-yellow-300:focus {
@@ -11982,106 +11982,6 @@ video {
   border-left-width: 1px;
 }
 
-.last\:border-0:last-child {
-  border-width: 0px;
-}
-
-.last\:border-2:last-child {
-  border-width: 2px;
-}
-
-.last\:border-4:last-child {
-  border-width: 4px;
-}
-
-.last\:border-8:last-child {
-  border-width: 8px;
-}
-
-.last\:border:last-child {
-  border-width: 1px;
-}
-
-.last\:border-t-0:last-child {
-  border-top-width: 0px;
-}
-
-.last\:border-r-0:last-child {
-  border-right-width: 0px;
-}
-
-.last\:border-b-0:last-child {
-  border-bottom-width: 0px;
-}
-
-.last\:border-l-0:last-child {
-  border-left-width: 0px;
-}
-
-.last\:border-t-2:last-child {
-  border-top-width: 2px;
-}
-
-.last\:border-r-2:last-child {
-  border-right-width: 2px;
-}
-
-.last\:border-b-2:last-child {
-  border-bottom-width: 2px;
-}
-
-.last\:border-l-2:last-child {
-  border-left-width: 2px;
-}
-
-.last\:border-t-4:last-child {
-  border-top-width: 4px;
-}
-
-.last\:border-r-4:last-child {
-  border-right-width: 4px;
-}
-
-.last\:border-b-4:last-child {
-  border-bottom-width: 4px;
-}
-
-.last\:border-l-4:last-child {
-  border-left-width: 4px;
-}
-
-.last\:border-t-8:last-child {
-  border-top-width: 8px;
-}
-
-.last\:border-r-8:last-child {
-  border-right-width: 8px;
-}
-
-.last\:border-b-8:last-child {
-  border-bottom-width: 8px;
-}
-
-.last\:border-l-8:last-child {
-  border-left-width: 8px;
-}
-
-.last\:border-t:last-child {
-  border-top-width: 1px;
-}
-
-.last\:border-r:last-child {
-  border-right-width: 1px;
-}
-
-.last\:border-b:last-child {
-  border-bottom-width: 1px;
-}
-
-.last\:border-l:last-child {
-  border-left-width: 1px;
-}
-
 .decoration-slice {
   -webkit-box-decoration-break: slice;
           box-decoration-break: slice;
@@ -12552,8 +12452,16 @@ video {
   clear: none;
 }
 
-.font-body {
-  font-family: Lora, serif;
+.font-sans {
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.font-serif {
+  font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+}
+
+.font-mono {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
 .font-thin {
@@ -17285,17 +17193,17 @@ video {
 
 .placeholder-yellow-200::-moz-placeholder {
   --tw-placeholder-opacity: 1;
-  color: rgba(251, 241, 214, var(--tw-placeholder-opacity));
+  color: rgba(253, 230, 138, var(--tw-placeholder-opacity));
 }
 
 .placeholder-yellow-200:-ms-input-placeholder {
   --tw-placeholder-opacity: 1;
-  color: rgba(251, 241, 214, var(--tw-placeholder-opacity));
+  color: rgba(253, 230, 138, var(--tw-placeholder-opacity));
 }
 
 .placeholder-yellow-200::placeholder {
   --tw-placeholder-opacity: 1;
-  color: rgba(251, 241, 214, var(--tw-placeholder-opacity));
+  color: rgba(253, 230, 138, var(--tw-placeholder-opacity));
 }
 
 .placeholder-yellow-300::-moz-placeholder {
@@ -18539,17 +18447,17 @@ video {
 
 .focus\:placeholder-yellow-200:focus::-moz-placeholder {
   --tw-placeholder-opacity: 1;
-  color: rgba(251, 241, 214, var(--tw-placeholder-opacity));
+  color: rgba(253, 230, 138, var(--tw-placeholder-opacity));
 }
 
 .focus\:placeholder-yellow-200:focus:-ms-input-placeholder {
   --tw-placeholder-opacity: 1;
-  color: rgba(251, 241, 214, var(--tw-placeholder-opacity));
+  color: rgba(253, 230, 138, var(--tw-placeholder-opacity));
 }
 
 .focus\:placeholder-yellow-200:focus::placeholder {
   --tw-placeholder-opacity: 1;
-  color: rgba(251, 241, 214, var(--tw-placeholder-opacity));
+  color: rgba(253, 230, 138, var(--tw-placeholder-opacity));
 }
 
 .focus\:placeholder-yellow-300:focus::-moz-placeholder {
@@ -23054,7 +22962,7 @@ video {
 }
 
 .ring-offset-yellow-200 {
-  --tw-ring-offset-color: #FBF1D6;
+  --tw-ring-offset-color: #fde68a;
 }
 
 .ring-offset-yellow-300 {
@@ -23390,7 +23298,7 @@ video {
 }
 
 .focus-within\:ring-offset-yellow-200:focus-within {
-  --tw-ring-offset-color: #FBF1D6;
+  --tw-ring-offset-color: #fde68a;
 }
 
 .focus-within\:ring-offset-yellow-300:focus-within {
@@ -23726,7 +23634,7 @@ video {
 }
 
 .focus\:ring-offset-yellow-200:focus {
-  --tw-ring-offset-color: #FBF1D6;
+  --tw-ring-offset-color: #fde68a;
 }
 
 .focus\:ring-offset-yellow-300:focus {
@@ -24147,7 +24055,7 @@ video {
 
 .ring-yellow-200 {
   --tw-ring-opacity: 1;
-  --tw-ring-color: rgba(251, 241, 214, var(--tw-ring-opacity));
+  --tw-ring-color: rgba(253, 230, 138, var(--tw-ring-opacity));
 }
 
 .ring-yellow-300 {
@@ -24565,7 +24473,7 @@ video {
 
 .focus-within\:ring-yellow-200:focus-within {
   --tw-ring-opacity: 1;
-  --tw-ring-color: rgba(251, 241, 214, var(--tw-ring-opacity));
+  --tw-ring-color: rgba(253, 230, 138, var(--tw-ring-opacity));
 }
 
 .focus-within\:ring-yellow-300:focus-within {
@@ -24983,7 +24891,7 @@ video {
 
 .focus\:ring-yellow-200:focus {
   --tw-ring-opacity: 1;
-  --tw-ring-color: rgba(251, 241, 214, var(--tw-ring-opacity));
+  --tw-ring-color: rgba(253, 230, 138, var(--tw-ring-opacity));
 }
 
 .focus\:ring-yellow-300:focus {
@@ -25625,7 +25533,7 @@ video {
 
 .text-yellow-200 {
   --tw-text-opacity: 1;
-  color: rgba(251, 241, 214, var(--tw-text-opacity));
+  color: rgba(253, 230, 138, var(--tw-text-opacity));
 }
 
 .text-yellow-300 {
@@ -26043,7 +25951,7 @@ video {
 
 .group:hover .group-hover\:text-yellow-200 {
   --tw-text-opacity: 1;
-  color: rgba(251, 241, 214, var(--tw-text-opacity));
+  color: rgba(253, 230, 138, var(--tw-text-opacity));
 }
 
 .group:hover .group-hover\:text-yellow-300 {
@@ -26461,7 +26369,7 @@ video {
 
 .focus-within\:text-yellow-200:focus-within {
   --tw-text-opacity: 1;
-  color: rgba(251, 241, 214, var(--tw-text-opacity));
+  color: rgba(253, 230, 138, var(--tw-text-opacity));
 }
 
 .focus-within\:text-yellow-300:focus-within {
@@ -26879,7 +26787,7 @@ video {
 
 .hover\:text-yellow-200:hover {
   --tw-text-opacity: 1;
-  color: rgba(251, 241, 214, var(--tw-text-opacity));
+  color: rgba(253, 230, 138, var(--tw-text-opacity));
 }
 
 .hover\:text-yellow-300:hover {
@@ -27297,7 +27205,7 @@ video {
 
 .focus\:text-yellow-200:focus {
   --tw-text-opacity: 1;
-  color: rgba(251, 241, 214, var(--tw-text-opacity));
+  color: rgba(253, 230, 138, var(--tw-text-opacity));
 }
 
 .focus\:text-yellow-300:focus {
@@ -33450,26 +33358,20 @@ pre[class*='language-'].language-scss > code {
 
 ::-moz-selection {
   --tw-bg-opacity: 1;
-  background-color: rgba(251, 241, 214, var(--tw-bg-opacity));
+  background-color: rgba(253, 230, 138, var(--tw-bg-opacity));
 }
 
 ::selection {
   --tw-bg-opacity: 1;
-  background-color: rgba(251, 241, 214, var(--tw-bg-opacity));
+  background-color: rgba(253, 230, 138, var(--tw-bg-opacity));
 }
 
-body {
-  font-family: Lora, serif;
-}
-
-a {
-  text-decoration: underline;
-}
-
-a:hover {
-  --tw-text-opacity: 1;
-  color: rgba(31, 41, 55, var(--tw-text-opacity));
-}
+/* html {
+	font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen-Sans, Ubuntu, Cantarell, Helvetica Neue, sans-serif;
+	font-size: calc(.9em + .3vw);
+	text-rendering: optimizeSpeed;
+	line-height: 1.6
+} */
 
 .container {
   margin-left: auto;
@@ -33702,7 +33604,7 @@ a:hover {
     line-height: 1.7142857;
     margin-top: 1.7142857em;
     margin-bottom: 1.7142857em;
-    border-radius: 0;
+    border-radius: 0.375rem;
     padding-top: 0.8571429em;
     padding-right: 1.1428571em;
     padding-bottom: 0.8571429em;
@@ -35826,7 +35728,7 @@ a:hover {
 
   .sm\:divide-yellow-200 > :not([hidden]) ~ :not([hidden]) {
     --tw-divide-opacity: 1;
-    border-color: rgba(251, 241, 214, var(--tw-divide-opacity));
+    border-color: rgba(253, 230, 138, var(--tw-divide-opacity));
   }
 
   .sm\:divide-yellow-300 > :not([hidden]) ~ :not([hidden]) {
@@ -36428,7 +36330,7 @@ a:hover {
 
   .sm\:bg-yellow-200 {
     --tw-bg-opacity: 1;
-    background-color: rgba(251, 241, 214, var(--tw-bg-opacity));
+    background-color: rgba(253, 230, 138, var(--tw-bg-opacity));
   }
 
   .sm\:bg-yellow-300 {
@@ -36846,7 +36748,7 @@ a:hover {
 
   .group:hover .sm\:group-hover\:bg-yellow-200 {
     --tw-bg-opacity: 1;
-    background-color: rgba(251, 241, 214, var(--tw-bg-opacity));
+    background-color: rgba(253, 230, 138, var(--tw-bg-opacity));
   }
 
   .group:hover .sm\:group-hover\:bg-yellow-300 {
@@ -37264,7 +37166,7 @@ a:hover {
 
   .sm\:focus-within\:bg-yellow-200:focus-within {
     --tw-bg-opacity: 1;
-    background-color: rgba(251, 241, 214, var(--tw-bg-opacity));
+    background-color: rgba(253, 230, 138, var(--tw-bg-opacity));
   }
 
   .sm\:focus-within\:bg-yellow-300:focus-within {
@@ -37682,7 +37584,7 @@ a:hover {
 
   .sm\:hover\:bg-yellow-200:hover {
     --tw-bg-opacity: 1;
-    background-color: rgba(251, 241, 214, var(--tw-bg-opacity));
+    background-color: rgba(253, 230, 138, var(--tw-bg-opacity));
   }
 
   .sm\:hover\:bg-yellow-300:hover {
@@ -38100,7 +38002,7 @@ a:hover {
 
   .sm\:focus\:bg-yellow-200:focus {
     --tw-bg-opacity: 1;
-    background-color: rgba(251, 241, 214, var(--tw-bg-opacity));
+    background-color: rgba(253, 230, 138, var(--tw-bg-opacity));
   }
 
   .sm\:focus\:bg-yellow-300:focus {
@@ -38555,8 +38457,8 @@ a:hover {
   }
 
   .sm\:from-yellow-200 {
-    --tw-gradient-from: #FBF1D6;
-    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(251, 241, 214, 0));
+    --tw-gradient-from: #fde68a;
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(253, 230, 138, 0));
   }
 
   .sm\:from-yellow-300 {
@@ -38949,7 +38851,7 @@ a:hover {
   }
 
   .sm\:via-yellow-200 {
-    --tw-gradient-stops: var(--tw-gradient-from), #FBF1D6, var(--tw-gradient-to, rgba(251, 241, 214, 0));
+    --tw-gradient-stops: var(--tw-gradient-from), #fde68a, var(--tw-gradient-to, rgba(253, 230, 138, 0));
   }
 
   .sm\:via-yellow-300 {
@@ -39285,7 +39187,7 @@ a:hover {
   }
 
   .sm\:to-yellow-200 {
-    --tw-gradient-to: #FBF1D6;
+    --tw-gradient-to: #fde68a;
   }
 
   .sm\:to-yellow-300 {
@@ -39647,8 +39549,8 @@ a:hover {
   }
 
   .sm\:hover\:from-yellow-200:hover {
-    --tw-gradient-from: #FBF1D6;
-    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(251, 241, 214, 0));
+    --tw-gradient-from: #fde68a;
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(253, 230, 138, 0));
   }
 
   .sm\:hover\:from-yellow-300:hover {
@@ -40041,7 +39943,7 @@ a:hover {
   }
 
   .sm\:hover\:via-yellow-200:hover {
-    --tw-gradient-stops: var(--tw-gradient-from), #FBF1D6, var(--tw-gradient-to, rgba(251, 241, 214, 0));
+    --tw-gradient-stops: var(--tw-gradient-from), #fde68a, var(--tw-gradient-to, rgba(253, 230, 138, 0));
   }
 
   .sm\:hover\:via-yellow-300:hover {
@@ -40377,7 +40279,7 @@ a:hover {
   }
 
   .sm\:hover\:to-yellow-200:hover {
-    --tw-gradient-to: #FBF1D6;
+    --tw-gradient-to: #fde68a;
   }
 
   .sm\:hover\:to-yellow-300:hover {
@@ -40739,8 +40641,8 @@ a:hover {
   }
 
   .sm\:focus\:from-yellow-200:focus {
-    --tw-gradient-from: #FBF1D6;
-    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(251, 241, 214, 0));
+    --tw-gradient-from: #fde68a;
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(253, 230, 138, 0));
   }
 
   .sm\:focus\:from-yellow-300:focus {
@@ -41133,7 +41035,7 @@ a:hover {
   }
 
   .sm\:focus\:via-yellow-200:focus {
-    --tw-gradient-stops: var(--tw-gradient-from), #FBF1D6, var(--tw-gradient-to, rgba(251, 241, 214, 0));
+    --tw-gradient-stops: var(--tw-gradient-from), #fde68a, var(--tw-gradient-to, rgba(253, 230, 138, 0));
   }
 
   .sm\:focus\:via-yellow-300:focus {
@@ -41469,7 +41371,7 @@ a:hover {
   }
 
   .sm\:focus\:to-yellow-200:focus {
-    --tw-gradient-to: #FBF1D6;
+    --tw-gradient-to: #fde68a;
   }
 
   .sm\:focus\:to-yellow-300:focus {
@@ -42210,7 +42112,7 @@ a:hover {
 
   .sm\:border-yellow-200 {
     --tw-border-opacity: 1;
-    border-color: rgba(251, 241, 214, var(--tw-border-opacity));
+    border-color: rgba(253, 230, 138, var(--tw-border-opacity));
   }
 
   .sm\:border-yellow-300 {
@@ -42628,7 +42530,7 @@ a:hover {
 
   .group:hover .sm\:group-hover\:border-yellow-200 {
     --tw-border-opacity: 1;
-    border-color: rgba(251, 241, 214, var(--tw-border-opacity));
+    border-color: rgba(253, 230, 138, var(--tw-border-opacity));
   }
 
   .group:hover .sm\:group-hover\:border-yellow-300 {
@@ -43046,7 +42948,7 @@ a:hover {
 
   .sm\:focus-within\:border-yellow-200:focus-within {
     --tw-border-opacity: 1;
-    border-color: rgba(251, 241, 214, var(--tw-border-opacity));
+    border-color: rgba(253, 230, 138, var(--tw-border-opacity));
   }
 
   .sm\:focus-within\:border-yellow-300:focus-within {
@@ -43464,7 +43366,7 @@ a:hover {
 
   .sm\:hover\:border-yellow-200:hover {
     --tw-border-opacity: 1;
-    border-color: rgba(251, 241, 214, var(--tw-border-opacity));
+    border-color: rgba(253, 230, 138, var(--tw-border-opacity));
   }
 
   .sm\:hover\:border-yellow-300:hover {
@@ -43882,7 +43784,7 @@ a:hover {
 
   .sm\:focus\:border-yellow-200:focus {
     --tw-border-opacity: 1;
-    border-color: rgba(251, 241, 214, var(--tw-border-opacity));
+    border-color: rgba(253, 230, 138, var(--tw-border-opacity));
   }
 
   .sm\:focus\:border-yellow-300:focus {
@@ -44950,106 +44852,6 @@ a:hover {
     border-left-width: 1px;
   }
 
-  .sm\:last\:border-0:last-child {
-    border-width: 0px;
-  }
-
-  .sm\:last\:border-2:last-child {
-    border-width: 2px;
-  }
-
-  .sm\:last\:border-4:last-child {
-    border-width: 4px;
-  }
-
-  .sm\:last\:border-8:last-child {
-    border-width: 8px;
-  }
-
-  .sm\:last\:border:last-child {
-    border-width: 1px;
-  }
-
-  .sm\:last\:border-t-0:last-child {
-    border-top-width: 0px;
-  }
-
-  .sm\:last\:border-r-0:last-child {
-    border-right-width: 0px;
-  }
-
-  .sm\:last\:border-b-0:last-child {
-    border-bottom-width: 0px;
-  }
-
-  .sm\:last\:border-l-0:last-child {
-    border-left-width: 0px;
-  }
-
-  .sm\:last\:border-t-2:last-child {
-    border-top-width: 2px;
-  }
-
-  .sm\:last\:border-r-2:last-child {
-    border-right-width: 2px;
-  }
-
-  .sm\:last\:border-b-2:last-child {
-    border-bottom-width: 2px;
-  }
-
-  .sm\:last\:border-l-2:last-child {
-    border-left-width: 2px;
-  }
-
-  .sm\:last\:border-t-4:last-child {
-    border-top-width: 4px;
-  }
-
-  .sm\:last\:border-r-4:last-child {
-    border-right-width: 4px;
-  }
-
-  .sm\:last\:border-b-4:last-child {
-    border-bottom-width: 4px;
-  }
-
-  .sm\:last\:border-l-4:last-child {
-    border-left-width: 4px;
-  }
-
-  .sm\:last\:border-t-8:last-child {
-    border-top-width: 8px;
-  }
-
-  .sm\:last\:border-r-8:last-child {
-    border-right-width: 8px;
-  }
-
-  .sm\:last\:border-b-8:last-child {
-    border-bottom-width: 8px;
-  }
-
-  .sm\:last\:border-l-8:last-child {
-    border-left-width: 8px;
-  }
-
-  .sm\:last\:border-t:last-child {
-    border-top-width: 1px;
-  }
-
-  .sm\:last\:border-r:last-child {
-    border-right-width: 1px;
-  }
-
-  .sm\:last\:border-b:last-child {
-    border-bottom-width: 1px;
-  }
-
-  .sm\:last\:border-l:last-child {
-    border-left-width: 1px;
-  }
-
   .sm\:decoration-slice {
     -webkit-box-decoration-break: slice;
             box-decoration-break: slice;
@@ -45520,8 +45322,16 @@ a:hover {
     clear: none;
   }
 
-  .sm\:font-body {
-    font-family: Lora, serif;
+  .sm\:font-sans {
+    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  }
+
+  .sm\:font-serif {
+    font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+  }
+
+  .sm\:font-mono {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   }
 
   .sm\:font-thin {
@@ -50253,17 +50063,17 @@ a:hover {
 
   .sm\:placeholder-yellow-200::-moz-placeholder {
     --tw-placeholder-opacity: 1;
-    color: rgba(251, 241, 214, var(--tw-placeholder-opacity));
+    color: rgba(253, 230, 138, var(--tw-placeholder-opacity));
   }
 
   .sm\:placeholder-yellow-200:-ms-input-placeholder {
     --tw-placeholder-opacity: 1;
-    color: rgba(251, 241, 214, var(--tw-placeholder-opacity));
+    color: rgba(253, 230, 138, var(--tw-placeholder-opacity));
   }
 
   .sm\:placeholder-yellow-200::placeholder {
     --tw-placeholder-opacity: 1;
-    color: rgba(251, 241, 214, var(--tw-placeholder-opacity));
+    color: rgba(253, 230, 138, var(--tw-placeholder-opacity));
   }
 
   .sm\:placeholder-yellow-300::-moz-placeholder {
@@ -51507,17 +51317,17 @@ a:hover {
 
   .sm\:focus\:placeholder-yellow-200:focus::-moz-placeholder {
     --tw-placeholder-opacity: 1;
-    color: rgba(251, 241, 214, var(--tw-placeholder-opacity));
+    color: rgba(253, 230, 138, var(--tw-placeholder-opacity));
   }
 
   .sm\:focus\:placeholder-yellow-200:focus:-ms-input-placeholder {
     --tw-placeholder-opacity: 1;
-    color: rgba(251, 241, 214, var(--tw-placeholder-opacity));
+    color: rgba(253, 230, 138, var(--tw-placeholder-opacity));
   }
 
   .sm\:focus\:placeholder-yellow-200:focus::placeholder {
     --tw-placeholder-opacity: 1;
-    color: rgba(251, 241, 214, var(--tw-placeholder-opacity));
+    color: rgba(253, 230, 138, var(--tw-placeholder-opacity));
   }
 
   .sm\:focus\:placeholder-yellow-300:focus::-moz-placeholder {
@@ -56009,7 +55819,7 @@ a:hover {
   }
 
   .sm\:ring-offset-yellow-200 {
-    --tw-ring-offset-color: #FBF1D6;
+    --tw-ring-offset-color: #fde68a;
   }
 
   .sm\:ring-offset-yellow-300 {
@@ -56345,7 +56155,7 @@ a:hover {
   }
 
   .sm\:focus-within\:ring-offset-yellow-200:focus-within {
-    --tw-ring-offset-color: #FBF1D6;
+    --tw-ring-offset-color: #fde68a;
   }
 
   .sm\:focus-within\:ring-offset-yellow-300:focus-within {
@@ -56681,7 +56491,7 @@ a:hover {
   }
 
   .sm\:focus\:ring-offset-yellow-200:focus {
-    --tw-ring-offset-color: #FBF1D6;
+    --tw-ring-offset-color: #fde68a;
   }
 
   .sm\:focus\:ring-offset-yellow-300:focus {
@@ -57102,7 +56912,7 @@ a:hover {
 
   .sm\:ring-yellow-200 {
     --tw-ring-opacity: 1;
-    --tw-ring-color: rgba(251, 241, 214, var(--tw-ring-opacity));
+    --tw-ring-color: rgba(253, 230, 138, var(--tw-ring-opacity));
   }
 
   .sm\:ring-yellow-300 {
@@ -57520,7 +57330,7 @@ a:hover {
 
   .sm\:focus-within\:ring-yellow-200:focus-within {
     --tw-ring-opacity: 1;
-    --tw-ring-color: rgba(251, 241, 214, var(--tw-ring-opacity));
+    --tw-ring-color: rgba(253, 230, 138, var(--tw-ring-opacity));
   }
 
   .sm\:focus-within\:ring-yellow-300:focus-within {
@@ -57938,7 +57748,7 @@ a:hover {
 
   .sm\:focus\:ring-yellow-200:focus {
     --tw-ring-opacity: 1;
-    --tw-ring-color: rgba(251, 241, 214, var(--tw-ring-opacity));
+    --tw-ring-color: rgba(253, 230, 138, var(--tw-ring-opacity));
   }
 
   .sm\:focus\:ring-yellow-300:focus {
@@ -58580,7 +58390,7 @@ a:hover {
 
   .sm\:text-yellow-200 {
     --tw-text-opacity: 1;
-    color: rgba(251, 241, 214, var(--tw-text-opacity));
+    color: rgba(253, 230, 138, var(--tw-text-opacity));
   }
 
   .sm\:text-yellow-300 {
@@ -58998,7 +58808,7 @@ a:hover {
 
   .group:hover .sm\:group-hover\:text-yellow-200 {
     --tw-text-opacity: 1;
-    color: rgba(251, 241, 214, var(--tw-text-opacity));
+    color: rgba(253, 230, 138, var(--tw-text-opacity));
   }
 
   .group:hover .sm\:group-hover\:text-yellow-300 {
@@ -59416,7 +59226,7 @@ a:hover {
 
   .sm\:focus-within\:text-yellow-200:focus-within {
     --tw-text-opacity: 1;
-    color: rgba(251, 241, 214, var(--tw-text-opacity));
+    color: rgba(253, 230, 138, var(--tw-text-opacity));
   }
 
   .sm\:focus-within\:text-yellow-300:focus-within {
@@ -59834,7 +59644,7 @@ a:hover {
 
   .sm\:hover\:text-yellow-200:hover {
     --tw-text-opacity: 1;
-    color: rgba(251, 241, 214, var(--tw-text-opacity));
+    color: rgba(253, 230, 138, var(--tw-text-opacity));
   }
 
   .sm\:hover\:text-yellow-300:hover {
@@ -60252,7 +60062,7 @@ a:hover {
 
   .sm\:focus\:text-yellow-200:focus {
     --tw-text-opacity: 1;
-    color: rgba(251, 241, 214, var(--tw-text-opacity));
+    color: rgba(253, 230, 138, var(--tw-text-opacity));
   }
 
   .sm\:focus\:text-yellow-300:focus {
@@ -66132,7 +65942,7 @@ a:hover {
     line-height: 1.7142857;
     margin-top: 1.7142857em;
     margin-bottom: 1.7142857em;
-    border-radius: 0;
+    border-radius: 0.375rem;
     padding-top: 0.8571429em;
     padding-right: 1.1428571em;
     padding-bottom: 0.8571429em;
@@ -68256,7 +68066,7 @@ a:hover {
 
   .md\:divide-yellow-200 > :not([hidden]) ~ :not([hidden]) {
     --tw-divide-opacity: 1;
-    border-color: rgba(251, 241, 214, var(--tw-divide-opacity));
+    border-color: rgba(253, 230, 138, var(--tw-divide-opacity));
   }
 
   .md\:divide-yellow-300 > :not([hidden]) ~ :not([hidden]) {
@@ -68858,7 +68668,7 @@ a:hover {
 
   .md\:bg-yellow-200 {
     --tw-bg-opacity: 1;
-    background-color: rgba(251, 241, 214, var(--tw-bg-opacity));
+    background-color: rgba(253, 230, 138, var(--tw-bg-opacity));
   }
 
   .md\:bg-yellow-300 {
@@ -69276,7 +69086,7 @@ a:hover {
 
   .group:hover .md\:group-hover\:bg-yellow-200 {
     --tw-bg-opacity: 1;
-    background-color: rgba(251, 241, 214, var(--tw-bg-opacity));
+    background-color: rgba(253, 230, 138, var(--tw-bg-opacity));
   }
 
   .group:hover .md\:group-hover\:bg-yellow-300 {
@@ -69694,7 +69504,7 @@ a:hover {
 
   .md\:focus-within\:bg-yellow-200:focus-within {
     --tw-bg-opacity: 1;
-    background-color: rgba(251, 241, 214, var(--tw-bg-opacity));
+    background-color: rgba(253, 230, 138, var(--tw-bg-opacity));
   }
 
   .md\:focus-within\:bg-yellow-300:focus-within {
@@ -70112,7 +69922,7 @@ a:hover {
 
   .md\:hover\:bg-yellow-200:hover {
     --tw-bg-opacity: 1;
-    background-color: rgba(251, 241, 214, var(--tw-bg-opacity));
+    background-color: rgba(253, 230, 138, var(--tw-bg-opacity));
   }
 
   .md\:hover\:bg-yellow-300:hover {
@@ -70530,7 +70340,7 @@ a:hover {
 
   .md\:focus\:bg-yellow-200:focus {
     --tw-bg-opacity: 1;
-    background-color: rgba(251, 241, 214, var(--tw-bg-opacity));
+    background-color: rgba(253, 230, 138, var(--tw-bg-opacity));
   }
 
   .md\:focus\:bg-yellow-300:focus {
@@ -70985,8 +70795,8 @@ a:hover {
   }
 
   .md\:from-yellow-200 {
-    --tw-gradient-from: #FBF1D6;
-    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(251, 241, 214, 0));
+    --tw-gradient-from: #fde68a;
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(253, 230, 138, 0));
   }
 
   .md\:from-yellow-300 {
@@ -71379,7 +71189,7 @@ a:hover {
   }
 
   .md\:via-yellow-200 {
-    --tw-gradient-stops: var(--tw-gradient-from), #FBF1D6, var(--tw-gradient-to, rgba(251, 241, 214, 0));
+    --tw-gradient-stops: var(--tw-gradient-from), #fde68a, var(--tw-gradient-to, rgba(253, 230, 138, 0));
   }
 
   .md\:via-yellow-300 {
@@ -71715,7 +71525,7 @@ a:hover {
   }
 
   .md\:to-yellow-200 {
-    --tw-gradient-to: #FBF1D6;
+    --tw-gradient-to: #fde68a;
   }
 
   .md\:to-yellow-300 {
@@ -72077,8 +71887,8 @@ a:hover {
   }
 
   .md\:hover\:from-yellow-200:hover {
-    --tw-gradient-from: #FBF1D6;
-    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(251, 241, 214, 0));
+    --tw-gradient-from: #fde68a;
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(253, 230, 138, 0));
   }
 
   .md\:hover\:from-yellow-300:hover {
@@ -72471,7 +72281,7 @@ a:hover {
   }
 
   .md\:hover\:via-yellow-200:hover {
-    --tw-gradient-stops: var(--tw-gradient-from), #FBF1D6, var(--tw-gradient-to, rgba(251, 241, 214, 0));
+    --tw-gradient-stops: var(--tw-gradient-from), #fde68a, var(--tw-gradient-to, rgba(253, 230, 138, 0));
   }
 
   .md\:hover\:via-yellow-300:hover {
@@ -72807,7 +72617,7 @@ a:hover {
   }
 
   .md\:hover\:to-yellow-200:hover {
-    --tw-gradient-to: #FBF1D6;
+    --tw-gradient-to: #fde68a;
   }
 
   .md\:hover\:to-yellow-300:hover {
@@ -73169,8 +72979,8 @@ a:hover {
   }
 
   .md\:focus\:from-yellow-200:focus {
-    --tw-gradient-from: #FBF1D6;
-    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(251, 241, 214, 0));
+    --tw-gradient-from: #fde68a;
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(253, 230, 138, 0));
   }
 
   .md\:focus\:from-yellow-300:focus {
@@ -73563,7 +73373,7 @@ a:hover {
   }
 
   .md\:focus\:via-yellow-200:focus {
-    --tw-gradient-stops: var(--tw-gradient-from), #FBF1D6, var(--tw-gradient-to, rgba(251, 241, 214, 0));
+    --tw-gradient-stops: var(--tw-gradient-from), #fde68a, var(--tw-gradient-to, rgba(253, 230, 138, 0));
   }
 
   .md\:focus\:via-yellow-300:focus {
@@ -73899,7 +73709,7 @@ a:hover {
   }
 
   .md\:focus\:to-yellow-200:focus {
-    --tw-gradient-to: #FBF1D6;
+    --tw-gradient-to: #fde68a;
   }
 
   .md\:focus\:to-yellow-300:focus {
@@ -74640,7 +74450,7 @@ a:hover {
 
   .md\:border-yellow-200 {
     --tw-border-opacity: 1;
-    border-color: rgba(251, 241, 214, var(--tw-border-opacity));
+    border-color: rgba(253, 230, 138, var(--tw-border-opacity));
   }
 
   .md\:border-yellow-300 {
@@ -75058,7 +74868,7 @@ a:hover {
 
   .group:hover .md\:group-hover\:border-yellow-200 {
     --tw-border-opacity: 1;
-    border-color: rgba(251, 241, 214, var(--tw-border-opacity));
+    border-color: rgba(253, 230, 138, var(--tw-border-opacity));
   }
 
   .group:hover .md\:group-hover\:border-yellow-300 {
@@ -75476,7 +75286,7 @@ a:hover {
 
   .md\:focus-within\:border-yellow-200:focus-within {
     --tw-border-opacity: 1;
-    border-color: rgba(251, 241, 214, var(--tw-border-opacity));
+    border-color: rgba(253, 230, 138, var(--tw-border-opacity));
   }
 
   .md\:focus-within\:border-yellow-300:focus-within {
@@ -75894,7 +75704,7 @@ a:hover {
 
   .md\:hover\:border-yellow-200:hover {
     --tw-border-opacity: 1;
-    border-color: rgba(251, 241, 214, var(--tw-border-opacity));
+    border-color: rgba(253, 230, 138, var(--tw-border-opacity));
   }
 
   .md\:hover\:border-yellow-300:hover {
@@ -76312,7 +76122,7 @@ a:hover {
 
   .md\:focus\:border-yellow-200:focus {
     --tw-border-opacity: 1;
-    border-color: rgba(251, 241, 214, var(--tw-border-opacity));
+    border-color: rgba(253, 230, 138, var(--tw-border-opacity));
   }
 
   .md\:focus\:border-yellow-300:focus {
@@ -77380,106 +77190,6 @@ a:hover {
     border-left-width: 1px;
   }
 
-  .md\:last\:border-0:last-child {
-    border-width: 0px;
-  }
-
-  .md\:last\:border-2:last-child {
-    border-width: 2px;
-  }
-
-  .md\:last\:border-4:last-child {
-    border-width: 4px;
-  }
-
-  .md\:last\:border-8:last-child {
-    border-width: 8px;
-  }
-
-  .md\:last\:border:last-child {
-    border-width: 1px;
-  }
-
-  .md\:last\:border-t-0:last-child {
-    border-top-width: 0px;
-  }
-
-  .md\:last\:border-r-0:last-child {
-    border-right-width: 0px;
-  }
-
-  .md\:last\:border-b-0:last-child {
-    border-bottom-width: 0px;
-  }
-
-  .md\:last\:border-l-0:last-child {
-    border-left-width: 0px;
-  }
-
-  .md\:last\:border-t-2:last-child {
-    border-top-width: 2px;
-  }
-
-  .md\:last\:border-r-2:last-child {
-    border-right-width: 2px;
-  }
-
-  .md\:last\:border-b-2:last-child {
-    border-bottom-width: 2px;
-  }
-
-  .md\:last\:border-l-2:last-child {
-    border-left-width: 2px;
-  }
-
-  .md\:last\:border-t-4:last-child {
-    border-top-width: 4px;
-  }
-
-  .md\:last\:border-r-4:last-child {
-    border-right-width: 4px;
-  }
-
-  .md\:last\:border-b-4:last-child {
-    border-bottom-width: 4px;
-  }
-
-  .md\:last\:border-l-4:last-child {
-    border-left-width: 4px;
-  }
-
-  .md\:last\:border-t-8:last-child {
-    border-top-width: 8px;
-  }
-
-  .md\:last\:border-r-8:last-child {
-    border-right-width: 8px;
-  }
-
-  .md\:last\:border-b-8:last-child {
-    border-bottom-width: 8px;
-  }
-
-  .md\:last\:border-l-8:last-child {
-    border-left-width: 8px;
-  }
-
-  .md\:last\:border-t:last-child {
-    border-top-width: 1px;
-  }
-
-  .md\:last\:border-r:last-child {
-    border-right-width: 1px;
-  }
-
-  .md\:last\:border-b:last-child {
-    border-bottom-width: 1px;
-  }
-
-  .md\:last\:border-l:last-child {
-    border-left-width: 1px;
-  }
-
   .md\:decoration-slice {
     -webkit-box-decoration-break: slice;
             box-decoration-break: slice;
@@ -77950,8 +77660,16 @@ a:hover {
     clear: none;
   }
 
-  .md\:font-body {
-    font-family: Lora, serif;
+  .md\:font-sans {
+    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  }
+
+  .md\:font-serif {
+    font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+  }
+
+  .md\:font-mono {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   }
 
   .md\:font-thin {
@@ -82683,17 +82401,17 @@ a:hover {
 
   .md\:placeholder-yellow-200::-moz-placeholder {
     --tw-placeholder-opacity: 1;
-    color: rgba(251, 241, 214, var(--tw-placeholder-opacity));
+    color: rgba(253, 230, 138, var(--tw-placeholder-opacity));
   }
 
   .md\:placeholder-yellow-200:-ms-input-placeholder {
     --tw-placeholder-opacity: 1;
-    color: rgba(251, 241, 214, var(--tw-placeholder-opacity));
+    color: rgba(253, 230, 138, var(--tw-placeholder-opacity));
   }
 
   .md\:placeholder-yellow-200::placeholder {
     --tw-placeholder-opacity: 1;
-    color: rgba(251, 241, 214, var(--tw-placeholder-opacity));
+    color: rgba(253, 230, 138, var(--tw-placeholder-opacity));
   }
 
   .md\:placeholder-yellow-300::-moz-placeholder {
@@ -83937,17 +83655,17 @@ a:hover {
 
   .md\:focus\:placeholder-yellow-200:focus::-moz-placeholder {
     --tw-placeholder-opacity: 1;
-    color: rgba(251, 241, 214, var(--tw-placeholder-opacity));
+    color: rgba(253, 230, 138, var(--tw-placeholder-opacity));
   }
 
   .md\:focus\:placeholder-yellow-200:focus:-ms-input-placeholder {
     --tw-placeholder-opacity: 1;
-    color: rgba(251, 241, 214, var(--tw-placeholder-opacity));
+    color: rgba(253, 230, 138, var(--tw-placeholder-opacity));
   }
 
   .md\:focus\:placeholder-yellow-200:focus::placeholder {
     --tw-placeholder-opacity: 1;
-    color: rgba(251, 241, 214, var(--tw-placeholder-opacity));
+    color: rgba(253, 230, 138, var(--tw-placeholder-opacity));
   }
 
   .md\:focus\:placeholder-yellow-300:focus::-moz-placeholder {
@@ -88439,7 +88157,7 @@ a:hover {
   }
 
   .md\:ring-offset-yellow-200 {
-    --tw-ring-offset-color: #FBF1D6;
+    --tw-ring-offset-color: #fde68a;
   }
 
   .md\:ring-offset-yellow-300 {
@@ -88775,7 +88493,7 @@ a:hover {
   }
 
   .md\:focus-within\:ring-offset-yellow-200:focus-within {
-    --tw-ring-offset-color: #FBF1D6;
+    --tw-ring-offset-color: #fde68a;
   }
 
   .md\:focus-within\:ring-offset-yellow-300:focus-within {
@@ -89111,7 +88829,7 @@ a:hover {
   }
 
   .md\:focus\:ring-offset-yellow-200:focus {
-    --tw-ring-offset-color: #FBF1D6;
+    --tw-ring-offset-color: #fde68a;
   }
 
   .md\:focus\:ring-offset-yellow-300:focus {
@@ -89532,7 +89250,7 @@ a:hover {
 
   .md\:ring-yellow-200 {
     --tw-ring-opacity: 1;
-    --tw-ring-color: rgba(251, 241, 214, var(--tw-ring-opacity));
+    --tw-ring-color: rgba(253, 230, 138, var(--tw-ring-opacity));
   }
 
   .md\:ring-yellow-300 {
@@ -89950,7 +89668,7 @@ a:hover {
 
   .md\:focus-within\:ring-yellow-200:focus-within {
     --tw-ring-opacity: 1;
-    --tw-ring-color: rgba(251, 241, 214, var(--tw-ring-opacity));
+    --tw-ring-color: rgba(253, 230, 138, var(--tw-ring-opacity));
   }
 
   .md\:focus-within\:ring-yellow-300:focus-within {
@@ -90368,7 +90086,7 @@ a:hover {
 
   .md\:focus\:ring-yellow-200:focus {
     --tw-ring-opacity: 1;
-    --tw-ring-color: rgba(251, 241, 214, var(--tw-ring-opacity));
+    --tw-ring-color: rgba(253, 230, 138, var(--tw-ring-opacity));
   }
 
   .md\:focus\:ring-yellow-300:focus {
@@ -91010,7 +90728,7 @@ a:hover {
 
   .md\:text-yellow-200 {
     --tw-text-opacity: 1;
-    color: rgba(251, 241, 214, var(--tw-text-opacity));
+    color: rgba(253, 230, 138, var(--tw-text-opacity));
   }
 
   .md\:text-yellow-300 {
@@ -91428,7 +91146,7 @@ a:hover {
 
   .group:hover .md\:group-hover\:text-yellow-200 {
     --tw-text-opacity: 1;
-    color: rgba(251, 241, 214, var(--tw-text-opacity));
+    color: rgba(253, 230, 138, var(--tw-text-opacity));
   }
 
   .group:hover .md\:group-hover\:text-yellow-300 {
@@ -91846,7 +91564,7 @@ a:hover {
 
   .md\:focus-within\:text-yellow-200:focus-within {
     --tw-text-opacity: 1;
-    color: rgba(251, 241, 214, var(--tw-text-opacity));
+    color: rgba(253, 230, 138, var(--tw-text-opacity));
   }
 
   .md\:focus-within\:text-yellow-300:focus-within {
@@ -92264,7 +91982,7 @@ a:hover {
 
   .md\:hover\:text-yellow-200:hover {
     --tw-text-opacity: 1;
-    color: rgba(251, 241, 214, var(--tw-text-opacity));
+    color: rgba(253, 230, 138, var(--tw-text-opacity));
   }
 
   .md\:hover\:text-yellow-300:hover {
@@ -92682,7 +92400,7 @@ a:hover {
 
   .md\:focus\:text-yellow-200:focus {
     --tw-text-opacity: 1;
-    color: rgba(251, 241, 214, var(--tw-text-opacity));
+    color: rgba(253, 230, 138, var(--tw-text-opacity));
   }
 
   .md\:focus\:text-yellow-300:focus {
@@ -98562,7 +98280,7 @@ a:hover {
     line-height: 1.7142857;
     margin-top: 1.7142857em;
     margin-bottom: 1.7142857em;
-    border-radius: 0;
+    border-radius: 0.375rem;
     padding-top: 0.8571429em;
     padding-right: 1.1428571em;
     padding-bottom: 0.8571429em;
@@ -100686,7 +100404,7 @@ a:hover {
 
   .lg\:divide-yellow-200 > :not([hidden]) ~ :not([hidden]) {
     --tw-divide-opacity: 1;
-    border-color: rgba(251, 241, 214, var(--tw-divide-opacity));
+    border-color: rgba(253, 230, 138, var(--tw-divide-opacity));
   }
 
   .lg\:divide-yellow-300 > :not([hidden]) ~ :not([hidden]) {
@@ -101288,7 +101006,7 @@ a:hover {
 
   .lg\:bg-yellow-200 {
     --tw-bg-opacity: 1;
-    background-color: rgba(251, 241, 214, var(--tw-bg-opacity));
+    background-color: rgba(253, 230, 138, var(--tw-bg-opacity));
   }
 
   .lg\:bg-yellow-300 {
@@ -101706,7 +101424,7 @@ a:hover {
 
   .group:hover .lg\:group-hover\:bg-yellow-200 {
     --tw-bg-opacity: 1;
-    background-color: rgba(251, 241, 214, var(--tw-bg-opacity));
+    background-color: rgba(253, 230, 138, var(--tw-bg-opacity));
   }
 
   .group:hover .lg\:group-hover\:bg-yellow-300 {
@@ -102124,7 +101842,7 @@ a:hover {
 
   .lg\:focus-within\:bg-yellow-200:focus-within {
     --tw-bg-opacity: 1;
-    background-color: rgba(251, 241, 214, var(--tw-bg-opacity));
+    background-color: rgba(253, 230, 138, var(--tw-bg-opacity));
   }
 
   .lg\:focus-within\:bg-yellow-300:focus-within {
@@ -102542,7 +102260,7 @@ a:hover {
 
   .lg\:hover\:bg-yellow-200:hover {
     --tw-bg-opacity: 1;
-    background-color: rgba(251, 241, 214, var(--tw-bg-opacity));
+    background-color: rgba(253, 230, 138, var(--tw-bg-opacity));
   }
 
   .lg\:hover\:bg-yellow-300:hover {
@@ -102960,7 +102678,7 @@ a:hover {
 
   .lg\:focus\:bg-yellow-200:focus {
     --tw-bg-opacity: 1;
-    background-color: rgba(251, 241, 214, var(--tw-bg-opacity));
+    background-color: rgba(253, 230, 138, var(--tw-bg-opacity));
   }
 
   .lg\:focus\:bg-yellow-300:focus {
@@ -103415,8 +103133,8 @@ a:hover {
   }
 
   .lg\:from-yellow-200 {
-    --tw-gradient-from: #FBF1D6;
-    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(251, 241, 214, 0));
+    --tw-gradient-from: #fde68a;
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(253, 230, 138, 0));
   }
 
   .lg\:from-yellow-300 {
@@ -103809,7 +103527,7 @@ a:hover {
   }
 
   .lg\:via-yellow-200 {
-    --tw-gradient-stops: var(--tw-gradient-from), #FBF1D6, var(--tw-gradient-to, rgba(251, 241, 214, 0));
+    --tw-gradient-stops: var(--tw-gradient-from), #fde68a, var(--tw-gradient-to, rgba(253, 230, 138, 0));
   }
 
   .lg\:via-yellow-300 {
@@ -104145,7 +103863,7 @@ a:hover {
   }
 
   .lg\:to-yellow-200 {
-    --tw-gradient-to: #FBF1D6;
+    --tw-gradient-to: #fde68a;
   }
 
   .lg\:to-yellow-300 {
@@ -104507,8 +104225,8 @@ a:hover {
   }
 
   .lg\:hover\:from-yellow-200:hover {
-    --tw-gradient-from: #FBF1D6;
-    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(251, 241, 214, 0));
+    --tw-gradient-from: #fde68a;
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(253, 230, 138, 0));
   }
 
   .lg\:hover\:from-yellow-300:hover {
@@ -104901,7 +104619,7 @@ a:hover {
   }
 
   .lg\:hover\:via-yellow-200:hover {
-    --tw-gradient-stops: var(--tw-gradient-from), #FBF1D6, var(--tw-gradient-to, rgba(251, 241, 214, 0));
+    --tw-gradient-stops: var(--tw-gradient-from), #fde68a, var(--tw-gradient-to, rgba(253, 230, 138, 0));
   }
 
   .lg\:hover\:via-yellow-300:hover {
@@ -105237,7 +104955,7 @@ a:hover {
   }
 
   .lg\:hover\:to-yellow-200:hover {
-    --tw-gradient-to: #FBF1D6;
+    --tw-gradient-to: #fde68a;
   }
 
   .lg\:hover\:to-yellow-300:hover {
@@ -105599,8 +105317,8 @@ a:hover {
   }
 
   .lg\:focus\:from-yellow-200:focus {
-    --tw-gradient-from: #FBF1D6;
-    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(251, 241, 214, 0));
+    --tw-gradient-from: #fde68a;
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(253, 230, 138, 0));
   }
 
   .lg\:focus\:from-yellow-300:focus {
@@ -105993,7 +105711,7 @@ a:hover {
   }
 
   .lg\:focus\:via-yellow-200:focus {
-    --tw-gradient-stops: var(--tw-gradient-from), #FBF1D6, var(--tw-gradient-to, rgba(251, 241, 214, 0));
+    --tw-gradient-stops: var(--tw-gradient-from), #fde68a, var(--tw-gradient-to, rgba(253, 230, 138, 0));
   }
 
   .lg\:focus\:via-yellow-300:focus {
@@ -106329,7 +106047,7 @@ a:hover {
   }
 
   .lg\:focus\:to-yellow-200:focus {
-    --tw-gradient-to: #FBF1D6;
+    --tw-gradient-to: #fde68a;
   }
 
   .lg\:focus\:to-yellow-300:focus {
@@ -107070,7 +106788,7 @@ a:hover {
 
   .lg\:border-yellow-200 {
     --tw-border-opacity: 1;
-    border-color: rgba(251, 241, 214, var(--tw-border-opacity));
+    border-color: rgba(253, 230, 138, var(--tw-border-opacity));
   }
 
   .lg\:border-yellow-300 {
@@ -107488,7 +107206,7 @@ a:hover {
 
   .group:hover .lg\:group-hover\:border-yellow-200 {
     --tw-border-opacity: 1;
-    border-color: rgba(251, 241, 214, var(--tw-border-opacity));
+    border-color: rgba(253, 230, 138, var(--tw-border-opacity));
   }
 
   .group:hover .lg\:group-hover\:border-yellow-300 {
@@ -107906,7 +107624,7 @@ a:hover {
 
   .lg\:focus-within\:border-yellow-200:focus-within {
     --tw-border-opacity: 1;
-    border-color: rgba(251, 241, 214, var(--tw-border-opacity));
+    border-color: rgba(253, 230, 138, var(--tw-border-opacity));
   }
 
   .lg\:focus-within\:border-yellow-300:focus-within {
@@ -108324,7 +108042,7 @@ a:hover {
 
   .lg\:hover\:border-yellow-200:hover {
     --tw-border-opacity: 1;
-    border-color: rgba(251, 241, 214, var(--tw-border-opacity));
+    border-color: rgba(253, 230, 138, var(--tw-border-opacity));
   }
 
   .lg\:hover\:border-yellow-300:hover {
@@ -108742,7 +108460,7 @@ a:hover {
 
   .lg\:focus\:border-yellow-200:focus {
     --tw-border-opacity: 1;
-    border-color: rgba(251, 241, 214, var(--tw-border-opacity));
+    border-color: rgba(253, 230, 138, var(--tw-border-opacity));
   }
 
   .lg\:focus\:border-yellow-300:focus {
@@ -109810,106 +109528,6 @@ a:hover {
     border-left-width: 1px;
   }
 
-  .lg\:last\:border-0:last-child {
-    border-width: 0px;
-  }
-
-  .lg\:last\:border-2:last-child {
-    border-width: 2px;
-  }
-
-  .lg\:last\:border-4:last-child {
-    border-width: 4px;
-  }
-
-  .lg\:last\:border-8:last-child {
-    border-width: 8px;
-  }
-
-  .lg\:last\:border:last-child {
-    border-width: 1px;
-  }
-
-  .lg\:last\:border-t-0:last-child {
-    border-top-width: 0px;
-  }
-
-  .lg\:last\:border-r-0:last-child {
-    border-right-width: 0px;
-  }
-
-  .lg\:last\:border-b-0:last-child {
-    border-bottom-width: 0px;
-  }
-
-  .lg\:last\:border-l-0:last-child {
-    border-left-width: 0px;
-  }
-
-  .lg\:last\:border-t-2:last-child {
-    border-top-width: 2px;
-  }
-
-  .lg\:last\:border-r-2:last-child {
-    border-right-width: 2px;
-  }
-
-  .lg\:last\:border-b-2:last-child {
-    border-bottom-width: 2px;
-  }
-
-  .lg\:last\:border-l-2:last-child {
-    border-left-width: 2px;
-  }
-
-  .lg\:last\:border-t-4:last-child {
-    border-top-width: 4px;
-  }
-
-  .lg\:last\:border-r-4:last-child {
-    border-right-width: 4px;
-  }
-
-  .lg\:last\:border-b-4:last-child {
-    border-bottom-width: 4px;
-  }
-
-  .lg\:last\:border-l-4:last-child {
-    border-left-width: 4px;
-  }
-
-  .lg\:last\:border-t-8:last-child {
-    border-top-width: 8px;
-  }
-
-  .lg\:last\:border-r-8:last-child {
-    border-right-width: 8px;
-  }
-
-  .lg\:last\:border-b-8:last-child {
-    border-bottom-width: 8px;
-  }
-
-  .lg\:last\:border-l-8:last-child {
-    border-left-width: 8px;
-  }
-
-  .lg\:last\:border-t:last-child {
-    border-top-width: 1px;
-  }
-
-  .lg\:last\:border-r:last-child {
-    border-right-width: 1px;
-  }
-
-  .lg\:last\:border-b:last-child {
-    border-bottom-width: 1px;
-  }
-
-  .lg\:last\:border-l:last-child {
-    border-left-width: 1px;
-  }
-
   .lg\:decoration-slice {
     -webkit-box-decoration-break: slice;
             box-decoration-break: slice;
@@ -110380,8 +109998,16 @@ a:hover {
     clear: none;
   }
 
-  .lg\:font-body {
-    font-family: Lora, serif;
+  .lg\:font-sans {
+    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  }
+
+  .lg\:font-serif {
+    font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+  }
+
+  .lg\:font-mono {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   }
 
   .lg\:font-thin {
@@ -115113,17 +114739,17 @@ a:hover {
 
   .lg\:placeholder-yellow-200::-moz-placeholder {
     --tw-placeholder-opacity: 1;
-    color: rgba(251, 241, 214, var(--tw-placeholder-opacity));
+    color: rgba(253, 230, 138, var(--tw-placeholder-opacity));
   }
 
   .lg\:placeholder-yellow-200:-ms-input-placeholder {
     --tw-placeholder-opacity: 1;
-    color: rgba(251, 241, 214, var(--tw-placeholder-opacity));
+    color: rgba(253, 230, 138, var(--tw-placeholder-opacity));
   }
 
   .lg\:placeholder-yellow-200::placeholder {
     --tw-placeholder-opacity: 1;
-    color: rgba(251, 241, 214, var(--tw-placeholder-opacity));
+    color: rgba(253, 230, 138, var(--tw-placeholder-opacity));
   }
 
   .lg\:placeholder-yellow-300::-moz-placeholder {
@@ -116367,17 +115993,17 @@ a:hover {
 
   .lg\:focus\:placeholder-yellow-200:focus::-moz-placeholder {
     --tw-placeholder-opacity: 1;
-    color: rgba(251, 241, 214, var(--tw-placeholder-opacity));
+    color: rgba(253, 230, 138, var(--tw-placeholder-opacity));
   }
 
   .lg\:focus\:placeholder-yellow-200:focus:-ms-input-placeholder {
     --tw-placeholder-opacity: 1;
-    color: rgba(251, 241, 214, var(--tw-placeholder-opacity));
+    color: rgba(253, 230, 138, var(--tw-placeholder-opacity));
   }
 
   .lg\:focus\:placeholder-yellow-200:focus::placeholder {
     --tw-placeholder-opacity: 1;
-    color: rgba(251, 241, 214, var(--tw-placeholder-opacity));
+    color: rgba(253, 230, 138, var(--tw-placeholder-opacity));
   }
 
   .lg\:focus\:placeholder-yellow-300:focus::-moz-placeholder {
@@ -120869,7 +120495,7 @@ a:hover {
   }
 
   .lg\:ring-offset-yellow-200 {
-    --tw-ring-offset-color: #FBF1D6;
+    --tw-ring-offset-color: #fde68a;
   }
 
   .lg\:ring-offset-yellow-300 {
@@ -121205,7 +120831,7 @@ a:hover {
   }
 
   .lg\:focus-within\:ring-offset-yellow-200:focus-within {
-    --tw-ring-offset-color: #FBF1D6;
+    --tw-ring-offset-color: #fde68a;
   }
 
   .lg\:focus-within\:ring-offset-yellow-300:focus-within {
@@ -121541,7 +121167,7 @@ a:hover {
   }
 
   .lg\:focus\:ring-offset-yellow-200:focus {
-    --tw-ring-offset-color: #FBF1D6;
+    --tw-ring-offset-color: #fde68a;
   }
 
   .lg\:focus\:ring-offset-yellow-300:focus {
@@ -121962,7 +121588,7 @@ a:hover {
 
   .lg\:ring-yellow-200 {
     --tw-ring-opacity: 1;
-    --tw-ring-color: rgba(251, 241, 214, var(--tw-ring-opacity));
+    --tw-ring-color: rgba(253, 230, 138, var(--tw-ring-opacity));
   }
 
   .lg\:ring-yellow-300 {
@@ -122380,7 +122006,7 @@ a:hover {
 
   .lg\:focus-within\:ring-yellow-200:focus-within {
     --tw-ring-opacity: 1;
-    --tw-ring-color: rgba(251, 241, 214, var(--tw-ring-opacity));
+    --tw-ring-color: rgba(253, 230, 138, var(--tw-ring-opacity));
   }
 
   .lg\:focus-within\:ring-yellow-300:focus-within {
@@ -122798,7 +122424,7 @@ a:hover {
 
   .lg\:focus\:ring-yellow-200:focus {
     --tw-ring-opacity: 1;
-    --tw-ring-color: rgba(251, 241, 214, var(--tw-ring-opacity));
+    --tw-ring-color: rgba(253, 230, 138, var(--tw-ring-opacity));
   }
 
   .lg\:focus\:ring-yellow-300:focus {
@@ -123440,7 +123066,7 @@ a:hover {
 
   .lg\:text-yellow-200 {
     --tw-text-opacity: 1;
-    color: rgba(251, 241, 214, var(--tw-text-opacity));
+    color: rgba(253, 230, 138, var(--tw-text-opacity));
   }
 
   .lg\:text-yellow-300 {
@@ -123858,7 +123484,7 @@ a:hover {
 
   .group:hover .lg\:group-hover\:text-yellow-200 {
     --tw-text-opacity: 1;
-    color: rgba(251, 241, 214, var(--tw-text-opacity));
+    color: rgba(253, 230, 138, var(--tw-text-opacity));
   }
 
   .group:hover .lg\:group-hover\:text-yellow-300 {
@@ -124276,7 +123902,7 @@ a:hover {
 
   .lg\:focus-within\:text-yellow-200:focus-within {
     --tw-text-opacity: 1;
-    color: rgba(251, 241, 214, var(--tw-text-opacity));
+    color: rgba(253, 230, 138, var(--tw-text-opacity));
   }
 
   .lg\:focus-within\:text-yellow-300:focus-within {
@@ -124694,7 +124320,7 @@ a:hover {
 
   .lg\:hover\:text-yellow-200:hover {
     --tw-text-opacity: 1;
-    color: rgba(251, 241, 214, var(--tw-text-opacity));
+    color: rgba(253, 230, 138, var(--tw-text-opacity));
   }
 
   .lg\:hover\:text-yellow-300:hover {
@@ -125112,7 +124738,7 @@ a:hover {
 
   .lg\:focus\:text-yellow-200:focus {
     --tw-text-opacity: 1;
-    color: rgba(251, 241, 214, var(--tw-text-opacity));
+    color: rgba(253, 230, 138, var(--tw-text-opacity));
   }
 
   .lg\:focus\:text-yellow-300:focus {
@@ -130992,7 +130618,7 @@ a:hover {
     line-height: 1.7142857;
     margin-top: 1.7142857em;
     margin-bottom: 1.7142857em;
-    border-radius: 0;
+    border-radius: 0.375rem;
     padding-top: 0.8571429em;
     padding-right: 1.1428571em;
     padding-bottom: 0.8571429em;
@@ -133116,7 +132742,7 @@ a:hover {
 
   .xl\:divide-yellow-200 > :not([hidden]) ~ :not([hidden]) {
     --tw-divide-opacity: 1;
-    border-color: rgba(251, 241, 214, var(--tw-divide-opacity));
+    border-color: rgba(253, 230, 138, var(--tw-divide-opacity));
   }
 
   .xl\:divide-yellow-300 > :not([hidden]) ~ :not([hidden]) {
@@ -133718,7 +133344,7 @@ a:hover {
 
   .xl\:bg-yellow-200 {
     --tw-bg-opacity: 1;
-    background-color: rgba(251, 241, 214, var(--tw-bg-opacity));
+    background-color: rgba(253, 230, 138, var(--tw-bg-opacity));
   }
 
   .xl\:bg-yellow-300 {
@@ -134136,7 +133762,7 @@ a:hover {
 
   .group:hover .xl\:group-hover\:bg-yellow-200 {
     --tw-bg-opacity: 1;
-    background-color: rgba(251, 241, 214, var(--tw-bg-opacity));
+    background-color: rgba(253, 230, 138, var(--tw-bg-opacity));
   }
 
   .group:hover .xl\:group-hover\:bg-yellow-300 {
@@ -134554,7 +134180,7 @@ a:hover {
 
   .xl\:focus-within\:bg-yellow-200:focus-within {
     --tw-bg-opacity: 1;
-    background-color: rgba(251, 241, 214, var(--tw-bg-opacity));
+    background-color: rgba(253, 230, 138, var(--tw-bg-opacity));
   }
 
   .xl\:focus-within\:bg-yellow-300:focus-within {
@@ -134972,7 +134598,7 @@ a:hover {
 
   .xl\:hover\:bg-yellow-200:hover {
     --tw-bg-opacity: 1;
-    background-color: rgba(251, 241, 214, var(--tw-bg-opacity));
+    background-color: rgba(253, 230, 138, var(--tw-bg-opacity));
   }
 
   .xl\:hover\:bg-yellow-300:hover {
@@ -135390,7 +135016,7 @@ a:hover {
 
   .xl\:focus\:bg-yellow-200:focus {
     --tw-bg-opacity: 1;
-    background-color: rgba(251, 241, 214, var(--tw-bg-opacity));
+    background-color: rgba(253, 230, 138, var(--tw-bg-opacity));
   }
 
   .xl\:focus\:bg-yellow-300:focus {
@@ -135845,8 +135471,8 @@ a:hover {
   }
 
   .xl\:from-yellow-200 {
-    --tw-gradient-from: #FBF1D6;
-    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(251, 241, 214, 0));
+    --tw-gradient-from: #fde68a;
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(253, 230, 138, 0));
   }
 
   .xl\:from-yellow-300 {
@@ -136239,7 +135865,7 @@ a:hover {
   }
 
   .xl\:via-yellow-200 {
-    --tw-gradient-stops: var(--tw-gradient-from), #FBF1D6, var(--tw-gradient-to, rgba(251, 241, 214, 0));
+    --tw-gradient-stops: var(--tw-gradient-from), #fde68a, var(--tw-gradient-to, rgba(253, 230, 138, 0));
   }
 
   .xl\:via-yellow-300 {
@@ -136575,7 +136201,7 @@ a:hover {
   }
 
   .xl\:to-yellow-200 {
-    --tw-gradient-to: #FBF1D6;
+    --tw-gradient-to: #fde68a;
   }
 
   .xl\:to-yellow-300 {
@@ -136937,8 +136563,8 @@ a:hover {
   }
 
   .xl\:hover\:from-yellow-200:hover {
-    --tw-gradient-from: #FBF1D6;
-    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(251, 241, 214, 0));
+    --tw-gradient-from: #fde68a;
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(253, 230, 138, 0));
   }
 
   .xl\:hover\:from-yellow-300:hover {
@@ -137331,7 +136957,7 @@ a:hover {
   }
 
   .xl\:hover\:via-yellow-200:hover {
-    --tw-gradient-stops: var(--tw-gradient-from), #FBF1D6, var(--tw-gradient-to, rgba(251, 241, 214, 0));
+    --tw-gradient-stops: var(--tw-gradient-from), #fde68a, var(--tw-gradient-to, rgba(253, 230, 138, 0));
   }
 
   .xl\:hover\:via-yellow-300:hover {
@@ -137667,7 +137293,7 @@ a:hover {
   }
 
   .xl\:hover\:to-yellow-200:hover {
-    --tw-gradient-to: #FBF1D6;
+    --tw-gradient-to: #fde68a;
   }
 
   .xl\:hover\:to-yellow-300:hover {
@@ -138029,8 +137655,8 @@ a:hover {
   }
 
   .xl\:focus\:from-yellow-200:focus {
-    --tw-gradient-from: #FBF1D6;
-    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(251, 241, 214, 0));
+    --tw-gradient-from: #fde68a;
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(253, 230, 138, 0));
   }
 
   .xl\:focus\:from-yellow-300:focus {
@@ -138423,7 +138049,7 @@ a:hover {
   }
 
   .xl\:focus\:via-yellow-200:focus {
-    --tw-gradient-stops: var(--tw-gradient-from), #FBF1D6, var(--tw-gradient-to, rgba(251, 241, 214, 0));
+    --tw-gradient-stops: var(--tw-gradient-from), #fde68a, var(--tw-gradient-to, rgba(253, 230, 138, 0));
   }
 
   .xl\:focus\:via-yellow-300:focus {
@@ -138759,7 +138385,7 @@ a:hover {
   }
 
   .xl\:focus\:to-yellow-200:focus {
-    --tw-gradient-to: #FBF1D6;
+    --tw-gradient-to: #fde68a;
   }
 
   .xl\:focus\:to-yellow-300:focus {
@@ -139500,7 +139126,7 @@ a:hover {
 
   .xl\:border-yellow-200 {
     --tw-border-opacity: 1;
-    border-color: rgba(251, 241, 214, var(--tw-border-opacity));
+    border-color: rgba(253, 230, 138, var(--tw-border-opacity));
   }
 
   .xl\:border-yellow-300 {
@@ -139918,7 +139544,7 @@ a:hover {
 
   .group:hover .xl\:group-hover\:border-yellow-200 {
     --tw-border-opacity: 1;
-    border-color: rgba(251, 241, 214, var(--tw-border-opacity));
+    border-color: rgba(253, 230, 138, var(--tw-border-opacity));
   }
 
   .group:hover .xl\:group-hover\:border-yellow-300 {
@@ -140336,7 +139962,7 @@ a:hover {
 
   .xl\:focus-within\:border-yellow-200:focus-within {
     --tw-border-opacity: 1;
-    border-color: rgba(251, 241, 214, var(--tw-border-opacity));
+    border-color: rgba(253, 230, 138, var(--tw-border-opacity));
   }
 
   .xl\:focus-within\:border-yellow-300:focus-within {
@@ -140754,7 +140380,7 @@ a:hover {
 
   .xl\:hover\:border-yellow-200:hover {
     --tw-border-opacity: 1;
-    border-color: rgba(251, 241, 214, var(--tw-border-opacity));
+    border-color: rgba(253, 230, 138, var(--tw-border-opacity));
   }
 
   .xl\:hover\:border-yellow-300:hover {
@@ -141172,7 +140798,7 @@ a:hover {
 
   .xl\:focus\:border-yellow-200:focus {
     --tw-border-opacity: 1;
-    border-color: rgba(251, 241, 214, var(--tw-border-opacity));
+    border-color: rgba(253, 230, 138, var(--tw-border-opacity));
   }
 
   .xl\:focus\:border-yellow-300:focus {
@@ -142240,106 +141866,6 @@ a:hover {
     border-left-width: 1px;
   }
 
-  .xl\:last\:border-0:last-child {
-    border-width: 0px;
-  }
-
-  .xl\:last\:border-2:last-child {
-    border-width: 2px;
-  }
-
-  .xl\:last\:border-4:last-child {
-    border-width: 4px;
-  }
-
-  .xl\:last\:border-8:last-child {
-    border-width: 8px;
-  }
-
-  .xl\:last\:border:last-child {
-    border-width: 1px;
-  }
-
-  .xl\:last\:border-t-0:last-child {
-    border-top-width: 0px;
-  }
-
-  .xl\:last\:border-r-0:last-child {
-    border-right-width: 0px;
-  }
-
-  .xl\:last\:border-b-0:last-child {
-    border-bottom-width: 0px;
-  }
-
-  .xl\:last\:border-l-0:last-child {
-    border-left-width: 0px;
-  }
-
-  .xl\:last\:border-t-2:last-child {
-    border-top-width: 2px;
-  }
-
-  .xl\:last\:border-r-2:last-child {
-    border-right-width: 2px;
-  }
-
-  .xl\:last\:border-b-2:last-child {
-    border-bottom-width: 2px;
-  }
-
-  .xl\:last\:border-l-2:last-child {
-    border-left-width: 2px;
-  }
-
-  .xl\:last\:border-t-4:last-child {
-    border-top-width: 4px;
-  }
-
-  .xl\:last\:border-r-4:last-child {
-    border-right-width: 4px;
-  }
-
-  .xl\:last\:border-b-4:last-child {
-    border-bottom-width: 4px;
-  }
-
-  .xl\:last\:border-l-4:last-child {
-    border-left-width: 4px;
-  }
-
-  .xl\:last\:border-t-8:last-child {
-    border-top-width: 8px;
-  }
-
-  .xl\:last\:border-r-8:last-child {
-    border-right-width: 8px;
-  }
-
-  .xl\:last\:border-b-8:last-child {
-    border-bottom-width: 8px;
-  }
-
-  .xl\:last\:border-l-8:last-child {
-    border-left-width: 8px;
-  }
-
-  .xl\:last\:border-t:last-child {
-    border-top-width: 1px;
-  }
-
-  .xl\:last\:border-r:last-child {
-    border-right-width: 1px;
-  }
-
-  .xl\:last\:border-b:last-child {
-    border-bottom-width: 1px;
-  }
-
-  .xl\:last\:border-l:last-child {
-    border-left-width: 1px;
-  }
-
   .xl\:decoration-slice {
     -webkit-box-decoration-break: slice;
             box-decoration-break: slice;
@@ -142810,8 +142336,16 @@ a:hover {
     clear: none;
   }
 
-  .xl\:font-body {
-    font-family: Lora, serif;
+  .xl\:font-sans {
+    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  }
+
+  .xl\:font-serif {
+    font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+  }
+
+  .xl\:font-mono {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   }
 
   .xl\:font-thin {
@@ -147543,17 +147077,17 @@ a:hover {
 
   .xl\:placeholder-yellow-200::-moz-placeholder {
     --tw-placeholder-opacity: 1;
-    color: rgba(251, 241, 214, var(--tw-placeholder-opacity));
+    color: rgba(253, 230, 138, var(--tw-placeholder-opacity));
   }
 
   .xl\:placeholder-yellow-200:-ms-input-placeholder {
     --tw-placeholder-opacity: 1;
-    color: rgba(251, 241, 214, var(--tw-placeholder-opacity));
+    color: rgba(253, 230, 138, var(--tw-placeholder-opacity));
   }
 
   .xl\:placeholder-yellow-200::placeholder {
     --tw-placeholder-opacity: 1;
-    color: rgba(251, 241, 214, var(--tw-placeholder-opacity));
+    color: rgba(253, 230, 138, var(--tw-placeholder-opacity));
   }
 
   .xl\:placeholder-yellow-300::-moz-placeholder {
@@ -148797,17 +148331,17 @@ a:hover {
 
   .xl\:focus\:placeholder-yellow-200:focus::-moz-placeholder {
     --tw-placeholder-opacity: 1;
-    color: rgba(251, 241, 214, var(--tw-placeholder-opacity));
+    color: rgba(253, 230, 138, var(--tw-placeholder-opacity));
   }
 
   .xl\:focus\:placeholder-yellow-200:focus:-ms-input-placeholder {
     --tw-placeholder-opacity: 1;
-    color: rgba(251, 241, 214, var(--tw-placeholder-opacity));
+    color: rgba(253, 230, 138, var(--tw-placeholder-opacity));
   }
 
   .xl\:focus\:placeholder-yellow-200:focus::placeholder {
     --tw-placeholder-opacity: 1;
-    color: rgba(251, 241, 214, var(--tw-placeholder-opacity));
+    color: rgba(253, 230, 138, var(--tw-placeholder-opacity));
   }
 
   .xl\:focus\:placeholder-yellow-300:focus::-moz-placeholder {
@@ -153299,7 +152833,7 @@ a:hover {
   }
 
   .xl\:ring-offset-yellow-200 {
-    --tw-ring-offset-color: #FBF1D6;
+    --tw-ring-offset-color: #fde68a;
   }
 
   .xl\:ring-offset-yellow-300 {
@@ -153635,7 +153169,7 @@ a:hover {
   }
 
   .xl\:focus-within\:ring-offset-yellow-200:focus-within {
-    --tw-ring-offset-color: #FBF1D6;
+    --tw-ring-offset-color: #fde68a;
   }
 
   .xl\:focus-within\:ring-offset-yellow-300:focus-within {
@@ -153971,7 +153505,7 @@ a:hover {
   }
 
   .xl\:focus\:ring-offset-yellow-200:focus {
-    --tw-ring-offset-color: #FBF1D6;
+    --tw-ring-offset-color: #fde68a;
   }
 
   .xl\:focus\:ring-offset-yellow-300:focus {
@@ -154392,7 +153926,7 @@ a:hover {
 
   .xl\:ring-yellow-200 {
     --tw-ring-opacity: 1;
-    --tw-ring-color: rgba(251, 241, 214, var(--tw-ring-opacity));
+    --tw-ring-color: rgba(253, 230, 138, var(--tw-ring-opacity));
   }
 
   .xl\:ring-yellow-300 {
@@ -154810,7 +154344,7 @@ a:hover {
 
   .xl\:focus-within\:ring-yellow-200:focus-within {
     --tw-ring-opacity: 1;
-    --tw-ring-color: rgba(251, 241, 214, var(--tw-ring-opacity));
+    --tw-ring-color: rgba(253, 230, 138, var(--tw-ring-opacity));
   }
 
   .xl\:focus-within\:ring-yellow-300:focus-within {
@@ -155228,7 +154762,7 @@ a:hover {
 
   .xl\:focus\:ring-yellow-200:focus {
     --tw-ring-opacity: 1;
-    --tw-ring-color: rgba(251, 241, 214, var(--tw-ring-opacity));
+    --tw-ring-color: rgba(253, 230, 138, var(--tw-ring-opacity));
   }
 
   .xl\:focus\:ring-yellow-300:focus {
@@ -155870,7 +155404,7 @@ a:hover {
 
   .xl\:text-yellow-200 {
     --tw-text-opacity: 1;
-    color: rgba(251, 241, 214, var(--tw-text-opacity));
+    color: rgba(253, 230, 138, var(--tw-text-opacity));
   }
 
   .xl\:text-yellow-300 {
@@ -156288,7 +155822,7 @@ a:hover {
 
   .group:hover .xl\:group-hover\:text-yellow-200 {
     --tw-text-opacity: 1;
-    color: rgba(251, 241, 214, var(--tw-text-opacity));
+    color: rgba(253, 230, 138, var(--tw-text-opacity));
   }
 
   .group:hover .xl\:group-hover\:text-yellow-300 {
@@ -156706,7 +156240,7 @@ a:hover {
 
   .xl\:focus-within\:text-yellow-200:focus-within {
     --tw-text-opacity: 1;
-    color: rgba(251, 241, 214, var(--tw-text-opacity));
+    color: rgba(253, 230, 138, var(--tw-text-opacity));
   }
 
   .xl\:focus-within\:text-yellow-300:focus-within {
@@ -157124,7 +156658,7 @@ a:hover {
 
   .xl\:hover\:text-yellow-200:hover {
     --tw-text-opacity: 1;
-    color: rgba(251, 241, 214, var(--tw-text-opacity));
+    color: rgba(253, 230, 138, var(--tw-text-opacity));
   }
 
   .xl\:hover\:text-yellow-300:hover {
@@ -157542,7 +157076,7 @@ a:hover {
 
   .xl\:focus\:text-yellow-200:focus {
     --tw-text-opacity: 1;
-    color: rgba(251, 241, 214, var(--tw-text-opacity));
+    color: rgba(253, 230, 138, var(--tw-text-opacity));
   }
 
   .xl\:focus\:text-yellow-300:focus {
@@ -163422,7 +162956,7 @@ a:hover {
     line-height: 1.7142857;
     margin-top: 1.7142857em;
     margin-bottom: 1.7142857em;
-    border-radius: 0;
+    border-radius: 0.375rem;
     padding-top: 0.8571429em;
     padding-right: 1.1428571em;
     padding-bottom: 0.8571429em;
@@ -165546,7 +165080,7 @@ a:hover {
 
   .\32xl\:divide-yellow-200 > :not([hidden]) ~ :not([hidden]) {
     --tw-divide-opacity: 1;
-    border-color: rgba(251, 241, 214, var(--tw-divide-opacity));
+    border-color: rgba(253, 230, 138, var(--tw-divide-opacity));
   }
 
   .\32xl\:divide-yellow-300 > :not([hidden]) ~ :not([hidden]) {
@@ -166148,7 +165682,7 @@ a:hover {
 
   .\32xl\:bg-yellow-200 {
     --tw-bg-opacity: 1;
-    background-color: rgba(251, 241, 214, var(--tw-bg-opacity));
+    background-color: rgba(253, 230, 138, var(--tw-bg-opacity));
   }
 
   .\32xl\:bg-yellow-300 {
@@ -166566,7 +166100,7 @@ a:hover {
 
   .group:hover .\32xl\:group-hover\:bg-yellow-200 {
     --tw-bg-opacity: 1;
-    background-color: rgba(251, 241, 214, var(--tw-bg-opacity));
+    background-color: rgba(253, 230, 138, var(--tw-bg-opacity));
   }
 
   .group:hover .\32xl\:group-hover\:bg-yellow-300 {
@@ -166984,7 +166518,7 @@ a:hover {
 
   .\32xl\:focus-within\:bg-yellow-200:focus-within {
     --tw-bg-opacity: 1;
-    background-color: rgba(251, 241, 214, var(--tw-bg-opacity));
+    background-color: rgba(253, 230, 138, var(--tw-bg-opacity));
   }
 
   .\32xl\:focus-within\:bg-yellow-300:focus-within {
@@ -167402,7 +166936,7 @@ a:hover {
 
   .\32xl\:hover\:bg-yellow-200:hover {
     --tw-bg-opacity: 1;
-    background-color: rgba(251, 241, 214, var(--tw-bg-opacity));
+    background-color: rgba(253, 230, 138, var(--tw-bg-opacity));
   }
 
   .\32xl\:hover\:bg-yellow-300:hover {
@@ -167820,7 +167354,7 @@ a:hover {
 
   .\32xl\:focus\:bg-yellow-200:focus {
     --tw-bg-opacity: 1;
-    background-color: rgba(251, 241, 214, var(--tw-bg-opacity));
+    background-color: rgba(253, 230, 138, var(--tw-bg-opacity));
   }
 
   .\32xl\:focus\:bg-yellow-300:focus {
@@ -168275,8 +167809,8 @@ a:hover {
   }
 
   .\32xl\:from-yellow-200 {
-    --tw-gradient-from: #FBF1D6;
-    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(251, 241, 214, 0));
+    --tw-gradient-from: #fde68a;
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(253, 230, 138, 0));
   }
 
   .\32xl\:from-yellow-300 {
@@ -168669,7 +168203,7 @@ a:hover {
   }
 
   .\32xl\:via-yellow-200 {
-    --tw-gradient-stops: var(--tw-gradient-from), #FBF1D6, var(--tw-gradient-to, rgba(251, 241, 214, 0));
+    --tw-gradient-stops: var(--tw-gradient-from), #fde68a, var(--tw-gradient-to, rgba(253, 230, 138, 0));
   }
 
   .\32xl\:via-yellow-300 {
@@ -169005,7 +168539,7 @@ a:hover {
   }
 
   .\32xl\:to-yellow-200 {
-    --tw-gradient-to: #FBF1D6;
+    --tw-gradient-to: #fde68a;
   }
 
   .\32xl\:to-yellow-300 {
@@ -169367,8 +168901,8 @@ a:hover {
   }
 
   .\32xl\:hover\:from-yellow-200:hover {
-    --tw-gradient-from: #FBF1D6;
-    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(251, 241, 214, 0));
+    --tw-gradient-from: #fde68a;
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(253, 230, 138, 0));
   }
 
   .\32xl\:hover\:from-yellow-300:hover {
@@ -169761,7 +169295,7 @@ a:hover {
   }
 
   .\32xl\:hover\:via-yellow-200:hover {
-    --tw-gradient-stops: var(--tw-gradient-from), #FBF1D6, var(--tw-gradient-to, rgba(251, 241, 214, 0));
+    --tw-gradient-stops: var(--tw-gradient-from), #fde68a, var(--tw-gradient-to, rgba(253, 230, 138, 0));
   }
 
   .\32xl\:hover\:via-yellow-300:hover {
@@ -170097,7 +169631,7 @@ a:hover {
   }
 
   .\32xl\:hover\:to-yellow-200:hover {
-    --tw-gradient-to: #FBF1D6;
+    --tw-gradient-to: #fde68a;
   }
 
   .\32xl\:hover\:to-yellow-300:hover {
@@ -170459,8 +169993,8 @@ a:hover {
   }
 
   .\32xl\:focus\:from-yellow-200:focus {
-    --tw-gradient-from: #FBF1D6;
-    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(251, 241, 214, 0));
+    --tw-gradient-from: #fde68a;
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(253, 230, 138, 0));
   }
 
   .\32xl\:focus\:from-yellow-300:focus {
@@ -170853,7 +170387,7 @@ a:hover {
   }
 
   .\32xl\:focus\:via-yellow-200:focus {
-    --tw-gradient-stops: var(--tw-gradient-from), #FBF1D6, var(--tw-gradient-to, rgba(251, 241, 214, 0));
+    --tw-gradient-stops: var(--tw-gradient-from), #fde68a, var(--tw-gradient-to, rgba(253, 230, 138, 0));
   }
 
   .\32xl\:focus\:via-yellow-300:focus {
@@ -171189,7 +170723,7 @@ a:hover {
   }
 
   .\32xl\:focus\:to-yellow-200:focus {
-    --tw-gradient-to: #FBF1D6;
+    --tw-gradient-to: #fde68a;
   }
 
   .\32xl\:focus\:to-yellow-300:focus {
@@ -171930,7 +171464,7 @@ a:hover {
 
   .\32xl\:border-yellow-200 {
     --tw-border-opacity: 1;
-    border-color: rgba(251, 241, 214, var(--tw-border-opacity));
+    border-color: rgba(253, 230, 138, var(--tw-border-opacity));
   }
 
   .\32xl\:border-yellow-300 {
@@ -172348,7 +171882,7 @@ a:hover {
 
   .group:hover .\32xl\:group-hover\:border-yellow-200 {
     --tw-border-opacity: 1;
-    border-color: rgba(251, 241, 214, var(--tw-border-opacity));
+    border-color: rgba(253, 230, 138, var(--tw-border-opacity));
   }
 
   .group:hover .\32xl\:group-hover\:border-yellow-300 {
@@ -172766,7 +172300,7 @@ a:hover {
 
   .\32xl\:focus-within\:border-yellow-200:focus-within {
     --tw-border-opacity: 1;
-    border-color: rgba(251, 241, 214, var(--tw-border-opacity));
+    border-color: rgba(253, 230, 138, var(--tw-border-opacity));
   }
 
   .\32xl\:focus-within\:border-yellow-300:focus-within {
@@ -173184,7 +172718,7 @@ a:hover {
 
   .\32xl\:hover\:border-yellow-200:hover {
     --tw-border-opacity: 1;
-    border-color: rgba(251, 241, 214, var(--tw-border-opacity));
+    border-color: rgba(253, 230, 138, var(--tw-border-opacity));
   }
 
   .\32xl\:hover\:border-yellow-300:hover {
@@ -173602,7 +173136,7 @@ a:hover {
 
   .\32xl\:focus\:border-yellow-200:focus {
     --tw-border-opacity: 1;
-    border-color: rgba(251, 241, 214, var(--tw-border-opacity));
+    border-color: rgba(253, 230, 138, var(--tw-border-opacity));
   }
 
   .\32xl\:focus\:border-yellow-300:focus {
@@ -174670,106 +174204,6 @@ a:hover {
     border-left-width: 1px;
   }
 
-  .\32xl\:last\:border-0:last-child {
-    border-width: 0px;
-  }
-
-  .\32xl\:last\:border-2:last-child {
-    border-width: 2px;
-  }
-
-  .\32xl\:last\:border-4:last-child {
-    border-width: 4px;
-  }
-
-  .\32xl\:last\:border-8:last-child {
-    border-width: 8px;
-  }
-
-  .\32xl\:last\:border:last-child {
-    border-width: 1px;
-  }
-
-  .\32xl\:last\:border-t-0:last-child {
-    border-top-width: 0px;
-  }
-
-  .\32xl\:last\:border-r-0:last-child {
-    border-right-width: 0px;
-  }
-
-  .\32xl\:last\:border-b-0:last-child {
-    border-bottom-width: 0px;
-  }
-
-  .\32xl\:last\:border-l-0:last-child {
-    border-left-width: 0px;
-  }
-
-  .\32xl\:last\:border-t-2:last-child {
-    border-top-width: 2px;
-  }
-
-  .\32xl\:last\:border-r-2:last-child {
-    border-right-width: 2px;
-  }
-
-  .\32xl\:last\:border-b-2:last-child {
-    border-bottom-width: 2px;
-  }
-
-  .\32xl\:last\:border-l-2:last-child {
-    border-left-width: 2px;
-  }
-
-  .\32xl\:last\:border-t-4:last-child {
-    border-top-width: 4px;
-  }
-
-  .\32xl\:last\:border-r-4:last-child {
-    border-right-width: 4px;
-  }
-
-  .\32xl\:last\:border-b-4:last-child {
-    border-bottom-width: 4px;
-  }
-
-  .\32xl\:last\:border-l-4:last-child {
-    border-left-width: 4px;
-  }
-
-  .\32xl\:last\:border-t-8:last-child {
-    border-top-width: 8px;
-  }
-
-  .\32xl\:last\:border-r-8:last-child {
-    border-right-width: 8px;
-  }
-
-  .\32xl\:last\:border-b-8:last-child {
-    border-bottom-width: 8px;
-  }
-
-  .\32xl\:last\:border-l-8:last-child {
-    border-left-width: 8px;
-  }
-
-  .\32xl\:last\:border-t:last-child {
-    border-top-width: 1px;
-  }
-
-  .\32xl\:last\:border-r:last-child {
-    border-right-width: 1px;
-  }
-
-  .\32xl\:last\:border-b:last-child {
-    border-bottom-width: 1px;
-  }
-
-  .\32xl\:last\:border-l:last-child {
-    border-left-width: 1px;
-  }
-
   .\32xl\:decoration-slice {
     -webkit-box-decoration-break: slice;
             box-decoration-break: slice;
@@ -175240,8 +174674,16 @@ a:hover {
     clear: none;
   }
 
-  .\32xl\:font-body {
-    font-family: Lora, serif;
+  .\32xl\:font-sans {
+    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  }
+
+  .\32xl\:font-serif {
+    font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+  }
+
+  .\32xl\:font-mono {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   }
 
   .\32xl\:font-thin {
@@ -179973,17 +179415,17 @@ a:hover {
 
   .\32xl\:placeholder-yellow-200::-moz-placeholder {
     --tw-placeholder-opacity: 1;
-    color: rgba(251, 241, 214, var(--tw-placeholder-opacity));
+    color: rgba(253, 230, 138, var(--tw-placeholder-opacity));
   }
 
   .\32xl\:placeholder-yellow-200:-ms-input-placeholder {
     --tw-placeholder-opacity: 1;
-    color: rgba(251, 241, 214, var(--tw-placeholder-opacity));
+    color: rgba(253, 230, 138, var(--tw-placeholder-opacity));
   }
 
   .\32xl\:placeholder-yellow-200::placeholder {
     --tw-placeholder-opacity: 1;
-    color: rgba(251, 241, 214, var(--tw-placeholder-opacity));
+    color: rgba(253, 230, 138, var(--tw-placeholder-opacity));
   }
 
   .\32xl\:placeholder-yellow-300::-moz-placeholder {
@@ -181227,17 +180669,17 @@ a:hover {
 
   .\32xl\:focus\:placeholder-yellow-200:focus::-moz-placeholder {
     --tw-placeholder-opacity: 1;
-    color: rgba(251, 241, 214, var(--tw-placeholder-opacity));
+    color: rgba(253, 230, 138, var(--tw-placeholder-opacity));
   }
 
   .\32xl\:focus\:placeholder-yellow-200:focus:-ms-input-placeholder {
     --tw-placeholder-opacity: 1;
-    color: rgba(251, 241, 214, var(--tw-placeholder-opacity));
+    color: rgba(253, 230, 138, var(--tw-placeholder-opacity));
   }
 
   .\32xl\:focus\:placeholder-yellow-200:focus::placeholder {
     --tw-placeholder-opacity: 1;
-    color: rgba(251, 241, 214, var(--tw-placeholder-opacity));
+    color: rgba(253, 230, 138, var(--tw-placeholder-opacity));
   }
 
   .\32xl\:focus\:placeholder-yellow-300:focus::-moz-placeholder {
@@ -185729,7 +185171,7 @@ a:hover {
   }
 
   .\32xl\:ring-offset-yellow-200 {
-    --tw-ring-offset-color: #FBF1D6;
+    --tw-ring-offset-color: #fde68a;
   }
 
   .\32xl\:ring-offset-yellow-300 {
@@ -186065,7 +185507,7 @@ a:hover {
   }
 
   .\32xl\:focus-within\:ring-offset-yellow-200:focus-within {
-    --tw-ring-offset-color: #FBF1D6;
+    --tw-ring-offset-color: #fde68a;
   }
 
   .\32xl\:focus-within\:ring-offset-yellow-300:focus-within {
@@ -186401,7 +185843,7 @@ a:hover {
   }
 
   .\32xl\:focus\:ring-offset-yellow-200:focus {
-    --tw-ring-offset-color: #FBF1D6;
+    --tw-ring-offset-color: #fde68a;
   }
 
   .\32xl\:focus\:ring-offset-yellow-300:focus {
@@ -186822,7 +186264,7 @@ a:hover {
 
   .\32xl\:ring-yellow-200 {
     --tw-ring-opacity: 1;
-    --tw-ring-color: rgba(251, 241, 214, var(--tw-ring-opacity));
+    --tw-ring-color: rgba(253, 230, 138, var(--tw-ring-opacity));
   }
 
   .\32xl\:ring-yellow-300 {
@@ -187240,7 +186682,7 @@ a:hover {
 
   .\32xl\:focus-within\:ring-yellow-200:focus-within {
     --tw-ring-opacity: 1;
-    --tw-ring-color: rgba(251, 241, 214, var(--tw-ring-opacity));
+    --tw-ring-color: rgba(253, 230, 138, var(--tw-ring-opacity));
   }
 
   .\32xl\:focus-within\:ring-yellow-300:focus-within {
@@ -187658,7 +187100,7 @@ a:hover {
 
   .\32xl\:focus\:ring-yellow-200:focus {
     --tw-ring-opacity: 1;
-    --tw-ring-color: rgba(251, 241, 214, var(--tw-ring-opacity));
+    --tw-ring-color: rgba(253, 230, 138, var(--tw-ring-opacity));
   }
 
   .\32xl\:focus\:ring-yellow-300:focus {
@@ -188300,7 +187742,7 @@ a:hover {
 
   .\32xl\:text-yellow-200 {
     --tw-text-opacity: 1;
-    color: rgba(251, 241, 214, var(--tw-text-opacity));
+    color: rgba(253, 230, 138, var(--tw-text-opacity));
   }
 
   .\32xl\:text-yellow-300 {
@@ -188718,7 +188160,7 @@ a:hover {
 
   .group:hover .\32xl\:group-hover\:text-yellow-200 {
     --tw-text-opacity: 1;
-    color: rgba(251, 241, 214, var(--tw-text-opacity));
+    color: rgba(253, 230, 138, var(--tw-text-opacity));
   }
 
   .group:hover .\32xl\:group-hover\:text-yellow-300 {
@@ -189136,7 +188578,7 @@ a:hover {
 
   .\32xl\:focus-within\:text-yellow-200:focus-within {
     --tw-text-opacity: 1;
-    color: rgba(251, 241, 214, var(--tw-text-opacity));
+    color: rgba(253, 230, 138, var(--tw-text-opacity));
   }
 
   .\32xl\:focus-within\:text-yellow-300:focus-within {
@@ -189554,7 +188996,7 @@ a:hover {
 
   .\32xl\:hover\:text-yellow-200:hover {
     --tw-text-opacity: 1;
-    color: rgba(251, 241, 214, var(--tw-text-opacity));
+    color: rgba(253, 230, 138, var(--tw-text-opacity));
   }
 
   .\32xl\:hover\:text-yellow-300:hover {
@@ -189972,7 +189414,7 @@ a:hover {
 
   .\32xl\:focus\:text-yellow-200:focus {
     --tw-text-opacity: 1;
-    color: rgba(251, 241, 214, var(--tw-text-opacity));
+    color: rgba(253, 230, 138, var(--tw-text-opacity));
   }
 
   .\32xl\:focus\:text-yellow-300:focus {
