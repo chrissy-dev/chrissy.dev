@@ -1,9 +1,11 @@
 module.exports = {
-	  theme: {
-	  	fontFamily: {
-	  		'serif': ['Libre Baskerville', 'Georgia', 'serif'],
-	  	}
-	  },
+	extend: {
+		 theme: {
+		 	fontFamily: {
+		 		'serif': ['Libre Baskerville', 'Georgia', 'serif'],
+		 	}
+		 },
+	},
   plugins: [
     require('@tailwindcss/typography'),
   ],

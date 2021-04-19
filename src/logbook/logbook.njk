@@ -17,7 +17,7 @@ permalink: /logbook/index.html
 			<p class="text-sm text-gray-600 font-serif">A personal log book of hill climbs, camping trips and cycles.</p>
 		</div>
 
-    <ul class="border border-b-0">
+    <ul class="-mx-6 text-sm">
       {% set items = pagination.items | reverse %}
 
       {% for entry in items %}
@@ -29,13 +29,13 @@ permalink: /logbook/index.html
       {% endif %}
 
       {% if entry.url %}
-        <li class="border-b px-2">
-          <a href="{{ entry.url }}" class="no-underline mb-1 lg:mb-0 flex items-center justify-between py-1">
+        <li class="border-b px-6">
+          <a href="{{ entry.url }}" class="no-underline mb-1 lg:mb-0 flex items-center justify-between py-2">
             <span>{{ symbol }} <span class="ml-2 underline">{{ entry.data.title }}</span></span> <time class="block text-gray-500 text-xs mt-1 lg:mt-0">{{ entry.date | prettyDate }}</time>
           </a>
         </li>
       {% else %}
-        <li class="mb-1 lg:mb-0 flex items-center justify-between py-1 px-2 border-b">
+        <li class="mb-1 lg:mb-0 flex items-center justify-between py-2 px-6 border-b">
             <span>{{ symbol }} <span class="ml-2">{{ entry.data.title }}</span></span> <time class="block text-gray-500 text-xs mt-1 lg:mt-0">{{ entry.date | prettyDate }}</time>
         </li>
       {% endif %}
