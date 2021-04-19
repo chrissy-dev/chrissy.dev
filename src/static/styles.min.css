@@ -714,16 +714,16 @@ video {
 
 .prose code {
   color: #111827;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 0.875em;
 }
 
 .prose code::before {
-  content: "";
+  content: "`";
 }
 
 .prose code::after {
-  content: "";
+  content: "`";
 }
 
 .prose pre {
@@ -12452,16 +12452,8 @@ video {
   clear: none;
 }
 
-.font-sans {
-  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-}
-
 .font-serif {
-  font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
-}
-
-.font-mono {
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-family: Libre Baskerville, Georgia, serif;
 }
 
 .font-thin {
@@ -33376,9 +33368,13 @@ pre[class*='language-'].language-scss > code {
 .container {
   margin-left: auto;
   margin-right: auto;
-  max-width: 42rem;
+  max-width: 56rem;
   padding-left: 1.5rem;
   padding-right: 1.5rem;
+}
+
+a {
+  text-decoration: underline;
 }
 
 .prose figure {
@@ -33584,16 +33580,16 @@ pre[class*='language-'].language-scss > code {
 
   .sm\:prose code {
     color: #111827;
-    font-weight: 500;
+    font-weight: 600;
     font-size: 0.875em;
   }
 
   .sm\:prose code::before {
-    content: "";
+    content: "`";
   }
 
   .sm\:prose code::after {
-    content: "";
+    content: "`";
   }
 
   .sm\:prose pre {
@@ -45322,16 +45318,8 @@ pre[class*='language-'].language-scss > code {
     clear: none;
   }
 
-  .sm\:font-sans {
-    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  }
-
   .sm\:font-serif {
-    font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
-  }
-
-  .sm\:font-mono {
-    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    font-family: Libre Baskerville, Georgia, serif;
   }
 
   .sm\:font-thin {
@@ -65922,16 +65910,16 @@ pre[class*='language-'].language-scss > code {
 
   .md\:prose code {
     color: #111827;
-    font-weight: 500;
+    font-weight: 600;
     font-size: 0.875em;
   }
 
   .md\:prose code::before {
-    content: "";
+    content: "`";
   }
 
   .md\:prose code::after {
-    content: "";
+    content: "`";
   }
 
   .md\:prose pre {
@@ -77660,16 +77648,8 @@ pre[class*='language-'].language-scss > code {
     clear: none;
   }
 
-  .md\:font-sans {
-    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  }
-
   .md\:font-serif {
-    font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
-  }
-
-  .md\:font-mono {
-    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    font-family: Libre Baskerville, Georgia, serif;
   }
 
   .md\:font-thin {
@@ -98260,16 +98240,16 @@ pre[class*='language-'].language-scss > code {
 
   .lg\:prose code {
     color: #111827;
-    font-weight: 500;
+    font-weight: 600;
     font-size: 0.875em;
   }
 
   .lg\:prose code::before {
-    content: "";
+    content: "`";
   }
 
   .lg\:prose code::after {
-    content: "";
+    content: "`";
   }
 
   .lg\:prose pre {
@@ -109998,16 +109978,8 @@ pre[class*='language-'].language-scss > code {
     clear: none;
   }
 
-  .lg\:font-sans {
-    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  }
-
   .lg\:font-serif {
-    font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
-  }
-
-  .lg\:font-mono {
-    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    font-family: Libre Baskerville, Georgia, serif;
   }
 
   .lg\:font-thin {
@@ -130598,16 +130570,16 @@ pre[class*='language-'].language-scss > code {
 
   .xl\:prose code {
     color: #111827;
-    font-weight: 500;
+    font-weight: 600;
     font-size: 0.875em;
   }
 
   .xl\:prose code::before {
-    content: "";
+    content: "`";
   }
 
   .xl\:prose code::after {
-    content: "";
+    content: "`";
   }
 
   .xl\:prose pre {
@@ -142336,16 +142308,8 @@ pre[class*='language-'].language-scss > code {
     clear: none;
   }
 
-  .xl\:font-sans {
-    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  }
-
   .xl\:font-serif {
-    font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
-  }
-
-  .xl\:font-mono {
-    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    font-family: Libre Baskerville, Georgia, serif;
   }
 
   .xl\:font-thin {
@@ -162936,16 +162900,16 @@ pre[class*='language-'].language-scss > code {
 
   .\32xl\:prose code {
     color: #111827;
-    font-weight: 500;
+    font-weight: 600;
     font-size: 0.875em;
   }
 
   .\32xl\:prose code::before {
-    content: "";
+    content: "`";
   }
 
   .\32xl\:prose code::after {
-    content: "";
+    content: "`";
   }
 
   .\32xl\:prose pre {
@@ -174674,16 +174638,8 @@ pre[class*='language-'].language-scss > code {
     clear: none;
   }
 
-  .\32xl\:font-sans {
-    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  }
-
   .\32xl\:font-serif {
-    font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
-  }
-
-  .\32xl\:font-mono {
-    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    font-family: Libre Baskerville, Georgia, serif;
   }
 
   .\32xl\:font-thin {

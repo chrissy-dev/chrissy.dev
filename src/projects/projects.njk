@@ -12,11 +12,10 @@ permalink: "/projects/index.html"
 
 <main class="my-20">
   <div class="container">
-    <h1 class="my-20 text-center font-bold text-3xl">{{ title }}</h1>
-
-    <div class="prose prose-sm text-black text-center my-20 max-w-lg mx-auto">
-      <p>Personal projects that scratch an itch.</p>
-    </div>
+		<div class="mt-4 mb-8 md:my-20">
+			<h1 class="font-bold text-4xl md:text-5xl mb-4">{{ title }}</h1>
+			<p class="text-sm text-gray-600">Personal projects that scratch an itch.</p>
+		</div>
 
     <ul>
       {% set items = pagination.items | reverse %}

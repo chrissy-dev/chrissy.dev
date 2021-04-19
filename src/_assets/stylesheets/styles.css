@@ -20,7 +20,11 @@
 } */
 
 .container {
-	@apply mx-auto max-w-2xl px-6;
+	@apply mx-auto max-w-4xl px-6;
+}
+
+a {
+	@apply underline;
 }
 
 .prose figure {
