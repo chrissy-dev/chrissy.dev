@@ -7,6 +7,7 @@ const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 const Image = require("@11ty/eleventy-img");
 const markdown = require("markdown-it");
+const pageAssetsPlugin = require('eleventy-plugin-page-assets');
 
 module.exports = function (eleventyConfig) {
     // Folders to copy to build dir (See. 1.1)
@@ -78,6 +79,14 @@ module.exports = function (eleventyConfig) {
 
         return `<picture> ${source} ${img} </picture>`;
     });
+
+		eleventyConfig.addPlugin(pageAssetsPlugin, {
+		        mode: "directory",
+		        	recursive: true,
+		        	assetsMatching: "*.jpg|*.png",
+		        	hashAssets: false,
+		        	postsMatching: "src/logbook/*/*.md",
+		});
 
     eleventyConfig.setLibrary("md", markdown({
         html: true,
