@@ -1,6 +1,0 @@
----
-title: Inveroran to Kinlochleven
-date: 2019-04-12
-permalink: false
----
-
