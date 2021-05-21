@@ -1,0 +1,15 @@
+---
+layout: "base.njk"
+---
+
+<header class="page-title">
+	<h1 class="page-title__title">{{ title }}</h1>
+	{% if description %}
+		<h2 class="page-title__desc">{{ description }}</h2>
+	{% endif %}
+	<time class="page-title__date" datetime="{{ date | postDate }}">{{ date | postDate }}</time>
+</header>
+<article class="body-copy">
+	{{ content | safe }}
+</article>
+

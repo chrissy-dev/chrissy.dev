@@ -1,0 +1,21 @@
+---
+layout: page.njk
+title: Notes
+description: Random notes.
+pagination:
+  data: collections.notes
+  size: 10
+---
+
+<ul class="listing">
+	{% set items = pagination.items | reverse %}
+
+	{% for entry in items %}
+
+		<li>
+			<a href="{{ entry.url }}">{{ symbol }} {{ entry.data.title }}</a>
+			<time>{{ entry.date | postDate }}</time>
+		</li>
+	{% endfor %}
+</ul>
+

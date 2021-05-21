@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Load CSS in an efficent way if Javascript is enabled -->
+	<link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+	<link rel="preload" href="/static/styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+	<link rel="preload" defer async href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+	<!-- Load CSS traditionally if JS disabled -->
+	<noscript>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+		<link rel="stylesheet" href="/static/styles.css">
+		<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" defer async rel="stylesheet">
+	</noscript>	
+
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	
+	<title>{% if title %}{{ title }}{% else %}Chris Collins{% endif %}</title>
+	<meta name="description" content="{% if description %}{{ description }}{% else %}Chris Collins is a Glasgow based multi-disciplinary software engineer working across digital design, web development and solutions architecture.{% endif %}">
+	<!-- Favicons -->
+	<link rel="apple-touch-icon" href="/static/favicon-apple.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/static/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/static/favicon-16x16.png">
+
+	<!-- Open Graph -->
+	<meta property="og:url" content="https://chrissy.dev{{ page.url }}">
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="{% if title %}{{ title }}{% else %}Chris Collins{% endif %}">
+	<meta property="og:image" content="{% if cover %}https://chrissy.dev{{ page.url | url }}{{ cover }}{% else %}https://chrissy.dev/static/opengraph-cover.jpg{% endif %}" />
+	<meta property="og:description" content="{% if description %}{{ description }}{% else %}Chris Collins is a Glasgow based multi-disciplinary software engineer working across digital design, web development and solutions architecture.{% endif %}" />
+	<meta property="og:site_name" content="Chris Collins">
+	<meta property="og:locale" content="en_US">
+
+	<!-- Twitter -->
+	<meta name="twitter:card" content="summary_large_image" />
+</head>
+<body>
+	<nav class="top-nav">
+		<ul>
+			<li><a href="/">Home</a></li>
+			<li><a href="/notes">Notes</a></li>
+			<li><a href="/uses">Uses</a></li>
+			<li><a href="/now">Now</a></li>
+			<li><a href="mailto:chris@chriscollins.me">Email</a></li>
+		</ul>
+	</nav>
+	<main class="container">
+			{{ content | safe }}
+	</main>
+	<footer class="container">
+		<div class="footer">
+			<ul>
+				<li><strong>Social:</strong></li>
+				<li><a href="https://instagram.com/scottishstoater">Instagram</a></li>
+				<li><a href="https://twitter.com/scottishstoater">Twitter</a></li>
+				<li><a href="https://github.com/scottishstoater">GitHub</a></li>
+				<li><a href="https://linkedin.com/in/chriscollinsme">Instagram</a></li>
+			</ul>
+			<small>© 2021</small>
+		</div>
+	</footer>
+</body>
+</html>
