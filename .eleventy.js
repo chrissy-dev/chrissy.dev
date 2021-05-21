@@ -4,6 +4,7 @@ const beautify = require("js-beautify").html;
 
 module.exports = function (eleventyConfig) {
 	eleventyConfig.addPassthroughCopy("source/static");
+	eleventyConfig.addPassthroughCopy("source/notes/**/*.{jpg,jpeg}");
 
 	eleventyConfig.addCollection("log", function (collectionApi) {
 		return collectionApi.getFilteredByGlob("source/logbook/**/*.md").sort(function (a, b) {
