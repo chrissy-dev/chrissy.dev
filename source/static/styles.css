@@ -100,14 +100,14 @@ body {
 	margin-bottom: 3rem;
 }
 
-.body-copy a, .top-nav a {
+.body-copy a, .navigation a {
 	text-decoration-color: var(--lightest);
 	text-decoration-thickness: 0.15rem;
 	text-underline-offset: 0.2rem;
 }
 
 .body-copy a:hover,
-.top-nav a:hover {
+.navigation a:hover {
 	text-decoration-color: var(--brand);
 
 }
@@ -143,12 +143,12 @@ body {
 	margin: 0 0.1rem;
 }
 
-ul.listing, .top-nav ul, .footer ul  {
+ul.listing, .navigation ul, .footer ul  {
 	list-style-type: none;
 	padding: 0;
 }
 
-.top-nav ul {
+.navigation ul {
 	display: flex;
 	align-items: center;
 	list-style: none;
@@ -158,7 +158,7 @@ ul.listing, .top-nav ul, .footer ul  {
 	font-size: 0.85rem;
 }
 
-.top-nav ul li {
+.navigation ul li {
 	padding: 1rem 0.5rem;
 }
 
