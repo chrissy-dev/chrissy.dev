@@ -5,12 +5,13 @@ if (theme == "color-scheme=light") {
 	document.documentElement.setAttribute('data-color-scheme', 'light');
 	document.querySelector('.moon').style.display = 'block';
 	document.querySelector('.sun').style.display = 'none';
-}
-
-if (theme == "color-scheme=dark") {
+} else if (theme == "color-scheme=dark") {
 	document.documentElement.setAttribute('data-color-scheme', 'dark');
 	document.querySelector('.moon').style.display = 'none';
 	document.querySelector('.sun').style.display = 'block';
+} else {
+	document.querySelector('.moon').style.display = 'block';
+	document.querySelector('.sun').style.display = 'none';
 }
 
 themeToggle.addEventListener('click', function () {
