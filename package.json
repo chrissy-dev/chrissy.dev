@@ -1,8 +1,7 @@
 {
-  "name": "historyoftheparishofneilston.com",
+  "name": "chrissy.dev",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Personal site of Chris Collins built using Eleventy.",
   "scripts": {
     "start": "eleventy --serve",
     "build": "eleventy"
@@ -13,7 +12,7 @@
   "devDependencies": {
     "@11ty/eleventy": "^0.12.1",
     "clean-css": "^5.1.2",
-    "js-beautify": "^1.13.13",
+    "html-minifier": "^4.0.0",
     "luxon": "^1.26.0",
     "markdown-it": "^12.0.6",
     "markdown-it-figure": "^0.2.0"
