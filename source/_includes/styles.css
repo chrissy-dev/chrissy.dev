@@ -1,11 +1,22 @@
 :root,
 :root[data-color-scheme=light] {
+	--font-color: #222;
 	--brand: #00AEAE;
 	--background-color: #fdfdfa;
 	--link-color: #222;
 	--muted: #aaa;
 	--lightest: #eeeed6;
 	--transparency-1: rgba(0,0,0,0.05);
+}
+
+:root[data-color-scheme=dark] {
+	--font-color: #fff;
+	--brand: #00AEAE;
+	--background-color: #222;
+	--link-color: #fff;
+	--muted: #444;
+	--lightest: #333;
+	--transparency-1: rgba(255, 255, 255, 0.05);
 }
 
 .container {
@@ -24,10 +35,6 @@
 a,
 a:visited {
 	color: var(--link-color);
-}
-
-a:hover {
-	text-decoration-color: var(--brand);
 }
 
 html {
@@ -109,7 +116,6 @@ body {
 .body-copy a:hover,
 .navigation a:hover {
 	text-decoration-color: var(--brand);
-
 }
 
 .body-copy figure {
@@ -148,13 +154,39 @@ ul.listing, .navigation ul, .footer ul  {
 	padding: 0;
 }
 
+.navigation button {
+	appearance: none;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	border: none;
+	background: none;
+	padding: 0.25rem;
+	display: block;
+	cursor: pointer;
+}
+
+.navigation button svg {
+	color: var(--font-color);
+	fill: currentColor;
+}
+
+.navigation button svg.sun:hover {
+	color: orange;
+}
+
+.navigation {
+	padding: 0 0.5rem;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	border-bottom: dashed 0.1rem var(--transparency-1);
+}
+
 .navigation ul {
 	display: flex;
 	align-items: center;
 	list-style: none;
-	padding: 0 0.5rem;
 	margin:0;
-	border-bottom: dashed 0.1rem var(--transparency-1);
 	font-size: 0.85rem;
 }
 
@@ -182,7 +214,6 @@ ul.listing li time {
 	font-size: 0.65em;
 	white-space: nowrap;	
 	margin-left: 2rem;
-	color: var(--muted);
 }
 
 .footer {
@@ -193,8 +224,8 @@ ul.listing li time {
 	border-bottom: solid 1px var(--transparency-1);
 	padding: 1rem 0;
 	display: flex;
-		justify-content: space-between;
-align-items: center;
+	justify-content: space-between;
+	align-items: center;
 }
 
 .footer ul {
