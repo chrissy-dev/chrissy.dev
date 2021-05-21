@@ -8,16 +8,14 @@
 	<!-- Load CSS in an efficent way if Javascript is enabled -->
 	<link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
 	<link rel="preload" href="/static/styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-	<link rel="preload" defer async href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
 	<!-- Load CSS traditionally if JS disabled -->
 	<noscript>
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
 		<link rel="stylesheet" href="/static/styles.css">
-		<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" defer async rel="stylesheet">
 	</noscript>	
 
 	<link rel="preconnect" href="https://fonts.gstatic.com">
-	
+	<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" defer async rel="stylesheet">
 	<title>{% if title %}{{ title }}{% else %}Chris Collins{% endif %}</title>
 	<meta name="description" content="{% if description %}{{ description }}{% else %}Chris Collins is a Glasgow based multi-disciplinary software engineer working across digital design, web development and solutions architecture.{% endif %}">
 	<!-- Favicons -->
