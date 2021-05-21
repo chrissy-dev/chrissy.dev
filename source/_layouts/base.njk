@@ -10,8 +10,13 @@
 	<!-- Inline CSS -->
 	<style>{{ css | cssmin | safe }}</style>
 
+	<!-- Try and serve Google Fonts in the most efficent way possible -->
 	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" defer async rel="stylesheet">
+	<link rel="preload" href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+	<noscript>
+		<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" type="text/css" />
+	</noscript>
+
 	<title>{% if title %}{{ title }}{% else %}Chris Collins{% endif %}</title>
 	<meta name="description" content="{% if description %}{{ description }}{% else %}Chris Collins is a Glasgow based multi-disciplinary software engineer working across digital design, web development and solutions architecture.{% endif %}">
 	<!-- Favicons -->
