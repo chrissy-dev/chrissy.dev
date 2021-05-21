@@ -1,6 +1,6 @@
 const { DateTime } = require("luxon");
 const markdownIt = require("markdown-it");
-const beautify = require("js-beautify").html;
+const CleanCSS = require("clean-css");
 
 module.exports = function (eleventyConfig) {
 	eleventyConfig.addPassthroughCopy("source/static");
@@ -22,17 +22,8 @@ module.exports = function (eleventyConfig) {
 		return DateTime.fromJSDate(dateObj).toLocaleString(DateTime.DATE_MED);
 	});
 
-	eleventyConfig.addTransform("prettyOutput", function (content, outputPath) {
-		// Eleventy 1.0+: use this.inputPath and this.outputPath instead
-		if (outputPath && outputPath.endsWith(".html")) {
-			let beautifed = beautify(content, {
-				indent_size: 2,
-				space_in_empty_paren: true
-			});
-			return beautifed;
-		}
-
-		return content;
+	eleventyConfig.addFilter("cssmin", function (code) {
+		return new CleanCSS({}).minify(code).styles;
 	});
 
 	eleventyConfig.setLibrary("md", markdownIt({

@@ -7,11 +7,14 @@
 
 	<!-- Load CSS in an efficent way if Javascript is enabled -->
 	<link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-	<link rel="preload" href="/static/styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+	{%- set css -%}
+		{% include "styles.css" %}
+	{% endset %}
+	<style>{{ css | cssmin | safe }}</style>
+
 	<!-- Load CSS traditionally if JS disabled -->
 	<noscript>
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-		<link rel="stylesheet" href="/static/styles.css">
 	</noscript>	
 
 	<link rel="preconnect" href="https://fonts.gstatic.com">
