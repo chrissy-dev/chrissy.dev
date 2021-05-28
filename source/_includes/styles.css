@@ -119,6 +119,11 @@ body {
 	text-decoration-color: var(--brand);
 }
 
+.body-copy s a, .body-copy s a:hover {
+	text-decoration-color: var(--font-color);
+	text-decoration: none;
+}
+
 .body-copy figure {
 	margin: 4rem 0;
 }
@@ -141,13 +146,6 @@ body {
 	text-align: center;
 	font-size: 0.75em;
 	margin: 2rem;
-}
-
-.body-copy code {
-	padding: 0.1rem 0.5rem;
-	background-color: var(--lightest);
-	border-radius: 0.2rem;
-	margin: 0 0.1rem;
 }
 
 ul.listing, .navigation ul, .footer ul  {

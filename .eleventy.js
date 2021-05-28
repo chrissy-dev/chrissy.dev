@@ -7,6 +7,7 @@ const {
 const markdownIt = require("markdown-it");
 const CleanCSS = require("clean-css");
 const htmlmin = require("html-minifier");
+const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 
 module.exports = function (eleventyConfig) {
 	eleventyConfig.addPassthroughCopy("source/static");
@@ -27,6 +28,8 @@ module.exports = function (eleventyConfig) {
 	eleventyConfig.addFilter("postDate", (dateObj) => {
 		return DateTime.fromJSDate(dateObj).toLocaleString(DateTime.DATE_MED);
 	});
+
+	eleventyConfig.addPlugin(syntaxHighlight);
 
 	eleventyConfig.addTransform("htmlmin", function (content, outputPath) {
 		// Eleventy 1.0+: use this.inputPath and this.outputPath instead
