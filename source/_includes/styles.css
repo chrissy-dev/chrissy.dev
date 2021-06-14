@@ -2,11 +2,11 @@
 :root[data-color-scheme=light] {
 	--font-color: #222;
 	--brand: #00AEAE;
-	--background-color: #fdfdfa;
+	--background-color: #fdfdfd;
 	--link-color: #222;
 	--muted: #aaa;
-	--lightest: #eeeed6;
-	--transparency-1: rgba(0,0,0,0.05);
+	--lightest: #efefef;
+	--transparency-1: rgba(0, 0, 0, 0.05);
 }
 
 :root[data-color-scheme=dark] {
@@ -38,10 +38,10 @@ a:visited {
 }
 
 html {
-	font-family: 'Libre Baskerville', serif;
-	font-size: calc(.85em + .3vw);
+	font-family: 'Inter', sans-serif;
+	font-size: calc(.95em + .3vw);
 	text-rendering: optimizeSpeed;
-	line-height: 1.8;
+	line-height: 1.6;
 }
 
 body {
@@ -63,21 +63,22 @@ body {
 }
 
 .page-title {
-	margin: 6rem 0;
-	text-transform: uppercase;
+	margin: 3rem 0;
 	font-size: 1rem;
-	letter-spacing: 0.1rem;
 	text-align: center;
-	padding: 0 4rem;
+	padding: 0 1rem;
 }
 
 .page-title__title {
+	letter-spacing: 0.025rem;
 	font-size: 1.4rem;
-	line-height: 1.5;
+	line-height: 1.2;
 }
 
 .page-title__desc {
-	font-size: 0.65rem;
+	font-weight: 400;
+	font-size: 0.85rem;
+	margin: 0 auto;
 }
 
 .page-title__date {
@@ -86,11 +87,11 @@ body {
 
 .page-title:after {
 	content: "";
-	width: 6rem;
+	width: 4rem;
 	display: block;
-	height: 1px;
-	background-color: rgba(0, 0, 0, 0.2);
-	margin: 3rem auto;
+	height: .1rem;
+	background-color: var(--transparency-1);
+	margin: 1rem auto 3rem auto;
 }
 
 
@@ -99,15 +100,27 @@ body {
 }
 
 .body-copy h2,
-.body-copy h3 {
+.body-copy h3,
+.body-copy h4,
+.body-copy h5 {
 	text-transform: uppercase;
 	font-size: 0.865rem;
 	letter-spacing: 0.1rem;
 	margin-top: 3rem;
-	margin-bottom: 3rem;
+	margin-bottom: 1rem;
+	padding-bottom: 0.5em;
+	border-bottom: solid 0.1rem var(--transparency-1);
 }
 
-.body-copy a, .navigation a {
+.body-copy h2 {
+	font-size: 1em;
+	padding-bottom: 0.5rem;
+	border-bottom: solid 0.1rem var(--transparency-1);
+}
+
+
+.body-copy a,
+.navigation a {
 	text-decoration-color: var(--lightest);
 	text-decoration-thickness: 0.15rem;
 	text-underline-offset: 0.2rem;
@@ -119,7 +132,8 @@ body {
 	text-decoration-color: var(--brand);
 }
 
-.body-copy s a, .body-copy s a:hover {
+.body-copy s a,
+.body-copy s a:hover {
 	text-decoration-color: var(--font-color);
 	text-decoration: none;
 }
@@ -148,57 +162,43 @@ body {
 	margin: 2rem;
 }
 
-ul.listing, .navigation ul, .footer ul  {
+ul.listing,
+.navigation ul,
+.footer ul {
 	list-style-type: none;
 	padding: 0;
 }
 
-.navigation button {
-	appearance: none;
-	-moz-appearance: none;
-	-webkit-appearance: none;
-	border: none;
-	background: none;
-	padding: 0.25rem;
-	display: block;
-	cursor: pointer;
-}
-
-.navigation button svg {
-	color: var(--font-color);
-	fill: currentColor;
-}
-
-.navigation button svg.sun:hover {
-	color: orange;
-}
-
 .navigation {
+	margin-left: -0.15rem;
 	padding: 0 0.5rem;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	border-bottom: dashed 0.1rem var(--transparency-1);
+	border-bottom: solid 0.1rem var(--transparency-1);
 }
 
 .navigation ul {
 	display: flex;
 	align-items: center;
 	list-style: none;
-	margin:0;
+	margin: 0;
 	font-size: 0.85rem;
 }
 
-.navigation ul li {
-	padding: 1rem 0.5rem;
+.navigation ul li a {
+	display: block;
+	padding: 1rem 0.65rem;
+	text-underline-offset: 0.3rem;
 }
 
 ul.listing li {
-	border-bottom: dashed 0.1rem var(--transparency-1);
+	border-bottom: solid 0.1rem var(--transparency-1);
 	padding: 0.5rem 0;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+	flex-wrap: wrap;
 }
 
 ul.listing li a {
@@ -211,8 +211,9 @@ ul.listing li a:hover {
 
 ul.listing li time {
 	font-size: 0.65em;
-	white-space: nowrap;	
-	margin-left: 2rem;
+	white-space: nowrap;
+	display: block;
+	width: 100%;
 }
 
 .footer {
@@ -221,12 +222,15 @@ ul.listing li time {
 	margin-bottom: 1rem;
 	border-top: solid 1px var(--transparency-1);
 	padding: 1rem 0;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
 }
 
-.footer ul {
+.footer section {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+}
+
+.footer section ul {
 	display: flex;
 	align-items: center;
 	list-style: none;
@@ -234,12 +238,34 @@ ul.listing li time {
 	margin: 0;
 }
 
-.footer ul li  {
+.footer section ul li {
 	padding: 0.25rem;
 }
 
-.footer ul li:first-of-type {
+.footer section ul li:first-of-type {
 	padding-left: 0;
+}
+
+.footer button {
+	appearance: none;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	border: solid 0.1rem var(--transparency-1);
+	background: none;
+	padding: .5rem .5rem;
+	display: block;
+	align-items: center;
+	cursor: pointer;
+	margin: 3rem auto;
+}
+
+.footer button svg {
+	color: var(--font-color);
+	fill: currentColor;
+}
+
+.footer button svg.sun:hover {
+	color: orange;
 }
 
 /* 
@@ -266,9 +292,17 @@ ul.listing li time {
 		width: 8rem;
 		height: 8rem;
 	}
+		
+	.page-title__desc {
+		max-width: 75%;
+	}
 
-	.page-title {
-		font-size: 2rem;
-		padding: 0 1rem;
+	ul.listing li {
+		flex-wrap: nowrap;
+	}
+
+	ul.listing li time {
+		width: auto;
+		margin-left: 2rem;
 	}
 }
