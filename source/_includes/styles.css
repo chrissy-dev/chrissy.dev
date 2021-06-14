@@ -225,9 +225,9 @@ ul.listing li time {
 }
 
 .footer section {
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
 
 .footer section ul {
@@ -292,7 +292,7 @@ ul.listing li time {
 		width: 8rem;
 		height: 8rem;
 	}
-		
+
 	.page-title__desc {
 		max-width: 75%;
 	}
