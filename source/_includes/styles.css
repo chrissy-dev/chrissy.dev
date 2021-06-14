@@ -70,8 +70,7 @@ body {
 }
 
 .page-title__title {
-	letter-spacing: 0.025rem;
-	font-size: 1.4rem;
+	font-size: 1.8rem;
 	line-height: 1.2;
 }
 
@@ -118,12 +117,19 @@ body {
 	border-bottom: solid 0.1rem var(--transparency-1);
 }
 
+.body-copy img {
+	max-width: 100%;
+}
 
 .body-copy a,
 .navigation a {
-	text-decoration-color: var(--lightest);
+	text-decoration-color: var(--transparency-1);
 	text-decoration-thickness: 0.15rem;
 	text-underline-offset: 0.2rem;
+}
+
+.navigation a {
+	text-decoration-color: var(--background-color);
 }
 
 .body-copy a:hover,
@@ -175,7 +181,7 @@ ul.listing,
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	border-bottom: solid 0.1rem var(--transparency-1);
+	border-bottom: solid 0.05rem var(--transparency-1);
 }
 
 .navigation ul {
