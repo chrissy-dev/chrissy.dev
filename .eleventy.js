@@ -11,7 +11,7 @@ const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 
 module.exports = function (eleventyConfig) {
 	eleventyConfig.addPassthroughCopy("source/static");
-	eleventyConfig.addPassthroughCopy("source/notes/**/*.{jpg,jpeg}");
+	eleventyConfig.addPassthroughCopy("source/notes/**/*.{jpg,jpeg,png}");
 
 	eleventyConfig.addCollection("log", function (collectionApi) {
 		return collectionApi.getFilteredByGlob("source/logbook/**/*.md").sort(function (a, b) {
