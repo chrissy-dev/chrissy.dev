@@ -1,7 +1,7 @@
 :root,
 :root[data-color-scheme=light] {
 	--font-color: #222;
-	--brand: #00AEAE;
+	--brand: #90e0ef;
 	--background-color: #fdfdfd;
 	--link-color: #222;
 	--muted: #aaa;
@@ -11,7 +11,7 @@
 
 :root[data-color-scheme=dark] {
 	--font-color: #fff;
-	--brand: #00AEAE;
+	--brand: #90e0ef;
 	--background-color: #222;
 	--link-color: #fff;
 	--muted: #444;
@@ -39,9 +39,10 @@ a:visited {
 
 html {
 	font-family: 'Inter', sans-serif;
-	font-size: calc(.95em + .3vw);
+	font-size: clamp(1rem, 3vw, 1.3rem);
 	text-rendering: optimizeSpeed;
 	line-height: 1.6;
+	letter-spacing: -0.01rem;
 }
 
 body {
@@ -52,14 +53,14 @@ body {
 }
 
 .home-header {
-	width: 100%;
-	margin: 6rem auto 1rem auto;
+	margin: 2rem 0;
 }
 
 .home-header img {
-	width: 6rem;
-	height: 6rem;
 	border-radius: 100%;
+	border: solid .5rem var(--brand);
+	width: 5rem;
+	height: 5rem;
 }
 
 .page-title {
@@ -129,6 +130,7 @@ body {
 }
 
 .navigation a {
+	font-weight: 600;
 	text-decoration-color: var(--background-color);
 }
 
@@ -142,6 +144,24 @@ body {
 .body-copy s a:hover {
 	text-decoration-color: var(--font-color);
 	text-decoration: none;
+}
+
+.body-copy ul {
+	padding-left: 1.25rem;
+}
+
+.body-copy ul a {
+	font-weight: 600;
+	text-underline-offset: 0.25rem;
+	text-decoration-thickness: 0.1rem;
+}
+
+.body-copy ul li {
+	margin-bottom: 0.5rem;
+}
+
+.body-copy ul li::marker {
+	color: var(--brand);
 }
 
 .body-copy figure {
@@ -291,7 +311,7 @@ ul.listing li time {
 
 @media only screen and (min-width: 600px) {
 	.home-header {
-		margin: 8rem auto 4rem auto;
+		margin: 6rem auto 4rem auto;
 	}
 
 	.home-header img {
