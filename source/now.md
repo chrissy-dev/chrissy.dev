@@ -2,7 +2,7 @@
 title: Now
 layout: page.njk
 description:  What I am focusing on right now.
-last_updated: 2021-04-10T20:12:31+00:00
+last_updated: 2021-07-26T20:12:31+00:00
 ---
 
 ## At work:
