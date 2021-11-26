@@ -1,3 +1,5 @@
+### This repository is not connected to the live site anymore and has been archived.
+
 <img src="/source/static/chriscollins.jpg" style="border-radius: 1rem;" alt="Chris" width="56" align="center" />
 
 <strong><a href="https://chrissy.dev">chrissy.dev</a></strong> - <em> Personal Website of Chris Collins</em></strong>
